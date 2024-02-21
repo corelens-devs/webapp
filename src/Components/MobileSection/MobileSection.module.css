@@ -1,0 +1,41 @@
+.main_div{
+    padding: 20px;
+    background: #F7FBFF;
+    position: relative;
+}
+.mob_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.mob_div > img{height: 550px;
+    width: 425px;
+    }
+.mob_div > div > h4{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0;
+    }
+.mob_div > div > p{
+    font-size: 16px;
+    color: #5E6075;
+    text-align: left;
+    /* margin: 0; */
+    /* font-weight: 500; */
+    }
+    .mob_div > div {
+        width: 30%;
+    }
+
+    .img_mob1 {
+        position: absolute;
+        left: 11%;
+        top: 16%;
+        width: 765px;
+    }
+   @media screen and (max-width : 620px) {
+    .mob_div > img {
+        height: 250px;
+        width: 200px;
+    }
+    }

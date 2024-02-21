@@ -1,0 +1,13 @@
+.head{
+    margin: 50px 0;
+}
+.head h4{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+}
+.head p{
+    margin: 0;
+    font-size: 18px;
+    color: #737373;
+}

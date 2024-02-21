@@ -1,0 +1,83 @@
+.card1>button {
+    background: white;
+    color: black;
+    border: 1px solid #d9d9d9;
+    padding: 10px 20px;
+    border-radius: 20px;
+    width: fit-content;
+}
+
+.card1>img {
+    width: 125px;
+    height: 185px;
+    margin-bottom: 40px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.div2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div2>p {
+    margin: 0;
+}
+
+.div2>button {
+    border: 1px solid #d9d9d9d9;
+    background: white;
+    padding: 7px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.div2>button>svg {
+    fill: hsl(39deg 97.11% 49.53%) !important;
+    font-size: 16px;
+}
+
+.h6 {
+    font-size: 14px;
+    text-align: left;
+    font-weight: 500;
+    margin: 10px 0;
+}
+
+.view {
+    color: #00398E;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.p1 {
+    background: linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%);
+
+}
+
+.p2 {
+    background: linear-gradient(180deg, #6FDBF9 0%, rgba(207, 245, 255, 0.69) 100%);
+
+}
+
+.p3 {
+    background: linear-gradient(180deg, #E8EB8C 0%, #FEFFEE 100%);
+
+}
+
+.p4 {
+    background: linear-gradient(180deg, #FF9CA9 0%, rgba(255, 181, 191, 0.48) 100%);
+}

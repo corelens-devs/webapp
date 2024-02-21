@@ -1,0 +1,33 @@
+.service_div{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+.card{
+    padding: 10px;
+    width: 350px !important;
+}
+.card > img {
+    height: 100px;
+    width: 100px;
+}
+.card > h4 {
+    font-size: 20px;
+    margin:10px 0 0 0;
+    font-weight: 500;
+}
+.card > p {
+    font-size: 16px;
+    text-align: justify;
+}
+
+@media screen and (max-width : 600px)  {
+    .service_div{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .card{
+        width: 100% !important;
+        padding: 0;
+    }
+}

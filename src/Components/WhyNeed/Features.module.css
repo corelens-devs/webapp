@@ -1,0 +1,86 @@
+.main_div{
+    display: flex;
+    gap: 4%;
+    padding: 20px 50px;
+}
+.main_div ul{
+    list-style: none;
+    width: 48%;
+}
+.main_div ul li{
+    display: flex;
+    gap: 4%;
+    margin-bottom: 30px;
+}
+.main_div ul li img{
+    height: 30px;
+    width: 30px;
+    background: #DAEEFF;
+    padding: 10px;
+    border-radius: 50%;
+}
+.main_div ul li div{
+width: 70%;
+}
+.main_div ul li div h1{
+    margin: 0;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 500;
+}
+.main_div ul li div p{
+    margin: 10px 0;
+    text-align: start;
+    color: #5E6075;
+}
+.feat{
+    display: flex;
+    gap: 4%;
+    padding: 20px 80px;
+}
+.btm_section{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.btm_section h5{
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 500;
+}
+.btm_section p{
+    font-size: 16px;
+    /* font-style: italic; */
+    font-weight: 400;
+    /* margin: 0; */
+}
+.btm_section h6{
+    font-size: 16px;
+    /* font-style: italic; */
+    font-weight: 500;
+    margin: 0;
+}
+@media screen and (max-width : 620px) {
+    .feat { 
+        display: none;
+    }
+    .main_div ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .main_div ul li {
+        gap: 9%;
+    }
+    .main_div{
+        padding: 20px;
+        gap: 0;
+        flex-direction: column;
+
+    }
+    .btm_section {
+        margin-top: 0;
+        margin-bottom: 50px;
+    padding: 20px;
+    }
+}
