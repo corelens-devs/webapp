@@ -18,7 +18,7 @@ const ProductSlider = () => {
             type: 'progressbar',
           }}
           navigation={true}
-          modules={[  Pagination, Navigation]}
+          modules={[ Autoplay, Pagination, Navigation]}
             // loop={true}
             // autoplay={{
             //     delay: 5000,

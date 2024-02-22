@@ -37,4 +37,10 @@ border-bottom: 1px solid #d9d9d9;
 /* show */
 .show{
     display: block;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    padding-bottom: 67px;
+    border: 1px solid #d9d9d9;
+    scroll-behavior: smooth;
 }

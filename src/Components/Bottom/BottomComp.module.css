@@ -1,28 +1,33 @@
-.main_div{
+.main_div {
     display: flex;
     padding: 40px;
     align-items: center;
     gap: 30px;
     justify-content: space-evenly;
 }
-.main_div > img {
+
+.main_div>img {
     width: 550px;
     height: 500px;
 }
-.main_div > div {
+
+.main_div>div {
     width: 50%;
 }
-.main_div > div > h1 {
+
+.main_div>div>h1 {
     font-size: 40px;
     font-weight: 600;
     text-align: left;
 }
-.main_div > div > p {
+
+.main_div>div>p {
     font-size: 18px;
     color: #737373;
-text-align: left;
-margin: 10px 0 20px 0;
+    text-align: left;
+    margin: 10px 0 20px 0;
 }
+
 /* .btm_btn{
     background: black;
     padding: 10px;
@@ -49,7 +54,7 @@ margin: 10px 0 20px 0;
     gap: 20px;
 } */
 
-.btm_btn{
+.btm_btn {
     background: black;
     padding: 15px;
     border: none;
@@ -58,27 +63,30 @@ margin: 10px 0 20px 0;
     display: flex;
     /* flex-direction: column; */
     align-items: center;
-    font-size: 18px; 
+    font-size: 18px;
     gap: 15px;
     text-align: center;
     letter-spacing: 1.5px;
     /* height: 50px; */
     /* width: 200px; */
-   
+
 }
-.btm_btn > span > span{
+
+.btm_btn>span>span {
     font-size: 12px !important;
     display: flex;
     gap: 15px;
-    
+
 }
-.btm_btn > span {
+
+.btm_btn>span {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     row-gap: 3px;
 }
-.btm_btn_div{
+
+.btm_btn_div {
     display: flex;
     gap: 20px;
     /* align-items: center; */
@@ -86,33 +94,45 @@ margin: 10px 0 20px 0;
 }
 
 @media screen and (max-width : 620px) {
-    .main_div > img { width: 400px;
-    height: 330px;}
-    .main_div > div {
+    .main_div>img {
+        width: 400px;
+        height: 330px;
+    }
+
+    .main_div>div {
         width: 100%;
     }
-    .main_div > div > p {
+
+    .main_div>div>p {
         font-size: 18px;
         text-align: center;
     }
-    .main_div > div > h1 {
+
+    .main_div>div>h1 {
         margin: 20px 0;
         font-size: 30px;
         text-align: center;
     }
+
     .main_div {
-        padding: 30px;
+        padding: 0;
         flex-direction: column;
     }
-    .btm_btn_div{
+
+    .btm_btn_div {
         width: 100%;
         justify-content: center;
         flex-direction: column;
     }
-    .btm_btn{
+
+    .btm_btn {
         width: 100%;
         align-items: center;
         justify-content: center;
+        padding: 10px;
+
     }
-   
+    .btm_btn > span > span{
+        font-size: 12px !important;
+     }
 }

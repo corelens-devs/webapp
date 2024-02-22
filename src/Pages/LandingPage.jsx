@@ -20,9 +20,11 @@ const LandingPage = () => {
         <Services/>
         <ProductSlider/>
         <Features/>
-        <MobileSection/>
-        <BottomComponent/>
        </div>
+        <MobileSection/>
+        <div className={classes.main_div}>
+        <BottomComponent/>
+        </div>
         <Footer/>
 {/* 
         <Navbar/>

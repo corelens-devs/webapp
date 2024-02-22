@@ -6,7 +6,7 @@ import { FaCircle } from 'react-icons/fa'
 
 const AISecurity = () => {
     return (
-        <div id='Aihome'>
+        <div id='Aihome' className={classes.ai_home}>
             <Heading heading={"A.I Home Security"} para={"Experience ultimate in home comfort, convenience, and control with our smart home solutions."}/>
             <div className={classes.btm_btn_div}>
                 <button className={classes.btm_btn}><FaCircle /><span><span>Download on the</span>App Store</span></button>

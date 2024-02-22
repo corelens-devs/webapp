@@ -20,3 +20,24 @@
     height: 30px !important;
     border-radius: 50% !important;
 }
+.home_slider2{
+    padding-bottom: 0 !important;
+}
+@media screen and (max-width : 620px) {
+.home_slider1 {
+    padding: 0 !important;
+}
+}
+.modal-dialog-centered{
+    justify-content: center !important;
+}
+.modal-content{
+    width: 1100px !important;
+}
+
+@media screen and (max-width:620px) {
+    .modal-content{
+        width: 100% !important;
+    }
+    
+   }

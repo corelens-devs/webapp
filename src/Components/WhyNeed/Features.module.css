@@ -32,7 +32,7 @@ width: 70%;
 .main_div ul li div h1{
     margin: 0;
     text-align: start;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
 }
 .main_div ul li div p{
@@ -42,12 +42,12 @@ width: 70%;
 }
 .feat{
     display: flex;
-    gap: 1%;
+    gap: 2%;
     margin-top: 60px;
     /* padding: 20px 80px; */
 }
 .feat > img {
- width: 19%;
+ width: 18%;
     /* padding: 20px 80px; */
 }
 .btm_section{
@@ -61,13 +61,13 @@ width: 70%;
     font-weight: 500;
 }
 .btm_section p{
-    font-size: 16px;
+    font-size: 18px;
     /* font-style: italic; */
     font-weight: 500;
     margin: 15px 0;
 }
 .btm_section h6{
-    font-size: 16px;
+    font-size: 18px;
     /* font-style: italic; */
     font-weight: 600;
     margin: 0;

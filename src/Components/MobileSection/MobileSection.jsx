@@ -8,9 +8,9 @@ import classes from "./MobileSection.module.css"
 const MobileSection = () => {
     return (
         <div className={classes.main_div}>
-            <div className={classes.mob_div}>
+            <div className={`${classes.mob_div} `}>
                 <img src={mobile2} className={classes.mob} />
-                <div>
+                <div className={classes.mob2}>
                     <h4>Buy your Favorite CCTV Cameras</h4>
                     <p>You can also check your account balance through the net
                         banking facility. To use this facility need to login to the

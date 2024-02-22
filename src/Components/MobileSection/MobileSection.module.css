@@ -1,5 +1,5 @@
 .main_div{
-    padding: 90px;
+    padding: 90px 140px;
     background: #F7FBFF;
     position: relative;
 }
@@ -27,6 +27,10 @@
     }
     .mob_div > div {
         width: 50%;
+    }
+    .mob2 {
+        width: 50%;
+        margin-top: -80px !important;
     }
 
     /* .img_mob1 {
@@ -94,7 +98,7 @@
     }
     .mob_div > div {
         width: 100%;
-        margin-top: -30px;
+        margin-top: -30px !important;
         text-align: center;
     }
     .mob_div > div > p {

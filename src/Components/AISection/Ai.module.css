@@ -41,15 +41,28 @@
 
 @media screen and (max-width : 620px) {
     .img{
-        display: none;
+        width: 100%;
+        height: fit-content;
+        order: 1;
+        
+    }
+    .ai_home{
+        display: flex;
+        flex-direction: column;
     }
     .btm_btn_div{
         width: 100%;
         flex-direction: column;
+        order: 2;
+        margin: 40px 0;
     }
     .btm_btn{
+        padding: 10px;
         width: 100%;
         align-items: center;
         justify-content: center;
+    }
+    .btm_btn > span > span{
+       font-size: 12px !important;
     }
 }
