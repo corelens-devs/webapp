@@ -20,20 +20,20 @@ const Home = () => {
                     }}
                     className={'home_slider'}
                     // slidesPerView={1}
-                    // breakpoints={{
-                    //     360: {
-                    //         slidesPerView: 1
-                    //     },
-                    //     690: {
-                    //         slidesPerView: 2
-                    //     },
-                    //     1000: {
-                    //         slidesPerView: 3
-                    //     },
-                    //     1200: {
-                    //         slidesPerView: 4
-                    //     }
-                    // }}
+                    breakpoints={{
+                        360: {
+                            slidesPerView: 1
+                        },
+                        690: {
+                            slidesPerView: 1
+                        },
+                        1000: {
+                            slidesPerView: 1
+                        },
+                        1200: {
+                            slidesPerView: 1.5
+                        }
+                    }}
 
 
                     spaceBetween={30}

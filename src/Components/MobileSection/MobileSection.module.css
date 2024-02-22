@@ -71,4 +71,25 @@
         height: 250px;
         width: 200px;
     } */
+    .vector1{
+        display: none;
+    }
+    .vector2{
+        display: none;
+    }
+    .mob{
+       display: none;
+    }
+    .main_div{
+        padding: 30px;
+    }
+    .mob_div > div {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .mob_div > div > p {
+        margin: 10px 0;
+        text-align: center;
+    }
     }
