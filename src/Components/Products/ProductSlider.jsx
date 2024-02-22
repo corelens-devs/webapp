@@ -21,7 +21,7 @@ const ProductSlider = () => {
           modules={[Autoplay,  Pagination, Navigation]}
             loop={true}
             autoplay={{
-                delay: 2000,
+                delay: 1000,
                 disableOnInteraction: true,
             }}
             className={'home_slider home_slider1'}
