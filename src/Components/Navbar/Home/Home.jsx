@@ -10,42 +10,48 @@ import './Home.css'
 
 const Home = () => {
     return (
-          
-                <Swiper
-                pagination={true} 
-                    loop={true}
-                    autoplay={{
-                        delay: 2000,
-                        disableOnInteraction: true,
-                    }}
-                    className={'home_slider'}
-                    // slidesPerView={1}
-                    breakpoints={{
-                        360: {
-                            slidesPerView: 1
-                        },
-                        690: {
-                            slidesPerView: 1
-                        },
-                        1000: {
-                            slidesPerView: 1
-                        },
-                        1200: {
-                            slidesPerView: 1.5
-                        }
-                    }}
+
+        <Swiper
+            // pagination={true} 
+            loop={true}
+            centeredSlides={true}
+            pagination={{
+                clickable: true,
+            }}
+            autoplay={{
+                delay: 1000,
+                disableOnInteraction: true,
+            }}
+            // dir="rtl"
+            className={'home_slider'}
+            // slidesPerView={1}
+            breakpoints={{
+                360: {
+                    slidesPerView: 1
+                },
+                690: {
+                    slidesPerView: 1
+                },
+                1000: {
+                    slidesPerView: 1
+                },
+                1200: {
+                    slidesPerView: 1.5
+                }
+            }}
 
 
-                    spaceBetween={30}
-                    slidesPerView={1.5}
-                    modules={[ Autoplay, Pagination]}
-                >
-                  <SwiperSlide><img className='img'   src={Banner}/></SwiperSlide>
-                  <SwiperSlide><img  className='img'  src={Banner}/></SwiperSlide>
-                  <SwiperSlide><img className='img'   src={Banner}/></SwiperSlide>
-                  
-                </Swiper>
-              
+            spaceBetween={30}
+            slidesPerView={1.5}
+            modules={[Autoplay, Pagination]}
+        >
+            <SwiperSlide><img className='img' src={Banner} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner} /></SwiperSlide>
+
+        </Swiper>
+
     );
 }
 

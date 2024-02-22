@@ -37,6 +37,7 @@
     outline: none;
     color: #b6b6b6;
     border-radius: 20px;
+    text-align: left;
   }
   
   .search_bar input::placeholder {
@@ -107,8 +108,9 @@ padding: 10px 65px;
   @media screen and (max-width:1000px) {
     .navbar {
       justify-content: end;
+      padding: 10px 30px;
     }
-  .btm_div ul li {
+  /* .btm_div ul li {
     padding: 10px;
     border-bottom: 1px solid #989898;
 
@@ -120,6 +122,10 @@ padding: 10px 65px;
     flex-direction: column;
     width: 100%;
     padding: 0;
+  } */
+
+  .btm_div{
+    display: none;
   }
  
     .search_bar {

@@ -8,18 +8,21 @@ import Features from '../Components/WhyNeed/Features'
 import MobileSection from '../Components/MobileSection/MobileSection'
 import BottomComponent from '../Components/Bottom/BottomComponent'
 import Footer from '../Components/Footer/Footer'
+import classes from "./Landing.module.css"
 
 const LandingPage = () => {
   return (
     <div>
         <Navbar/>
         <Home/>
-        <AISecurity/>
+       <div className={classes.main_div}>
+       <AISecurity/>
         <Services/>
         <ProductSlider/>
         <Features/>
         <MobileSection/>
         <BottomComponent/>
+       </div>
         <Footer/>
 {/* 
         <Navbar/>

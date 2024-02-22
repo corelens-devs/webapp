@@ -1,13 +1,20 @@
 .head{
-    margin: 50px 0;
+    margin: 100px 0 50px 0;
 }
 .head h4{
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 600;
     margin: 0;
+    margin-bottom: 10px;
 }
 .head p{
     margin: 0;
     font-size: 18px;
     color: #737373;
 }
+
+@media screen and (max-width : 620px) {
+    .head{
+        margin: 20px  0;
+    }
+ }

@@ -1,0 +1,40 @@
+.btm_div {
+    background: #f9f9f9;
+    padding: 10px 0;
+    display: none;
+}
+
+.btm_div ul {
+
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btm_div ul li a {
+    color: #000;
+    text-decoration: none;
+}
+.btm_div ul li {
+line-height: 3;
+border-bottom: 1px solid #d9d9d9;
+}
+.side_bn{
+    display: flex;
+    align-items: end;
+    padding-inline: 20px;
+    justify-content: end;
+}
+.side_bn > button {
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+.side_bn > button > svg {
+   color: #989898;
+}
+
+/* show */
+.show{
+    display: block;
+}

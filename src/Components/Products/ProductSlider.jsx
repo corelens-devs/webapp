@@ -11,19 +11,19 @@ import Heading from '../Heading/Heading';
 import classes from "./Product.module.css"
 const ProductSlider = () => {
     return (
-        <div style={{padding:"0 90px"}} id='product'>
+        <div  id='product'>
         <Heading heading="Our Products"/>
         <Swiper
         pagination={{
             type: 'progressbar',
           }}
           navigation={true}
-          modules={[Autoplay,  Pagination, Navigation]}
-            loop={true}
-            autoplay={{
-                delay: 1000,
-                disableOnInteraction: true,
-            }}
+          modules={[  Pagination, Navigation]}
+            // loop={true}
+            // autoplay={{
+            //     delay: 5000,
+            //     disableOnInteraction: true,
+            // }}
             className={'home_slider home_slider1'}
             slidesPerView={1}
             breakpoints={{

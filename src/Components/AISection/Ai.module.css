@@ -1,6 +1,6 @@
 .img{
-    width: 85%;
-    height: 650px;
+    width: 75%;
+    height: 600px;
 }
 .btm_btn{
     background: black;
@@ -36,10 +36,20 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 40px;
 }
 
 @media screen and (max-width : 620px) {
     .img{
         display: none;
+    }
+    .btm_btn_div{
+        width: 100%;
+        flex-direction: column;
+    }
+    .btm_btn{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
 }

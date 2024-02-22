@@ -10,7 +10,7 @@
 .card1>img {
     width: 125px;
     height: 185px;
-    margin-bottom: 40px;
+    margin-bottom: 70px;
 }
 
 .card1 {
@@ -20,7 +20,10 @@
     background: linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%);
     padding: 20px;
     border-radius: 5px;
+    /* width: 250px; */
+    width: 100%;
 }
+
 
 .div2 {
     display: flex;

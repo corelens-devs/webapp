@@ -1,6 +1,8 @@
 import React from 'react'
-import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'
+import {FaInstagram} from 'react-icons/fa'
+import { FiFacebook, FiGithub } from "react-icons/fi";
 import classes from "./Footer.module.css"
+import { SlSocialTwitter } from "react-icons/sl";
 
 const Footer = () => {
   return (
@@ -16,9 +18,10 @@ const Footer = () => {
         <div className={classes.div2}>
             <p>@Copyright2023,All Rights Reserved</p>
             <div>
-            <FaFacebookF />
-            <FaTwitter />
+            <FiFacebook />
+            <SlSocialTwitter />
             <FaInstagram />
+            <FiGithub/>
 
             </div>
         </div>

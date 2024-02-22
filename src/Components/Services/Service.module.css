@@ -1,6 +1,6 @@
 .service_div{
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
     justify-content: space-around;
 }
 .card{
@@ -22,7 +22,7 @@
     color: hsl(240deg 7.71% 27.34%);
 }
 
-@media screen and (max-width : 600px)  {
+@media screen and (max-width : 620px)  {
     .service_div{
         flex-direction: column;
         padding: 30px;

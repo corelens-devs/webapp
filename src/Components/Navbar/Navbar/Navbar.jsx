@@ -4,6 +4,7 @@ import {  FaPhoneAlt } from 'react-icons/fa'
 import search from "../../../Assets/search.png"
 import logo from "../../../Assets/logo.png"
 import BotttomNav from './BotttomNav'
+import Sidebar from '../../Sidebar/Sidebar'
 
 const Navbar = (props) => {
   const [sidebar, setSidebar] = useState(false)
@@ -37,6 +38,8 @@ const Navbar = (props) => {
         </button>
       </div>
     </header>
+    {sidebar && <Sidebar sidebar={sidebar} setSidebar={setSidebar} />}
+
     <BotttomNav/>
     </>
   )

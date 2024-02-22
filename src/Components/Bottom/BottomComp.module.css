@@ -2,6 +2,7 @@
     display: flex;
     padding: 40px;
     align-items: center;
+    gap: 30px;
     justify-content: space-evenly;
 }
 .main_div > img {
@@ -9,11 +10,11 @@
     height: 500px;
 }
 .main_div > div {
-    width: 30%;
+    width: 50%;
 }
 .main_div > div > h1 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: 600;
     text-align: left;
 }
 .main_div > div > p {
@@ -80,18 +81,38 @@ margin: 10px 0 20px 0;
 .btm_btn_div{
     display: flex;
     gap: 20px;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: center; */
 }
 
 @media screen and (max-width : 620px) {
-    .main_div > img { display: none;}
+    .main_div > img { width: 400px;
+    height: 330px;}
     .main_div > div {
         width: 100%;
     }
+    .main_div > div > p {
+        font-size: 18px;
+        text-align: center;
+    }
+    .main_div > div > h1 {
+        margin: 20px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+    .main_div {
+        padding: 30px;
+        flex-direction: column;
+    }
     .btm_btn_div{
+        width: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .btm_btn{
+        width: 100%;
+        align-items: center;
         justify-content: center;
     }
-    
    
 }
