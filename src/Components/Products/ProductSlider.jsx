@@ -24,7 +24,7 @@ const ProductSlider = () => {
                 delay: 2000,
                 disableOnInteraction: true,
             }}
-            className={'home_slider'}
+            className={'home_slider home_slider1'}
             slidesPerView={1}
             breakpoints={{
                 360: {
