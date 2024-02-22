@@ -8,7 +8,7 @@ import classes from "./Service.module.css"
 
 const Services = () => {
   return (
-      <>
+      <div id="services">
       <Heading heading={"What We Offer"} para="" />
     <div className={classes.service_div}>
         <ServiceComp para={"We provide AI-advanced security devices to protect your home and your vehicles from theft which you can monitor yourself on mobile phones. "} heading={"Camera sensors"} img={service1}/>
@@ -16,7 +16,7 @@ const Services = () => {
         <ServiceComp heading={"Support"} para={"Enjoy complementary HOME SERVICE for 2 years (rare now a days),free delivery pan india,72hour replacement policy , 24/7 toll-free call support and much more."} img={service3}/>
  
     </div>
-    </>
+    </div>
   )
 }
 

@@ -21,6 +21,28 @@ const LandingPage = () => {
         <MobileSection/>
         <BottomComponent/>
         <Footer/>
+{/* 
+        <Navbar/>
+        <Home/>
+        <Routes>
+        <Route path='/Aihome' element={ <AISecurity/>}/>
+        </Routes>
+        <Routes>
+        <Route path='/services' element={<Services/>}/>
+        </Routes>
+        <Routes>
+        <Route path='/product' element={  <ProductSlider/>}/>
+        </Routes>
+        <Routes>
+        <Route path='/features' element={<Features/>}/>
+        </Routes>
+        <Routes>
+        <Route path='/mobile' element={<MobileSection/>}/>
+        </Routes>        
+        <Routes>
+        <Route path='/bottom' element={<BottomComponent/>}/>
+        </Routes>
+        <Footer/> */}
     </div>
   )
 }

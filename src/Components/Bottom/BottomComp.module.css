@@ -14,26 +14,27 @@
 .main_div > div > h1 {
     font-size: 20px;
     font-weight: 500;
+    text-align: left;
 }
 .main_div > div > p {
     font-size: 18px;
     color: #737373;
 text-align: left;
+margin: 10px 0 20px 0;
 }
-.btm_btn{
+/* .btm_btn{
     background: black;
     padding: 10px;
     border: none;
     border-radius: 5px;
     color: #fff;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     font-size: 18px; 
     gap: 5px;
     text-align: center;
     letter-spacing: 1.5px;
-    /* height: 50px; */
+   
     width: 200px;
 }
 .btm_btn > span > span{
@@ -45,6 +46,42 @@ text-align: left;
 .btm_btn_div{
     display: flex;
     gap: 20px;
+} */
+
+.btm_btn{
+    background: black;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    font-size: 18px; 
+    gap: 15px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    /* height: 50px; */
+    /* width: 200px; */
+   
+}
+.btm_btn > span > span{
+    font-size: 12px !important;
+    display: flex;
+    gap: 15px;
+    
+}
+.btm_btn > span {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    row-gap: 3px;
+}
+.btm_btn_div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
 
 @media screen and (max-width : 620px) {

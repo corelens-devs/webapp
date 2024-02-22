@@ -1,5 +1,5 @@
 .main_div{
-    padding: 20px;
+    padding: 90px;
     background: #F7FBFF;
     position: relative;
 }
@@ -7,10 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+    position: relative;
 }
-.mob_div > img{height: 550px;
+/* .mob_div > img{height: 550px;
     width: 425px;
-    }
+    } */
 .mob_div > div > h4{
     font-size: 18px;
     font-weight: 500;
@@ -27,15 +28,47 @@
         width: 30%;
     }
 
-    .img_mob1 {
+    /* .img_mob1 {
         position: absolute;
         left: 11%;
         top: 16%;
         width: 765px;
+    } */
+    .mob{
+        position: relative;
+    z-index: 4;
+    height: 550px;
+    object-fit: contain;
+    }
+    .vector1{
+        /* position: absolute;
+        bottom: -325px;
+        z-index: 1;
+        width: 770px;
+        top: 70%;
+        left: 199px; */
+        position: absolute;
+        /* bottom: -198px; */
+        z-index: 1;
+        width: 764px;
+        top: 58%;
+        left: 117px;
+    }
+    .vector2{
+        /* position: absolute;
+        bottom: -180px;
+        z-index: 1; */
+        position: absolute;
+        bottom: -180px;
+        z-index: 1;
+        width: 954px;
+        left: 169px;
+        top: 46%;
+        
     }
    @media screen and (max-width : 620px) {
-    .mob_div > img {
+    /* .mob_div > img {
         height: 250px;
         width: 200px;
-    }
+    } */
     }

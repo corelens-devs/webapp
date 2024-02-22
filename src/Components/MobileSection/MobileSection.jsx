@@ -9,15 +9,15 @@ const MobileSection = () => {
     return (
         <div className={classes.main_div}>
             <div className={classes.mob_div}>
-                <img src={mobile2} />
+                <img src={mobile2} className={classes.mob} />
                 <div>
                     <h4>Buy your Favorite CCTV Cameras</h4>
                     <p>You can also check your account balance through the net
                         banking facility. To use this facility need to login to the
                         official website of the concerned bank from your phone.</p>
                 </div>
+            <img src={Vector1}  className={classes.vector1}  />
             </div>
-            {/* <img src={Vector1} className={classes.img_mob1} /> */}
             <div className={classes.mob_div}>
                 <div>
                     <h4>Buy Camera Surveillance</h4>
@@ -25,11 +25,11 @@ const MobileSection = () => {
                         banking facility. To use this facility need to login to the official
                         website of the concerned bank from your phone.</p>
                 </div>
-                <img src={mobile1}  />
+                <img src={mobile1}  className={classes.mob}/>
+            <img src={Vector2}  className={classes.vector2} />
             </div>
-            {/* <img src={Vector2}/> */}
             <div className={classes.mob_div}>
-                <img src={mobile2} />
+                <img src={mobile2}  className={classes.mob} />
                 <div>
                     <h4>Customize your
                         profile from app.</h4>

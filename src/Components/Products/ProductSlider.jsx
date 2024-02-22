@@ -11,7 +11,7 @@ import Heading from '../Heading/Heading';
 import classes from "./Product.module.css"
 const ProductSlider = () => {
     return (
-        <>
+        <div style={{padding:"0 90px"}} id='product'>
         <Heading heading="Our Products"/>
         <Swiper
         pagination={{
@@ -54,7 +54,7 @@ const ProductSlider = () => {
 
         </Swiper>
         <button className={classes.view}>View All</button>
-</>
+</div>
     );
 }
 

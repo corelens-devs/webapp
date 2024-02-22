@@ -16,7 +16,7 @@ import BottomSection from './BottomSection'
 
 const Features = () => {
   return (
-    <div>
+    <div className={classes.feat_top}>
         <Heading heading="Why You need Corelens"/>
         <div className={classes.main_div}>
             <ul>
