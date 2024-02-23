@@ -61,19 +61,20 @@ border-radius: 5px;
     justify-content: space-between;
     width: 100%;
     align-items: start;
+    gap: 2%;
     /* justify-content: left; */
 }
 .inn_ul p {
     font-size: 14px;
     font-weight: 600;
     text-align: left;
-    width: 50%;
+    width: 49%;
 }
 .inn_ul span {
         font-size: 14px;
         font-weight: 500;
         text-align: left;
-        width: 50%;
+        width: 49%;
     } 
 
 /* .ul li {
