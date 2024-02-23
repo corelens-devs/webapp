@@ -46,18 +46,17 @@
     object-fit: contain;
     }
     .vector1{
-        /* position: absolute;
-        bottom: -325px;
-        z-index: 1;
-        width: 770px;
-        top: 70%;
-        left: 199px; */
         position: absolute;
         /* bottom: -198px; */
         z-index: 1;
+        width: 791px;
+        top: 63%;
+        left: 134px;
+        /* position: absolute;
+        z-index: 1;
         width: 764px;
         top: 58%;
-        left: 117px;
+        left: 117px; */
     }
     .vector2{
         /* position: absolute;
