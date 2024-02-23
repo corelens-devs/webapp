@@ -17,7 +17,7 @@ padding:0 20px 50px !important;
 .home_slider .swiper-pagination-bullet-active {
     position: relative;
     z-index: 10;
-    width: 40px;
+    width: 30px;
     height: 6px;
     border-radius: 10px;
 background: #000 !important;
