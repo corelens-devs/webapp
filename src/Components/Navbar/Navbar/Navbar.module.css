@@ -76,6 +76,7 @@
   border: none;
   margin-left: 10px;
   display: none;
+  transition: 0.3s ease-in;
 }
 
 .sidebar_open_btn div {
