@@ -26,6 +26,9 @@ const Home = () => {
             className={'home_slider'}
             // slidesPerView={1}
             breakpoints={{
+                200: {
+                    slidesPerView: 1
+                },
                 360: {
                     slidesPerView: 1
                 },
