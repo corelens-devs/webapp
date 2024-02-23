@@ -23,7 +23,7 @@ const DetailSlider = () => {
            clickable: true,
        }}
        autoplay={{
-           delay: 1000,
+           delay: 5000,
            disableOnInteraction: true,
        }}
        // dir="rtl"

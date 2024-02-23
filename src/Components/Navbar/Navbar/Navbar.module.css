@@ -112,7 +112,7 @@
 @media screen and (max-width:1000px) {
   .navbar {
     justify-content: end;
-    padding: 10px 30px;
+    padding: 10px 20px;
   }
 
   /* .btm_div ul li {

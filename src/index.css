@@ -22,3 +22,14 @@ z-index: 1;
   /* padding: 0 90px; */
   /* max-width: 1500px; */
 }
+
+.btn:hover,
+.btn:focus-visible {
+  color: inherit !important;
+  border: none !important;
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.btn-close:focus {
+  box-shadow: none !important;}

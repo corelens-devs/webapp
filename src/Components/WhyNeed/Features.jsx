@@ -19,8 +19,8 @@ const Features = () => {
     <div className={classes.feat_top}>
         <Heading heading="Why You need Corelens"/>
         <div className={classes.main_div}>
-            <ul>
-                <li>
+            <div className={classes.d1}>
+                <div className={classes.d2}>
                     <img src={Security1}/>
                    <div>
                    <h1>
@@ -30,23 +30,77 @@ const Features = () => {
                     Secure your property at bare minimum prices. Leave your home worry-free knowing it’s secured. 
                     </p>
                    </div>
-                </li>
-                <li>
+                </div>
+                <div className={classes.d2}>
                 <img src={Security2}/>
-                  <div>
+                  <div >
                   <h1>On demand surveillance </h1>
                     <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>
                   </div>
-                </li>
-                <li>
+                </div>
+                {/* <li>
                 <img src={Security3}/>
                  <div>
                  <h1>AI -Features</h1>
                     <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
                  </div>
-                </li>
-            </ul>
-            <ul>
+                </li> */}
+            </div>
+            <div className={classes.d1}>
+                <div className={classes.d2}>
+                    <img src={Security1}/>
+                   <div>
+                   <h1>
+                    Theft-proof home and offices
+                    </h1>
+                    <p>
+                    Secure your property at bare minimum prices. Leave your home worry-free knowing it’s secured. 
+                    </p>
+                   </div>
+                </div>
+                <div className={classes.d2}>
+                <img src={Security2}/>
+                  <div >
+                  <h1>On demand surveillance </h1>
+                    <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>
+                  </div>
+                </div>
+                {/* <li>
+                <img src={Security3}/>
+                 <div>
+                 <h1>AI -Features</h1>
+                    <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
+                 </div>
+                </li> */}
+            </div>
+            <div className={classes.d1}>
+                <div className={classes.d2}>
+                    <img src={Security1}/>
+                   <div>
+                   <h1>
+                    Theft-proof home and offices
+                    </h1>
+                    <p>
+                    Secure your property at bare minimum prices. Leave your home worry-free knowing it’s secured. 
+                    </p>
+                   </div>
+                </div>
+                <div className={classes.d2}>
+                <img src={Security2}/>
+                  <div >
+                  <h1>On demand surveillance </h1>
+                    <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>
+                  </div>
+                </div>
+                {/* <li>
+                <img src={Security3}/>
+                 <div>
+                 <h1>AI -Features</h1>
+                    <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
+                 </div>
+                </li> */}
+            </div>
+            {/* <ul>
                 <li>
                 <img src={Security4}/>
                    <div>
@@ -72,7 +126,7 @@ const Features = () => {
                     <p>Enjoy FREE home service for two years for unlimited times.NO conditions or restrictions. If our sensors detect any issues, we fix and deliver within 72 hours at your doorstep, and it's all free of charge.</p>
                   </div>
                 </li>
-            </ul>
+            </ul> */}
         </div>
         <div className={classes.feat}>
             <img src={Frame1}/>

@@ -6,6 +6,7 @@ padding:0 20px 50px !important;
     border-radius: 10px;
 }
 .home_slider .swiper-slide{
+
     /* margin-inline:20px !important; */
 }
 .home_slider .swiper-pagination-bullet {
@@ -31,5 +32,8 @@ padding:0 20px 50px !important;
            }
            .home_slider {
             /* padding-bottom: 0 !important; */
+           }
+           .home_slider .swiper-slide {
+            /* margin-right: 0 !important; */
            }
         }

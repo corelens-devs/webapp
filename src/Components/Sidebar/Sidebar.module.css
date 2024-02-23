@@ -29,6 +29,8 @@ border-bottom: 1px solid #d9d9d9;
     background: none;
     border: none;
     font-size: 25px;
+    transition: 0.5s ease-in-out;
+
 }
 .side_bn > button > svg {
    color: #989898;
@@ -36,11 +38,12 @@ border-bottom: 1px solid #d9d9d9;
 
 /* show */
 .show{
+    transition: 0.5s ease-in-out;
     display: block;
     position: absolute;
     z-index: 10;
     width: 100%;
-    padding-bottom: 67px;
+    padding-bottom: 20px;
     border: 1px solid #d9d9d9;
     scroll-behavior: smooth;
 }

@@ -18,6 +18,7 @@ const ProductDetail = (props) => {
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
+          <Modal.Header  className={classes.head_modal} closeButton>Product Detail</Modal.Header>
      
         <Modal.Body className={classes.bdy}>
       <div className={classes.main_div}>
@@ -49,17 +50,37 @@ const ProductDetail = (props) => {
         </div>
       <div>
       <p className={classes.para}>Technical highlights</p>
-        <ul className={classes.ul}>
-        <li>
+        {/* <ul className={classes.ul}> */}
+        <div className={classes.ul}>
+        <div className={classes.inn_ul}>
           <p>Brand</p> <span>Corelens</span>
-        </li>
-        <li>
+        </div>
+        <div className={classes.inn_ul}>
           <p>Model Name</p> <span>V45</span>
-        </li>
-        <li>
+        </div>
+        <div className={classes.inn_ul}>
           <p>Connectivity Technology</p> <span>Wired</span>
-        </li>
-        <li>
+        </div>
+        <div className={classes.inn_ul}>
+          <p>Special Feature</p> <span>PTZ Technology</span>
+        </div>
+        <div className={classes.inn_ul}>
+          <p>Indoor/Outdoor Usage</p> <span>Outdoor</span>
+        </div>
+        <div className={classes.inn_ul}>
+          <p>Compatible Devices</p> <span>Laptop, Smart Phone</span>
+        </div>
+        <div className={classes.inn_ul}>
+          <p>Power Source</p> <span>Corded Electric</span>
+        </div>
+        <div className={classes.inn_ul}>
+          <p>Connectivity Protocol</p> <span>HomePlug</span>
+        </div>
+        <div className={classes.inn_ul}>
+          <p>Controller Type</p> <span>Android</span>
+        </div>
+        </div>
+        {/* <li>
           <p>Special Feature</p> <span>PTZ Technology</span>
         </li>
         <li>
@@ -77,7 +98,7 @@ const ProductDetail = (props) => {
         <li>
           <p>Controller Type</p> <span>Android</span>
         </li>
-        </ul>
+        </ul> */}
       </div>
       <div>
         <h1 className={classes.head2}>Special Price</h1>

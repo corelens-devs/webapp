@@ -27,6 +27,9 @@
 .home_slider1 {
     padding: 0 !important;
 }
+.home_slider2{
+    padding-bottom: 40px !important;
+}
 }
 .modal-dialog-centered{
     justify-content: center !important;

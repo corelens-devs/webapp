@@ -19,11 +19,11 @@ const ProductSlider = () => {
           }}
           navigation={true}
           modules={[ Autoplay, Pagination, Navigation]}
-            // loop={true}
-            // autoplay={{
-            //     delay: 5000,
-            //     disableOnInteraction: true,
-            // }}
+            loop={true}
+            autoplay={{
+                delay: 5000,
+                disableOnInteraction: true,
+            }}
             className={'home_slider home_slider1'}
             slidesPerView={1}
             breakpoints={{
