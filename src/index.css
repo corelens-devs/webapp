@@ -33,3 +33,6 @@ z-index: 1;
 
 .btn-close:focus {
   box-shadow: none !important;}
+  .btn-close{
+    font-size: 13px;
+  }

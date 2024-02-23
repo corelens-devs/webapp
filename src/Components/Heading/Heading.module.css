@@ -17,4 +17,7 @@
     .head{
         margin: 35px 0 20px  0;
     }
+    .head h4{
+        font-size: 25px;
+    }
  }

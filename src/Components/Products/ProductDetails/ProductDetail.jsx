@@ -49,7 +49,7 @@ const ProductDetail = (props) => {
 </div>
         </div>
       <div>
-      <p className={classes.para}>Technical highlights</p>
+      <p className={`${classes.para} ${classes.p2}`}>Technical highlights</p>
         {/* <ul className={classes.ul}> */}
         <div className={classes.ul}>
         <div className={classes.inn_ul}>

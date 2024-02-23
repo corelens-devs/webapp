@@ -1,12 +1,14 @@
 import React from 'react'
 import { FaCircle, FaRegCircle } from 'react-icons/fa'
 import Bottom_img from "../../Assets/Bottom_img.png"
+import phoneResponsive from "../../Assets/phoneResponsive.png"
 import classes from "./BottomComp.module.css"
 
 const BottomComponent = () => {
   return (
     <div className={classes.main_div}> 
             <img src={Bottom_img} />
+            <img src={phoneResponsive} className={classes.mob_res}/>
         <div>
             <h1>Your Gateway to 24/7 Security with Our Surveillance App</h1>
             <p>Experience ultimate in home comfort, convenience, and control with our smart home solutions.</p>

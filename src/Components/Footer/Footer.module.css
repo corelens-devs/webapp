@@ -1,6 +1,6 @@
 .upper_div {
     background: #fbfbfb;
-    padding: 15px 160px;
+    padding: 15px 160px 34px 160px;
     margin-top: 30px;
 }
 
@@ -19,7 +19,7 @@
 
 .main_div p {
     font-weight: 500;
-    /* margin-bottom: 20px; */
+    margin-bottom: 0;
 }
 
 .div2 {
@@ -44,6 +44,7 @@
     font-size: 14px;
     font-weight: 500;
     color: #25261D;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width : 620px) {
@@ -51,6 +52,7 @@
         flex-direction: column;
         gap: 0;
         padding: 20px 0;
+      
     }
 
     .div2 {

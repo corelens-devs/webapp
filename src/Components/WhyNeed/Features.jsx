@@ -48,7 +48,7 @@ const Features = () => {
             </div>
             <div className={classes.d1}>
                 <div className={classes.d2}>
-                    <img src={Security1}/>
+                    <img src={Security3}/>
                    <div>
                    <h1>
                     Theft-proof home and offices
@@ -59,7 +59,7 @@ const Features = () => {
                    </div>
                 </div>
                 <div className={classes.d2}>
-                <img src={Security2}/>
+                <img src={Security4}/>
                   <div >
                   <h1>On demand surveillance </h1>
                     <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>
@@ -75,7 +75,7 @@ const Features = () => {
             </div>
             <div className={classes.d1}>
                 <div className={classes.d2}>
-                    <img src={Security1}/>
+                    <img src={Security5}/>
                    <div>
                    <h1>
                     Theft-proof home and offices
@@ -86,7 +86,7 @@ const Features = () => {
                    </div>
                 </div>
                 <div className={classes.d2}>
-                <img src={Security2}/>
+                <img src={Security6}/>
                   <div >
                   <h1>On demand surveillance </h1>
                     <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>

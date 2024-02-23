@@ -12,14 +12,16 @@ padding:0 20px 50px !important;
 .home_slider .swiper-pagination-bullet {
     position: relative;
     z-index: 10;
-    width: 10px;
-        height: 10px;}
+    width: 6px;
+        height: 6px;}
 .home_slider .swiper-pagination-bullet-active {
     position: relative;
     z-index: 10;
-    width: 56px;
-    height: 10px;
-    border-radius: 10px;}
+    width: 40px;
+    height: 6px;
+    border-radius: 10px;
+background: #000 !important;
+}
     
     /* .class="swiper-pagination-bullet-active" {
     width: 56px;
