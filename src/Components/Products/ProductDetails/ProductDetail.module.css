@@ -7,12 +7,14 @@
 .card{
     background: linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%);
 border-radius: 5px;
+height: 100%;
 }
 .card1 {
-    height: 85.5vh;
+    /* height: 85.5vh; */
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 .card1 > img {
     width: 200px;
@@ -122,18 +124,19 @@ border-radius: 5px;
     width: 100%;
     border: none;
     border-radius: 5px;
-    margin: 15px 0;
+    margin: 15px 0 0 0;
     padding: 10px;
     color: #fff;
 }
 .bdy{
-    padding: 15px 25px 5px 0px !important;
+    padding: 15px 25px 18px 0px !important;
 
 }
 .head_modal{
     font-size: 18px;
     font-weight: 500;
-    padding: 10px 20px !important;
+    padding: 10px 20px 0 20px !important;
+    border: none !important;
 }
 
 @media screen and (max-width:620px) {
