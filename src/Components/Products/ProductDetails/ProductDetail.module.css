@@ -129,13 +129,14 @@ height: 100%;
     color: #fff;
 }
 .bdy{
-    padding: 15px 25px 18px 0px !important;
+    /* padding: 10px 25px 18px 0px !important; */
+    padding: 10px 30px 30px 12px !important;
 
 }
 .head_modal{
     font-size: 18px;
     font-weight: 500;
-    padding: 10px 20px 0 20px !important;
+    padding: 20px 30px 10px 30px !important;
     border: none !important;
 }
 
