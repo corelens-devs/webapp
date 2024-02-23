@@ -132,6 +132,9 @@ border-radius: 5px;
  .main_div{
     flex-direction: column;
  }
+ .main_div2{
+    gap: 20px;
+ }
  .card1{
     height: 400px !important;
  }
