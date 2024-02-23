@@ -1,6 +1,6 @@
 .btm_div {
     background: #f9f9f9;
-    padding: 10px 0;
+    /* padding: 10px 0; */
     display: none;
 }
 
@@ -18,6 +18,10 @@ padding: 0;
 .btm_div ul li {
 line-height: 3;
 border-bottom: 1px solid #d9d9d9;
+}
+.btm_div ul li:nth-child(5) {
+/* line-height: 3; */
+border: none;
 }
 .side_bn{
     display: flex;
@@ -47,7 +51,8 @@ border-bottom: 1px solid #d9d9d9;
     position: absolute;
     z-index: 10;
     width: 100%;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    /* padding-bottom: 20px; */
     border: 1px solid #d9d9d9;
     scroll-behavior: smooth;
 }
