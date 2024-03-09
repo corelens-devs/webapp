@@ -47,6 +47,20 @@
     margin-bottom: 0;
 }
 
+@media screen and (max-width : 1000px) {
+    .upper_div{
+        width: 100%;
+        padding: 40px;
+    }
+    .main_div{
+        align-items: center;
+        justify-content: space-between;
+        gap: 27px;
+    }
+    .main_div > p{
+        font-size: 14px;
+    }
+}
 @media screen and (max-width : 620px) {
     .main_div {
         flex-direction: column;

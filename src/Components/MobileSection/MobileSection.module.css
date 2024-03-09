@@ -1,111 +1,148 @@
-.main_div{
+.main_div {
     padding: 90px 140px;
     background: #F7FBFF;
     position: relative;
 }
-.mob_div{
+
+.mob_div {
     display: flex;
     align-items: center;
     justify-content: space-around;
     position: relative;
 }
+
 /* .mob_div > img{height: 550px;
     width: 425px;
     } */
-.mob_div > div > h4{
+.mob_div>div>h4 {
     font-size: 40px;
     font-weight: 700;
     margin: 0;
     text-align: left;
-    }
-.mob_div > div > p{
+}
+
+.mob_div>div>p {
     font-size: 18px;
     color: #5E6075;
     text-align: left;
     margin: 20px 0;
     /* font-weight: 500; */
-    }
-    .mob_div > div {
-        width: 50%;
-    }
-    .mob2 {
-        width: 50%;
-        margin-top: -80px !important;
-    }
+}
 
-    /* .img_mob1 {
+.mob_div>div {
+    width: 50%;
+}
+
+.mob2 {
+    width: 50%;
+    margin-top: -80px !important;
+}
+
+/* .img_mob1 {
         position: absolute;
         left: 11%;
         top: 16%;
         width: 765px;
     } */
-    .mob{
-        position: relative;
+.mob {
+    position: relative;
     z-index: 4;
     height: 550px;
     object-fit: contain;
-    }
-    .vector1{
-        position: absolute;
-        /* bottom: -198px; */
-        z-index: 1;
-        width: 791px;
-        top: 63%;
-        left: 134px;
-        /* position: absolute;
+}
+
+.vector1 {
+    position: absolute;
+    /* bottom: -198px; */
+    z-index: 1;
+    width: 791px;
+    top: 63%;
+    left: 134px;
+    /* position: absolute;
         z-index: 1;
         width: 764px;
         top: 58%;
         left: 117px; */
-    }
-    .vector2{
-        /* position: absolute;
+}
+
+.vector2 {
+    /* position: absolute;
         bottom: -180px;
         z-index: 1; */
+    position: absolute;
+    bottom: -180px;
+    z-index: 1;
+    width: 938px;
+    left: 58px;
+    top: 48%;
+}
+
+@media screen and (max-width : 1000px) {
+    .vector1 {
         position: absolute;
-        bottom: -180px;
+        /* bottom: -198px; */
         z-index: 1;
-        width: 938px;
-        left: 58px;
-        top: 48%;
+        width: 395px;
+        top: 63%;
+        left: 69px;
     }
-   @media screen and (max-width : 620px) {
-    .mob_div{
+
+    .vector2 {
+        position: absolute;
+        bottom: -148px;
+        z-index: 1;
+        width: 575px;
+        left: -14px;
+        top: 68%;
+    }
+}
+
+@media screen and (max-width : 620px) {
+    .mob_div {
         position: relative;
         flex-direction: column;
         /* margin-bottom: 80px; */
     }
-    .mob_div:nth-child(2){
+
+    .mob_div:nth-child(2) {
         margin: 80px 0;
         position: relative;
         flex-direction: column-reverse;
     }
-    .mob{
+
+    .mob {
         height: 400px;
     }
-    .vector1{
+
+    .vector1 {
         display: none;
     }
-    .vector2{
+
+    .vector2 {
         display: none;
     }
-    .mob{
-       /* display: none; */
+
+    .mob {
+        /* display: none; */
     }
-    .main_div{
+
+    .main_div {
         padding: 30px;
     }
-    .mob_div > div {
+
+    .mob_div>div {
         width: 100%;
         margin-top: -30px !important;
         text-align: center;
     }
-    .mob_div > div > p {
+
+    .mob_div>div>p {
         margin: 10px 0;
         text-align: center;
     }
-    .mob_div > div > h4{
+
+    .mob_div>div>h4 {
         font-size: 25px;
         text-align: center;
     }
-    }
+}

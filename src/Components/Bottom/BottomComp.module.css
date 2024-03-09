@@ -95,6 +95,15 @@
 .mob_res{
     display: none;
 }
+@media screen and (max-width : 1000px) {
+    .btm_btn_div{
+        flex-direction: column;
+        width: fit-content;  }
+        .btm_btn_div button{
+padding: 15px 30px;
+gap: 25px;
+        }
+}
 @media screen and (max-width : 620px) {
     .main_div>img:nth-child(1) {
       display: none;

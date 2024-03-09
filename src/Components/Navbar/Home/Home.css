@@ -28,6 +28,11 @@ background: #000 !important;
         height: 10px;
         border-radius: 10px;} */
 
+        @media screen and (max-width : 1000px) {
+            .home_slider{
+                padding: 0 30px 50px !important;
+            }
+        }
         @media screen and (max-width : 620px) {
            .home_slider .img{
             height: 180px;
