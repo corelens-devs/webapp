@@ -6,11 +6,11 @@ import Security3 from "../../Assets/Security3.png"
 import Security4 from "../../Assets/Security4.png"
 import Security5 from "../../Assets/Security5.png"
 import Security6 from "../../Assets/Security6.png"
-import Frame1 from "../../Assets/Frame1.png"
-import Frame2 from "../../Assets/Frame2.png"
-import Frame3 from "../../Assets/Frame3.png"
-import Frame4 from "../../Assets/Frame4.png"
-import Frame5 from "../../Assets/Frame5.png"
+import im1 from "../../Assets/im1.png"
+import im2 from "../../Assets/im2.png"
+import im3 from "../../Assets/im3.png"
+import im4 from "../../Assets/im4.png"
+import im5 from "../../Assets/im5.png"
 import classes from "./Features.module.css"
 import BottomSection from './BottomSection'
 
@@ -129,11 +129,11 @@ const Features = () => {
             </ul> */}
         </div>
         <div className={classes.feat}>
-            <img src={Frame1}/>
-            <img src={Frame2}/>
-            <img src={Frame3}/>
-            <img src={Frame4}/>
-            <img src={Frame5}/>
+            <img src={im1}/>
+            <img src={im2}/>
+            <img src={im3}/>
+            <img src={im4}/>
+            <img src={im5}/>
         </div>
         <BottomSection/>
     </div>

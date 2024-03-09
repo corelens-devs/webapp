@@ -138,6 +138,9 @@ height: 100%;
 }
 
 @media screen and (max-width:620px) {
+    .btm_btn_div{
+        flex-direction: column;
+    }
  .main_div{
     flex-direction: column;
  }
