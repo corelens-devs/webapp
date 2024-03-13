@@ -16,10 +16,10 @@ const BotttomNav = () => {
     <a href="#product">Our Products</a>
             </li>
             <li>
-    <a href="/">Process</a>
+    <a href="#mobile-section">Process</a>
             </li>
             <li>
-    <a href="/">Download app</a>
+    <a href="#btm-section">Download app</a>
             </li>
         </ul>
     </div>
