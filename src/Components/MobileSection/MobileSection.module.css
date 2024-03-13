@@ -16,9 +16,14 @@
     } */
 .mob_div>div>h4 {
     font-size: 40px;
-    font-weight: 700;
     margin: 0;
     text-align: left;
+
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+      
 }
 
 .mob_div>div>p {
@@ -26,6 +31,10 @@
     color: #5E6075;
     text-align: left;
     margin: 20px 0;
+    font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
     /* font-weight: 500; */
 }
 
@@ -97,6 +106,33 @@
     }
 }
 
+@media screen and (max-width : 1150px) {
+.vector1{
+    width: 597px;
+    top: 63%;
+    left: 60px;
+}
+.vector2{
+    width: 693px;
+    left: 30px;
+    top: 55%;
+}
+}
+@media screen and (max-width : 880px) {
+    .vector1 {
+        display: none;
+    }
+
+    .vector2 {
+        display: none;
+    }
+    .main_div{
+        padding: 30px;
+    }
+    .mob_div{
+        justify-content: space-between;
+    }
+}
 @media screen and (max-width : 620px) {
     .mob_div {
         position: relative;

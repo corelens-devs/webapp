@@ -1,10 +1,10 @@
 .img{
-    width: 75%;
+    width: 90%;
     height: 600px;
 }
 .btm_btn{
     background: black;
-    padding: 15px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -45,18 +45,31 @@
     margin:13px 0 40px 0;
     font-size: 18px;
     color: #737373;
+    font-family: "Inter", sans-serif;
 }
 .btn1{
     color: #5FA5F9;
     font-size: 18px;
     border: none;
     background: none;
+    font-family: "Inter", sans-serif;
 }
 .btn1 > span {
     text-decoration: underline;
 }
 .btn1 svg {
     font-size: 25px;
+}
+@media screen and (max-width : 880px) {
+    .img{
+        width: 100%;
+        height: 500px;
+        /* order: 1; */
+        
+    }
+    .mb{
+        margin-top: 50px !important;
+    }
 }
 @media screen and (max-width : 620px) {
     .img{
@@ -85,4 +98,5 @@
     .btm_btn > span > span{
        font-size: 12px !important;
     }
+ 
 }

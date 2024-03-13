@@ -7,7 +7,7 @@
   top: 0;
   background: hsl(0, 0%, 100%);
   z-index: 9;
-  border-bottom: 2px solid #f9f9f9;
+  /* border-bottom: 2px solid #f9f9f9; */
 }
 
 .nav_div {

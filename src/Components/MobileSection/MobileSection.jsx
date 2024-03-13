@@ -10,7 +10,7 @@ import classes from "./MobileSection.module.css"
 
 const MobileSection = () => {
     return (
-        <div className={classes.main_div}>
+        <div id='mobile-section' className={classes.main_div}>
             <div className={`${classes.mob_div} `}>
                 <img src={pic1} className={classes.mob} />
                 <div className={classes.mob2}>

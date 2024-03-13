@@ -29,26 +29,28 @@ const ProductDetail = (props) => {
             <h1 className={classes.head}>Corelens Outdoor PTZ Wireless CCTV Camera| Alarm | Motion Alert | Color Night Vision | SD Card Support</h1>
             <p className={classes.para}>Main Highlights</p>
             <div className={classes.main_div2}>
-              <div className={classes.main_div3}>
+             <div>
+             <div className={classes.main_div3}>
                 <img src={scan1} alt="" />
-                <span>Sample test here</span>
+                <p>Sample test here</p>
               </div>
               <div className={classes.main_div3}>
                 <img src={scan2} alt="" />
-                <span>Sample test here</span>
+                <p>Sample test here</p>
               </div>
               <div className={classes.main_div3}>
                 <img src={scan3} alt="" />
-                <span>Sample test here</span>
+                <p>Sample test here</p>
               </div>
               <div className={classes.main_div3}>
                 <img src={scan4} alt="" />
-                <span>Sample test here</span>
+                <p>Sample test here</p>
               </div>
               <div className={classes.main_div3}>
                 <img src={scan5} alt="" />
-                <span>Sample test here</span>
+                <p>Sample test here</p>
               </div>
+             </div>
             </div>
             <div>
               <p className={`${classes.para} ${classes.p2}`}>Technical highlights</p>

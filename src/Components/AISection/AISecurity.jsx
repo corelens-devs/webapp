@@ -9,7 +9,7 @@ import { ImAppleinc } from "react-icons/im";
 const AISecurity = () => {
     return (
         <div id='Aihome' className={classes.ai_home}>
-            <Heading cls={classes.mb} heading={'"Want to secure your home and vehicles from theft?"'}/>
+            <Heading cls={classes.mb} heading={'Want to secure your home and vehicles from theft?'}/>
             <button className={classes.btn1}><span>See Video</span> <HiOutlinePlayCircle />
 </button>
             <p className={classes.p}>Download corelens app now</p>

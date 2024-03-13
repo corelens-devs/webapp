@@ -47,6 +47,11 @@
     margin-bottom: 0;
 }
 
+@media screen and (max-width : 1150px) {
+.upper_div{
+    padding: 20px;
+}
+}
 @media screen and (max-width : 1000px) {
     .upper_div{
         width: 100%;

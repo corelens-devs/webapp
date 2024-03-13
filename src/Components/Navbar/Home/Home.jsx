@@ -23,7 +23,7 @@ const Home = () => {
                 disableOnInteraction: true,
             }}
             // dir="rtl"
-            className={'home_slider'}
+            className={'home_slider hs1'}
             // slidesPerView={1}
             breakpoints={{
                 200: {

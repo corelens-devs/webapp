@@ -23,13 +23,13 @@ height: 100%;
 .head{
     font-size: 20px;
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
 }
 .para{
     text-align: left;
-    font-weight: 500;
-    font-size: 16px;
-    margin: 15px 0;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 12px 0;
 }
 .p2{
     margin-bottom: 5px !important;
@@ -98,7 +98,7 @@ height: 100%;
 .para2{
     text-align: left;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     gap: 10px;
     margin-bottom: 0;
@@ -116,7 +116,7 @@ height: 100%;
     width: 100%;
     border: none;
     border-radius: 5px;
-    margin: 15px 0 0 0;
+    margin: 15px 0px 0 0;
     padding: 10px;
     color: #fff;
     font-size: 14px;
@@ -124,19 +124,69 @@ height: 100%;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    height: 45px;
 }
 .bdy{
-    /* padding: 10px 25px 18px 0px !important; */
-    padding: 10px 30px 30px 12px !important;
+    /* padding: 10px 30px 30px 12px !important; */
+    padding: 10px 20px 20px 0px !important;
 
 }
 .head_modal{
     font-size: 18px;
-    font-weight: 500;
-    padding: 20px 30px 10px 30px !important;
+    font-weight: 600;
+    padding: 10px 30px 0px 30px !important;
     border: none !important ;
 }
-
+.main_div2 > div{
+    width: 430px;
+    display: flex;
+    gap: 30px;
+    overflow: scroll;
+}
+.main_div3 > p{
+    width: max-content;
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+@media screen and (max-width:1000px) {
+    .main_div2 > div{
+        /* width: 267px; */
+    }
+    .btm_btn_div{
+        flex-direction: column;
+    }
+    .btm_btn_div{
+        flex-direction: column;
+    }
+ .main_div{
+    flex-direction: column;
+ }
+ .main_div2{
+    gap: 20px;
+ }
+ .card1{
+    height: 400px !important;
+ }
+ .prod{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ .bdy{
+    padding: 20px !important;
+}
+.head{
+    text-align: center;
+}
+.home_slider2 .swiper-pagination-bullet-active {
+height: 10px !important;
+width: 10px !important;
+}
+.buy_btn{
+    margin-bottom: 0;
+}
+    
+}
 @media screen and (max-width:620px) {
     .btm_btn_div{
         flex-direction: column;

@@ -15,7 +15,7 @@ const Navbar = (props) => {
 
   return (
     <>
-    <header className={classes.navbar}>
+    <header className={`${classes.navbar} shadow-sm `} onClick={()=> sidebar && setSidebar(false)}>
        <div className={classes.nav_div}>
        <img src={logo}/>
       <div className={classes.search_bar}>
@@ -31,7 +31,7 @@ const Navbar = (props) => {
      <p>7989898789</p>
           </div>
          
-        <button onClick={() => setSidebar(true)} className={classes.sidebar_open_btn}>
+        <button onClick={() => setSidebar(!sidebar)} className={classes.sidebar_open_btn}>
           <div></div>
           <div></div>
           <div></div>

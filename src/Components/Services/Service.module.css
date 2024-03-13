@@ -17,15 +17,22 @@
 .card > h4 {
     font-size: 20px;
     margin:20px;
-    font-weight: 500;
+    font-weight: 600;
     width: 234px;
 }
 .card > p {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     color: hsl(240deg 7.71% 27.34%);
+    font-family: "Quicksand", sans-serif;
+font-weight: 500;
 }
 
+@media screen and (max-width : 880px)  {
+    .service_div{
+        flex-wrap: wrap;
+        padding: 30px;
+    }}
 @media screen and (max-width : 620px)  {
     .service_div{
         flex-direction: column;
