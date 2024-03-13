@@ -13,6 +13,7 @@ import im4 from "../../Assets/im4.png"
 import im5 from "../../Assets/im5.png"
 import classes from "./Features.module.css"
 import BottomSection from './BottomSection'
+import BtmSlider from './BtmSlider'
 
 const Features = () => {
   return (
@@ -32,11 +33,39 @@ const Features = () => {
                    </div>
                 </div>
                 <div className={classes.d2}>
-                <img src={Security2}/>
+                <img src={Security4}/>
                   <div >
-                  <h1>On demand surveillance </h1>
-                    <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>
+                  <h1>Peace of mind </h1>
+                    <p>Enjoy family trips, movies, dinners, and more without worrying about home security. Our app solves everyday concerns like pet and maid surveillance, and caring for elderly parents. Explore for more details!</p>
                   </div>
+                </div>
+                {/* <li>
+                <img src={Security3}/>
+                 <div>
+                 <h1>AI -Features</h1>
+                    <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
+                 </div>
+                </li> */}
+            </div>
+            <div className={classes.d1}>
+                <div className={classes.d2}>
+                    <img src={Security2}/>
+                   <div>
+                   <h1>
+                   On demand surveillance 
+                    </h1>
+                    <p>
+                    Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.
+                    </p>
+                   </div>
+                </div>
+                <div className={classes.d2}>
+                <img src={Security5}/>
+                  <div >
+                  <h1>Latest products with long-lasting life</h1>
+                    <p>Our products are tested over Various Quality checks before we send them to your service. See full product list on our App.</p>
+                
+                 </div>
                 </div>
                 {/* <li>
                 <img src={Security3}/>
@@ -50,46 +79,15 @@ const Features = () => {
                 <div className={classes.d2}>
                     <img src={Security3}/>
                    <div>
-                   <h1>
-                    Theft-proof home and offices
-                    </h1>
-                    <p>
-                    Secure your property at bare minimum prices. Leave your home worry-free knowing it’s secured. 
-                    </p>
-                   </div>
-                </div>
-                <div className={classes.d2}>
-                <img src={Security4}/>
-                  <div >
-                  <h1>On demand surveillance </h1>
-                    <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>
-                  </div>
-                </div>
-                {/* <li>
-                <img src={Security3}/>
-                 <div>
-                 <h1>AI -Features</h1>
+                   <h1>AI -Features</h1>
                     <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
-                 </div>
-                </li> */}
-            </div>
-            <div className={classes.d1}>
-                <div className={classes.d2}>
-                    <img src={Security5}/>
-                   <div>
-                   <h1>
-                    Theft-proof home and offices
-                    </h1>
-                    <p>
-                    Secure your property at bare minimum prices. Leave your home worry-free knowing it’s secured. 
-                    </p>
                    </div>
                 </div>
                 <div className={classes.d2}>
                 <img src={Security6}/>
                   <div >
-                  <h1>On demand surveillance </h1>
-                    <p>Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.</p>
+                  <h1>After Sales Support</h1>
+                    <p>Enjoy FREE home service for two years for unlimited times.NO conditions or restrictions. If our sensors detect any issues, we fix and deliver within 72 hours at your doorstep, and it's all free of charge.</p>
                   </div>
                 </div>
                 {/* <li>
@@ -127,6 +125,10 @@ const Features = () => {
                   </div>
                 </li>
             </ul> */}
+        </div>
+        {/* <div> */}
+        <div className={`${classes.mob} w-100`}>
+          <BtmSlider />
         </div>
         <div className={classes.feat}>
             <img src={im1}/>

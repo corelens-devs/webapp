@@ -9,10 +9,15 @@ import MobileSection from '../Components/MobileSection/MobileSection'
 import BottomComponent from '../Components/Bottom/BottomComponent'
 import Footer from '../Components/Footer/Footer'
 import classes from "./Landing.module.css"
+import { FaSquareWhatsapp } from 'react-icons/fa6'
 
 const LandingPage = () => {
   return (
     <div>
+       <FaSquareWhatsapp
+ className={classes.flt_icn} />
+            {/* <FaWhatsapp className={classes.flt_icn} /> */}
+
         <Navbar/>
         <Home/>
        <div className={classes.main_div}>
@@ -48,6 +53,7 @@ const LandingPage = () => {
         <Route path='/bottom' element={<BottomComponent/>}/>
         </Routes>
         <Footer/> */}
+
     </div>
   )
 }

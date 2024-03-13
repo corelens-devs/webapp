@@ -10,17 +10,17 @@ const Product = (props) => {
   const handleShow = () => setShow(!show)
   return (
     <>
-    <div className={`${classes.card}`}>
+    <div className={`${classes.card}`}  onClick={handleShow}>
         <div className={`${classes.card1} ${props.cls}`} >
             <img src={camera} alt="" />
-            <button onClick={handleShow}>Buy Now</button>
+            <button>Buy Now</button>
         </div>
         <h6 className={classes.h6}>Indoor PTZ Camera</h6>
         <div className={classes.div2}>
             <p>₹600</p>
 
-            <button><IoMdStar />
-4.5 (78)</button>
+            {/* <button><IoMdStar />
+4.5 (78)</button> */}
         </div>
     </div>
     <ProductDetail
