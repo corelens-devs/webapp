@@ -11,6 +11,7 @@ import Footer from '../Components/Footer/Footer'
 import classes from "./Landing.module.css"
 import { FaSquareWhatsapp } from 'react-icons/fa6'
 import { FaWhatsapp } from 'react-icons/fa'
+import Faq from '../Components/FAQ/Faq'
 
 const LandingPage = () => {
   return (
@@ -31,6 +32,7 @@ const LandingPage = () => {
        </div>
         <MobileSection/>
         <div className={classes.main_div}>
+          <Faq/>
         <BottomComponent/>
         </div>
         <Footer/>

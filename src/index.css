@@ -36,3 +36,18 @@ z-index: 1;
   .btn-close{
     font-size: 13px;
   }
+  .accordion-button:focus{
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  .accordion-button:not(.collapsed){
+    background: none !important;
+
+  }
+  .accordion{
+    --bs-accordion-border-width : 0 !important
+  }
+  .accordion-button::after{
+    --bs-accordion-btn-icon-width: 1rem !important;
+
+  }

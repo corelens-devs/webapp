@@ -29,7 +29,7 @@ const Navbar = (props) => {
       <div className={classes.nav_body}>
           <div className={classes.nav_btn}>
           <FaPhoneAlt />
-     <p>7989898789</p>
+     <p>1800-313-4207</p>
           </div>
          
         {/* <button onClick={() => setSidebar(!sidebar)} className={classes.sidebar_open_btn}>

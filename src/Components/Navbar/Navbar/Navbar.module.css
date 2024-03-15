@@ -67,6 +67,7 @@
 .nav_btn>p {
   font-weight: 600;
   margin-bottom: 0;
+  width: max-content;
 }
 
 
