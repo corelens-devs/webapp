@@ -9,7 +9,7 @@ import classes from "./Service.module.css"
 const Services = () => {
   return (
       <div id="services">
-      <Heading heading={"What We Offer"} para="" />
+      <Heading heading={"What We Offer"} para="" cls={classes.div_head} />
     <div className={classes.service_div}>
         <ServiceComp para={"We provide AI-advanced security devices to protect your home and your vehicles from theft which you can monitor yourself on mobile phones. "} heading={"Camera sensors and vehicle finder"} img={service1}/>
         <ServiceComp para={"If you are busy, We can watch your camera sensors for you at 150Rs per hour, and you only pay for the time we do monitoring, no monthly fees. Download app to know more."} heading={"On Demand Surveillance"} img={service2}/>

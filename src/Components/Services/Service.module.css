@@ -36,7 +36,7 @@ font-weight: 500;
 @media screen and (max-width : 620px)  {
     .service_div{
         flex-direction: column;
-        padding: 30px;
+        padding: 0;
     }
     .card{
         width: 100% !important;
@@ -53,4 +53,8 @@ font-weight: 500;
     .card:nth-child(2){
         margin-bottom: 50px;
     }
+    .div_head h4{
+        margin-bottom: 50px;
+    }
+    
 }
