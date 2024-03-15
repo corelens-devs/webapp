@@ -7,7 +7,7 @@ import './nav.css'
 
 const BottomNavSlider = () => {
     return (
-      <div className='mobile_section'>
+      <div className='mobile_section shadow-sm'>
           <Swiper
             // pagination={true} 
             // loop={true}
