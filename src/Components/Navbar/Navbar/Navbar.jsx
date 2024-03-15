@@ -27,6 +27,12 @@ const Navbar = (props) => {
       </div>
        </div>
       <div className={classes.nav_body}>
+     
+
+          <div className={classes.nav_btn1}>
+          <FaPhoneAlt />
+     <p className={classes.phn_res}>1800-313-4207</p>
+          </div>
           <div className={classes.nav_btn}>
           <FaPhoneAlt />
      <p>1800-313-4207</p>

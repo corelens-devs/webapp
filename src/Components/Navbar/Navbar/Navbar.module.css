@@ -59,8 +59,20 @@
   justify-content: center;
   cursor: pointer;
 }
+.nav_btn1 {
+  /* margin-right: 30px; */
+  padding: 10px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
 .nav_btn>svg {
+  color: #86BBE6;
+}
+.nav_btn1>svg {
   color: #86BBE6;
 }
 
@@ -112,6 +124,13 @@
   color: #000;
   text-decoration: none;
 }
+.phn_res{
+  display: none;
+  width: max-content;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
 
 @media screen and (max-width:1000px) {
   .navbar {
@@ -144,6 +163,11 @@
   .nav_btn {
     display: none;
   }
+
+  .phn_res {
+    display: block;
+  }
+
 
   .sidebar_open_btn {
     display: block;
