@@ -8,7 +8,7 @@ padding:0 20px 50px !important;
 .home_slider .img_mob{
     width: 100% !important;
     border-radius: 10px;
-    height: 375px;
+    height: 600px;
     display: none;
 }
 .home_slider .swiper-slide{
@@ -47,7 +47,8 @@ background: #000 !important;
             display: block;
            }
            .hs1{
-            margin-top: 20px !important;
+            /* margin-top: 20px !important; */
+            padding: 0 !important;
            }
            .home_slider {
             /* padding-bottom: 0 !important; */
