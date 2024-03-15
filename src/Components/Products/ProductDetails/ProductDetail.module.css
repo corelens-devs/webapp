@@ -29,10 +29,10 @@ height: 100%;
     text-align: left;
     font-weight: 700;
     font-size: 16px;
-    margin: 25px 0;
+    margin: 15px 0;
 }
 .p2{
-    margin-bottom: 20px !important;
+    margin-bottom: 5px !important;
 }
 .main_div2{
     display: flex;
@@ -237,5 +237,12 @@ width: 10px !important;
 }
 .buy_btn{
     margin-bottom: 0;
+}
+.para{
+   
+    margin: 25px 0;
+}
+.p2{
+    margin-bottom: 20px !important;
 }
 }
