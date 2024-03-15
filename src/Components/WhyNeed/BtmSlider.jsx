@@ -6,7 +6,6 @@ import 'swiper/css';
 import { Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import Heading from '../Heading/Heading';
 import classes from "./Features.module.css"
 import im1 from "../../Assets/im1.png"
 import im2 from "../../Assets/im2.png"
@@ -30,7 +29,7 @@ const BtmSlider = () => {
                 delay: 5000,
                 disableOnInteraction: true,
             }}
-            className={'home_slider home_slider1'}
+            className={'home_slider home_slider1 whyneed1'}
             slidesPerView={1}
             breakpoints={{
                 360: {

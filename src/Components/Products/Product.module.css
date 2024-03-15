@@ -92,3 +92,9 @@
 .p4 {
     background: linear-gradient(180deg, #FF9CA9 0%, rgba(255, 181, 191, 0.48) 100%);
 }
+
+@media screen and (max-width : 600px) {
+   .div_head h4{
+    margin-bottom: 50px;
+   }
+}

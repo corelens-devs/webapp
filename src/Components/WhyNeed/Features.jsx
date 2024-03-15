@@ -18,7 +18,7 @@ import BtmSlider from './BtmSlider'
 const Features = () => {
   return (
     <div className={classes.feat_top}>
-        <Heading heading="Why You need Corelens"/>
+        <Heading heading="Why You need Corelens" cls={classes.div_head}/>
         <div className={classes.main_div}>
             <div className={classes.d1}>
                 <div className={classes.d2}>

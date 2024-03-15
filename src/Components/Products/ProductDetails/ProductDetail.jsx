@@ -3,13 +3,10 @@ import classes from './ProductDetail.module.css'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import DetailSlider from './DetailSlider';
-import scan1 from "../../../Assets/scan1.png"
-import scan2 from "../../../Assets/scan2.png"
-import scan3 from "../../../Assets/scan3.png"
-import scan4 from "../../../Assets/scan4.png"
-import scan5 from "../../../Assets/scan5.png"
+
 import { FaPhone, FaPhoneAlt } from 'react-icons/fa';
 import { ImMobile } from 'react-icons/im';
+import MainHighlight from './MainHighlight';
 
 const ProductDetail = (props) => {
 
@@ -29,28 +26,7 @@ const ProductDetail = (props) => {
             <h1 className={classes.head}>Corelens Outdoor PTZ Wireless CCTV Camera| Alarm | Motion Alert | Color Night Vision | SD Card Support</h1>
             <p className={classes.para}>Main Highlights</p>
             <div className={classes.main_div2}>
-             <div>
-             <div className={classes.main_div3}>
-                <img src={scan1} alt="" />
-                <p>Sample test here</p>
-              </div>
-              <div className={classes.main_div3}>
-                <img src={scan2} alt="" />
-                <p>Sample test here</p>
-              </div>
-              <div className={classes.main_div3}>
-                <img src={scan3} alt="" />
-                <p>Sample test here</p>
-              </div>
-              <div className={classes.main_div3}>
-                <img src={scan4} alt="" />
-                <p>Sample test here</p>
-              </div>
-              <div className={classes.main_div3}>
-                <img src={scan5} alt="" />
-                <p>Sample test here</p>
-              </div>
-             </div>
+             <MainHighlight/>
             </div>
             <div>
               <p className={`${classes.para} ${classes.p2}`}>Technical highlights</p>

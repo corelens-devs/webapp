@@ -190,4 +190,7 @@ justify-content: space-between;}
 .d1{
     flex-direction: column !important;
 }
+.div_head h4{
+    margin-bottom: 50px;
+}
 }

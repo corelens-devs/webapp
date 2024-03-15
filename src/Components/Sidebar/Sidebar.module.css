@@ -48,11 +48,12 @@ border: none;
 .show{
     transition: 0.5s ease-in-out;
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     width: 100%;
     padding-top: 10px;
     /* padding-bottom: 20px; */
     border: 1px solid #d9d9d9;
     scroll-behavior: smooth;
+    top: 10.5%;
 }

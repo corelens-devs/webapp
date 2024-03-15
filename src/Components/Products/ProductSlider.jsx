@@ -12,7 +12,7 @@ import classes from "./Product.module.css"
 const ProductSlider = () => {
     return (
         <div  id='product'>
-        <Heading heading="Our Products"/>
+        <Heading heading="Our Products" cls={classes.div_head}/>
         <Swiper
         pagination={{
             type: 'progressbar',
@@ -24,7 +24,7 @@ const ProductSlider = () => {
                 delay: 5000,
                 disableOnInteraction: true,
             }}
-            className={'home_slider home_slider1'}
+            className={'home_slider home_slider1 prmodal'}
             slidesPerView={1}
             breakpoints={{
                 360: {

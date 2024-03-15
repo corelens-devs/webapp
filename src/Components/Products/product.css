@@ -5,24 +5,48 @@
 .swiper-button-next:after, 
 .swiper-rtl .swiper-button-prev:after {
     content: 'next';
-    font-size: 14px !important;
+    font-size: 12px ;
 }
  .swiper-button-prev:after, 
 .swiper-rtl .swiper-button-prev:after {
     content: 'prev';
-    font-size: 14px !important;
+    font-size: 12px;
 }
 
 .swiper-button-next, .swiper-button-prev, 
 .swiper-rtl .swiper-button-prev {
     background: #999999 !important;
     color: white !important;
-    height: 30px !important;
+    height: 20px;
+    width: 20px;
     border-radius: 50% !important;
+}
+.slidemodal .swiper-button-next, .swiper-button-prev, 
+.swiper-rtl .swiper-button-prev {
+    background: #999999 !important;
+    color: white !important;
+    height: 20px;
+    width: 20px ;
+    border-radius: 50% !important;
+    margin-inline:-8px;
+}
+.slidemodal .swiper-rtl .swiper-button-prev:after {
+    content: 'prev';
+    font-size: 8px;
+}
+.slidemodal .swiper-button-next:after, 
+.swiper-rtl .swiper-button-prev:after {
+    content: 'next';}
+.slidemodal{
+    padding: 0 20px !important;
 }
 .home_slider2{
     height: 100%;
     padding-bottom: 0 !important;
+}
+.slidemodal .swiper-button-prev:after {
+    content: 'prev';
+    font-size: 8px ;
 }
 @media screen and (max-width : 1000px) {
     .hm3{
@@ -48,6 +72,20 @@
 @media screen and (max-width:620px) {
     .modal-content{
         width: 100% !important;
+    }
+    .prmodal .swiper-button-prev:after, 
+    .swiper-rtl .swiper-button-prev:after {
+        content: 'prev';
+        font-size: 12px ;
+    }
+    .prmodal .swiper-button-next, .swiper-button-prev, 
+    .swiper-rtl .swiper-button-prev {
+        background: #999999 !important;
+        color: white !important;
+        height: 20px ;
+        width: 20px ;
+        border-radius: 50% !important;
+        margin-inline:-8px;
     }
     
    }

@@ -10,13 +10,16 @@ import BottomComponent from '../Components/Bottom/BottomComponent'
 import Footer from '../Components/Footer/Footer'
 import classes from "./Landing.module.css"
 import { FaSquareWhatsapp } from 'react-icons/fa6'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const LandingPage = () => {
   return (
     <div>
-       <FaSquareWhatsapp
- className={classes.flt_icn} />
-            {/* <FaWhatsapp className={classes.flt_icn} /> */}
+       
+ <div className={classes.float} >
+ <FaWhatsapp />
+ </div>
+ 
 
         <Navbar/>
         <Home/>
