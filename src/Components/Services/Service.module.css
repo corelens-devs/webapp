@@ -44,6 +44,7 @@ font-weight: 500;
     }
     .card > p{
       margin-bottom: 0;
+      text-align: center;
     }
     .card:nth-child(1){
      
