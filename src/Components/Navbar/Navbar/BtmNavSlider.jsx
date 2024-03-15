@@ -28,7 +28,10 @@ const BottomNavSlider = () => {
                     slidesPerView: 2
                 },
                 360: {
-                    slidesPerView: 2
+                    slidesPerView: 2.5
+                },
+                390: {
+                    slidesPerView: 3
                 },
                 430: {
                     slidesPerView: 3
@@ -47,7 +50,7 @@ const BottomNavSlider = () => {
             }}
 
 
-            spaceBetween={10}
+            spaceBetween={5}
             slidesPerView={3}
         >
             <SwiperSlide>   <div>
