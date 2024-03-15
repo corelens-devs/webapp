@@ -19,10 +19,10 @@ const Home = () => {
             pagination={{
                 clickable: true,
             }}
-            // autoplay={{
-            //     delay: 1000,
-            //     disableOnInteraction: true,
-            // }}
+            autoplay={{
+                delay: 1000,
+                disableOnInteraction: true,
+            }}
             // dir="rtl"
             className={'home_slider hs1'}
             // slidesPerView={1}
@@ -47,7 +47,7 @@ const Home = () => {
 
             spaceBetween={30}
             slidesPerView={1.5}
-            modules={[ Pagination]}
+            modules={[Autoplay, Pagination]}
         >
             <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
             <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
