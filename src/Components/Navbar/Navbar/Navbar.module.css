@@ -62,17 +62,18 @@
 .nav_btn1 {
   /* margin-right: 30px; */
   padding: 10px;
-  gap: 5px;
+  /* gap: 5px; */
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  display: none;
 }
 
 .nav_btn>svg {
   color: #86BBE6;
 }
-.nav_btn1>svg {
+.nav_btn1> div>svg {
   color: #86BBE6;
 }
 
@@ -81,6 +82,11 @@
   margin-bottom: 0;
   width: max-content;
 }
+/* .nav_btn1>p {
+  font-weight: 600;
+  margin-bottom: 0;
+  width: max-content;
+} */
 
 
 
@@ -151,8 +157,10 @@
     width: 100%;
     padding: 0;
   } */
-
-  .btm_div {
+.nav_btn1{
+display: block;
+}  
+.btm_div {
     display: none;
   }
 

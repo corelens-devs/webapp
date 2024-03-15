@@ -30,8 +30,10 @@ const Navbar = (props) => {
      
 
           <div className={classes.nav_btn1}>
-          <FaPhoneAlt />
+       <div className='d-flex gap-2'>
+       <FaPhoneAlt />
      <p className={classes.phn_res}>1800-313-4207</p>
+       </div>
           </div>
           <div className={classes.nav_btn}>
           <FaPhoneAlt />
