@@ -28,10 +28,20 @@ const BottomNavSlider = () => {
                     slidesPerView: 2
                 },
                 360: {
+                    slidesPerView: 2
+                },
+                430: {
                     slidesPerView: 3
                 },
-                690: {
+                500: {
                     slidesPerView: 3
+                },
+
+                690: {
+                    slidesPerView: 4
+                },
+                800: {
+                    slidesPerView: 5
                 },
                
             }}

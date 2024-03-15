@@ -37,8 +37,10 @@
       .mobile_section_a {
         color: #000;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 500;
+        font-family: "Roboto", sans-serif;
+
       }
         
         /* .class="swiper-pagination-bullet-active" {
@@ -50,6 +52,19 @@
                 .home_slider{
                     padding: 0 30px 50px !important;
                 }
+                .home_slider .img{
+                    display: none;
+                   }
+                   .home_slider .img_mob{
+                    display: block;
+                   }
+                   .hs2{
+                    /* margin-top: 20px !important; */
+                    padding: 0 !important;
+                   }
+                   .mobile_section{
+                    display: block;
+                  }
             }
             @media screen and (max-width : 620px) {
                .home_slider .img{
