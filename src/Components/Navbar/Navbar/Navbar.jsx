@@ -5,6 +5,7 @@ import search from "../../../Assets/search.png"
 import logo from "../../../Assets/logo.png"
 import BotttomNav from './BotttomNav'
 import Sidebar from '../../Sidebar/Sidebar'
+import BottomNavSlider from './BtmNavSlider'
 
 const Navbar = (props) => {
   const [sidebar, setSidebar] = useState(false)
@@ -31,16 +32,17 @@ const Navbar = (props) => {
      <p>7989898789</p>
           </div>
          
-        <button onClick={() => setSidebar(!sidebar)} className={classes.sidebar_open_btn}>
+        {/* <button onClick={() => setSidebar(!sidebar)} className={classes.sidebar_open_btn}>
           <div></div>
           <div></div>
           <div></div>
-        </button>
+        </button> */}
       </div>
     </header>
-    {sidebar && <Sidebar sidebar={sidebar} setSidebar={setSidebar} />}
+    {/* {sidebar && <Sidebar sidebar={sidebar} setSidebar={setSidebar} />} */}
 
     <BotttomNav/>
+    <BottomNavSlider/>
     </>
   )
 }
