@@ -56,6 +56,7 @@
 }
 .btn1 > span {
     text-decoration: underline;
+    font-family: "Inter", sans-serif;
 }
 .btn1 svg {
     font-size: 25px;
