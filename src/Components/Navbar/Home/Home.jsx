@@ -25,7 +25,7 @@ const Home = () => {
             }}
             // dir="rtl"
             className={'home_slider hs1'}
-            // slidesPerView={1}
+            // slidesPerView={1}  
             breakpoints={{
                 200: {
                     slidesPerView: 1
