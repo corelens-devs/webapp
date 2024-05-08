@@ -17,8 +17,9 @@
 .card > h4 {
     font-size: 20px;
     margin:20px;
-    font-weight: 600;
+    font-weight: 500;
     width: 234px;
+    font-family: "Helvetica Neue Medium Extended";
 }
 .card > p {
     font-size: 16px;

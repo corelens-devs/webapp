@@ -4,20 +4,30 @@ import classes from "./Product.module.css"
 import './product.css'
 import { IoMdStar } from "react-icons/io";
 import ProductDetail from './ProductDetails/ProductDetail';
+import { DiscountFunction } from '../DiscountFunction/DiscountFunction';
 
 const Product = (props) => {
+  const[productData, setProductData] = useState({})
+  let data = props?.data
+  // console.log(data.actualAmount)
+  // console.log(data.discount)
   const [show, setShow] = useState(false)
-  const handleShow = () => setShow(!show)
+  const handleShow = (id, data) => {
+    console.log(id)
+    setProductData(data)
+    setShow(!show)
+
+  }
   return (
     <>
-    <div className={`${classes.card}`}  onClick={handleShow}>
+    <div className={`${classes.card}`}  onClick={() =>handleShow(data.id, data)}>
         <div className={`${classes.card1} ${props.cls}`} >
-            <img src={camera} alt="" />
+            <img src={data.img} alt="" />
             <button>Buy Now</button>
         </div>
-        <h6 className={classes.h6}>Indoor PTZ Camera</h6>
+        <h6 className={classes.h6}>{data.name}</h6>
         <div className={classes.div2}>
-            <p>₹600</p>
+            <p>₹ {DiscountFunction(data)}</p>
 
             {/* <button><IoMdStar />
 4.5 (78)</button> */}
@@ -26,6 +36,7 @@ const Product = (props) => {
     <ProductDetail
         show={show}
         onHide={() => setShow(false)}
+        productData={productData}
       />
     {/* {show && <ProductDetail isPopup={show} popupFunc={setShow} /> } */}
     </>

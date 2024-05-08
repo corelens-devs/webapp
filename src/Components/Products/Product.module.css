@@ -10,8 +10,8 @@
 }
 
 .card1>img {
-    width: 125px;
-    height: 185px;
+    max-width: 200px;
+    height: 200px;
     margin-bottom: 70px;
 }
 
@@ -96,6 +96,7 @@
 .allProducts {
     margin-left: 17px;
     overflow: hidden;
+    height: 0;
     transition: height 0.5s ease-in-out;
 }
 .allProducts > div{
@@ -108,14 +109,13 @@
     /* width: 100%;
     height: 185px; */
 }
-.productContainer {
+/* .productContainer {
     overflow: hidden;
     transition: height 15s ease-in-out;
     transition-timing-function: ease-in-out
-  }
+  } */
   .showAllProducts {
-    height: auto;
-    transition-delay: 3000s; /* Adjust the delay duration as needed */
+    height: auto; /* Adjust the delay duration as needed */
   }
 @media screen and (max-width : 1000px) {
     .productItem{

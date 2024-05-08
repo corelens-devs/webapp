@@ -9,6 +9,16 @@ import 'swiper/css/navigation';
 import Product from './Product';
 import Heading from '../Heading/Heading';
 import classes from "./Product.module.css"
+import product1 from "../../Assets/product1.jpeg"
+import product2 from "../../Assets/product2.jpeg"
+import product3 from "../../Assets/product3.png"
+import product4 from "../../Assets/product4.png"
+import product5 from "../../Assets/product5.PNG"
+import product7 from "../../Assets/product7.PNG"
+import product9 from "../../Assets/product9.JPG"
+import product8 from "../../Assets/product8.JPG"
+import product6 from "../../Assets/product6.JPG"
+
 const ProductSlider = () => {
     const gradients = {
         p1: 'linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%)',
@@ -24,19 +34,271 @@ const ProductSlider = () => {
     };
 
       const products = [
-        { id: 1, name: 'Product 1', cls: classes.p1, gradientColors: gradients.p1 },
-        { id: 2, name: 'Product 2', cls: classes.p2, gradientColors: gradients.p2 },
-        { id: 3, name: 'Product 3', cls: classes.p3, gradientColors: gradients.p3 },
-        { id: 4, name: 'Product 4', cls: classes.p4, gradientColors: gradients.p4 },
-        { id: 5, name: 'Product 1', cls: classes.p1, gradientColors: gradients.p1 },
-        { id: 6, name: 'Product 2', cls: classes.p2, gradientColors: gradients.p2 },
-        { id: 7, name: 'Product 3', cls: classes.p3, gradientColors: gradients.p3 },
-        { id: 8, name: 'Product 4', cls: classes.p4, gradientColors: gradients.p4 },
+        { id: 1, name: 'Corelens Turbo', actualAmount: '3499', discount : "40", img:product1, cls: classes.p1, gradientColors: gradients.p1, 
+            mainhighlight : [
+                {
+                    title : "Real-time Tracking", img:""
+                },
+                {
+                    title : "2G network communication", img:""
+                },
+                {
+                    title : "Track Playback", img:""
+                },
+                {
+                    title : "ACC", img:""
+                },
+                {
+                    title : "Power-off alarm", img:""
+                },
+                {
+                    title : "Fence alarm", img:""
+                },
+                {
+                    title : "Over-speed alarm", img:""
+                },
+            ]
+            , technicalHightlight : []
+        },
+        { id: 2, name: 'Corelens moto',  actualAmount: '7499', discount : "40",img:product2, cls: classes.p1, gradientColors: gradients.p1, 
+            mainhighlight : [
+                {
+                    title : "Real-time Tracking", img:""
+                },
+                {
+                    title : "2G network communication", img:""
+                },
+                {
+                    title : "Track Playback", img:""
+                },
+                {
+                    title : "ACC", img:""
+                },
+                {
+                    title : "Power-off alarm", img:""
+                },
+                {
+                    title : "Fence alarm", img:""
+                },
+                {
+                    title : "Over-speed alarm", img:""
+                },
+            ]
+            , technicalHightlight : []
+        },
+        { id: 3, name: 'Corelens router - mercusys mr30G', actualAmount: '2418', discount : "10", img:product3, cls: classes.p1, gradientColors: gradients.p1, 
+            mainhighlight : [
+                {
+                    title : "4 External Antennas", img:""
+                },
+                {
+                    title : "Enhanced Signal", img:""
+                },
+                {
+                    title : "2 x 2 MIMO", img:""
+                },
+                {
+                    title : "Ease of Use", img:""
+                },
+                {
+                    title : "Guest Network", img:""
+                },
+                {
+                    title : "Parental Controls", img:""
+                }
+            ]
+            , technicalHightlight : [
+                {title: "Wireless WAN", description:"Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet"},
+                {title: "Easy Setup", description:"Quick to set up and get it run just in minutes using any smartphone, pad or computer."},
+                {title: "Advanced Security", description:"WPA2 wireless encryption helps you keep your wireless network protected."}
+            ]
+        },
+        { id: 4, name: 'Corelens router - ac12', actualAmount: '2088', discount : "10", img:product4, cls: classes.p1, gradientColors: gradients.p1, 
+        mainhighlight : [
+            {
+                title : "4 External Antennas", img:""
+            },
+            {
+                title : "Enhanced Signal", img:""
+            },
+            {
+                title : "2 x 2 MIMO", img:""
+            },
+            {
+                title : "Ease of Use", img:""
+            },
+            {
+                title : "Guest Network", img:""
+            },
+            {
+                title : "Parental Controls", img:""
+            }
+        ]
+            , technicalHightlight : [
+                {title: "Wireless WAN", description:"Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet"},
+                {title: "Easy Setup", description:"Quick to set up and get it run just in minutes using any smartphone, pad or computer."},
+                {title: "Advanced Security", description:"WPA2 wireless encryption helps you keep your wireless network protected."}]
+        },
+        { id: 5, name: 'Corelens polo',  actualAmount: '2499', discount : "50", img:product5, cls: classes.p1, gradientColors: gradients.p1, 
+            mainhighlight : [
+                {
+                    title : "Real 4mb", img:""
+                },
+                {
+                    title : "Ip67 water resistant", img:""
+                },
+                {
+                    title : "1 yr home service", img:""
+                },
+                {
+                    title : "Inbuilty memory", img:""
+                },
+                {
+                    title : "Motion follow", img:""
+                },
+                {
+                    title : "2 way audio", img:""
+                },
+                {
+                    title : "IR night vision", img:""
+                },
+                {
+                    title : "Smart alarm", img:""
+                },
+            ]
+            , technicalHightlight : []
+        },
+        { id: 6, name: 'Corelens oval',  actualAmount: '6999', discount : "50", img:product6, cls: classes.p1, gradientColors: gradients.p1, 
+        mainhighlight : [
+            {
+                title : "Real 8mb", img:""
+            },
+            {
+                title : "Ip67 water resistant", img:""
+            },
+            {
+                title : "1 yr home service", img:""
+            },
+            {
+                title : "Inbuilty memory", img:""
+            },
+            {
+                title : "Motion follow", img:""
+            },
+            {
+                title : "2 way audio", img:""
+            },
+            {
+                title : "IR night vision", img:""
+            },
+            {
+                title : "Smart alarm", img:""
+            },
+        ]
+            , technicalHightlight : []
+        },
+        { id: 7, name: 'Corelens gem',  actualAmount: '6199', discount : "50", img:product7, cls: classes.p1, gradientColors: gradients.p1, 
+        mainhighlight : [
+            {
+                title : "Real 4mb", img:""
+            },
+            {
+                title : "Ip67 water resistant", img:""
+            },
+            {
+                title : "1 yr home service", img:""
+            },
+            {
+                title : "Inbuilty memory", img:""
+            },
+            {
+                title : "Motion follow", img:""
+            },
+            {
+                title : "2 way audio", img:""
+            },
+            {
+                title : "IR night vision", img:""
+            },
+            {
+                title : "Smart alarm", img:""
+            },
+        ]
+            , technicalHightlight : []
+        },
+        { id: 8, name: 'Corelens echo', actualAmount: '3999', discount : "50", img:product8, cls: classes.p1, gradientColors: gradients.p1, 
+        mainhighlight : [
+            {
+                title : "Real 2mb", img:""
+            },
+            {
+                title : "alexa and google assistant support", img:""
+            },
+            {
+                title : "1 yr home service", img:""
+            },
+            {
+                title : "Inbuilty memory", img:""
+            },
+            {
+                title : "Motion follow", img:""
+            },
+            {
+                title : "2 way audio", img:""
+            },
+            {
+                title : "IR night vision", img:""
+            },
+            {
+                title : "Smart alarm", img:""
+            },
+        ]
+            , technicalHightlight : []
+        },
+        { id: 9, name: 'Corelens Turbo', actualAmount: '3999', discount : "50",img:product9, cls: classes.p1, gradientColors: gradients.p1, 
+        mainhighlight : [
+            {
+                title : "Real 2mb", img:""
+            },
+            {
+                title : "alexa and google assistant support", img:""
+            },
+            {
+                title : "1 yr home service", img:""
+            },
+            {
+                title : "Inbuilty memory", img:""
+            },
+            {
+                title : "Motion follow", img:""
+            },
+            {
+                title : "2 way audio", img:""
+            },
+            {
+                title : "IR night vision", img:""
+            },
+            {
+                title : "Smart alarm", img:""
+            },
+        ]
+            , technicalHightlight : []
+        },
+        // { id: 2, name: 'Product 2', cls: classes.p2, gradientColors: gradients.p2 },
+        // { id: 3, name: 'Product 3', cls: classes.p3, gradientColors: gradients.p3 },
+        // { id: 4, name: 'Product 4', cls: classes.p4, gradientColors: gradients.p4 },
+        // { id: 5, name: 'Product 1', cls: classes.p1, gradientColors: gradients.p1 },
+        // { id: 6, name: 'Product 2', cls: classes.p2, gradientColors: gradients.p2 },
+        // { id: 7, name: 'Product 3', cls: classes.p3, gradientColors: gradients.p3 },
+        // { id: 8, name: 'Product 4', cls: classes.p4, gradientColors: gradients.p4 },
+        // { id: 9, name: 'Product 4', cls: classes.p1, gradientColors: gradients.p1 },
+        // { id: 10, name: 'Product 4', cls: classes.p2, gradientColors: gradients.p2 },
         // Add more products as needed
     ];
+
     
     return (
-        <div  id='product' className={`${classes.productContainer} ${showAllProducts ? classes.showAllProducts : ''}`}>
+        <div  id='product'>
         <Heading heading="Our Products" cls={classes.div_head}/>
         <Swiper
         pagination={{
@@ -71,10 +333,10 @@ const ProductSlider = () => {
         >
 
 
-      {[...Array(10)].map((_, index) => (
+      {products.map((item, index) => (
         <SwiperSlide key={index}>
-          <Product cls={classes[`p${(index % 4) + 1}`]} gradientColors={gradients[`p${(index % 4) + 1}`]} />
-        </SwiperSlide>
+        <Product data={item} cls={classes[`p${(index % 4) + 1}`]} gradientColors={gradients[`p${(index % 4) + 1}`]} />
+      </SwiperSlide>
       ))}
       
           
@@ -86,12 +348,13 @@ const ProductSlider = () => {
 
 
         {showAllProducts && (
-                <div className={classes.allProducts}>
+                <div  className={`${classes.allProducts} ${showAllProducts ? classes.showAllProducts : ''}`}>
                   
                     <div className={classes.productList}>
                         {products.map(product => (
                             <div key={product.id} className={classes.productItem}>
-                                <Product cls={product.cls} gradientColors={product.gradientColors} />
+                                <Product cls={product.cls}
+                                data={product} gradientColors={product.gradientColors} />
                                 
                             </div>
                         ))}

@@ -15,7 +15,8 @@ import scan5 from "../../../Assets/scan5.png"
 import '../product.css'
 
 
-const MainHighlight = () => {
+const MainHighlight = ({data}) => {
+    console.log(data)
     return (
         <div>
         {/* <Heading heading="Our Products"/> */}
@@ -56,8 +57,13 @@ const MainHighlight = () => {
             spaceBetween={10}
             // slidesPerView={4}
         >
-           
-            <SwiperSlide><div className={classes.main_div3}>
+           {data?.map((item)=>(
+             <SwiperSlide><div className={classes.main_div3}>
+             <img src={scan1} alt="" />
+             <p>{item.title}</p>
+           </div></SwiperSlide>
+           ))}
+            {/* <SwiperSlide><div className={classes.main_div3}>
                 <img src={scan1} alt="" />
                 <p>Sample test here</p>
               </div></SwiperSlide>
@@ -76,7 +82,7 @@ const MainHighlight = () => {
             <SwiperSlide> <div className={classes.main_div3}>
                 <img src={scan5} alt="" />
                 <p>Sample test here</p>
-              </div></SwiperSlide>
+              </div></SwiperSlide> */}
              
             
         </Swiper>
