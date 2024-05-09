@@ -96,8 +96,8 @@
 .allProducts {
     margin-left: 17px;
     overflow: hidden;
-    height: 0;
-    transition: height 0.5s ease-in-out;
+    height: 1000px;
+    transition: height 5s ease-in-out;
 }
 .allProducts > div{
     display: flex;

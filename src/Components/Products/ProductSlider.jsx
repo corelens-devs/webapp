@@ -9,15 +9,15 @@ import 'swiper/css/navigation';
 import Product from './Product';
 import Heading from '../Heading/Heading';
 import classes from "./Product.module.css"
-import product1 from "../../Assets/product1.jpeg"
-import product2 from "../../Assets/product2.jpeg"
+import product1 from "../../Assets/product1.png"
+import product2 from "../../Assets/product2.png"
 import product3 from "../../Assets/product3.png"
 import product4 from "../../Assets/product4.png"
 import product5 from "../../Assets/product5.PNG"
 import product7 from "../../Assets/product7.PNG"
-import product9 from "../../Assets/product9.JPG"
-import product8 from "../../Assets/product8.JPG"
-import product6 from "../../Assets/product6.JPG"
+import product9 from "../../Assets/product9.png"
+import product8 from "../../Assets/product8.png"
+import product6 from "../../Assets/product6.png"
 
 const ProductSlider = () => {
     const gradients = {
@@ -58,9 +58,27 @@ const ProductSlider = () => {
                     title : "Over-speed alarm", img:""
                 },
             ]
-            , technicalHightlight : []
+            , technicalHightlight : [{
+                title : "Operating voltage", description : "3.7V"
+            },
+            {
+                title : "Position method", description : "GPS+BDS+LBS+WiFi"
+            },
+            {
+                title : "Positioning error", description : "<10 M"
+            },
+            {
+                title : "Communication network", description : "2G/4G"
+            },
+            {
+                title : "Weight", description : "317g"
+            },
+            {
+                title : "Communication band", description : "Global version : LTE-FDD B1/B2/B3/B4/B5/B7/B8/B12/B13/B18/B19/B20/B25/B26/B28/B66 LTE-TDD : B34/B38/B39/B40/B41  GSM : 850/900/1800/1900 MHz"
+            },
+        ]
         },
-        { id: 2, name: 'Corelens moto',  actualAmount: '7499', discount : "40",img:product2, cls: classes.p1, gradientColors: gradients.p1, 
+        { id: 2, name: 'Corelens moto',  actualAmount: '7499', discount : "40",img:product2, cls: classes.p2, gradientColors: gradients.p2, 
             mainhighlight : [
                 {
                     title : "Real-time Tracking", img:""
@@ -84,9 +102,27 @@ const ProductSlider = () => {
                     title : "Over-speed alarm", img:""
                 },
             ]
-            , technicalHightlight : []
+            , technicalHightlight : [{
+                title : "Operating voltage", description : "3.7V"
+            },
+            {
+                title : "Position method", description : "GPS+BDS+LBS+WiFi"
+            },
+            {
+                title : "Positioning error", description : "<10 M"
+            },
+            {
+                title : "Communication network", description : "2G/4G"
+            },
+            {
+                title : "Weight", description : "317g"
+            },
+            {
+                title : "Communication band", description : "Global version : LTE-FDD B1/B2/B3/B4/B5/B7/B8/B12/B13/B18/B19/B20/B25/B26/B28/B66 LTE-TDD : B34/B38/B39/B40/B41  GSM : 850/900/1800/1900 MHz"
+            },
+        ]
         },
-        { id: 3, name: 'Corelens router - mercusys mr30G', actualAmount: '2418', discount : "10", img:product3, cls: classes.p1, gradientColors: gradients.p1, 
+        { id: 3, name: 'Corelens router - mercusys mr30G', actualAmount: '2418', discount : "10", img:product3, cls: classes.p3, gradientColors: gradients.p3, 
             mainhighlight : [
                 {
                     title : "4 External Antennas", img:""
@@ -113,7 +149,7 @@ const ProductSlider = () => {
                 {title: "Advanced Security", description:"WPA2 wireless encryption helps you keep your wireless network protected."}
             ]
         },
-        { id: 4, name: 'Corelens router - ac12', actualAmount: '2088', discount : "10", img:product4, cls: classes.p1, gradientColors: gradients.p1, 
+        { id: 4, name: 'Corelens router - ac12', actualAmount: '2088', discount : "10", img:product4, cls: classes.p4, gradientColors: gradients.p4, 
         mainhighlight : [
             {
                 title : "4 External Antennas", img:""
@@ -166,9 +202,17 @@ const ProductSlider = () => {
                     title : "Smart alarm", img:""
                 },
             ]
-            , technicalHightlight : []
+            , technicalHightlight : [
+                {title:"Chip Processor", description:"NT98566"},
+                {title:"Sensor", description:"SC8238"},
+                {title:"Lens", description:"3.6mm"},
+                {title:"Connection way", description:"Wireless/wired/AP hotpot connection/Wireless recording"},
+                {title:"Wireless Method", description:"802.1 1a/b/g/n transmission protocol"},
+                {title:"Antenna method", description:"External antenna:3dB antenna*2"},
+                {title:"Wired Connection", description:"TCP/IPv4"},
+            ]
         },
-        { id: 6, name: 'Corelens oval',  actualAmount: '6999', discount : "50", img:product6, cls: classes.p1, gradientColors: gradients.p1, 
+        { id: 6, name: 'Corelens oval',  actualAmount: '6999', discount : "50", img:product6, cls: classes.p2, gradientColors: gradients.p2, 
         mainhighlight : [
             {
                 title : "Real 8mb", img:""
@@ -195,9 +239,17 @@ const ProductSlider = () => {
                 title : "Smart alarm", img:""
             },
         ]
-            , technicalHightlight : []
+        , technicalHightlight : [
+            {title:"Chip Processor", description:"XM530V200"},
+            {title:"Sensor", description:"SC401AI"},
+            {title:"Lens", description:"3.6mm"},
+            {title:"Connection way", description:"Wireless/wired/AP hotpot connection/Wireless recording"},
+            {title:"Wireless Method", description:"802.1 1a/b/g/n transmission protocol"},
+            {title:"Antenna method", description:"External antenna:3dB antenna*2"},
+            {title:"Wired Connection", description:"TCP/IPv4"},
+        ]
         },
-        { id: 7, name: 'Corelens gem',  actualAmount: '6199', discount : "50", img:product7, cls: classes.p1, gradientColors: gradients.p1, 
+        { id: 7, name: 'Corelens gem',  actualAmount: '6199', discount : "50", img:product7, cls: classes.p3, gradientColors: gradients.p3, 
         mainhighlight : [
             {
                 title : "Real 4mb", img:""
@@ -224,9 +276,17 @@ const ProductSlider = () => {
                 title : "Smart alarm", img:""
             },
         ]
-            , technicalHightlight : []
+        , technicalHightlight : [
+            {title:"Chip Processor", description:"XM530V200"},
+            {title:"Sensor", description:"SC401AI"},
+            {title:"Lens", description:"3.6mm"},
+            {title:"Connection way", description:"Wireless/wired/AP hotpot connection/Wireless recording"},
+            {title:"Wireless Method", description:"802.1 1a/b/g/n transmission protocol"},
+            {title:"Antenna method", description:"External antenna:3dB antenna*2"},
+            {title:"Wired Connection", description:"TCP/IPv4"},
+        ]
         },
-        { id: 8, name: 'Corelens echo', actualAmount: '3999', discount : "50", img:product8, cls: classes.p1, gradientColors: gradients.p1, 
+        { id: 8, name: 'Corelens echo', actualAmount: '3999', discount : "50", img:product8, cls: classes.p4, gradientColors: gradients.p4, 
         mainhighlight : [
             {
                 title : "Real 2mb", img:""
@@ -253,7 +313,15 @@ const ProductSlider = () => {
                 title : "Smart alarm", img:""
             },
         ]
-            , technicalHightlight : []
+        , technicalHightlight : [
+            {title:"Processor", description:"530V200"},
+            {title:"Sensor", description:"SC2336P"},
+            {title:"Lens", description:"3.6mm"},
+            {title:"Connection way", description:"Wireless/wired/AP hotpot connection/Wireless recording"},
+            {title:"Wireless Method", description:"802.1 1a/b/g/n transmission protocol"},
+            {title:"Antenna method", description:"External antenna:3dB antenna*2"},
+            {title:"Wired Connection", description:"TCP/IPv4"},
+        ]
         },
         { id: 9, name: 'Corelens Turbo', actualAmount: '3999', discount : "50",img:product9, cls: classes.p1, gradientColors: gradients.p1, 
         mainhighlight : [
@@ -282,18 +350,17 @@ const ProductSlider = () => {
                 title : "Smart alarm", img:""
             },
         ]
-            , technicalHightlight : []
+        , technicalHightlight : [
+            {title:"Processor", description:"530V200"},
+            {title:"Sensor", description:"SC2336P"},
+            {title:"Lens", description:"3.6mm"},
+            {title:"Connection way", description:"Wireless/wired/AP hotpot connection/Wireless recording"},
+            {title:"Wireless Method", description:"802.1 1a/b/g/n transmission protocol"},
+            {title:"Antenna method", description:"External antenna:3dB antenna*2"},
+            {title:"Wired Connection", description:"TCP/IPv4"},
+        ]
         },
-        // { id: 2, name: 'Product 2', cls: classes.p2, gradientColors: gradients.p2 },
-        // { id: 3, name: 'Product 3', cls: classes.p3, gradientColors: gradients.p3 },
-        // { id: 4, name: 'Product 4', cls: classes.p4, gradientColors: gradients.p4 },
-        // { id: 5, name: 'Product 1', cls: classes.p1, gradientColors: gradients.p1 },
-        // { id: 6, name: 'Product 2', cls: classes.p2, gradientColors: gradients.p2 },
-        // { id: 7, name: 'Product 3', cls: classes.p3, gradientColors: gradients.p3 },
-        // { id: 8, name: 'Product 4', cls: classes.p4, gradientColors: gradients.p4 },
-        // { id: 9, name: 'Product 4', cls: classes.p1, gradientColors: gradients.p1 },
-        // { id: 10, name: 'Product 4', cls: classes.p2, gradientColors: gradients.p2 },
-        // Add more products as needed
+        
     ];
 
     
