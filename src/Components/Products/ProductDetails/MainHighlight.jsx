@@ -59,7 +59,9 @@ const MainHighlight = ({data}) => {
         >
            {data?.map((item)=>(
              <SwiperSlide><div className={classes.main_div3}>
-             <img src={scan1} alt="" />
+             <div>
+             <img src={item?.img} alt="" className={classes.img1} />
+             </div>
              <p>{item.title}</p>
            </div></SwiperSlide>
            ))}

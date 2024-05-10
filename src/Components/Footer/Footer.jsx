@@ -21,7 +21,7 @@ const Footer = () => {
             <FiFacebook />
             <SlSocialTwitter />
             <FaInstagram />
-            <FiGithub/>
+            {/* <FiGithub/> */}
 
             </div>
         </div>

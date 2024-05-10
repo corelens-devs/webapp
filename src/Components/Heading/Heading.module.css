@@ -1,12 +1,17 @@
 .head{
     margin: 100px 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 .head h4{
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 500;
     margin: 0;
     margin-bottom: 10px;
     font-family: "Helvetica Neue Medium Extended";
+    width: 65%;
 }
 .head p{
     margin: 0;
@@ -20,5 +25,6 @@
     }
     .head h4{
         font-size: 25px;
+        width: 100%;
     }
  }

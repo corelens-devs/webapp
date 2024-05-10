@@ -18,8 +18,28 @@ import product7 from "../../Assets/product7.PNG"
 import product9 from "../../Assets/product9.png"
 import product8 from "../../Assets/product8.png"
 import product6 from "../../Assets/product6.png"
+import icon1 from "../../Assets/icon1.png"
+import icon2 from "../../Assets/icon2.png"
+import icon3 from "../../Assets/icon3.png"
+import icon4 from "../../Assets/icon4.png"
+import icon5 from "../../Assets/icon5.png"
+import icon6 from "../../Assets/icon6.png"
+import icon7 from "../../Assets/icon7.png"
+import icon8 from "../../Assets/icon8.png"
+import icon9 from "../../Assets/icon9.png"
+import icon10 from "../../Assets/icon10.png"
+import icon11 from "../../Assets/icon11.png"
+import icon12 from "../../Assets/icon12.png"
+import icon13 from "../../Assets/icon13.png"
+import icon14 from "../../Assets/icon14.png"
+import icon15 from "../../Assets/icon15.png"
+import icon16 from "../../Assets/icon16.png"
+import icon17 from "../../Assets/icon17.png"
+import icon18 from "../../Assets/icon18.png"
+import icon19 from "../../Assets/icon19.png"
 
 const ProductSlider = () => {
+    
     const gradients = {
         p1: 'linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%)',
         p2: 'linear-gradient(180deg, #6FDBF9 0%, rgba(207, 245, 255, 0.69) 100%)',
@@ -37,25 +57,25 @@ const ProductSlider = () => {
         { id: 1, name: 'Corelens Turbo', actualAmount: '3499', discount : "40", img:product1, cls: classes.p1, gradientColors: gradients.p1, 
             mainhighlight : [
                 {
-                    title : "Real-time Tracking", img:""
+                    title : "Real-time Tracking", img:icon1
                 },
                 {
-                    title : "2G network communication", img:""
+                    title : "2G network communication", img:icon2
                 },
                 {
-                    title : "Track Playback", img:""
+                    title : "Track Playback", img:icon3
                 },
                 {
-                    title : "ACC", img:""
+                    title : "ACC Alarm", img:icon4
                 },
                 {
-                    title : "Power-off alarm", img:""
+                    title : "Power-off alarm", img:icon5
                 },
                 {
-                    title : "Fence alarm", img:""
+                    title : "Fence alarm", img:icon7
                 },
                 {
-                    title : "Over-speed alarm", img:""
+                    title : "Over-speed alarm", img:icon6
                 },
             ]
             , technicalHightlight : [{
@@ -81,28 +101,30 @@ const ProductSlider = () => {
         { id: 2, name: 'Corelens moto',  actualAmount: '7499', discount : "40",img:product2, cls: classes.p2, gradientColors: gradients.p2, 
             mainhighlight : [
                 {
-                    title : "Real-time Tracking", img:""
+                    title : "Real-time Tracking", img:icon1
                 },
                 {
-                    title : "2G network communication", img:""
+                    title : "2G network communication", img:icon2
                 },
                 {
-                    title : "Track Playback", img:""
+                    title : "Track Playback", img:icon3
                 },
                 {
-                    title : "ACC", img:""
+                    title : "ACC", img:icon4
                 },
                 {
-                    title : "Power-off alarm", img:""
+                    title : "Power-off alarm", img:icon5
                 },
                 {
-                    title : "Fence alarm", img:""
+                    title : "Fence alarm", img:icon7
                 },
                 {
-                    title : "Over-speed alarm", img:""
+                    title : "Over-speed alarm", img:icon6
                 },
             ]
-            , technicalHightlight : [{
+            ,
+             technicalHightlight : [
+                {
                 title : "Operating voltage", description : "3.7V"
             },
             {
@@ -125,22 +147,22 @@ const ProductSlider = () => {
         { id: 3, name: 'Corelens router - mercusys mr30G', actualAmount: '2418', discount : "10", img:product3, cls: classes.p3, gradientColors: gradients.p3, 
             mainhighlight : [
                 {
-                    title : "4 External Antennas", img:""
+                    title : "4 External Antennas", img:icon2
                 },
                 {
-                    title : "Enhanced Signal", img:""
+                    title : "Enhanced Signal", img:icon16
                 },
                 {
-                    title : "2 x 2 MIMO", img:""
+                    title : "2 x 2 MIMO", img:icon18
                 },
                 {
-                    title : "Ease of Use", img:""
+                    title : "Ease of Use", img:icon15
                 },
                 {
-                    title : "Guest Network", img:""
+                    title : "Guest Network", img:icon17
                 },
                 {
-                    title : "Parental Controls", img:""
+                    title : "Parental Controls", img:icon19
                 }
             ]
             , technicalHightlight : [
@@ -152,22 +174,22 @@ const ProductSlider = () => {
         { id: 4, name: 'Corelens router - ac12', actualAmount: '2088', discount : "10", img:product4, cls: classes.p4, gradientColors: gradients.p4, 
         mainhighlight : [
             {
-                title : "4 External Antennas", img:""
+                title : "4 External Antennas", img:icon2
             },
             {
-                title : "Enhanced Signal", img:""
+                title : "Enhanced Signal", img:icon16
             },
             {
-                title : "2 x 2 MIMO", img:""
+                title : "2 x 2 MIMO", img:icon18
             },
             {
-                title : "Ease of Use", img:""
+                title : "Ease of Use", img:icon15
             },
             {
-                title : "Guest Network", img:""
+                title : "Guest Network", img:icon17
             },
             {
-                title : "Parental Controls", img:""
+                title : "Parental Controls", img:icon19
             }
         ]
             , technicalHightlight : [
@@ -178,28 +200,28 @@ const ProductSlider = () => {
         { id: 5, name: 'Corelens polo',  actualAmount: '2499', discount : "50", img:product5, cls: classes.p1, gradientColors: gradients.p1, 
             mainhighlight : [
                 {
-                    title : "Real 4mb", img:""
+                    title : "Real 4mb", img:icon8
                 },
                 {
-                    title : "Ip67 water resistant", img:""
+                    title : "Ip67 water resistant", img:icon9
                 },
                 {
-                    title : "1 yr home service", img:""
+                    title : "1 yr home service", img:icon10
                 },
                 {
-                    title : "Inbuilty memory", img:""
+                    title : "Inbuilty memory", img:icon11
                 },
                 {
-                    title : "Motion follow", img:""
+                    title : "Motion follow", img:icon12
                 },
                 {
-                    title : "2 way audio", img:""
+                    title : "2 way audio", img:icon13
                 },
                 {
-                    title : "IR night vision", img:""
+                    title : "IR night vision", img:icon14
                 },
                 {
-                    title : "Smart alarm", img:""
+                    title : "Smart alarm", img:icon4
                 },
             ]
             , technicalHightlight : [
@@ -215,28 +237,28 @@ const ProductSlider = () => {
         { id: 6, name: 'Corelens oval',  actualAmount: '6999', discount : "50", img:product6, cls: classes.p2, gradientColors: gradients.p2, 
         mainhighlight : [
             {
-                title : "Real 8mb", img:""
+                title : "Real 8mb", img:icon8
             },
             {
-                title : "Ip67 water resistant", img:""
+                title : "Ip67 water resistant", img:icon9
             },
             {
-                title : "1 yr home service", img:""
+                title : "1 yr home service", img:icon10
             },
             {
-                title : "Inbuilty memory", img:""
+                title : "Inbuilty memory", img:icon11
             },
             {
-                title : "Motion follow", img:""
+                title : "Motion follow", img:icon12
             },
             {
-                title : "2 way audio", img:""
+                title : "2 way audio", img:icon13
             },
             {
-                title : "IR night vision", img:""
+                title : "IR night vision", img:icon14
             },
             {
-                title : "Smart alarm", img:""
+                title : "Smart alarm", img:icon4
             },
         ]
         , technicalHightlight : [
@@ -252,28 +274,28 @@ const ProductSlider = () => {
         { id: 7, name: 'Corelens gem',  actualAmount: '6199', discount : "50", img:product7, cls: classes.p3, gradientColors: gradients.p3, 
         mainhighlight : [
             {
-                title : "Real 4mb", img:""
+                title : "Real 4mb", img:icon8
             },
             {
-                title : "Ip67 water resistant", img:""
+                title : "Ip67 water resistant", img:icon9
             },
             {
-                title : "1 yr home service", img:""
+                title : "1 yr home service", img:icon10
             },
             {
-                title : "Inbuilty memory", img:""
+                title : "Inbuilty memory", img:icon11
             },
             {
-                title : "Motion follow", img:""
+                title : "Motion follow", img:icon12
             },
             {
-                title : "2 way audio", img:""
+                title : "2 way audio", img:icon13
             },
             {
-                title : "IR night vision", img:""
+                title : "IR night vision", img:icon14
             },
             {
-                title : "Smart alarm", img:""
+                title : "Smart alarm", img:icon4
             },
         ]
         , technicalHightlight : [
@@ -289,28 +311,28 @@ const ProductSlider = () => {
         { id: 8, name: 'Corelens echo', actualAmount: '3999', discount : "50", img:product8, cls: classes.p4, gradientColors: gradients.p4, 
         mainhighlight : [
             {
-                title : "Real 2mb", img:""
+                title : "Real 2mb", img:icon8
             },
             {
-                title : "alexa and google assistant support", img:""
+                title : "Alexa and google assistant support", img:icon9
             },
             {
-                title : "1 yr home service", img:""
+                title : "1 yr home service", img:icon10
             },
             {
-                title : "Inbuilty memory", img:""
+                title : "Inbuilty memory", img:icon11
             },
             {
-                title : "Motion follow", img:""
+                title : "Motion follow", img:icon12
             },
             {
-                title : "2 way audio", img:""
+                title : "2 way audio", img:icon13
             },
             {
-                title : "IR night vision", img:""
+                title : "IR night vision", img:icon14
             },
             {
-                title : "Smart alarm", img:""
+                title : "Smart alarm", img:icon4
             },
         ]
         , technicalHightlight : [
@@ -326,28 +348,28 @@ const ProductSlider = () => {
         { id: 9, name: 'Corelens Turbo', actualAmount: '3999', discount : "50",img:product9, cls: classes.p1, gradientColors: gradients.p1, 
         mainhighlight : [
             {
-                title : "Real 2mb", img:""
+                title : "Real 2mb", img:icon8
             },
             {
-                title : "alexa and google assistant support", img:""
+                title : "Alexa and google assistant support", img:icon9
             },
             {
-                title : "1 yr home service", img:""
+                title : "1 yr home service", img:icon10
             },
             {
-                title : "Inbuilty memory", img:""
+                title : "Inbuilty memory", img:icon11
             },
             {
-                title : "Motion follow", img:""
+                title : "Motion follow", img:icon12
             },
             {
-                title : "2 way audio", img:""
+                title : "2 way audio", img:icon13
             },
             {
-                title : "IR night vision", img:""
+                title : "IR night vision", img:icon14
             },
             {
-                title : "Smart alarm", img:""
+                title : "Smart alarm", img:icon4
             },
         ]
         , technicalHightlight : [
