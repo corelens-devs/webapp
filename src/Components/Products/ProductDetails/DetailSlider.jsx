@@ -12,7 +12,7 @@ import Heading from "../../Heading/Heading"
 import ProDetail from './ProDetail';
 import "../product.css"
 
-const DetailSlider = () => {
+const DetailSlider = (props) => {
     return (
         <div className={classes.prod}>
        
@@ -52,12 +52,12 @@ const DetailSlider = () => {
        slidesPerView={1.5}
        modules={[Autoplay, Pagination]}
         >
-            <SwiperSlide><ProDetail/></SwiperSlide>
-            <SwiperSlide><ProDetail /></SwiperSlide>
-            <SwiperSlide><ProDetail /></SwiperSlide>
-            <SwiperSlide><ProDetail /></SwiperSlide>
-            <SwiperSlide><ProDetail /></SwiperSlide>
-            <SwiperSlide><ProDetail/></SwiperSlide>
+            <SwiperSlide><ProDetail img={props.img}/></SwiperSlide>
+            <SwiperSlide><ProDetail  img={props.img} /></SwiperSlide>
+            <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
+            <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
+            <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
+            <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
 
         </Swiper>
        

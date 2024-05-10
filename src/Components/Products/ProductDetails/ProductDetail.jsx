@@ -129,7 +129,7 @@ const ProductDetail = (props) => {
 
       <Modal.Body className={classes.bdy}>
         <div className={classes.main_div}>
-          <DetailSlider />
+          <DetailSlider  img={data.img}/>
           <div>
             <h1 className={classes.head}>{data?.name}</h1>
             <p className={classes.para}>Main Highlights</p>
