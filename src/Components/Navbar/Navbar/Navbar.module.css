@@ -15,7 +15,12 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  
 }
+.nav_img{
+    height: 80px;
+   }
+
 
 .search_bar {
   width: 40%;
