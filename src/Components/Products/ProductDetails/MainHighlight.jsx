@@ -94,3 +94,10 @@ const MainHighlight = ({data}) => {
 }
 
 export default MainHighlight
+
+
+
+// [{
+//   id :1 ,
+//   value : ""
+// }]
