@@ -345,7 +345,7 @@ const ProductSlider = () => {
             {title:"Wired Connection", description:"TCP/IPv4"},
         ]
         },
-        { id: 9, name: 'Corelens Turbo', actualAmount: '3999', discount : "50",img:product9, cls: classes.p1, gradientColors: gradients.p1, 
+        { id: 9, name: 'Corelens Turbo', actualAmount: '3999', discount : "50",img:product9, cls: classes.p3, gradientColors: gradients.p3, 
         mainhighlight : [
             {
                 title : "Real 2mb", img:icon8
@@ -424,7 +424,7 @@ const ProductSlider = () => {
 
       {products.map((item, index) => (
         <SwiperSlide key={index}>
-        <Product data={item} cls={classes[`p${(index % 4) + 1}`]} gradientColors={gradients[`p${(index % 4) + 1}`]} />
+        <Product data={item} cls={item.cls} gradientColors={gradients[`p${(index % 4) + 1}`]} />
       </SwiperSlide>
       ))}
       
