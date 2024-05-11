@@ -345,7 +345,7 @@ const ProductSlider = () => {
             {title:"Wired Connection", description:"TCP/IPv4"},
         ]
         },
-        { id: 9, name: 'Corelens Turbo', actualAmount: '7499', discount : "40" ,img:product9, cls: classes.p3, gradientColors: gradients.p3, 
+        { id: 9, name: 'Corelens wave', actualAmount: '7499', discount : "40" ,img:product9, cls: classes.p3, gradientColors: gradients.p3, 
         mainhighlight : [
             {
                 title : "Real 2mb", img:icon8
