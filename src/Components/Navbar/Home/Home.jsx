@@ -1,7 +1,13 @@
 import React from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Banner1 from "../../../Assets/Banner1.png"
 import Banner2 from "../../../Assets/Banner2.png"
+import Banner3 from "../../../Assets/Banner3.png"
+import Banner4 from "../../../Assets/Banner4.png"
+import Banner5 from "../../../Assets/Banner5.png"
+import Banner6 from "../../../Assets/Banner6.png"
+import Banner7 from "../../../Assets/Banner7.png"
 import Banner_mob from "../../../Assets/Banner_mob.png"
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -49,10 +55,13 @@ const Home = () => {
             slidesPerView={1.5}
             modules={[Autoplay, Pagination]}
         >
+            <SwiperSlide><img className='img' src={Banner1} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
             <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner3} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner4} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner5} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner6} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner7} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
 
         </Swiper>
 
