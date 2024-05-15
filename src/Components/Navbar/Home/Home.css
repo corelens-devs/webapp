@@ -4,6 +4,7 @@ padding:0 20px 50px !important;
 .home_slider .img{
     width: 100% !important;
     border-radius: 10px;
+    height: 250px;
 }
 .home_slider .img_mob{
     width: 100% !important;
