@@ -46,7 +46,7 @@ const Home = () => {
                     slidesPerView: 1
                 },
                 1200: {
-                    slidesPerView: 1.5
+                    slidesPerView: 1.2
                 }
             }}
 
