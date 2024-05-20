@@ -14,7 +14,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import Faq from '../Components/FAQ/Faq'
 
 const LandingPage = () => {
-  const whatsappNumber = '9999973124';
+  const whatsappNumber = '+91 9999973124';
 
   const openWhatsApp = () => {
       const url = `https://wa.me/${whatsappNumber}`;
