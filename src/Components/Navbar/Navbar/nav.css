@@ -1,5 +1,5 @@
 .home_slider{
-    padding:0 20px 50px !important;
+    /* padding:0 20px 50px !important; */
     }
     .home_slider .img{
         width: 100% !important;
@@ -34,7 +34,7 @@
         background: #f9f9f9;
         padding: 10px 20px;
         position: sticky;
-        top: 13%;
+        top: 10%;
         z-index: 100;
       }
       .mobile_section_a {

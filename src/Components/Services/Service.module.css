@@ -28,12 +28,25 @@
     font-family: "Quicksand", sans-serif;
 font-weight: 500;
 }
+.p2{
+    margin-top: 45px ;
+}
+.p3{
+    margin-top: 18px ;
+}
 
 @media screen and (max-width : 880px)  {
     .service_div{
         flex-wrap: wrap;
         padding: 30px;
-    }}
+    }
+    .p2{
+        margin-top: 0 ;
+    }
+    .p3{
+        margin-top: 0;
+    }
+}
 @media screen and (max-width : 620px)  {
     .service_div{
         flex-direction: column;
@@ -42,6 +55,12 @@ font-weight: 500;
     .card{
         width: 100% !important;
         padding: 0;
+    }
+    .p2{
+        margin-top: 0 ;
+    }
+    .p3{
+        margin-top: 0;
     }
     .card > p{
       margin-bottom: 0;

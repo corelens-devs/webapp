@@ -20,12 +20,12 @@ const Product = (props) => {
   }
   return (
     <>
-    <div className={`${classes.card}`}  onClick={() =>handleShow(data.id, data)}>
+    <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}>
         <div className={`${classes.card1} ${props.cls}`} >
-            <img src={data.img} alt="" />
+            <img src={data?.img} alt="" />
             <button>Buy Now</button>
         </div>
-        <h6 className={classes.h6}>{data.name}</h6>
+        <h6 className={classes.h6}>{data?.name}</h6>
         <div className={classes.div2}>
             <p>₹ {DiscountFunction(data)}</p>
 

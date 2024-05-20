@@ -6,7 +6,7 @@ const BottomSection = () => {
   return (
     <div className={classes.btm_section}>
         <img src={quote}/>
-        <h5>By 2040, my mission is to assure safety in every Indian home and vehicles , increasing nationwide security</h5>
+        <h5>Our mission is to create a safer and peaceful environment for every indian household.</h5>
         <p>Vibhor Gupta</p>
         <h6>CEO, Corelens</h6>
     </div>

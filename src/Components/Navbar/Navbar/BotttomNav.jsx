@@ -7,7 +7,7 @@ const BotttomNav = () => {
     <div className={classes.btm_div}>
         <ul>
             <li>
-    <a href="#Aihome">A.I Home Security</a>
+    <a href="#Aihome">Home</a>
             </li>
             <li>
     <a href="#services">What we Offer</a>

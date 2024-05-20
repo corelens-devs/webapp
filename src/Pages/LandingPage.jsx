@@ -14,10 +14,17 @@ import { FaWhatsapp } from 'react-icons/fa'
 import Faq from '../Components/FAQ/Faq'
 
 const LandingPage = () => {
+  const whatsappNumber = '9999973124';
+
+  const openWhatsApp = () => {
+      const url = `https://wa.me/${whatsappNumber}`;
+      window.open(url, '_blank');
+  };
+
   return (
     <div>
        
- <div className={classes.float} >
+ <div className={classes.float}  onClick={openWhatsApp}>
  <FaWhatsapp />
  </div>
  

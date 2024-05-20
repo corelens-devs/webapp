@@ -25,27 +25,22 @@ const Features = () => {
                     <img src={Security1}/>
                    <div>
                    <h1>
-                    Theft-proof home and offices
+                   Increasing theft
                     </h1>
                     <p>
-                    Secure your property at bare minimum prices. Leave your home worry-free knowing it’s secured. 
+                    With theft rates rising in india , securing your home and valuables is essential.We always leave our home in fear of theft and wish someone to protect it, but now no more. Don't wait—protect your assets now. Easy to install and very affordable. 
                     </p>
                    </div>
                 </div>
                 <div className={classes.d2}>
                 <img src={Security4}/>
                   <div >
-                  <h1>Peace of mind </h1>
-                    <p>Enjoy family trips, movies, dinners, and more without worrying about home security. Our app solves everyday concerns like pet and maid surveillance, and caring for elderly parents. Explore for more details!</p>
+                  <h1>Total security solution</h1>
+                    <p>Experience complete peace of mind with our comprehensive security solution. Our camera sensors safeguard your home while our GPS trackers protect your vehicles. Say goodbye to worries about theft – our advanced technology ensures your property is always secure, giving you unmatched peace of mind.
+</p>
                   </div>
                 </div>
-                {/* <li>
-                <img src={Security3}/>
-                 <div>
-                 <h1>AI -Features</h1>
-                    <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
-                 </div>
-                </li> */}
+              
             </div>
             <div className={classes.d1}>
                 <div className={classes.d2}>
@@ -55,87 +50,65 @@ const Features = () => {
                    On demand surveillance 
                     </h1>
                     <p>
-                    Presenting the FIRST app that combines Monitoring/Surveillance. Pay for utilized hours, that can b easily booked when leaving home.
+                    Meet India's first app that combines monitoring with sensors. Our Camera Sensors keep your home safe. Plus, you can hire us to watch over your place through the app for just 150 rupees per hour per device. We'll keep an eye on your sensors when you can't, like when you're traveling or at the movies. If there's an emergency, we'll alert the police and neighbors.
                     </p>
                    </div>
                 </div>
                 <div className={classes.d2}>
                 <img src={Security5}/>
                   <div >
-                  <h1>Latest products with long-lasting life</h1>
-                    <p>Our products are tested over Various Quality checks before we send them to your service. See full product list on our App.</p>
+                  <h1>Latest features</h1>
+                    <p>Our camera sensors represent cutting-edge technology that hasn't hit the market yet, promising to elevate your home security to new heights. Meanwhile, our GPS trackers boast the latest lithium batteries, ensuring extended backup power of up to three months.</p>
                 
                  </div>
                 </div>
-                {/* <li>
-                <img src={Security3}/>
-                 <div>
-                 <h1>AI -Features</h1>
-                    <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
-                 </div>
-                </li> */}
+          
             </div>
             <div className={classes.d1}>
                 <div className={classes.d2}>
                     <img src={Security3}/>
                    <div>
-                   <h1>AI -Features</h1>
-                    <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
+                   <h1>Money saving prices</h1>
+                    <p>In a market saturated with low-quality products, our primary focus is on providing you with peace of mind after every purchase. That's why we never compromise on the quality of components in our products, yet we manage to offer exceptional value without cutting corners. Rest assured, all our products deliver outstanding value for your money.</p>
                    </div>
                 </div>
                 <div className={classes.d2}>
                 <img src={Security6}/>
                   <div >
                   <h1>After Sales Support</h1>
-                    <p>Enjoy FREE home service for two years for unlimited times.NO conditions or restrictions. If our sensors detect any issues, we fix and deliver within 72 hours at your doorstep, and it's all free of charge.</p>
+                    <p>Enjoy FREE home service for 1 year for unlimited times.NO conditions or restrictions. If our sensors detect any issues, we fix and deliver within 72 hours at your doorstep, and it's all free of charge.</p>
                   </div>
                 </div>
-                {/* <li>
-                <img src={Security3}/>
-                 <div>
-                 <h1>AI -Features</h1>
-                    <p>Over 20+ LATEST features in ONE device to COMPLETELY STOP theft and robbery. Download app to explore.</p>
-                 </div>
-                </li> */}
+               
             </div>
-            {/* <ul>
-                <li>
-                <img src={Security4}/>
-                   <div>
-                   <h1>
-                    Peace of mind
-                    </h1>
-                    <p>
-                    Enjoy family trips, movies, dinners, and more without worrying about home security. Our app solves everyday concerns like pet and maid surveillance, and caring for elderly parents. Explore for more details! 
-                    </p>
-                   </div>
-                </li>
-                <li>
-                <img src={Security5}/>
-                   <div>
-                   <h1>Latest products with long-lasting life</h1>
-                    <p>Our products are tested over Various Quality checks before we send them to your service. See full product list on our App.</p>
-                   </div>
-                </li>
-                <li>
-                <img src={Security6}/>
-                  <div>
-                  <h1>After Sales Support</h1>
-                    <p>Enjoy FREE home service for two years for unlimited times.NO conditions or restrictions. If our sensors detect any issues, we fix and deliver within 72 hours at your doorstep, and it's all free of charge.</p>
-                  </div>
-                </li>
-            </ul> */}
+          
         </div>
         {/* <div> */}
-        <div className={`${classes.mob} w-100`}>
-          <BtmSlider />
-        </div>
+       
+        <Heading heading="Features of our camera sensors" cls={classes.div_head}/>
         <div className={classes.feat}>
             <img src={im1}/>
             <img src={im2}/>
             <img src={im3}/>
             <img src={im4}/>
             <img src={im5}/>
+        </div>
+        <div className={`${classes.mob} w-100`}>
+        {/* <Heading heading="Features of our camera sensors" cls={classes.div_head}/> */}
+          <BtmSlider />
+        </div>
+      
+        <Heading heading="Features of our Gps Trackers" cls={classes.div_head}/>
+        <div className={classes.feat}>
+            <img src={im1}/>
+            <img src={im2}/>
+            <img src={im3}/>
+            <img src={im4}/>
+            <img src={im5}/>
+        </div>
+        <div className={`${classes.mob} w-100`}>
+        {/* <Heading heading="Features of our camera sensors" cls={classes.div_head}/> */}
+          <BtmSlider />
         </div>
         <BottomSection/>
     </div>

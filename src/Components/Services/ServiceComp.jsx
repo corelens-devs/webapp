@@ -6,7 +6,7 @@ const ServiceComp = (props) => {
     <div className={classes.card}>
       <img src={props.img} />
       <h4>{props.heading}</h4>
-      <p>{props.para}</p>
+      <p className={props.cls}>{props.para}</p>
     </div>
   )
 }
