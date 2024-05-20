@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
@@ -37,8 +37,15 @@ import icon16 from "../../Assets/icon16.png"
 import icon17 from "../../Assets/icon17.png"
 import icon18 from "../../Assets/icon18.png"
 import icon19 from "../../Assets/icon19.png"
+import ProductDetail from './ProductDetails/ProductDetail';
 
-const ProductSlider = () => {
+const ProductSlider = ({searchTerm}) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedProduct, setSelectedProduct] = useState(null);
+    const [filteredProducts, setFilteredProducts] = useState([]);
+    const [showAllProducts, setShowAllProducts] = useState(false);
+
+    console.log(searchTerm)
 
     const gradients = {
         p1: 'linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%)',
@@ -46,17 +53,6 @@ const ProductSlider = () => {
         p3: 'linear-gradient(180deg, #E8EB8C 0%, #FEFFEE 100%)',
         p4: 'linear-gradient(180deg, #FF9CA9 0%, rgba(255, 181, 191, 0.48) 100%)',
     };
-
-    const [showAllProducts, setShowAllProducts] = useState(false);
-
-    const toggleProductsView = () => {
-        setShowAllProducts(!showAllProducts);
-        if (showAllProducts) {
-            // Scroll to the products section when collapsing the view
-            document.getElementById('product').scrollIntoView({ behavior: 'smooth' });
-        }
-    };
-
     const products = [
         {
             id: 1, name: 'Corelens Turbo', actualAmount: '3499', discount: "40", img: product1, cls: classes.p1, gradientColors: gradients.p1,
@@ -399,84 +395,87 @@ const ProductSlider = () => {
     ];
 
 
+    const productsRef = useRef(null);
+    useEffect(() => {
+        setFilteredProducts(products);
+    }, []);
+
+    // useEffect(() => {
+    //     if (searchTerm) {
+    //         handleSearch(searchTerm.trim().toLowerCase());
+    //     } else {
+    //         setFilteredProducts(products);
+    //     }
+    // }, [searchTerm]);
+    // useEffect(() => {
+    //     if (searchTerm) {
+    //         const filtered = products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
+    //         setFilteredProducts(filtered);
+
+    //         if (filtered.length > 0) {
+    //             // Scroll to the product section when search matches any product
+    //             productsRef.current.scrollIntoView({ behavior: 'smooth' });
+    //         }
+    //     } else {
+    //         setFilteredProducts(products);
+    //     }
+    // }, [searchTerm]);
+
+    useEffect(() => {
+        if (searchTerm) {
+            const filtered = products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
+            setFilteredProducts(filtered);
+        } else {
+            setFilteredProducts(products);
+        }
+        // Scroll to the product section when search term changes
+        productsRef.current.scrollIntoView({ behavior: 'smooth' });
+    }, [searchTerm]);
+    
+    const handleSearch = (term) => {
+        if (!term) {
+            setFilteredProducts(products);
+            return;
+        }
+        const filtered = products.filter(product => product.name.toLowerCase().includes(term));
+        setFilteredProducts(filtered);
+    };
+
+
+    const toggleProductsView = () => {
+        setShowAllProducts(!showAllProducts);
+        if (!showAllProducts) {
+            setTimeout(() => {
+                productsRef.current.scrollIntoView({ behavior: 'smooth' });
+            }, 500); // No delay needed for smooth scrolling to the top
+        } else {
+            productsRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
+    
+    const openModal = (product) => {
+        setSelectedProduct(product);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setSelectedProduct(null);
+        setIsModalOpen(false);
+    };
+
+
     return (
-        // <div id='product'>
-        //     <Heading heading="Our Products" cls={classes.div_head} />
-        //     <Swiper
-        // pagination={{
-        //     type: 'progressbar',
-        // }}
-        // navigation={true}
-        // modules={[Autoplay, Pagination, Navigation]}
-        // loop={true}
-        // autoplay={{
-        //     delay: 5000,
-        //     disableOnInteraction: true,
-        // }}
-        // className={'home_slider home_slider1 prmodal'}
-        // slidesPerView={1}
-        // breakpoints={{
-        //     360: {
-        //         slidesPerView: 1
-        //     },
-        //     690: {
-        //         slidesPerView: 2
-        //     },
-        //     1000: {
-        //         slidesPerView: 3
-        //     },
-        //     1200: {
-        //         slidesPerView: 4
-        //     }
-        // }}
-
-
-        // spaceBetween={30}
-        //     >
-
-
-        // {products.map((item, index) => (
-        //     <SwiperSlide key={index}>
-        //         <Product data={item} cls={item.cls} gradientColors={gradients[`p${(index % 4) + 1}`]} />
-        //     </SwiperSlide>
-        // ))}
-
-
-
-        //     </Swiper>
-        //     {!showAllProducts &&
-        //         <button className={classes.view} onClick={toggleProductsView}>View More</button>
-        //     }
-
-
-        // {showAllProducts && (
-        //     <div className={`${classes.allProducts} ${showAllProducts ? classes.showAllProducts : ''}`}>
-
-        //         <div className={classes.productList}>
-        // {products.map(product => (
-        //     <div key={product.id} className={classes.productItem}>
-        //         <Product cls={product.cls}
-        //             data={product} gradientColors={product.gradientColors} />
-
-        //     </div>
-        // ))}
-        //         </div>
-        //     </div>
-        // )}
-
-        //     {showAllProducts && <button className={classes.view} onClick={toggleProductsView}>View Less</button>}
-
-        // </div>
-        <div id="product">
+        <div id="product" ref={productsRef}>
             <Heading heading="Our Products" highlight="Our Latest" subtitle="Find the best product" />
-            <div className={classes.ProductSlider}>
-                {showAllProducts ? (
+            <div className={classes.ProductSlider} >
+                {/* {showAllProducts ? (
                     <div className={`${classes.allProducts} ${showAllProducts ? classes.showAllProducts : ''}`}>
                       <div className={classes.productList}>
-                      {products.map(product => (
+                      {filteredProducts.map(product => (
                             <div key={product.id} className={classes.productItem}>
                                 <Product cls={product.cls}
-                                    data={product} gradientColors={product.gradientColors} />
+                                    data={product} gradientColors={product.gradientColors} onClick={() => openModal(product)} />
 
                             </div>
                         ))}
@@ -514,16 +513,62 @@ const ProductSlider = () => {
 
                         spaceBetween={30}
                     >
-                        {products.map((item, index) => (
+                        {filteredProducts.map((item, index) => (
                             <SwiperSlide key={index}>
-                                <Product data={item} cls={item.cls} gradientColors={gradients[`p${(index % 4) + 1}`]} />
+                                <Product  onClick={() => openModal(item)} data={item} cls={item.cls} gradientColors={gradients[`p${(index % 4) + 1}`]} />
                             </SwiperSlide>
                         ))}
                     </Swiper>
+                )} */}
+                   {filteredProducts.length > 0 ? (
+                    showAllProducts ? (
+                        <div className={`${classes.allProducts} ${showAllProducts ? classes.showAllProducts : ''}`}>
+                            <div className={classes.productList}>
+                                {filteredProducts.map(product => (
+                                    <div key={product.id} className={classes.productItem}>
+                                        <Product cls={product.cls}
+                                            data={product} gradientColors={product.gradientColors} onClick={() => openModal(product)} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ) : (
+                        <Swiper
+                            pagination={{ type: 'progressbar' }}
+                            navigation={true}
+                            modules={[Autoplay, Pagination, Navigation]}
+                            loop={true}
+                            autoplay={{ delay: 5000, disableOnInteraction: true }}
+                            className={'home_slider home_slider1 prmodal'}
+                            slidesPerView={1}
+                            breakpoints={{
+                                360: { slidesPerView: 1 },
+                                690: { slidesPerView: 2 },
+                                1000: { slidesPerView: 3 },
+                                1200: { slidesPerView: 4 }
+                            }}
+                            spaceBetween={30}
+                        >
+                            {filteredProducts.map((item, index) => (
+                                <SwiperSlide key={index}>
+                                    <Product onClick={() => openModal(item)} data={item} cls={item.cls} gradientColors={item.gradientColors} />
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    )
+                ) : (
+                    <div className={classes.noProducts}>
+                        <p>no product found!</p>
+                    </div>
                 )}
-                <button className={classes.view}onClick={toggleProductsView}>
-                    {showAllProducts ? 'View Less' : 'View More'}
-                </button>
+                {filteredProducts.length > 0 && (
+                    <button className={classes.view} onClick={toggleProductsView}>
+                        {showAllProducts ? 'View Less' : 'View More'}
+                    </button>
+                )}
+             
+             {isModalOpen &&    <ProductDetail show={isModalOpen} onHide={closeModal} productData={selectedProduct} />}
+
             </div>
         </div>
     );

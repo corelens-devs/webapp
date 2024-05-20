@@ -20,7 +20,8 @@ const Product = (props) => {
   }
   return (
     <>
-    <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}>
+    <div className={`${classes.card}`}  onClick={props?.onClick}>
+    {/* <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}> */}
         <div className={`${classes.card1} ${props.cls}`} >
             <img src={data?.img} alt="" />
             <button>Buy Now</button>

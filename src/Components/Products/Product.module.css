@@ -117,6 +117,30 @@
   .showAllProducts {
     height: auto; /* Adjust the delay duration as needed */
   }
+
+  .ProductSlider {
+    /* your existing styles */
+    overflow: hidden;
+}
+
+.allProducts {
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.allProducts.showAllProducts {
+    max-height: 2000px; /* Set a high value to ensure it covers the height of all products */
+}
+.noProducts {
+    margin-top: -40px;
+    z-index: 100;
+    position: absolute;
+    text-align: center;
+    color: #e80808;
+    left: 45%;
+    font-weight: 500;
+}
 @media screen and (max-width : 1000px) {
     .productItem{
         width: 47.5%;

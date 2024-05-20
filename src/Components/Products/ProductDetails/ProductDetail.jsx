@@ -129,7 +129,7 @@ const ProductDetail = (props) => {
 
       <Modal.Body className={classes.bdy}>
         <div className={classes.main_div}>
-          <DetailSlider  img={data.img}/>
+          <DetailSlider  img={data?.img}/>
           <div>
             <h1 className={classes.head}>{data?.name}</h1>
             <p className={classes.para}>Main Highlights</p>
@@ -179,7 +179,7 @@ const ProductDetail = (props) => {
             </div>}
             <div>
               <h1 className={classes.head2}>Special Price</h1>
-              <p className={classes.para2}>₹{DiscountFunction(data)} <p className={classes.p9}>{data.actualAmount}</p> <span>{data.discount}% Off</span></p>
+              <p className={classes.para2}>₹{DiscountFunction(data)} <p className={classes.p9}>{data?.actualAmount}</p> <span>{data?.discount}% Off</span></p>
             </div>
             <div className={classes.btm_btn_div}>
               <button className={classes.buy_btn} style={{ background: "black" }}>Order Through Call <FaPhoneAlt />

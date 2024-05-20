@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../Components/Navbar/Navbar/Navbar'
 import Home from '../Components/Navbar/Home/Home'
 import AISecurity from '../Components/AISection/AISecurity'
@@ -14,6 +14,11 @@ import { FaWhatsapp } from 'react-icons/fa'
 import Faq from '../Components/FAQ/Faq'
 
 const LandingPage = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearchChange = (value) => {
+    setSearchTerm(value);
+  };
   const whatsappNumber = '+91 9999973124';
 
   const openWhatsApp = () => {
@@ -29,12 +34,12 @@ const LandingPage = () => {
  </div>
  
 
-        <Navbar/>
+        <Navbar onSearchChange={handleSearchChange} />
         <Home/>
        <div className={classes.main_div}>
        <AISecurity/>
         <Services/>
-        <ProductSlider/>
+        <ProductSlider searchTerm={searchTerm} />
         <Features/>
        </div>
         <MobileSection/>
