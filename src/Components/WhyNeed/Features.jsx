@@ -87,7 +87,7 @@ const Features = () => {
         {/* <div> */}
        
         <Heading heading="Features of our camera sensors" cls={classes.div_head}/>
-        <MotionAnimate>
+        <MotionAnimate delay={0.5} speed={0.8}>
         <div className={classes.feat}>
             <img src={im1}/>
             <img src={im2}/>
@@ -102,7 +102,7 @@ const Features = () => {
         </div>
       
         <Heading heading="Features of our Gps Trackers" cls={classes.div_head}/>
-        <MotionAnimate>
+        <MotionAnimate delay={0.5} speed={0.8}>
         <div className={classes.feat}>
             <img src={im1}/>
             <img src={im2}/>

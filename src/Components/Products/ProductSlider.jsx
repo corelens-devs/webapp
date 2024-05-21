@@ -1046,7 +1046,7 @@ const ProductSlider = ({searchTerm}) => {
        
         <div id="product" ref={productsRef}>
             <Heading heading="Our Products" highlight="Our Latest" subtitle="Find the best product" />
-            <MotionAnimate delay={0.3} speed={0.4}>
+            <MotionAnimate delay={0.5} speed={0.8}>
             <div className={classes.ProductSlider} >
                
                    {filteredProducts.length > 0 ? (
