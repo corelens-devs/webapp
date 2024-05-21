@@ -14,6 +14,7 @@ import im5 from "../../Assets/im5.png"
 import classes from "./Features.module.css"
 import BottomSection from './BottomSection'
 import BtmSlider from './BtmSlider'
+import { MotionAnimate } from 'react-motion-animate'
 
 const Features = () => {
   return (
@@ -86,6 +87,7 @@ const Features = () => {
         {/* <div> */}
        
         <Heading heading="Features of our camera sensors" cls={classes.div_head}/>
+        <MotionAnimate>
         <div className={classes.feat}>
             <img src={im1}/>
             <img src={im2}/>
@@ -93,12 +95,14 @@ const Features = () => {
             <img src={im4}/>
             <img src={im5}/>
         </div>
+        </MotionAnimate>
         <div className={`${classes.mob} w-100`}>
         {/* <Heading heading="Features of our camera sensors" cls={classes.div_head}/> */}
           <BtmSlider />
         </div>
       
         <Heading heading="Features of our Gps Trackers" cls={classes.div_head}/>
+        <MotionAnimate>
         <div className={classes.feat}>
             <img src={im1}/>
             <img src={im2}/>
@@ -106,6 +110,7 @@ const Features = () => {
             <img src={im4}/>
             <img src={im5}/>
         </div>
+        </MotionAnimate>
         <div className={`${classes.mob} w-100`}>
         {/* <Heading heading="Features of our camera sensors" cls={classes.div_head}/> */}
           <BtmSlider />
