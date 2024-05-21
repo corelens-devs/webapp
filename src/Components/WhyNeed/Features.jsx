@@ -87,7 +87,9 @@ const Features = () => {
         {/* <div> */}
        
         <Heading heading="Features of our camera sensors" cls={classes.div_head}/>
-        <MotionAnimate delay={0.5} speed={0.8}>
+        <MotionAnimate delay={0.4} speed={0.8} scrollOpacity={[0, 0.8, 0.9, 1]}
+            scrollFadeIn={[0, 0.9]} // Example: start and end values for scroll fade in
+            scrollFadeOut={[0.7, 1]} >
         <div className={classes.feat}>
             <img src={im1}/>
             <img src={im2}/>
@@ -102,7 +104,9 @@ const Features = () => {
         </div>
       
         <Heading heading="Features of our Gps Trackers" cls={classes.div_head}/>
-        <MotionAnimate delay={0.5} speed={0.8}>
+        <MotionAnimate delay={0.4} speed={0.8} scrollOpacity={[0, 0.8, 0.9, 1]}
+            scrollFadeIn={[0, 0.9]} // Example: start and end values for scroll fade in
+            scrollFadeOut={[0.7, 1]} >
         <div className={classes.feat}>
             <img src={im1}/>
             <img src={im2}/>

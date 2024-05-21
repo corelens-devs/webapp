@@ -1036,7 +1036,7 @@ const ProductSlider = ({searchTerm}) => {
         setIsModalOpen(true);
     };
 
-    const closeModal = () => {
+    const closeModal = () => { 
         setSelectedProduct(null);
         setIsModalOpen(false);
     };
@@ -1046,7 +1046,10 @@ const ProductSlider = ({searchTerm}) => {
        
         <div id="product" ref={productsRef}>
             <Heading heading="Our Products" highlight="Our Latest" subtitle="Find the best product" />
-            <MotionAnimate delay={0.5} speed={0.8}>
+            <MotionAnimate delay={0.4} speed={0.8} scrollOpacity={[0, 0.8, 0.9, 1]}
+            scrollFadeIn={[0, 0.9]} // Example: start and end values for scroll fade in
+            scrollFadeOut={[0.7, 1]} 
+            ease="easeIn">
             <div className={classes.ProductSlider} >
                
                    {filteredProducts.length > 0 ? (
