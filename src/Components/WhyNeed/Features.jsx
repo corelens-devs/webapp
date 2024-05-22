@@ -11,6 +11,11 @@ import im2 from "../../Assets/im2.png"
 import im3 from "../../Assets/im3.png"
 import im4 from "../../Assets/im4.png"
 import im5 from "../../Assets/im5.png"
+import im6 from "../../Assets/im6.png"
+import im7 from "../../Assets/im7.png"
+import im8 from "../../Assets/im8.png"
+import im9 from "../../Assets/im9.png"
+import im10 from "../../Assets/im10.png"
 import classes from "./Features.module.css"
 import BottomSection from './BottomSection'
 import BtmSlider from './BtmSlider'
@@ -117,11 +122,11 @@ const Features = () => {
         <Heading heading="Features of our Gps Trackers" cls={classes.div_head}/>
       
         <div className={classes.feat}>
-            <img src={im1} data-aos="fade-left" data-aos-delay="100" />
-            <img src={im2} data-aos="fade-left" data-aos-delay="200" />
-            <img src={im3} data-aos="fade-left" data-aos-delay="300" />
-            <img src={im4} data-aos="fade-left" data-aos-delay="400" />
-            <img src={im5} data-aos="fade-left" data-aos-delay="500" /> {/* Adding an animation for the fifth image */}
+            <img src={im6} data-aos="fade-left" data-aos-delay="100" />
+            <img src={im7} data-aos="fade-left" data-aos-delay="200" />
+            <img src={im8} data-aos="fade-left" data-aos-delay="300" />
+            <img src={im9} data-aos="fade-left" data-aos-delay="400" />
+            <img src={im10} data-aos="fade-left" data-aos-delay="500" /> {/* Adding an animation for the fifth image */}
         </div>
        
         <div className={`${classes.mob} w-100`}>
