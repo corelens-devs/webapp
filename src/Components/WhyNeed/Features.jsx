@@ -117,11 +117,11 @@ const Features = () => {
         <Heading heading="Features of our Gps Trackers" cls={classes.div_head}/>
       
         <div className={classes.feat}>
-            <img src={im1} data-aos="fade-up" data-aos-delay="100" />
-            <img src={im2} data-aos="fade-up" data-aos-delay="200" />
-            <img src={im3} data-aos="fade-up" data-aos-delay="300" />
-            <img src={im4} data-aos="fade-up" data-aos-delay="400" />
-            <img src={im5} data-aos="fade-up" data-aos-delay="500" /> {/* Adding an animation for the fifth image */}
+            <img src={im1} data-aos="fade-left" data-aos-delay="100" />
+            <img src={im2} data-aos="fade-left" data-aos-delay="200" />
+            <img src={im3} data-aos="fade-left" data-aos-delay="300" />
+            <img src={im4} data-aos="fade-left" data-aos-delay="400" />
+            <img src={im5} data-aos="fade-left" data-aos-delay="500" /> {/* Adding an animation for the fifth image */}
         </div>
        
         <div className={`${classes.mob} w-100`}>
