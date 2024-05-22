@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Heading from '../Heading/Heading'
 import Security1 from "../../Assets/Security1.png"
 import Security2 from "../../Assets/Security2.png"
@@ -14,9 +14,15 @@ import im5 from "../../Assets/im5.png"
 import classes from "./Features.module.css"
 import BottomSection from './BottomSection'
 import BtmSlider from './BtmSlider'
-import { MotionAnimate } from 'react-motion-animate'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Aos from 'aos'
 
 const Features = () => {
+  useEffect(()=>{
+    Aos.init();
+
+  },[])
   return (
     <div className={classes.feat_top}>
         <Heading heading="Why You need Corelens" cls={classes.div_head}/>
@@ -87,34 +93,37 @@ const Features = () => {
         {/* <div> */}
        
         <Heading heading="Features of our camera sensors" cls={classes.div_head}/>
-        <MotionAnimate delay={0.4} speed={0.8} scrollOpacity={[0, 0.8, 0.9, 1]}
-            scrollFadeIn={[0, 0.9]} // Example: start and end values for scroll fade in
-            scrollFadeOut={[0.7, 1]} >
-        <div className={classes.feat}>
-            <img src={im1}/>
-            <img src={im2}/>
-            <img src={im3}/>
-            <img src={im4}/>
+       
+        {/* <div className={classes.feat}>
+            <img src={im1} data-aos = "fade-right"/>
+            <img src={im2}  data-aos = "fade-left"/>
+            <img src={im3}  data-aos = "fade-up"/>
+            <img src={im4}  data-aos = "fade-down"/>
             <img src={im5}/>
+        </div> */}
+          <div className={classes.feat}>
+            <img src={im1} data-aos="fade-right" data-aos-delay="100" />
+            <img src={im2} data-aos="fade-right" data-aos-delay="200" />
+            <img src={im3} data-aos="fade-right" data-aos-delay="300" />
+            <img src={im4} data-aos="fade-right" data-aos-delay="400" />
+            <img src={im5} data-aos="fade-right" data-aos-delay="500" /> {/* Adding an animation for the fifth image */}
         </div>
-        </MotionAnimate>
+   
         <div className={`${classes.mob} w-100`}>
         {/* <Heading heading="Features of our camera sensors" cls={classes.div_head}/> */}
           <BtmSlider />
         </div>
       
         <Heading heading="Features of our Gps Trackers" cls={classes.div_head}/>
-        <MotionAnimate delay={0.4} speed={0.8} scrollOpacity={[0, 0.8, 0.9, 1]}
-            scrollFadeIn={[0, 0.9]} // Example: start and end values for scroll fade in
-            scrollFadeOut={[0.7, 1]} >
+      
         <div className={classes.feat}>
-            <img src={im1}/>
-            <img src={im2}/>
-            <img src={im3}/>
-            <img src={im4}/>
-            <img src={im5}/>
+            <img src={im1} data-aos="fade-right" data-aos-delay="100" />
+            <img src={im2} data-aos="fade-right" data-aos-delay="200" />
+            <img src={im3} data-aos="fade-right" data-aos-delay="300" />
+            <img src={im4} data-aos="fade-right" data-aos-delay="400" />
+            <img src={im5} data-aos="fade-right" data-aos-delay="500" /> {/* Adding an animation for the fifth image */}
         </div>
-        </MotionAnimate>
+       
         <div className={`${classes.mob} w-100`}>
         {/* <Heading heading="Features of our camera sensors" cls={classes.div_head}/> */}
           <BtmSlider />

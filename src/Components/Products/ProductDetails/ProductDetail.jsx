@@ -116,7 +116,7 @@ import { DiscountFunction } from '../../DiscountFunction/DiscountFunction';
 
 const ProductDetail = (props) => {
   let data = props?.productData
-  console.log(data)
+  // console.log(data)
 
   return (
     <Modal

@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import camera from "../../Assets/camera.png"
 import classes from "./Product.module.css"
 import './product.css'
 import { IoMdStar } from "react-icons/io";
 import ProductDetail from './ProductDetails/ProductDetail';
 import { DiscountFunction } from '../DiscountFunction/DiscountFunction';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const Product = (props) => {
+  let index = props.index
   const[productData, setProductData] = useState({})
   let data = props?.data
   // console.log(data.actualAmount)
@@ -18,9 +21,15 @@ const Product = (props) => {
     setShow(!show)
 
   }
+  useEffect(() => {
+    AOS.init({
+        duration: 1000,
+        once: true,
+    });
+}, []);
   return (
     <>
-    <div className={`${classes.card}`}  onClick={props?.onClick}>
+    <div data-aos="fade-left"                                      data-aos-delay={(index + 1) * 100}  className={`${classes.card}`}  onClick={props?.onClick}>
     {/* <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}> */}
         <div className={`${classes.card1} ${props.cls}`} >
             <img src={data?.img} alt="" />

@@ -456,7 +456,7 @@
 //         }
 //     };
 
-    
+
 //     const openModal = (product) => {
 //         setSelectedProduct(product);
 //         setIsModalOpen(true);
@@ -569,7 +569,7 @@
 //                         {showAllProducts ? 'View Less' : 'View More'}
 //                     </button>
 //                 )}
-             
+
 //              {isModalOpen &&    <ProductDetail show={isModalOpen} onHide={closeModal} productData={selectedProduct} />}
 
 //             </div>
@@ -619,16 +619,17 @@ import icon17 from "../../Assets/icon17.png"
 import icon18 from "../../Assets/icon18.png"
 import icon19 from "../../Assets/icon19.png"
 import ProductDetail from './ProductDetails/ProductDetail';
-import { MotionAnimate } from 'react-motion-animate'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 
-const ProductSlider = ({searchTerm}) => {
+const ProductSlider = ({ searchTerm }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedProduct, setSelectedProduct] = useState(null);
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [showAllProducts, setShowAllProducts] = useState(false);
 
-    console.log(searchTerm)
+    // console.log(searchTerm)
 
     const gradients = {
         p1: 'linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%)',
@@ -978,45 +979,52 @@ const ProductSlider = ({searchTerm}) => {
     ];
 
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    }, []);
+
     const productsRef = useRef(null);
     useEffect(() => {
         setFilteredProducts(products);
     }, []);
 
     useEffect(() => {
-    if (searchTerm) {
-        const filtered = products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
-        setFilteredProducts(filtered);
-        // Scroll to the product section when search term changes
-        productsRef.current.scrollIntoView({ behavior: 'smooth' });
-    } else {
-        setFilteredProducts(products);
-    }
-}, [searchTerm]);
+        if (searchTerm) {
+            const filtered = products.filter(product => product.name.toLowerCase().includes(searchTerm.toLowerCase()));
+            setFilteredProducts(filtered);
+            // Scroll to the product section when search term changes
+            productsRef.current.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            setFilteredProducts(products);
+        }
+    }, [searchTerm]);
 
 
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('fadeInUp');
-                    entry.target.classList.remove('hidden');
-                }
-            });
-        }, { threshold: 0.1 });
+    // useEffect(() => {
+    //     const observer = new IntersectionObserver((entries) => {
+    //         entries.forEach(entry => {
+    //             if (entry.isIntersecting) {
+    //                 entry.target.classList.add('fadeInUp');
+    //                 entry.target.classList.remove('hidden');
+    //             }
+    //         });
+    //     }, { threshold: 0.1 });
 
-        const items = document.querySelectorAll('.productItem');
-        items.forEach(item => {
-            item.classList.add('hidden');
-            observer.observe(item);
-        });
+    //     const items = document.querySelectorAll('.productItem');
+    //     items.forEach(item => {
+    //         item.classList.add('hidden');
+    //         observer.observe(item);
+    //     });
 
-        return () => {
-            items.forEach(item => {
-                observer.unobserve(item);
-            });
-        };
-    }, [filteredProducts]);
+    //     return () => {
+    //         items.forEach(item => {
+    //             observer.unobserve(item);
+    //         });
+    //     };
+    // }, [filteredProducts]);
 
 
     const toggleProductsView = () => {
@@ -1030,34 +1038,34 @@ const ProductSlider = ({searchTerm}) => {
         }
     };
 
-    
+
     const openModal = (product) => {
         setSelectedProduct(product);
         setIsModalOpen(true);
     };
 
-    const closeModal = () => { 
+    const closeModal = () => {
         setSelectedProduct(null);
         setIsModalOpen(false);
     };
 
 
     return (
-       
+
         <div id="product" ref={productsRef}>
             <Heading heading="Our Products" highlight="Our Latest" subtitle="Find the best product" />
-            <MotionAnimate delay={0.4} speed={0.8} scrollOpacity={[0, 0.8, 0.9, 1]}
-            scrollFadeIn={[0, 0.9]} // Example: start and end values for scroll fade in
-            scrollFadeOut={[0.7, 1]} 
-            ease="easeIn">
+
             <div className={classes.ProductSlider} >
-               
-                   {filteredProducts.length > 0 ? (
+
+                {filteredProducts.length > 0 ? (
                     showAllProducts ? (
                         <div className={`${classes.allProducts} ${showAllProducts ? classes.showAllProducts : ''}`}>
                             <div className={classes.productList}>
-                                {filteredProducts.map(product => (
-                                    <div key={product.id} className={classes.productItem}>
+                                {filteredProducts.map((product, index) => (
+                                    <div key={product.id} className={classes.productItem} data-aos="fade-up"
+
+                                        data-aos-delay={(index + 1) * 100} // Adjust the delay value as needed
+                                    >
                                         <Product cls={product.cls}
                                             data={product} gradientColors={product.gradientColors} onClick={() => openModal(product)} />
                                     </div>
@@ -1083,7 +1091,10 @@ const ProductSlider = ({searchTerm}) => {
                         >
                             {filteredProducts.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <Product onClick={() => openModal(item)} data={item} cls={item.cls} gradientColors={item.gradientColors} />
+                                    <Product 
+                                        onClick={() => openModal(item)} data={item} cls={item.cls} 
+                                        index={index}
+                                        gradientColors={item.gradientColors} />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
@@ -1098,13 +1109,13 @@ const ProductSlider = ({searchTerm}) => {
                         {showAllProducts ? 'View Less' : 'View More'}
                     </button>
                 )}
-             
-             {isModalOpen &&    <ProductDetail show={isModalOpen} onHide={closeModal} productData={selectedProduct} />}
+
+                {isModalOpen && <ProductDetail show={isModalOpen} onHide={closeModal} productData={selectedProduct} />}
 
             </div>
-            </MotionAnimate>
+
         </div>
-        
+
     );
 }
 
