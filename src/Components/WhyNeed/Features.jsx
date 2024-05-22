@@ -22,6 +22,7 @@ import BtmSlider from './BtmSlider'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Aos from 'aos'
+import BtmSlider2 from './BtmSlider2'
 
 const Features = () => {
   useEffect(()=>{
@@ -131,7 +132,7 @@ const Features = () => {
        
         <div className={`${classes.mob} w-100`}>
         {/* <Heading heading="Features of our camera sensors" cls={classes.div_head}/> */}
-          <BtmSlider />
+          <BtmSlider2 />
         </div>
         <BottomSection/>
     </div>
