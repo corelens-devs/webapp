@@ -129,22 +129,22 @@ const ProductDetail = (props) => {
 
       <Modal.Body className={classes.bdy}>
         <div className={classes.main_div}>
-          <DetailSlider  img={data?.img}/>
+          <DetailSlider img={data?.img} />
           <div>
             <h1 className={classes.head}>{data?.name}</h1>
             <p className={classes.para}>Main Highlights</p>
             <div className={classes.main_div2}>
               <MainHighlight data={data?.mainhighlight} />
-           
+
             </div>
-              <p className={`${classes.para} ${classes.p2}`}>Technical highlights</p>
-           {data?.technicalHightlight?.length > 0  ?   data?.technicalHightlight?.map((item) => (
-            <div className={classes.ul}>
-            <div className={classes.inn_ul}>
-              <p>{item.title}</p> <span>{item.description}</span>
-            </div>
-             </div>
-           )):  <div>
+            <p className={`${classes.para} ${classes.p2}`}>Technical highlights</p>
+            {data?.technicalHightlight?.length > 0 ? data?.technicalHightlight?.map((item) => (
+              <div className={classes.ul}>
+                <div className={classes.inn_ul}>
+                  <p>{item.title}</p> <span>{item.description}</span>
+                </div>
+              </div>
+            )) : <div>
               {/* <ul className={classes.ul}> */}
               <div className={classes.ul}>
                 <div className={classes.inn_ul}>
@@ -175,11 +175,17 @@ const ProductDetail = (props) => {
                   <p>Controller Type</p> <span>Android</span>
                 </div>
               </div>
-              
+
             </div>}
-            <div>
-              <h1 className={classes.head2}>Special Price</h1>
-              <p className={classes.para2}>₹{DiscountFunction(data)} <p className={classes.p9}>{data?.actualAmount}</p> <span>{data?.discount}% Off</span></p>
+            <div style={{ marginTop: "20px" }}>
+
+              <p className={classes.para2}>₹{data?.saleAmount}
+              {data?.actualAmount &&    <p className={classes.p9}>MRP <span style={{
+                textDecoration: "line-through"
+              }}>₹{data?.actualAmount}</span></p>} 
+            {data?.discount &&  <span style={{ color: "#FF774F" }}>({data?.discount} Off)</span>}
+              </p>
+              <h1 className={classes.head2}>Inclusive all Taxes</h1>
             </div>
             <div className={classes.btm_btn_div}>
               <button className={classes.buy_btn} style={{ background: "black" }}>Order Through Call <FaPhoneAlt />

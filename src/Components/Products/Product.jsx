@@ -36,8 +36,14 @@ const Product = (props) => {
             <button>Buy Now</button>
         </div>
         <h6 className={classes.h6}>{data?.name}</h6>
+        <p className={classes.para}>{data?.cat}</p>
         <div className={classes.div2}>
-            <p>₹ {DiscountFunction(data)}</p>
+          <p className={classes.para2}> Rs. {data.saleAmount} 
+          
+        {data?.actualAmount && <span style={{textDecoration: "line-through"}}>Rs. {data.actualAmount} </span>}
+         {data.discount &&  <span style={{color:"#FF774F", fontWeight:"400"}}>({data.discount} OFF)</span>}
+          </p>
+            {/* <p>₹ {DiscountFunction(data)}</p> */}
 
             {/* <button><IoMdStar />
 4.5 (78)</button> */}

@@ -637,9 +637,10 @@ const ProductSlider = ({ searchTerm }) => {
         p3: 'linear-gradient(180deg, #E8EB8C 0%, #FEFFEE 100%)',
         p4: 'linear-gradient(180deg, #FF9CA9 0%, rgba(255, 181, 191, 0.48) 100%)',
     };
+
     const products = [
         {
-            id: 1, name: 'Corelens Turbo', actualAmount: '3499', discount: "40", img: product1, cls: classes.p1, gradientColors: gradients.p1,
+            id: 1, name: 'Turbo', cat: "GPS Trackers", actualAmount: '4999', discount: "30%", saleAmount : "3499", img: product1, cls: classes.p1, gradientColors: gradients.p1,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -684,7 +685,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 2, name: 'Corelens moto', actualAmount: ' 3999', discount: "40", img: product2, cls: classes.p2, gradientColors: gradients.p2,
+            id: 2, name: 'Moto', cat: "GPS Trackers", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: product2, cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -731,7 +732,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 3, name: 'Corelens router - mercusys mr30G', actualAmount: '2418', discount: "10", img: product3, cls: classes.p3, gradientColors: gradients.p3,
+            id: 3, name: 'Mercusys mr30G',cat: "Routers",  saleAmount : "2199", img: product3, cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "4 External Antennas", img: icon2
@@ -759,7 +760,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 4, name: 'Corelens router - ac12', actualAmount: '2088', discount: "10", img: product4, cls: classes.p4, gradientColors: gradients.p4,
+            id: 4, name: 'Mercusys ac12',cat: "Routers", saleAmount : "1899", img: product4, cls: classes.p4, gradientColors: gradients.p4,
             mainhighlight: [
                 {
                     title: "4 External Antennas", img: icon2
@@ -786,7 +787,7 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }]
         },
         {
-            id: 5, name: 'Corelens polo', actualAmount: '2499', discount: "50", img: product5, cls: classes.p1, gradientColors: gradients.p1,
+            id: 5, name: 'Polo',cat: "Outdoor Camera Sensors", actualAmount: '4999', discount: "50%", saleAmount : "2499", img: product5, cls: classes.p1, gradientColors: gradients.p1,
             mainhighlight: [
                 {
                     title: "Real 4mb", img: icon8
@@ -824,7 +825,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 6, name: 'Corelens oval', actualAmount: '6999', discount: "50", img: product6, cls: classes.p2, gradientColors: gradients.p2,
+            id: 6, name: 'Oval' ,cat: "Outdoor Camera Sensors", actualAmount: '6999', discount: "50%", saleAmount : "3499",img: product6, cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real 8mb", img: icon8
@@ -862,7 +863,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 7, name: 'Corelens gem', actualAmount: '6199', discount: "50", img: product7, cls: classes.p3, gradientColors: gradients.p3,
+            id: 7, name: 'Gem', cat: "Outdoor Camera Sensors", actualAmount: '6199', discount: "50%", saleAmount : "3099", img: product7, cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 4mb", img: icon8
@@ -900,7 +901,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 8, name: 'Corelens echo', actualAmount: '3999', discount: "50", img: product8, cls: classes.p4, gradientColors: gradients.p4,
+            id: 8, name: 'Echo',cat: "Indoor Camera Sensors", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: product8, cls: classes.p4, gradientColors: gradients.p4,
             mainhighlight: [
                 {
                     title: "Real 2mb", img: icon8
@@ -938,7 +939,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 9, name: 'Corelens wave', actualAmount: '7499', discount: "40", img: product9, cls: classes.p3, gradientColors: gradients.p3,
+            id: 9, name: 'Wave', cat: "Indoor Camera Sensors", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: product9, cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 2mb", img: icon8
