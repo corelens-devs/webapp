@@ -1077,6 +1077,7 @@ const ProductSlider = ({ searchTerm }) => {
                             navigation={true}
                             modules={[Autoplay, Pagination, Navigation]}
                             loop={true}
+                            style={{padding:"20px"}}
                             autoplay={{ delay: 5000, disableOnInteraction: true }}
                             className={'home_slider home_slider1 prmodal'}
                             slidesPerView={1}

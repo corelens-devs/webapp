@@ -25,14 +25,23 @@
     height: 100%;
     padding-bottom: 0 !important;
 }
+
 .slidemodal .swiper-button-next, .swiper-button-prev, 
 .swiper-rtl .swiper-button-prev {
     background: #999999 !important;
     color: white !important;
-    height: 20px;
-    width: 20px;
+    height: 20px ;
+    width: 20px ;
     border-radius: 50% !important;
-    margin-inline:-8px;
+    margin-inline:-4px;
+}
+.prmodal .swiper-button-prev{
+    height: 30px;
+    width: 30px;
+}
+.prmodal .swiper-button-next{
+    height: 30px;
+    width: 30px;
 }
 .slidemodal .swiper-button-next:after, 
 .swiper-rtl .swiper-button-prev:after {
@@ -89,3 +98,4 @@
     font-size: 12px;
 }
    }
+

@@ -2,7 +2,7 @@ import React from 'react'
 import {FaInstagram} from 'react-icons/fa'
 import { FiFacebook, FiGithub } from "react-icons/fi";
 import classes from "./Footer.module.css"
-import { SlSocialTwitter } from "react-icons/sl";
+import { FaXTwitter } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -19,7 +19,7 @@ const Footer = () => {
             <p>@Copyright2023,All Rights Reserved</p>
             <div>
             <FiFacebook />
-            <SlSocialTwitter />
+            <FaXTwitter />
             <FaInstagram />
             {/* <FiGithub/> */}
 
