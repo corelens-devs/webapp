@@ -1062,9 +1062,7 @@ const ProductSlider = ({ searchTerm }) => {
                         <div className={`${classes.allProducts} ${showAllProducts ? classes.showAllProducts : ''}`}>
                             <div className={classes.productList}>
                                 {filteredProducts.map((product, index) => (
-                                    <div key={product.id} className={classes.productItem} data-aos="fade-up"
-
-                                        data-aos-delay={(index + 1) * 100} // Adjust the delay value as needed
+                                    <div key={product.id} className={classes.productItem} 
                                     >
                                         <Product cls={product.cls}
                                             data={product} gradientColors={product.gradientColors} onClick={() => openModal(product)} />
