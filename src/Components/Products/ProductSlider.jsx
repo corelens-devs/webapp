@@ -1100,9 +1100,35 @@ const ProductSlider = ({ searchTerm }) => {
                         </Swiper>
                     )
                 ) : (
-                    <div className={classes.noProducts}>
-                        <p>no product found!</p>
-                    </div>
+                    <Swiper
+                    pagination={{ type: 'progressbar' }}
+                    navigation={true}
+                    modules={[Autoplay, Pagination, Navigation]}
+                    loop={true}
+                    style={{padding:"20px"}}
+                    autoplay={{ delay: 5000, disableOnInteraction: true }}
+                    className={'home_slider home_slider1 prmodal'}
+                    slidesPerView={1}
+                    breakpoints={{
+                        360: { slidesPerView: 1 },
+                        690: { slidesPerView: 2 },
+                        1000: { slidesPerView: 3 },
+                        1200: { slidesPerView: 4 }
+                    }}
+                    spaceBetween={30}
+                >
+                    {products.map((item, index) => (
+                        <SwiperSlide key={index}>
+                            <Product 
+                                onClick={() => openModal(item)} data={item} cls={item.cls} 
+                                index={index}
+                                gradientColors={item.gradientColors} />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                    // <div className={classes.noProducts}>
+                    //     <p>no product found!</p>
+                    // </div>
                 )}
                 {filteredProducts.length > 0 && (
                     <button className={classes.view} onClick={toggleProductsView}>
