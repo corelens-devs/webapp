@@ -10,7 +10,7 @@ import 'aos/dist/aos.css';
 
 const Product = (props) => {
   let index = props.index
-  const[productData, setProductData] = useState({})
+  const [productData, setProductData] = useState({})
   let data = props?.data
   // console.log(data.actualAmount)
   // console.log(data.discount)
@@ -24,37 +24,40 @@ const Product = (props) => {
   useEffect(() => {
     AOS.init({
         duration: 1000,
-        once: true,
+        once: false, // Ensure the animation triggers every time you scroll
     });
+
+    // Reinitialize AOS when component updates, if necessary
+    AOS.refresh();
 }, []);
   return (
     <>
-    <div data-aos="fade-left"                                      data-aos-delay={(index + 1) * 100}  className={`${classes.card}`}  onClick={props?.onClick}>
-    {/* <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}> */}
+      <div data-aos="fade-left" data-aos-delay={(index + 1) * 100} className={`${classes.card}`} onClick={props?.onClick}>
+        {/* <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}> */}
         <div className={`${classes.card1} ${props.cls}`} >
-            <img src={data?.img} alt="" />
-            <button>Buy Now</button>
+          <img src={data?.img} alt="" />
+          <button>Buy Now</button>
         </div>
         <h6 className={classes.h6}>{data?.name}</h6>
         <p className={classes.para}>{data?.cat}</p>
         <div className={classes.div2}>
-          <p className={classes.para2}> Rs. {data.saleAmount} 
-          
-        {data?.actualAmount && <span style={{textDecoration: "line-through"}}>Rs. {data.actualAmount} </span>}
-         {data.discount &&  <span style={{color:"#FF774F", fontWeight:"400"}}>({data.discount} OFF)</span>}
-          </p>
-            {/* <p>₹ {DiscountFunction(data)}</p> */}
+          <p className={classes.para2}> Rs. {data.saleAmount}
 
-            {/* <button><IoMdStar />
+            {data?.actualAmount && <span style={{ textDecoration: "line-through" }}>Rs. {data.actualAmount} </span>}
+            {data.discount && <span style={{ color: "#FF774F", fontWeight: "400" }}>({data.discount} OFF)</span>}
+          </p>
+          {/* <p>₹ {DiscountFunction(data)}</p> */}
+
+          {/* <button><IoMdStar />
 4.5 (78)</button> */}
         </div>
-    </div>
-    <ProductDetail
+      </div>
+      <ProductDetail
         show={show}
         onHide={() => setShow(false)}
         productData={productData}
       />
-    {/* {show && <ProductDetail isPopup={show} popupFunc={setShow} /> } */}
+      {/* {show && <ProductDetail isPopup={show} popupFunc={setShow} /> } */}
     </>
   )
 }

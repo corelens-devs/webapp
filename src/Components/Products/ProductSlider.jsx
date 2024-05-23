@@ -488,6 +488,7 @@ const ProductSlider = ({ searchTerm }) => {
                                     <div key={product.id} className={classes.productItem} 
                                     >
                                         <Product cls={product.cls}
+                                        index={index + 1}
                                             data={product} gradientColors={product.gradientColors} onClick={() => openModal(product)} />
                                     </div>
                                 ))}
