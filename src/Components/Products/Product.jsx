@@ -12,9 +12,10 @@ const Product = (props) => {
   let index = props.index
   const [productData, setProductData] = useState({})
   let data = props?.data
-  // console.log(data.actualAmount)
+  console.log(data)
   // console.log(data.discount)
   const [show, setShow] = useState(false)
+
   const handleShow = (id, data) => {
     console.log(id)
     setProductData(data)
@@ -35,7 +36,7 @@ const Product = (props) => {
       <div data-aos="fade-left" data-aos-delay={(index + 1) * 100} className={`${classes.card}`} onClick={props?.onClick}>
         {/* <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}> */}
         <div className={`${classes.card1} ${props.cls}`} >
-          <img src={data?.img} alt="" />
+          <img src={data?.img[0]} alt="" />
           <button>Buy Now</button>
         </div>
         <h6 className={classes.h6}>{data?.name}</h6>

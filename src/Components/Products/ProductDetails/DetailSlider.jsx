@@ -52,12 +52,14 @@ const DetailSlider = (props) => {
        slidesPerView={1.5}
        modules={[Autoplay, Pagination]}
         >
-            <SwiperSlide><ProDetail img={props.img}/></SwiperSlide>
-            <SwiperSlide><ProDetail  img={props.img} /></SwiperSlide>
+            {props?.img?.map((item) => (
+                <SwiperSlide><ProDetail img={item}/></SwiperSlide>
+            ))}
+            {/* <SwiperSlide><ProDetail  img={props.img} /></SwiperSlide>
             <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
             <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
             <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
-            <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide>
+            <SwiperSlide><ProDetail  img={props.img}/></SwiperSlide> */}
 
         </Swiper>
        
