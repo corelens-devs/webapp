@@ -402,8 +402,11 @@ const ProductSlider = ({ searchTerm }) => {
     useEffect(() => {
         AOS.init({
             duration: 1000,
-            once: true,
+            once: false, // Ensure the animation triggers every time you scroll
         });
+    
+        // Reinitialize AOS when component updates, if necessary
+        AOS.refresh();
     }, []);
 
     const productsRef = useRef(null);

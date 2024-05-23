@@ -26,7 +26,7 @@ const Home = () => {
                 clickable: true,
             }}
             autoplay={{
-                delay: 1000,
+                delay: 4000,
                 disableOnInteraction: true,
             }}
             // dir="rtl"

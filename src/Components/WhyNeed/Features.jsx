@@ -25,10 +25,17 @@ import Aos from 'aos'
 import BtmSlider2 from './BtmSlider2'
 
 const Features = () => {
+  
   useEffect(() => {
-    Aos.init();
+    AOS.init({
+        duration: 1000,
+        once: false, // Ensure the animation triggers every time you scroll
+    });
 
-  }, [])
+    // Reinitialize AOS when component updates, if necessary
+    AOS.refresh();
+}, []);
+
   return (
     <div className={classes.feat_top}>
       <Heading heading="Why You need Corelens" cls={classes.div_head} />
