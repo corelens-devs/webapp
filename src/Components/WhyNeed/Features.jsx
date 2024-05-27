@@ -159,7 +159,7 @@ import React, { useEffect } from 'react';
 import Heading from '../Heading/Heading';
 import Security1 from "../../Assets/Security1.png";
 import Security2 from "../../Assets/Security2.png";
-import Security3 from "../../Assets/Security3.png";
+import average from "../../Assets/average.png";
 import Security4 from "../../Assets/Security4.png";
 import Security5 from "../../Assets/Security5.png";
 import Security6 from "../../Assets/Security6.png";
@@ -239,7 +239,7 @@ const Features = () => {
                 </div>
                 <div className={classes.d1}>
                     <div className={classes.d2}>
-                        <img src={Security3} />
+                        <img src={average} />
                         <div>
                             <h1>Money saving prices</h1>
                             <p>
