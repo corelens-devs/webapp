@@ -113,7 +113,112 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 2, name: 'Moto', cat: "GPS Trackers", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
+            id: 2, name: 'Mercusys mr30G',cat: "Wifi Extender", actualAmount: '3299', discount: "33%",   saleAmount : "2199", img: [product3, product32, product31 ], cls: classes.p3, gradientColors: gradients.p3,
+            mainhighlight: [
+                {
+                    title: "4 External Antennas", img: icon2
+                },
+                {
+                    title: "Enhanced Signal", img: icon16
+                },
+                {
+                    title: "2 x 2 MIMO", img: icon18
+                },
+                {
+                    title: "Ease of Use", img: icon15
+                },
+                {
+                    title: "Guest Network", img: icon17
+                },
+                {
+                    title: "Parental Controls", img: icon19
+                }
+            ]
+            , technicalHightlight: [
+                { title: "Wireless WAN", description: "Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet" },
+                { title: "Easy Setup", description: "Quick to set up and get it run just in minutes using any smartphone, pad or computer." },
+                { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }
+            ]
+        },
+        {
+            id: 3, name: 'Polo',cat: "Outdoor Camera Sensor", actualAmount: '4999', discount: "50%", saleAmount : "2499", img: [product5, product5, product5], cls: classes.p1, gradientColors: gradients.p1,
+            mainhighlight: [
+                {
+                    title: "Real 4mp", img: icon8
+                },
+                {
+                    title: "Ip67 water resistant", img: icon9
+                },
+                {
+                    title: "1 yr home service", img: icon10
+                },
+                {
+                    title: "Inbuilty memory", img: icon11
+                },
+                {
+                    title: "Motion follow", img: icon12
+                },
+                {
+                    title: "2 way audio", img: icon13
+                },
+                {
+                    title: "IR night vision", img: icon14
+                },
+                {
+                    title: "Smart alarm", img: icon4
+                },
+            ]
+            , technicalHightlight: [
+                { title: "Chip Processor", description: "NT98566" },
+                { title: "Sensor", description: "SC8238" },
+                { title: "Lens", description: "3.6mm" },
+                { title: "Connection way", description: "Wireless/wired/AP hotpot connection/Wireless recording" },
+                { title: "Wireless Method", description: "802.1 1a/b/g/n transmission protocol" },
+                { title: "Antenna method", description: "External antenna:3dB antenna*2" },
+                { title: "Wired Connection", description: "TCP/IPv4" },
+            ]
+        },
+        
+        {
+            id: 4, name: 'Echo',cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product8, product8, product8], cls: classes.p4, gradientColors: gradients.p4,
+            mainhighlight: [
+                {
+                    title: "Real 2mp", img: icon8
+                },
+                {
+                    title: "Alexa and google assistant support", img: icon9
+                },
+                {
+                    title: "1 yr home service", img: icon10
+                },
+                {
+                    title: "Inbuilty memory", img: icon11
+                },
+                {
+                    title: "Motion follow", img: icon12
+                },
+                {
+                    title: "2 way audio", img: icon13
+                },
+                {
+                    title: "IR night vision", img: icon14
+                },
+                {
+                    title: "Smart alarm", img: icon4
+                },
+            ]
+            , technicalHightlight: [
+                { title: "Processor", description: "530V200" },
+                { title: "Sensor", description: "SC2336P" },
+                { title: "Lens", description: "3.6mm" },
+                { title: "Connection way", description: "Wireless/wired/AP hotpot connection/Wireless recording" },
+                { title: "Wireless Method", description: "802.1 1a/b/g/n transmission protocol" },
+                { title: "Antenna method", description: "External antenna:3dB antenna*2" },
+                { title: "Wired Connection", description: "TCP/IPv4" },
+            ]
+        },
+        {
+            id: 5, name: 'Moto', cat: "GPS Trackers", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -159,36 +264,9 @@ const ProductSlider = ({ searchTerm }) => {
                 },
             ]
         },
+       
         {
-            id: 3, name: 'Mercusys mr30G',cat: "Wifi Extender", actualAmount: '3299', discount: "33%",   saleAmount : "2199", img: [product3, product32, product31 ], cls: classes.p3, gradientColors: gradients.p3,
-            mainhighlight: [
-                {
-                    title: "4 External Antennas", img: icon2
-                },
-                {
-                    title: "Enhanced Signal", img: icon16
-                },
-                {
-                    title: "2 x 2 MIMO", img: icon18
-                },
-                {
-                    title: "Ease of Use", img: icon15
-                },
-                {
-                    title: "Guest Network", img: icon17
-                },
-                {
-                    title: "Parental Controls", img: icon19
-                }
-            ]
-            , technicalHightlight: [
-                { title: "Wireless WAN", description: "Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet" },
-                { title: "Easy Setup", description: "Quick to set up and get it run just in minutes using any smartphone, pad or computer." },
-                { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }
-            ]
-        },
-        {
-            id: 4, name: 'Mercusys ac12',cat: "Wifi Extender", actualAmount: '2999', discount: "36%",  saleAmount : "1899", img: [product4, product41, product42], cls: classes.p4, gradientColors: gradients.p4,
+            id: 6, name: 'Mercusys ac12',cat: "Wifi Extender", actualAmount: '2999', discount: "36%",  saleAmount : "1899", img: [product4, product41, product42], cls: classes.p4, gradientColors: gradients.p4,
             mainhighlight: [
                 {
                     title: "4 External Antennas", img: icon2
@@ -214,46 +292,9 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Easy Setup", description: "Quick to set up and get it run just in minutes using any smartphone, pad or computer." },
                 { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }]
         },
+      
         {
-            id: 5, name: 'Polo',cat: "Outdoor Camera Sensor", actualAmount: '4999', discount: "50%", saleAmount : "2499", img: [product5, product5, product5], cls: classes.p1, gradientColors: gradients.p1,
-            mainhighlight: [
-                {
-                    title: "Real 4mp", img: icon8
-                },
-                {
-                    title: "Ip67 water resistant", img: icon9
-                },
-                {
-                    title: "1 yr home service", img: icon10
-                },
-                {
-                    title: "Inbuilty memory", img: icon11
-                },
-                {
-                    title: "Motion follow", img: icon12
-                },
-                {
-                    title: "2 way audio", img: icon13
-                },
-                {
-                    title: "IR night vision", img: icon14
-                },
-                {
-                    title: "Smart alarm", img: icon4
-                },
-            ]
-            , technicalHightlight: [
-                { title: "Chip Processor", description: "NT98566" },
-                { title: "Sensor", description: "SC8238" },
-                { title: "Lens", description: "3.6mm" },
-                { title: "Connection way", description: "Wireless/wired/AP hotpot connection/Wireless recording" },
-                { title: "Wireless Method", description: "802.1 1a/b/g/n transmission protocol" },
-                { title: "Antenna method", description: "External antenna:3dB antenna*2" },
-                { title: "Wired Connection", description: "TCP/IPv4" },
-            ]
-        },
-        {
-            id: 6, name: 'Oval' ,cat: "Outdoor Camera Sensor", actualAmount: '6999', discount: "50%", saleAmount : "3499",img: [product6, product6, product6], cls: classes.p2, gradientColors: gradients.p2,
+            id: 7, name: 'Oval' ,cat: "Outdoor Camera Sensor", actualAmount: '6999', discount: "50%", saleAmount : "3499",img: [product6, product6, product6], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real 8mp", img: icon8
@@ -290,8 +331,47 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Wired Connection", description: "TCP/IPv4" },
             ]
         },
+           
         {
-            id: 7, name: 'Gem', cat: "Outdoor Camera Sensor", actualAmount: '6199', discount: "50%", saleAmount : "3099", img: [product7, product7, product7], cls: classes.p3, gradientColors: gradients.p3,
+            id: 8, name: 'Wave', cat: "Indoor Camera Sensors", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product9, product9, product9], cls: classes.p3, gradientColors: gradients.p3,
+            mainhighlight: [
+                {
+                    title: "Real 2mp", img: icon8
+                },
+                {
+                    title: "Alexa and google assistant support", img: icon9
+                },
+                {
+                    title: "1 yr home service", img: icon10
+                },
+                {
+                    title: "Inbuilty memory", img: icon11
+                },
+                {
+                    title: "Motion follow", img: icon12
+                },
+                {
+                    title: "2 way audio", img: icon13
+                },
+                {
+                    title: "IR night vision", img: icon14
+                },
+                {
+                    title: "Smart alarm", img: icon4
+                },
+            ]
+            , technicalHightlight: [
+                { title: "Processor", description: "530V200" },
+                { title: "Sensor", description: "SC2336P" },
+                { title: "Lens", description: "3.6mm" },
+                { title: "Connection way", description: "Wireless/wired/AP hotpot connection/Wireless recording" },
+                { title: "Wireless Method", description: "802.1 1a/b/g/n transmission protocol" },
+                { title: "Antenna method", description: "External antenna:3dB antenna*2" },
+                { title: "Wired Connection", description: "TCP/IPv4" },
+            ]
+        },
+        {
+            id: 9, name: 'Gem', cat: "Outdoor Camera Sensor", actualAmount: '6199', discount: "50%", saleAmount : "3099", img: [product7, product7, product7], cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 4mp", img: icon8
@@ -328,82 +408,7 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Wired Connection", description: "TCP/IPv4" },
             ]
         },
-        {
-            id: 8, name: 'Echo',cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product8, product8, product8], cls: classes.p4, gradientColors: gradients.p4,
-            mainhighlight: [
-                {
-                    title: "Real 2mp", img: icon8
-                },
-                {
-                    title: "Alexa and google assistant support", img: icon9
-                },
-                {
-                    title: "1 yr home service", img: icon10
-                },
-                {
-                    title: "Inbuilty memory", img: icon11
-                },
-                {
-                    title: "Motion follow", img: icon12
-                },
-                {
-                    title: "2 way audio", img: icon13
-                },
-                {
-                    title: "IR night vision", img: icon14
-                },
-                {
-                    title: "Smart alarm", img: icon4
-                },
-            ]
-            , technicalHightlight: [
-                { title: "Processor", description: "530V200" },
-                { title: "Sensor", description: "SC2336P" },
-                { title: "Lens", description: "3.6mm" },
-                { title: "Connection way", description: "Wireless/wired/AP hotpot connection/Wireless recording" },
-                { title: "Wireless Method", description: "802.1 1a/b/g/n transmission protocol" },
-                { title: "Antenna method", description: "External antenna:3dB antenna*2" },
-                { title: "Wired Connection", description: "TCP/IPv4" },
-            ]
-        },
-        {
-            id: 9, name: 'Wave', cat: "Indoor Camera Sensors", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product9, product9, product9], cls: classes.p3, gradientColors: gradients.p3,
-            mainhighlight: [
-                {
-                    title: "Real 2mp", img: icon8
-                },
-                {
-                    title: "Alexa and google assistant support", img: icon9
-                },
-                {
-                    title: "1 yr home service", img: icon10
-                },
-                {
-                    title: "Inbuilty memory", img: icon11
-                },
-                {
-                    title: "Motion follow", img: icon12
-                },
-                {
-                    title: "2 way audio", img: icon13
-                },
-                {
-                    title: "IR night vision", img: icon14
-                },
-                {
-                    title: "Smart alarm", img: icon4
-                },
-            ]
-            , technicalHightlight: [
-                { title: "Processor", description: "530V200" },
-                { title: "Sensor", description: "SC2336P" },
-                { title: "Lens", description: "3.6mm" },
-                { title: "Connection way", description: "Wireless/wired/AP hotpot connection/Wireless recording" },
-                { title: "Wireless Method", description: "802.1 1a/b/g/n transmission protocol" },
-                { title: "Antenna method", description: "External antenna:3dB antenna*2" },
-                { title: "Wired Connection", description: "TCP/IPv4" },
-            ]
-        },
+   
 
     ];
 
