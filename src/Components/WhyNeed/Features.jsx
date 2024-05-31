@@ -186,10 +186,9 @@ const Features = () => {
     useEffect(() => {
       AOS.init({
           duration: 1000,
-          once: false, // Ensure the animation triggers every time you scroll
+          once: false, 
       });
   
-      // Reinitialize AOS when component updates, if necessary
       AOS.refresh();
   }, []);
 
