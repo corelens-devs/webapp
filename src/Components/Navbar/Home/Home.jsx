@@ -8,6 +8,12 @@ import Banner4 from "../../../Assets/Banner4.png"
 import Banner5 from "../../../Assets/Banner5.png"
 import Banner6 from "../../../Assets/Banner6.png"
 import Banner7 from "../../../Assets/Banner7.png"
+import ban_sm4 from "../../../Assets/ban_sm4.png"
+import ban_sm from "../../../Assets/ban_sm.png"
+import ban_sm2 from "../../../Assets/ban_sm2.png"
+import ban_sm3 from "../../../Assets/ban_sm3.png"
+import ban_sm5 from "../../../Assets/ban_sm5.png"
+import ban_sm6 from "../../../Assets/ban_sm6.png"
 import Banner_mob from "../../../Assets/Banner_mob.png"
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -55,13 +61,13 @@ const Home = () => {
             slidesPerView={1.5}
             modules={[Autoplay, Pagination]}
         >
-            <SwiperSlide><img className='img' src={Banner1} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner3} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner4} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner5} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner6} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner7} /><img className='img_mob' src={Banner_mob} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner1} /><img className='img_mob' src={ban_sm} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner2} /><img className='img_mob' src={ban_sm2} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner3} /><img className='img_mob' src={ban_sm3} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner4} /><img className='img_mob' src={ban_sm4} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner5} /><img className='img_mob' src={ban_sm5} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner6} /><img className='img_mob' src={ban_sm6} /></SwiperSlide>
+            <SwiperSlide><img className='img' src={Banner7} /><img className='img_mob' src={ban_sm4} /></SwiperSlide>
 
         </Swiper>
 
