@@ -222,7 +222,7 @@ const Features = () => {
                         <div>
                             <h1>On demand surveillance</h1>
                             <p>
-                                Meet India's first app that combines monitoring with sensors. Our Camera Sensors keep your home safe. Plus, you can hire us to watch over your place through the app for just 150 rupees per hour per device. We'll keep an eye on your sensors when you can't, like when you're traveling or at the movies. If there's an emergency, we'll alert the police and neighbors.
+                                Meet India's first app that combines monitoring with sensors. Our Camera Sensors keep your home safe. Plus, you can hire us to watch over your place through the app for just 9 rupees per hour per device. We'll keep an eye on your sensors when you can't, like when you're traveling or at the movies. If there's an emergency, we'll alert the police and neighbors.
                             </p>
                         </div>
                     </div>

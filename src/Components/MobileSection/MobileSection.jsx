@@ -22,7 +22,7 @@ const MobileSection = () => {
             <div className={classes.mob_div}>
                 <div>
                     <h4>On demand surveillance</h4>
-                    <p>Book surveillance at your convenience for only 150rs/hour with no monthly commitments. Pay only for what you use, ensuring flexibility and affordability tailored to your needs.</p>
+                    <p>Book surveillance at your convenience for only 9rs/hour with no monthly commitments. Pay only for what you use, ensuring flexibility and affordability tailored to your needs.</p>
                 </div>
                 <img src={pic2}  className={classes.mob}/>
             <img src={Vector2}  className={classes.vector2} />
