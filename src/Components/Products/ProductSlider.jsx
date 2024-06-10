@@ -46,6 +46,17 @@ import icon16 from "../../Assets/icon16.png"
 import icon17 from "../../Assets/icon17.png"
 import icon18 from "../../Assets/icon18.png"
 import icon19 from "../../Assets/icon19.png"
+import echo1 from "../../Assets/echo1.png"
+import echo2 from "../../Assets/echo2.png"
+import echo3 from "../../Assets/echo3.png"
+import echo4 from "../../Assets/echo4.png"
+import echo5 from "../../Assets/echo5.png"
+import echo6 from "../../Assets/echo6.png"
+import echo7 from "../../Assets/echo7.png"
+import oval1 from "../../Assets/oval1.png"
+import oval2 from "../../Assets/oval2.png"
+import oval3 from "../../Assets/oval3.png"
+import oval4 from "../../Assets/oval4.png"
 import ProductDetail from './ProductDetails/ProductDetail';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -180,7 +191,7 @@ const ProductSlider = ({ searchTerm }) => {
         },
         
         {
-            id: 4, name: 'Echo',cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product8, product8, product8], cls: classes.p4, gradientColors: gradients.p4,
+            id: 4, name: 'Echo',cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product8, echo1, echo2, echo3, echo4, echo5, echo6, echo7 ], cls: classes.p4, gradientColors: gradients.p4,
             mainhighlight: [
                 {
                     title: "Real 2mp", img: icon8
@@ -333,7 +344,7 @@ const ProductSlider = ({ searchTerm }) => {
         },
            
         {
-            id: 8, name: 'Wave', cat: "Indoor Camera Sensors", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product9, product9, product9], cls: classes.p3, gradientColors: gradients.p3,
+            id: 8, name: 'Wave', cat: "Indoor Camera Sensors", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product9, oval1, oval2, oval3, oval4], cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 2mp", img: icon8
