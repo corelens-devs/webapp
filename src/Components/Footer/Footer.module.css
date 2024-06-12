@@ -4,19 +4,56 @@
     margin-top: 30px;
 }
 
-.main_div {
+.main_div1 {
     display: flex;
     gap: 97px;
     margin: 20px 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 40px;
+    align-items: center;
+    /* border-bottom: 1px solid #d9d9d9; */
+   
 }
 
-.main_div>p:nth-child(1) {
+.main_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    & input {
+        width: 60%;
+        height: 45px;
+        background: white;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-family: "Outfit", sans-serif;
+font-size: 16px;
+     }
+     & input::placeholder{
+        color: #979797;
+     }
+     & button {
+        background-color: #00398E;
+        color: white;
+        border-radius: 5px;
+        height: 45px;
+        width: 15%;
+        border: none;
+     }
+}
+
+.main_div1>p:nth-child(1) {
     color: #00398E;
     font-weight: 500;
 }
 
+.main_div1 p {
+    font-weight: 500;
+    margin-bottom: 0;
+}
 .main_div p {
     font-weight: 500;
     margin-bottom: 0;
@@ -45,33 +82,60 @@
     font-weight: 500;
     color: #25261D;
     margin-bottom: 0;
+    font-family: "Outfit", sans-serif;
+
 }
 
 @media screen and (max-width : 1150px) {
-.upper_div{
-    padding: 20px;
+    .upper_div {
+        padding: 20px;
+    }
 }
-}
+
 @media screen and (max-width : 1000px) {
-    .upper_div{
+    .upper_div {
         width: 100%;
         padding: 40px;
     }
-    .main_div{
+
+    .main_div {
         align-items: center;
         justify-content: space-between;
         gap: 27px;
     }
-    .main_div > p{
+    .main_div1 {
+        align-items: center;
+        justify-content: space-between;
+        gap: 27px;
+    }
+
+    .main_div>p {
+        font-size: 14px;
+    }
+    .main_div1>p {
         font-size: 14px;
     }
 }
+
 @media screen and (max-width : 620px) {
     .main_div {
         flex-direction: column;
         gap: 0;
+        padding: 20px;
+        & button {
+            margin-top: 20px;
+            width: 100%;
+        }
+        & input {
+            width: 100%;
+        }
+
+    }
+    .main_div1 {
+        flex-direction: column;
+        gap: 0;
         padding: 20px 0;
-      
+
     }
 
     .div2 {
@@ -79,10 +143,15 @@
         margin-top: 20px;
         gap: 0;
     }
-.div2 > p {
-    margin: 20px 0;
-}
+
+    .div2>p {
+        margin: 20px 0;
+    }
+
     .main_div p {
+        margin: 10px;
+    }
+    .main_div1 p {
         margin: 10px;
     }
 

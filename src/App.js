@@ -4,6 +4,11 @@ import { Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar/Navbar';
 import LandingPage from './Pages/LandingPage';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TermUse from './Pages/FooterPages/TermUse';
+import TermSales from './Pages/FooterPages/TermSales';
+import TermCondition from './Pages/FooterPages/TermCondition';
+import PrivacyPolicy from './Pages/FooterPages/PrivacyPolicy';
+import Layout from './UI/Layout/Layout';
 
 
 
@@ -12,7 +17,16 @@ function App() {
     <div className="App">
 
       
-<LandingPage/>
+<Layout>
+<Routes>
+  <Route  exact path="/" element={<LandingPage/>}/>
+  <Route path='/term-use' element={<TermUse/>} />
+  <Route path='/term-sales' element={<TermSales/>} />
+  <Route path='/term-condition' element={<TermCondition/>} />
+  <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+
+  </Routes>
+  </Layout>
     </div>
   );
 }

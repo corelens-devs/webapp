@@ -1,0 +1,36 @@
+.main_div{
+    max-width: 1300px;
+    margin-inline: auto;
+    text-align: left;
+    padding-block: 50px;
+    line-height: 2;
+    & h4{
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+    }
+    & h5{
+        font-size: 18px;
+        font-weight: 600;
+        font-family: "Inter", sans-serif;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    & p{
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Inter", sans-serif;
+        text-align: left;
+        color: #5E6075;
+     
+    }
+}
+strong{
+    font-weight: 600;
+    color: black;
+}
+@media screen and (max-width : 620px) {
+.main_div{
+    padding: 30px;
+}
+}

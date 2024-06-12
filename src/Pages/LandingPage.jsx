@@ -34,7 +34,7 @@ const LandingPage = () => {
  </div>
  
 
-        <Navbar onSearchChange={handleSearchChange} />
+        {/* <Navbar onSearchChange={handleSearchChange} /> */}
         <Home/>
        <div className={classes.main_div}>
        <AISecurity/>
@@ -47,7 +47,7 @@ const LandingPage = () => {
           <Faq/>
         <BottomComponent/>
         </div>
-        <Footer/>
+        {/* <Footer/> */}
 {/* 
         <Navbar/>
         <Home/>
