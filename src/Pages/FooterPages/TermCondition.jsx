@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "./Term.module.css"
+import Footer from '../../Components/Footer/Footer'
+import Navbar from '../../Components/Navbar/Navbar/Navbar'
 const TermCondition = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearchChange = (value) => {
+    setSearchTerm(value);
+  };
+
   return (
+    <>
+        <Navbar onSearchChange={handleSearchChange}/>
     <div className={classes.main_div} >
         <h3 className='text-start mb-5'>Corelens Terms and conditions.</h3>
         <h6 className='text-start my-3'>Last updated: April 2024</h6>
@@ -352,6 +362,8 @@ Acknowledgement: I have thoroughly perused the Terms, Consent & Release for Vide
 </p>
 
     </div>
+     <Footer/>
+     </>
   )
 }
 

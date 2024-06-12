@@ -85,8 +85,9 @@ import BotttomNav from './BotttomNav';
 import BottomNavSlider from './BtmNavSlider';
 import classes from './Navbar.module.css'; // Example CSS for styling
 import ProductSlider from '../../Products/ProductSlider';
+import { useNavigate } from 'react-router-dom';
 
-const Navbar = ({ onSearchChange }) => {
+const Navbar = ({ onSearchChange, navv }) => {
   const [sidebar, setSidebar] = useState(false)
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -95,13 +96,13 @@ const Navbar = ({ onSearchChange }) => {
     onSearchChange(event.target.value); // Pass the search term to the parent component
 
   };
-
+const navigate = useNavigate()
 
   return (
     <>
       <header className={`${classes.navbar} shadow-sm `} onClick={() => sidebar && setSidebar(false)}>
         <div className={classes.nav_div}>
-          <img src={logo} className={classes.nav_img} />
+          <img src={logo} className={classes.nav_img} onClick={()=>navigate('/')} />
           <div className={classes.search_bar}>
             <img src={search} alt="Search Icon" />
             <input
@@ -129,8 +130,10 @@ const Navbar = ({ onSearchChange }) => {
         </div>
       </header>
 
+    {navv &&   <>
       <BotttomNav />
       <BottomNavSlider />
+    </>}
       {/* <ProductSlider searchTerm={searchTerm} /> */}
 
     </>

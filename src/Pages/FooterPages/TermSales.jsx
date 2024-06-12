@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "./Term.module.css"
+import Navbar from '../../Components/Navbar/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
 
 const TermSales = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearchChange = (value) => {
+    setSearchTerm(value);
+  };
+
     return (
+      <>
+        <Navbar onSearchChange={handleSearchChange}/>
         <div className={classes.main_div}>
 
 <h3 className='text-start mb-5'> Corelens Terms of Sale </h3>
@@ -187,6 +197,8 @@ THE PRICE OF THE SYSTEM IS UNRELATED TO THE VALUE OF PROPERTY LOCATED ON OR NEAR
             </p>
 
         </div>
+        <Footer/>
+        </>
     )
 }
 

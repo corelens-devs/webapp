@@ -9,15 +9,15 @@ import TermSales from './Pages/FooterPages/TermSales';
 import TermCondition from './Pages/FooterPages/TermCondition';
 import PrivacyPolicy from './Pages/FooterPages/PrivacyPolicy';
 import Layout from './UI/Layout/Layout';
-
+import ScrollToTop from "./UI/ScrollToTop/ScrollToTop"
 
 
 function App() {
   return (
     <div className="App">
-
+            <ScrollToTop />
       
-<Layout>
+{/* <Layout> */}
 <Routes>
   <Route  exact path="/" element={<LandingPage/>}/>
   <Route path='/term-use' element={<TermUse/>} />
@@ -26,7 +26,7 @@ function App() {
   <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
 
   </Routes>
-  </Layout>
+  {/* </Layout> */}
     </div>
   );
 }

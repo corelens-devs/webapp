@@ -1,9 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "./Term.module.css"
+import Navbar from '../../Components/Navbar/Navbar/Navbar'
+import Footer from '../../Components/Footer/Footer'
 
 const TermUse = () => {
+    const [searchTerm, setSearchTerm] = useState('');
+
+    const handleSearchChange = (value) => {
+      setSearchTerm(value);
+    };
+
     return (
-        <div className={classes.main_div}>
+        <>
+        <Navbar onSearchChange={handleSearchChange}/>
+                <div className={classes.main_div}>
             <h3 className='text-start mb-5'>Terms of Use for Corelens</h3>
 
             <h6 className='text-start my-3'>LAST REVISED: FEBRUARY 2020</h6>
@@ -200,6 +210,8 @@ const TermUse = () => {
 
 
         </div>
+        <Footer/>
+        </>
     )
 }
 

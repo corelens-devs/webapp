@@ -7,6 +7,11 @@ import {useNavigate} from "react-router-dom"
 import logo from "../../Assets/logo.png"
 const Footer = () => {
   const navigate = useNavigate()
+  const handleNavigation = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  };
+  
   return (
     <div className={classes.upper_div}>
         <div  className={classes.main_div}>
@@ -16,10 +21,10 @@ const Footer = () => {
         </div>
         <div  className={classes.main_div1}>
            <img src={logo} style={{width:"100px"}}/>
-            <p style={{cursor:"pointer"}} onClick={() => navigate('/term-use')}>Terms of Use</p>
-            <p style={{cursor:"pointer"}} onClick={() => navigate('/term-sales')}>Terms of Sales</p>
-            <p style={{cursor:"pointer"}} onClick={() => navigate('/term-condition')}>Term & Condition</p>
-            <p style={{cursor:"pointer"}} onClick={() => navigate('/privacy-policy')}>Privacy Policy</p>
+            <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-use')}>Terms of Use</p>
+            <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-sales')}>Terms of Sales</p>
+            <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-condition')}>Term & Condition</p>
+            <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/privacy-policy')}>Privacy Policy</p>
             <p style={{cursor:"pointer"}}>Download App</p>
         </div>
         <div className={classes.div2}>

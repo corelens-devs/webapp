@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from "./Term.module.css"
+import Footer from '../../Components/Footer/Footer';
+import Navbar from '../../Components/Navbar/Navbar/Navbar';
 
 const PrivacyPolicy = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearchChange = (value) => {
+    setSearchTerm(value);
+  };
+
   return (
+    <>
+        <Navbar onSearchChange={handleSearchChange}/>
     <div className={classes.main_div}>
      <h4 className='text-start mb-4'>  1.	THE INTRODUCTION</h4> 
 
@@ -321,6 +331,9 @@ While we reserve the right to make changes to this policy at any moment, we will
 Use this contact form or send us a letter at connect@corelens.in if you need to get in touch with us for any reason, including but not limited to questions, complaints, recommendations, or issues about our Privacy Policy.</p>
 
     </div>
+     <Footer/>
+     </>
+    
   )
 }
 
