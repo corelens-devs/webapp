@@ -57,6 +57,28 @@ import oval1 from "../../Assets/oval1.png"
 import oval2 from "../../Assets/oval2.png"
 import oval3 from "../../Assets/oval3.png"
 import oval4 from "../../Assets/oval4.png"
+import polo1 from "../../Assets/polo1.png"
+import polo2 from "../../Assets/polo2.png"
+import polo3 from "../../Assets/polo3.png"
+import polo4 from "../../Assets/polo4.png"
+import polo5 from "../../Assets/polo5.png"
+import gem1 from "../../Assets/gem1.png"
+import gem2 from "../../Assets/gem2.png"
+import gem3 from "../../Assets/gem3.png"
+import gem4 from "../../Assets/gem4.png"
+import gem5 from "../../Assets/gem5.png"
+import gem6 from "../../Assets/gem6.png"
+import gem7 from "../../Assets/gem7.png"
+import gem8 from "../../Assets/gem8.png"
+import gem9 from "../../Assets/gem9.png"
+import gem10 from "../../Assets/gem10.png"
+import gem11 from "../../Assets/gem11.png"
+import ovl1 from "../../Assets/ovl1.png"
+import ovl2 from "../../Assets/ovl2.png"
+import ovl3 from "../../Assets/ovl3.png"
+import ovl4 from "../../Assets/ovl4.png"
+import ovl5 from "../../Assets/ovl5.png"
+import ovl6 from "../../Assets/ovl6.png"
 import ProductDetail from './ProductDetails/ProductDetail';
 import AOS from 'aos'
 import 'aos/dist/aos.css';
@@ -152,7 +174,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 3, name: 'Polo',cat: "Outdoor Camera Sensor", actualAmount: '4999', discount: "50%", saleAmount : "2499", img: [product5, product5, product5], cls: classes.p1, gradientColors: gradients.p1,
+            id: 3, name: 'Polo',cat: "Outdoor Camera Sensor", actualAmount: '4999', discount: "50%", saleAmount : "2499", img: [product5, polo1, polo2, polo3, polo4, polo5], cls: classes.p1, gradientColors: gradients.p1,
             mainhighlight: [
                 {
                     title: "Real 4mp", img: icon8
@@ -305,7 +327,7 @@ const ProductSlider = ({ searchTerm }) => {
         },
       
         {
-            id: 7, name: 'Oval' ,cat: "Outdoor Camera Sensor", actualAmount: '6999', discount: "50%", saleAmount : "3499",img: [product6, product6, product6], cls: classes.p2, gradientColors: gradients.p2,
+            id: 7, name: 'Oval' ,cat: "Outdoor Camera Sensor", actualAmount: '6999', discount: "50%", saleAmount : "3499",img: [product6, ovl1, ovl2, ovl3, ovl4, ovl5, ovl6], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real 8mp", img: icon8
@@ -382,7 +404,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 9, name: 'Gem', cat: "Outdoor Camera Sensor", actualAmount: '6199', discount: "50%", saleAmount : "3099", img: [product7, product7, product7], cls: classes.p3, gradientColors: gradients.p3,
+            id: 9, name: 'Gem', cat: "Outdoor Camera Sensor", actualAmount: '6199', discount: "50%", saleAmount : "3099", img: [product7, gem1, gem2, gem3, gem4, gem5, gem6, gem7, gem8, gem9, gem10, gem11], cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 4mp", img: icon8
