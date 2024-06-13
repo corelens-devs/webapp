@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import classes from "./Term.module.css"
 import Navbar from '../../Components/Navbar/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer'
+import { FaArrowLeft } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 
 const TermUse = () => {
     const [searchTerm, setSearchTerm] = useState('');
@@ -10,11 +12,19 @@ const TermUse = () => {
       setSearchTerm(value);
     };
 
+    const navigate = useNavigate()
+    const handleNavigate = () => {
+      navigate('/')
+    }
     return (
         <>
         <Navbar onSearchChange={handleSearchChange}/>
                 <div className={classes.main_div}>
-            <h3 className='text-start mb-5'>Terms of Use for Corelens</h3>
+                <div className={classes.inn_div} onClick={handleNavigate}>
+      <FaArrowLeft />
+<span>Back</span>
+      </div>
+            <h3 className='text-start mb-5'>Terms of Use</h3>
 
             <h6 className='text-start my-3'>LAST REVISED: FEBRUARY 2020</h6>
 

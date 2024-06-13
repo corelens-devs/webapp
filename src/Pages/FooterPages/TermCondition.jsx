@@ -2,18 +2,29 @@ import React, { useState } from 'react'
 import classes from "./Term.module.css"
 import Footer from '../../Components/Footer/Footer'
 import Navbar from '../../Components/Navbar/Navbar/Navbar'
+import { FaArrowLeft } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
 const TermCondition = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleSearchChange = (value) => {
     setSearchTerm(value);
   };
+  const navigate = useNavigate()
+  const handleNavigate = () => {
+    navigate('/')
+  }
 
   return (
     <>
         <Navbar onSearchChange={handleSearchChange}/>
+
     <div className={classes.main_div} >
-        <h3 className='text-start mb-5'>Corelens Terms and conditions.</h3>
+      <div className={classes.inn_div} onClick={handleNavigate}>
+      <FaArrowLeft />
+<span>Back</span>
+      </div>
+        <h3 className='text-start mb-5'>Terms and Conditions</h3>
         <h6 className='text-start my-3'>Last updated: April 2024</h6>
 
 <p>This document is a legally binding agreement (referred to as the "Agreement") between you (referred to as "you" or the "Subscriber") and Corelens, Inc. (referred to as "we" or "Corelens"). In this Agreement, the term "System" refers to the products purchased from Corelens. The term "Services" refers to the selected services provided by Corelens, which may include Emergency Dispatch Services, Video-Related Services, Account Management Services, the Application (software or subscription services downloaded to a smartphone, tablet, or other connected device), and customer support Services. The term "Premises" refers to the location where the System is installed. In this Agreement, the word "you" refers to any individual or organisation that accesses or utilises the Services. This includes individuals or organisations that establish an account, accept this Agreement, and access or use the Services. It also includes any person who is given access to the Services by you.

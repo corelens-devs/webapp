@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import classes from "./Term.module.css"
 import Footer from '../../Components/Footer/Footer';
 import Navbar from '../../Components/Navbar/Navbar/Navbar';
+import { useNavigate } from 'react-router-dom';
+import { FaArrowLeft } from 'react-icons/fa';
 
 const PrivacyPolicy = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -10,10 +12,18 @@ const PrivacyPolicy = () => {
     setSearchTerm(value);
   };
 
+  const navigate = useNavigate()
+  const handleNavigate = () => {
+    navigate('/')
+  }
   return (
     <>
         <Navbar onSearchChange={handleSearchChange}/>
     <div className={classes.main_div}>
+    <div className={classes.inn_div} onClick={handleNavigate}>
+      <FaArrowLeft />
+<span>Back</span>
+      </div>
      <h4 className='text-start mb-4'>  1.	THE INTRODUCTION</h4> 
 
 <p>CORELENS values the privacy of its customers. Security of your personal information, together with your person and possessions, is our first concern. The objective of this Privacy Policy is to outline the ways in which Corelens gathers, utilises, and discloses data collected from our home security systems, call centre, and online platforms (such as our website, mobile version, and chat function) that are under our control, such as www.corelens.in (collectively referred to as the "Site") or our mobile applications (the "App"). To learn about our services, please read this notice thoroughly. If you have any questions or concerns regarding our Privacy Policy, you may reach out to us using this website or the methods outlined in Section 10 of the document.
