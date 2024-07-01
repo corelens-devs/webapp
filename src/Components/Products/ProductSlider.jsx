@@ -101,7 +101,7 @@ const ProductSlider = ({ searchTerm }) => {
 
     const products = [
         {
-            id: 1, name: 'Turbo', cat: "GPS Trackers", actualAmount: '4999', discount: "30%", saleAmount : "3499", img:[ product1, product12, product123], cls: classes.p1, gradientColors: gradients.p1,
+            id: 1, name: 'Turbo', cat: "GPS Tracker", actualAmount: '4999', discount: "30%", saleAmount : "3499", img:[ product1, product12, product123], cls: classes.p1, gradientColors: gradients.p1,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -251,7 +251,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 5, name: 'Moto', cat: "GPS Trackers", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
+            id: 5, name: 'Moto', cat: "GPS Tracker", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -366,7 +366,7 @@ const ProductSlider = ({ searchTerm }) => {
         },
            
         {
-            id: 8, name: 'Wave', cat: "Indoor Camera Sensors", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product9, oval1, oval2, oval3, oval4], cls: classes.p3, gradientColors: gradients.p3,
+            id: 8, name: 'Wave', cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product9, oval1, oval2, oval3, oval4], cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 2mp", img: icon8
