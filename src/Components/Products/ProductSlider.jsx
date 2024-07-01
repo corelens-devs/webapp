@@ -168,9 +168,19 @@ const ProductSlider = ({ searchTerm }) => {
                 }
             ]
             , technicalHightlight: [
-                { title: "Wireless WAN", description: "Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet" },
-                { title: "Easy Setup", description: "Quick to set up and get it run just in minutes using any smartphone, pad or computer." },
-                { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }
+                // { title: "Wireless WAN", description: "Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet" },
+                // { title: "Easy Setup", description: "Quick to set up and get it run just in minutes using any smartphone, pad or computer." },
+                // { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }
+                { title: "Operating System", description: "Windows" },
+                { title: "Compatible Devices", description: "IPv6, IPTV" },
+                { title: "Special Features", description: "QoS, Access Point Mode, Remote Access" },
+                { title: "Mounting Hardware", description: "AC1200 Wireless Dual Band Gigabit Router(MR30G), Power Adapter, Quick Installation Guide, RJ45 Ethernet Cable" },
+                { title: "Voltage", description: "220 Volts" },
+                { title: "Data Transfer Rate", description: "1000 Megabits Per Second" },
+                { title: "Wireless Type", description: "802.11n, 802.11b, 802.11a, 802.11g, 802.11ac" },
+                { title: "GMS frequencies", description: "5 GHz" },
+                { title: "Number of Ports", description: "3" },
+  
             ]
         },
         {
@@ -321,9 +331,20 @@ const ProductSlider = ({ searchTerm }) => {
                 }
             ]
             , technicalHightlight: [
-                { title: "Wireless WAN", description: "Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet" },
-                { title: "Easy Setup", description: "Quick to set up and get it run just in minutes using any smartphone, pad or computer." },
-                { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }]
+
+                // { title: "Wireless WAN", description: "Working as client to connect to ISP hot points or uplink AP wirelessly to share the Internet" },
+                // { title: "Easy Setup", description: "Quick to set up and get it run just in minutes using any smartphone, pad or computer." },
+                // { title: "Advanced Security", description: "WPA2 wireless encryption helps you keep your wireless network protected." }
+                { title: "Ram Memory Installed Size", description: "128 MB" },
+                { title: "Operating System", description: "Windows" },
+                { title: "Mounting Hardware", description: "AC1200 Dual Band Wireless Router, Power adapter, Quick installation guide, Ethernet cable" },
+                { title: "Voltage", description: "9 Volts" },
+                { title: "Batteries Included", description: "No" },
+                { title: "Data Transfer Rate", description: "1200 Megabits Per Second" },
+                { title: "Wireless Type", description: "801.11ac" },
+                { title: "Data Link Protocol", description: "IEEE 802.11ac, IEEE 802.11n, IEEE 802.11g, IEEE 802.11b, IEEE 802.3, IEEE 802.3u" },
+            
+            ]
         },
       
         {

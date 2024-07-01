@@ -49,10 +49,19 @@
     content: 'prev';
     font-size: 8px ;
 }
+.modal-dialog-centered{
+    justify-content: center !important;
+}
+.modal-content{
+    width: 945px !important;
+}
 @media screen and (max-width : 1000px) {
     .hm3{
         padding: 0 10px 10px !important;
         /* padding: 0 10px 0 20px !important; */
+    }
+    .modal-content{
+        width: 100% !important;
     }
 }
 @media screen and (max-width : 620px) {
@@ -62,13 +71,9 @@
 .home_slider2{
     padding: 0 0 40px 0 !important;
 }
+
 }
-.modal-dialog-centered{
-    justify-content: center !important;
-}
-.modal-content{
-    width: 945px !important;
-}
+
 
 
 
