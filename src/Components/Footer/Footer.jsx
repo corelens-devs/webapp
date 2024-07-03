@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className={classes.contactinfo}>
                 <div className={classes.contactsection}>
                     <h3>Get In Touch</h3>
-                    <p>Lorem ipsum dolor sit amet.</p>
+                    {/* <p>Lorem ipsum dolor sit amet.</p> */}
                 </div>
                 <div className={classes.top_contact}>
                 <div className={classes.top_div}>
