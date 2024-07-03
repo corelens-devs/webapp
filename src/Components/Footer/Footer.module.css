@@ -180,6 +180,9 @@ margin-bottom: 0;
         width: 100%;
         padding: 40px;
     }
+    .contactinfo{
+        flex-direction: column;
+    }
 
     .main_div {
         align-items: center;
@@ -197,6 +200,12 @@ margin-bottom: 0;
     }
     .main_div1>p {
         font-size: 14px;
+    }
+    .contactsection{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 20px;    
     }
 }
 
@@ -240,5 +249,27 @@ margin-bottom: 0;
 
     .upper_div {
         padding: 0;
+    }
+    .contactsection{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin-bottom: 20px;    
+    }
+    .contactinfo{
+        padding: 20px;
+    }
+    .top_div{
+        width: auto;
+    }
+    .top_contact{
+        /* padding: 20px; */
+        flex-wrap: wrap;
+        gap: 0;
+        row-gap: 20px;
+        justify-content: space-between;
+    }
+    .icon1{
+        width: 50px;
     }
 }
