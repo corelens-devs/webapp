@@ -11,6 +11,31 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
+  const [email, setEmail] = useState('');
+  const [buttonText, setButtonText] = useState('Submit');
+  const [buttonColor, setButtonColor] = useState('#00398E');
+  
+ 
+  const handleSubmit = () => {
+    if (validateEmail(email)) {
+      setButtonText('Submitted');
+      setButtonColor('green');
+      alert('Thank you for subscribing to our newsletter');
+      
+      setTimeout(() => {
+        setButtonText('Submit');
+        setButtonColor('red');
+        setEmail('');
+      }, 2000); // 3 seconds delay
+    } else {
+      alert('Please enter a correct email');
+    }
+  };
+
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
 
   const togglePrivacyPolicy = () => {
       setShowPrivacyPolicy(prevState => !prevState);
@@ -25,8 +50,9 @@ const Footer = () => {
     <div className={classes.upper_div}>
         <div  className={classes.main_div}>
             <p>Subscribe to our Newsletter</p>
-          <input type="text" placeholder='Enter Email ID' />
-          <button>Submit</button>
+          <input type="email" placeholder='Enter Email ID'  value={email}
+        onChange={(e) => setEmail(e.target.value)} />
+          <button  style={{ backgroundColor: buttonColor }} onClick={handleSubmit}>{buttonText}</button>
         </div>
         <div  className={classes.main_div1}>
            <img src={logo} style={{width:"100px"}}/>
