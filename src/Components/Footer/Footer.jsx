@@ -24,7 +24,7 @@ const Footer = () => {
       
       setTimeout(() => {
         setButtonText('Submit');
-        setButtonColor('red');
+        setButtonColor('#00398E');
         setEmail('');
       }, 2000); // 3 seconds delay
     } else {
