@@ -12,6 +12,7 @@ import classes from "./Landing.module.css"
 import { FaSquareWhatsapp } from 'react-icons/fa6'
 import { FaWhatsapp } from 'react-icons/fa'
 import Faq from '../Components/FAQ/Faq'
+import BlogSection from '../Components/BlogSection/BlogSection'
 
 const LandingPage = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -45,6 +46,7 @@ const LandingPage = () => {
         <MobileSection/>
         <div className={classes.main_div}>
           <Faq/>
+          <BlogSection/>
         <BottomComponent/>
         </div>
         <Footer/>

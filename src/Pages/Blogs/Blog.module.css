@@ -1,0 +1,211 @@
+.main_hero_section {
+    background: white;
+    height: auto;
+    margin-inline: 180px;
+}
+
+.hero_section {
+    background: white;
+    padding: 40px 0;
+
+    & h6 {
+        color: #171717;
+        font-size: 36px;
+        font-weight: 500;
+        text-align: left;
+        font-family: "Helvetica Neue Medium Extended";
+        ;
+    }
+
+    & p {
+        width: 70%;
+        color: #4e5774;
+        font-size: 1.1rem;
+        font-weight: 400;
+        font-family: "Be Vietnam Pro";
+    }
+
+    & img {
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.category {
+    display: flex;
+    width: 120px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid rgba(78, 87, 116, 0.6);
+}
+
+.category_2 {
+    display: flex;
+    width: 100px;
+    padding: 4px;
+    gap: 10px;
+    color: #4e5774;
+    font-size: 0.7rem;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4e5774;
+}
+
+.span_div {
+    display: flex; gap: 20px;
+    & span {
+        border: 1px solid #4E5774;
+        color: #4E5774;
+        font-size: 14px;
+        padding: 6px 15px;
+        border-radius: 25px;
+        font-weight: 400;
+        font-family: "Be Vietnam Pro", sans-serif;
+    }
+}
+
+.span_div2 {
+    display: flex; 
+    gap: 20px;
+    margin-top: 20px;
+    /* margin-inline: 20px; */
+    & span {
+        border: 1px solid #4E5774;
+        color: #4E5774;
+        font-size: 12px;
+        padding: 5px 15px !important;
+        border-radius: 25px;
+        font-weight: 400;
+        font-family: "Be Vietnam Pro", sans-serif;
+        margin-inline: 0 !important;
+    }
+}
+
+.right_section {
+    margin:20px;
+
+    & h6 {
+        /* width: 68%; */
+        color: #000;
+        padding-top: 10px;
+        font-size: 34px;
+        font-weight: 500;
+        font-family: "Helvetica Neue Medium Extended";
+
+    }
+
+    & p {
+        color: #4e5774;
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Quicksand", sans-serif;
+text-align: left;
+    }
+
+    & a {
+        color: #424db6;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: none;
+        font-family: "Quicksand", sans-serif;
+text-align: left;
+display: flex;
+align-items: center;
+gap: 5px;
+    }
+}
+
+.bottom_section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px;
+
+    & h6 {
+        color: #b0b7ff;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 3rem;
+        font-weight: 800;
+        padding-bottom: 20px;
+    }
+
+    & span {
+        color: #4e5774;
+        font-size: 13px;
+        font-weight: 400;
+        font-family: "Be Vietnam Pro", sans-serif;
+        text-align: left;
+        display: flex;
+        margin-inline: 26px;
+        padding-bottom: 0;
+    }
+
+    & p {
+        color: #4e5774;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Be Vietnam Pro" sans-serif;
+        /* margin-inline: 20px; */
+        text-align: left;
+    }
+
+    & h5 {
+        padding-top: 10px;
+        color: #000;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 700;
+        /* margin-inline: 20px; */
+        text-align: left;
+        margin-block: 10px;
+    }
+
+    & a {
+        color: #424db6;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        font-family: "Be Vietnam Pro" , sans-serif;
+        display: flex;
+        /* margin-inline: 20px; */
+        gap: 5px;
+        align-items: center;
+    }
+
+    & img {
+        width: 90%;
+        height: auto;
+        padding-top: 10px;
+    }
+}
+
+.blogSection {
+    margin: 50px 0;
+}
+.mb2{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width : 620px) {
+    .main_hero_section{
+        margin-inline: 0;
+        padding: 20px;
+    }
+}
+@media screen and (max-width : 1000px) {
+    .main_hero_section{
+        margin-inline: 0;
+        padding: 20px;
+    }
+    .row1{
+        display: flex;
+        flex-direction: column;
+    }
+    .sm1{
+        width: 100%;
+    }
+}

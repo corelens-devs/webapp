@@ -19,6 +19,9 @@ const BotttomNav = () => {
     <a href="#mobile-section">Process</a>
             </li>
             <li>
+    <a href="#blogs">Blogs</a>
+            </li>
+            <li>
     <a href="#btm-section">Download app</a>
             </li>
         </ul>

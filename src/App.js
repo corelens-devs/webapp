@@ -10,6 +10,8 @@ import TermCondition from './Pages/FooterPages/TermCondition';
 import PrivacyPolicy from './Pages/FooterPages/PrivacyPolicy';
 import Layout from './UI/Layout/Layout';
 import ScrollToTop from "./UI/ScrollToTop/ScrollToTop"
+import Blog from './Pages/Blogs/Blog';
+import BlogDetail from './Pages/Blogs/BlogDetail/BlogDetail';
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
   <Route path='/term-sales' element={<TermSales/>} />
   <Route path='/term-condition' element={<TermCondition/>} />
   <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
+  <Route path='/blog' element={<Blog/>} />
+  <Route path='/blogs/details' element={<BlogDetail/>} />
 
   </Routes>
   {/* </Layout> */}
