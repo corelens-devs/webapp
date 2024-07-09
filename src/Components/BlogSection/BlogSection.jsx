@@ -54,7 +54,7 @@ const BlogSection = () => {
                                 blogs?.map((item, index) =>
                                     <BlogCard item={item} />
                                 )}
-                            <NewPagination {...paginationProps} />
+                            {/* <NewPagination {...paginationProps} /> */}
                         </>
 
                         : "no blogs found!"}
