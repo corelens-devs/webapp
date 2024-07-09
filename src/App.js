@@ -27,7 +27,7 @@ function App() {
   <Route path='/term-condition' element={<TermCondition/>} />
   <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
   <Route path='/blog' element={<Blog/>} />
-  <Route path='/blogs/details' element={<BlogDetail/>} />
+  <Route path='/blogs/details/:id' element={<BlogDetail/>} />
 
   </Routes>
   {/* </Layout> */}

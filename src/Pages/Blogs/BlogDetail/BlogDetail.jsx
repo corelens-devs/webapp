@@ -12,68 +12,62 @@ import blog3 from "../../../Assets/blog3.png"
 import big_blog from "../../../Assets/big_blog.png"
 import BlogCard from "../BlogCard";
 import { FaArrowLeft } from "react-icons/fa";
+import axios from "axios";
 
 const BlogDetail = () => {
-    const [data, setData] = useState([])
-    // const [blogs, setBlogs] = useState([])
-    const { id } = useParams()
-    //   const getData = () => {
-    //     sendRequest({
-    //         url: `news-by-id?news_id=${id}`,
-    //         headers: {
-    //             'Content-type': 'application/json'
-    //         }
-    //     }, result => {
-    //         setData(result.data)
-    //     })
-    // }
-    // const getBlogs = () => {
-    //   sendRequest({
-    //     url: `news?limit=6&page=1`,
-    //     headers: {
-    //       'Content-type': 'application/json'
-    //     }
-    //   }, result => {
+    // const [data, setData] = useState([])
+    const [blogs, setBlogs] = useState({})
+    const [relatedBlogs, setRelatedBlogs] = useState([])
+    
+    const {id} = useParams()
+    const getBlogs = async () => {
 
-    //     setBlogs(result.data.docs)
+        const register = `https://corelens.awarno.com/api/website/blog?id=${id}`
+        let response = await axios.get(register, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
 
-    //   })
-    // }
-    // useEffect(() => {
-    //   getBlogs()
-    // }, [])
+        console.log(response.data.data)
+        setBlogs(response.data.data?.blogDetails)
+setRelatedBlogs(response.data.data?.relatedBlogs)
+    }
+    useEffect(() => {
+      getBlogs()
+    }, [])
     // useEffect(() => {
     //     getData()
     // }, [])
-    const blogs = [
-        {
-            date: '19 Nov, 2024',
-            image: blog1,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        {
-            date: '19 Nov, 2024',
-            image: blog2,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        {
-            date: '19 Nov, 2024',
-            image: blog3,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
+    // const blogs = [
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog1,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog2,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog3,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
        
        
-        // Add more blog objects here...
-    ];
+    //     // Add more blog objects here...
+    // ];
     const navigate = useNavigate()
     return (
         <React.Fragment>
@@ -82,26 +76,26 @@ const BlogDetail = () => {
                 <Container>
                 <p className="text-start mt-0 mb-5 fw-medium text-dark" style={{fontFamily:'"Inter", san-serif', cursor:"pointer"}} onClick={() =>navigate('/blog')}><FaArrowLeft style={{fontSize:"15px" , marginRight:"10px"}}/>
                 Back</p>
-                    <p className={styles.span1}>{moment(data.createdAt).format("ll")}</p>
+                    {/* <p className={styles.span1}>{moment(data.createdAt).format("ll")}</p> */}
                     <h6>
-                    How can you Book Class in three easy steps and how its help in your kids in studies
+                 {blogs?.title}
                     </h6>
                     <p style={{fontSize:"18px", marginBlock:"20px"}}>
-                    Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent. 
+                  {blogs.sub_title}
                     </p>
 
                     <div className="d-flex gap-2 mt-3">
                     <div className={styles.span_div}>
-                                        <span>Category</span>
+                                        <span>{blogs.blog_category_id?.name}</span>
                                         <span>15 min read</span>
                                         <span>Share</span>
                                     </div>
                       
                     </div>
 
-                    <img src={big_blog} alt="banner_img" />
+                    <img src={blogs?.images_url}  />
 
-                    <p style={{ textIndent: '40px'}}>
+                    {/* <p style={{ textIndent: '40px'}}>
                     Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
                     </p>
            <p style={{ textIndent: '40px'}}>
@@ -113,9 +107,9 @@ Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam lacus nisi,
  </p>
  <p style={{ textIndent: '40px'}}>
                Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula. Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus. Praesent ac aliquet lorem. Morbi feugiat aliquam ligula, et vestibulum ligula hendrerit vitae. Sed ex lorem, pulvinar sed auctor sit amet, molestie a nibh. Ut euismod nisl arcu, sed placerat nulla volutpat aliquet. Ut id convallis nisl. Ut mauris leo, lacinia sed elit id, sagittis rhoncus odio. Pellentesque sapien libero, lobortis a placerat et, malesuada sit amet dui. Nam sem sapien, congue eu rutrum nec, pellentesque eget ligula.
-</p>
+</p> */}
 <p style={{ textIndent: '40px'}}>
-               Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula. Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus. Praesent ac aliquet lorem. Morbi feugiat aliquam ligula, et vestibulum ligula hendrerit vitae. Sed ex lorem, pulvinar sed auctor sit amet, molestie a nibh. Ut euismod nisl arcu, sed placerat nulla volutpat aliquet. Ut id convallis nisl. Ut mauris leo, lacinia sed elit id, sagittis rhoncus odio. Pellentesque sapien libero, lobortis a placerat et, malesuada sit amet dui. Nam sem sapien, congue eu rutrum nec, pellentesque eget ligula.
+    {blogs?.description}
 
                     </p>
                 </Container>
@@ -127,7 +121,7 @@ Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam lacus nisi,
                    <h4>Related Blogs</h4>
 
                         <Row>
-                            {blogs?.map((item, index) =>
+                            {relatedBlogs?.map((item, index) =>
                             <BlogCard item={item} />
                             //  {
                             //     return (

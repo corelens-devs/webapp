@@ -11,7 +11,8 @@
         font-weight: 500;
         padding-bottom: 20px;
         text-align: left;
-        margin-bottom: 50px;
+        margin-bottom: 10px;
+        margin-top: 50px;
     }
 
     & span {
@@ -69,6 +70,7 @@
     display: flex;
     gap: 20px;
 cursor: pointer;
+margin-bottom: 20px;
     & span {
         border: 1px solid #4E5774;
         color: #4E5774;
@@ -103,12 +105,15 @@ cursor: pointer;
         font-weight: 400;
         font-family: "Be Vietnam Pro", sans-serif;
         text-align: left;
+        margin-top: 20px;
         /* margin-block: 20px; */
     }
 
     & img {
-        padding: 20px 0;
+        /* padding: 20px 0; */
         width: 100%;
+        max-height: 500px;
+        border-radius: 10px;
     }
 }
 

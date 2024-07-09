@@ -1,0 +1,49 @@
+.btn1:disabled{
+    color: #fff !important;
+    background: rgb(194, 193, 193) !important;
+    border-radius: 4px;
+    padding-top:5px;
+    padding: 8px !important;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.btn2:disabled{
+    color: white !important;
+    background: rgb(194, 193, 193) !important;
+    border-radius: 5px;
+    /* padding:5px 6px; */
+    padding: 0 13px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.btn1{
+    padding-top:5px;
+    background-color: black;
+    color: white;
+    padding: 8px ;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+}
+.btn1 > svg {
+    font-size: 16px;
+}
+.btn2 > svg {
+    font-size: 16px;
+}
+.btn2{
+    padding-top:5px;
+    background-color: black;
+    color: white;
+    padding: 0 13px;
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}

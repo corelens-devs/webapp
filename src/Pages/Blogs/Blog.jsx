@@ -54,7 +54,7 @@
 // };
 
 // export default Blog;
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Blog.module.css";
 import { Col, Container, Row } from "react-bootstrap";
 import { MdOutlineArrowOutward } from "react-icons/md";
@@ -71,60 +71,93 @@ import blog6 from "../../Assets/blog6.png"
 import BlogCard from "./BlogCard";
 import { FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import NewPagination from "../../Components/NewPagination/NewPagination";
 const Blog = () => {
     const navigate = useNavigate()
 
-    const blogs = [
-        {
-            date: '19 Nov, 2024',
-            image: blog1,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        {
-            date: '19 Nov, 2024',
-            image: blog2,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        {
-            date: '19 Nov, 2024',
-            image: blog3,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        {
-            date: '19 Nov, 2024',
-            image: blog4,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        {
-            date: '19 Nov, 2024',
-            image: blog5,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        {
-            date: '19 Nov, 2024',
-            image: blog6,
-            title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
-            sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
-            category: 'Category',
-            readTime: '15 min read',
-        },
-        // Add more blog objects here...
-    ];
+    const [blogs, setBlogs] = useState([])
+    const [blog, setBlog] = useState({})
+    const [limit, setLimit] = useState(3)
+    const [page, setPage] = useState(1)
+    const [pageInfo, setPageInfo] = useState({})
+
+    const getBlogs = async () => {
+
+        const register = `https://corelens.awarno.com/api/website/blogs?limit=${limit}&page=${page}`
+        let response = await axios.get(register, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+        })
+
+        console.log(response.data.data?.docs)
+        setBlogs(response.data.data?.docs)
+        setBlog(response.data.data?.docs[0])
+        setPageInfo({ ...response.data.data, docs: null })
+
+    }
+    const paginationProps = {
+        setPage,
+        pageInfo
+    }
+
+    useEffect(() => {
+        getBlogs()
+    }, [])
+    // const navigate = useNavigate()
+
+    // const blogs = [
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog1,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog2,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog3,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog4,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog5,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     {
+    //         date: '19 Nov, 2024',
+    //         image: blog6,
+    //         title: 'How can you Book Class in three easy steps and how its help in your kids in studies',
+    //         sub_title: 'Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. ',
+    //         category: 'Category',
+    //         readTime: '15 min read',
+    //     },
+    //     // Add more blog objects here...
+    // ];
     return (
         <React.Fragment>
             <Navbar />
@@ -141,22 +174,24 @@ const Blog = () => {
                         <Row className={styles.row1}>
                             <Col md={5} className={styles.sm1} sm={12}>
                                 <div>
-                                    <img src={blog_img} />
+                                    <img className={styles.img2} src={blog?.images_url} />
                                 </div>
                             </Col>
                             <Col className={styles.sm1} md={7} sm={12}>
                                 <div className={styles.right_section}>
                                     <div className={styles.span_div}>
-                                        <span>Category</span>
+                                        <span>{blog.blog_category_id?.name}</span>
                                         <span>15 min read</span>
                                     </div>
                                     <h6>
-                                        How can you Book Class in three easy steps and how its help in your kids in studies
+                                    {blog.title}
                                     </h6>
                                     <p>
-                                        Qorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
-                                    </p>
-                                    <a href={"/blogs/details"} >
+                    {blog.sub_title}.{" "}
+               <br/>
+                    {blog.description}.{" "}
+                </p>
+                                    <a href={`/blogs/details/${blog?._id}`} >
                                         {/* <a href={"/blogs/details/" + blogs[0]?._id} > */}
                                         Read More <MdOutlineArrowOutward />
                                     </a>
@@ -172,33 +207,19 @@ const Blog = () => {
                     <div className={styles.bottom_section}>
                         {/* <h6>Latest blogs</h6> */}
 
-                        <Row>
+                        <Row className="gap-sm-4">
+                        {blogs.length > 0 ?
+                        <>
                             {blogs.map((item, index) => 
                             <BlogCard item={item} />
-                            // {
-                            //     return (
-                            //         <Col className={`${styles.mb2} p-0`} key={index} md={4} sm={12}  >
-                            //             <span>{moment(item.createdAt).format("ll")}</span>
-                            //             <img src={item.image} alt="blogs" />
-                            //             <div className={styles.span_div2}>
-                            //                 <span>Category</span>
-                            //                 <span>15 min read</span>
-                            //             </div>
-                            //             <h5>
-                            //                 {item.title}
-                            //             </h5>
-                            //             <p>
-                            //                 {item.sub_title}.{" "}
-                            //             </p>
-                            //             <a href={"/blogs/details/"}>
-                            //                 Read More <MdOutlineArrowOutward />
-                            //             </a>
-                            //         </Col>
-                            //     )
-                            // }
+                            
                         )
 
                             }
+                            <NewPagination {...paginationProps} />
+                        </>
+
+                        : "no blogs found!"}
 
                         </Row>
                     </div>
