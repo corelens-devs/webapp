@@ -21,8 +21,8 @@ const BlogCard = (props) => {
                 </h5>
                 <p>
                     {item.sub_title}.{" "}
-              <br/>
-                    {item.description}.{" "}
+              {/* <br/> */}
+                    {/* {item.description}.{" "} */}
                 </p>
                 <a href={`/blogs/details/${item?._id}`}>
                     Read More <MdOutlineArrowOutward />

@@ -108,7 +108,7 @@ Nam pulvinar blandit velit, id condimentum diam faucibus at. Aliquam lacus nisi,
  <p style={{ textIndent: '40px'}}>
                Vestibulum dictum ultrices elit a luctus. Sed in ante ut leo congue posuere at sit amet ligula. Pellentesque eget augue nec nisl sodales blandit sed et sem. Aenean quis finibus arcu, in hendrerit purus. Praesent ac aliquet lorem. Morbi feugiat aliquam ligula, et vestibulum ligula hendrerit vitae. Sed ex lorem, pulvinar sed auctor sit amet, molestie a nibh. Ut euismod nisl arcu, sed placerat nulla volutpat aliquet. Ut id convallis nisl. Ut mauris leo, lacinia sed elit id, sagittis rhoncus odio. Pellentesque sapien libero, lobortis a placerat et, malesuada sit amet dui. Nam sem sapien, congue eu rutrum nec, pellentesque eget ligula.
 </p> */}
-<p style={{ textIndent: '40px'}}>
+<p style={{ textIndent: '40px', marginTop:"20px"}}>
     {blogs?.description}
 
                     </p>
