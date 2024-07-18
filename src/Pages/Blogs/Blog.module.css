@@ -173,7 +173,7 @@ gap: 5px;
         text-decoration: none;
         font-family:  "Quicksand", sans-serif;
         display: flex;
-        /* margin-inline: 20px; */
+        
         gap: 5px;
         align-items: center;
     }
