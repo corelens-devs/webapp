@@ -42,6 +42,12 @@ strong{
         font-size: 16px;
     }
 }
+@media screen and (max-width : 1400px) {
+   .main_div{
+    padding-inline: 100px;
+    max-width: auto;
+   } 
+}
 @media screen and (max-width : 620px) {
 .main_div{
     padding: 30px;

@@ -169,6 +169,11 @@ margin-bottom: 0;
      }
 }
 
+@media screen and (max-width: 1400px){
+.main_div1{
+    gap: 3%
+}
+}
 @media screen and (max-width : 1150px) {
     .upper_div {
         padding: 20px;
