@@ -205,6 +205,14 @@ gap: 5px;
     height: 300px;
     border-radius: 10px;
 }
+@media screen and (max-width : 1400px) {
+.right_section {
+    & h6{
+        max-width: 100%;
+        word-wrap: break-word;
+    }
+}
+}
 @media screen and (max-width : 620px) {
     .main_hero_section{
         margin-inline: 0;
