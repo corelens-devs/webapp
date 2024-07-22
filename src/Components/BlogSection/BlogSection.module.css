@@ -4,6 +4,7 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 20px 0;
+  
 
     & h4 {
         /* color: #b0b7ff; */
@@ -73,9 +74,17 @@
     font-weight: 600;
 }
 
+@media screen and (max-width : 1400px)  {
+.bottom_section{
+    padding-inline: 100px;
+}
+}
 @media screen and (max-width : 620px)  {
     .div_head h4{
         margin-bottom: 50px;
+    }
+    .bottom_section{
+        padding-inline: 20px;
     }
     .btn{
         /* margin-top: 40px; */

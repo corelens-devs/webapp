@@ -31,8 +31,16 @@
     color: #105AB2;
     font-size: 16px;
 }
+@media screen and (max-width : 1400px) {
+.accord_divv{
+    padding-inline: 100px;
+}
+}
 @media screen and (max-width : 620px) {
 .foot{
     margin-bottom: 50px;
+}
+.accord_divv{
+    padding-inline: 20px;
 }
 }

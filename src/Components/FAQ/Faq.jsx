@@ -7,7 +7,7 @@ const Faq = () => {
   return (
     <div>
         <Heading heading={'Frequently Asked Questions'} />
-        <div>
+        <div className={classes.accord_divv}>
 
     <Accordion>
       <Accordion.Item eventKey="0" className={classes.accord}>
