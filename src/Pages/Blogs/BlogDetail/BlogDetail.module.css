@@ -143,5 +143,8 @@ margin-bottom: 20px;
         & h6{
             word-wrap: break-word;
         }
+        & p {
+            word-wrap: break-word;
+        }
     }
 }
