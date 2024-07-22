@@ -10,7 +10,7 @@ const BottomComponent = () => {
   return (
     <div id='btm-section' className={classes.main_div}>
       <img src={Bottom_img} />
-      <img src={phoneResponsive} className={classes.mob_res} />
+      <img src={Bottom_img} className={classes.mob_res} />
       <div>
         <h1>Your Gateway to 24/7 Security with Our Surveillance App</h1>
         <p>Experience ultimate in home comfort, convenience, and control with our smart home solutions.</p>

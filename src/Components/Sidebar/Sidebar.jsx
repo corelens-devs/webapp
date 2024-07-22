@@ -11,19 +11,22 @@ const Sidebar = ({ sidebar, setSidebar }) => {
                         </div>
                         <div >
                                 <ul>
-                                        <li onClick={()=> sidebar && setSidebar(false)}>
-                                                <a href="#Aihome">A.I Home Security</a>
+                                        <li onClick={() => sidebar && setSidebar(false)}>
+                                                <a href="#Aihome">Home</a>
                                         </li>
-                                        <li onClick={()=> sidebar && setSidebar(false)}>
+                                        <li onClick={() => sidebar && setSidebar(false)}>
                                                 <a href="#services">What we Offer</a>
                                         </li>
-                                        <li onClick={()=> sidebar && setSidebar(false)}>
+                                        <li onClick={() => sidebar && setSidebar(false)}>
                                                 <a href="#product">Our Products</a>
                                         </li>
-                                        <li onClick={()=> sidebar && setSidebar(false)}>
+                                        <li onClick={() => sidebar && setSidebar(false)}>
                                                 <a href="#mobile-section">Process</a>
                                         </li>
-                                        <li onClick={()=> sidebar && setSidebar(false)}>
+                                        <li onClick={() => sidebar && setSidebar(false)}>
+                                                <a href="#blogs">Blogs</a>
+                                        </li>
+                                        <li onClick={() => sidebar && setSidebar(false)}>
                                                 <a href="#btm-section">Download app</a>
                                         </li>
                                 </ul>
