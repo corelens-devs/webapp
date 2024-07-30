@@ -20,7 +20,7 @@ const LandingPage = () => {
   const handleSearchChange = (value) => {
     setSearchTerm(value);
   };
-  const whatsappNumber = '+91 9999973124';
+  const whatsappNumber = '+91 8527910504';
 
   const openWhatsApp = () => {
       const url = `https://wa.me/${whatsappNumber}`;
