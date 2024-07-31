@@ -5,7 +5,7 @@ const ProDetail = (props) => {
   return (
          <div className={`${classes.card}`}>
         <div className={`${classes.card1} `} >
-            <img src={props?.img} alt="" />
+            <img src={props?.img} alt='Corelens CCTV Camera for Home Security'  />
         </div>
     </div>
     

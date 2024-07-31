@@ -102,7 +102,7 @@ const navigate = useNavigate()
     <>
       <header className={`${classes.navbar} shadow-sm `} onClick={() => sidebar && setSidebar(false)}>
         <div className={classes.nav_div}>
-          <img src={logo} className={classes.nav_img} onClick={()=>navigate('/')} />
+          <img src={logo} className={classes.nav_img} alt='Corelens Logo' onClick={()=>navigate('/')} />
           <div className={classes.search_bar}>
             <img src={search} alt="Search Icon" />
             <input

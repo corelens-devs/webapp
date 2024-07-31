@@ -55,7 +55,7 @@ const Footer = () => {
           <button  style={{ backgroundColor: buttonColor }} onClick={handleSubmit}>{buttonText}</button>
         </div>
         <div  className={classes.main_div1}>
-           <img src={logo} style={{width:"100px"}}/>
+           <img src={logo} style={{width:"100px"}} alt='Corelens logo' />
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-use')}>Terms of Use</p>
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-sales')}>Terms of Sales</p>
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-condition')}>Term & Condition</p>
@@ -63,7 +63,7 @@ const Footer = () => {
             <p style={{cursor:"pointer"}} onClick={togglePrivacyPolicy}>Contact Us</p>
             <p style={{cursor:"pointer"}}>Download App</p>
         </div>
-        {showPrivacyPolicy && (
+        {true && (
                 <div className={classes.contactinfo}>
                 <div className={classes.contactsection}>
                     <h3>Get In Touch</h3>
@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
             )}
         <div className={classes.div2}>
-            <p>@Copyright2024,All Rights Reserved</p>
+            <p>copyright © vibhor electronics. All rights reserved</p>
             <div>
             <FiFacebook />
             <FaXTwitter />

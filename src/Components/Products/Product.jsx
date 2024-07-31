@@ -36,7 +36,7 @@ const Product = (props) => {
       <div data-aos="fade-left" data-aos-delay={(index + 1) * 100} className={`${classes.card}`} onClick={props?.onClick}>
         {/* <div className={`${classes.card}`}  onClick={() =>handleShow(data?.id, data)}> */}
         <div className={`${classes.card1} ${props.cls}`} >
-          <img src={data?.img[0]} alt="" />
+          <img src={data?.img[0]} alt="Corelens CCTV Camera for Home Security" />
           <button>Buy Now</button>
         </div>
         <h6 className={classes.h6}>{data?.name}</h6>

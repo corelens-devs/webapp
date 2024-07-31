@@ -58,7 +58,7 @@
 //       <div className={classes.main_div}>
 //         <div className={classes.d1}>
 //           <div className={classes.d2}>
-//             <img src={Security1} />
+//             <img alt='Corelens CCTV Camera for Home Security Features' src={Security1} />
 //             <div>
 //               <h1>
 //                 Increasing theft
@@ -69,7 +69,7 @@
 //             </div>
 //           </div>
 //           <div className={classes.d2}>
-//             <img src={Security4} />
+//             <img alt='Corelens CCTV Camera for Home Security Features' src={Security4} />
 //             <div >
 //               <h1>Total security solution</h1>
 //               <p>Experience complete peace of mind with our comprehensive security solution. Our camera sensors safeguard your home while our GPS trackers protect your vehicles. Say goodbye to worries about theft – our advanced technology ensures your property is always secure, giving you unmatched peace of mind.
@@ -80,7 +80,7 @@
 //         </div>
 //         <div className={classes.d1}>
 //           <div className={classes.d2}>
-//             <img src={Security2} />
+//             <img alt='Corelens CCTV Camera for Home Security Features' src={Security2} />
 //             <div>
 //               <h1>
 //                 On demand surveillance
@@ -91,7 +91,7 @@
 //             </div>
 //           </div>
 //           <div className={classes.d2}>
-//             <img src={Security5} />
+//             <img alt='Corelens CCTV Camera for Home Security Features' src={Security5} />
 //             <div >
 //               <h1>Latest features</h1>
 //               <p>Our camera sensors represent cutting-edge technology that hasn't hit the market yet, promising to elevate your home security to new heights. Meanwhile, our GPS trackers boast the latest lithium batteries, ensuring extended backup power of up to three months.</p>
@@ -102,14 +102,14 @@
 //         </div>
 //         <div className={classes.d1}>
 //           <div className={classes.d2}>
-//             <img src={Security3} />
+//             <img alt='Corelens CCTV Camera for Home Security Features' src={Security3} />
 //             <div>
 //               <h1>Money saving prices</h1>
 //               <p>In a market saturated with low-quality products, our primary focus is on providing you with peace of mind after every purchase. That's why we never compromise on the quality of components in our products, yet we manage to offer exceptional value without cutting corners. Rest assured, all our products deliver outstanding value for your money.</p>
 //             </div>
 //           </div>
 //           <div className={classes.d2}>
-//             <img src={Security6} />
+//             <img alt='Corelens CCTV Camera for Home Security Features' src={Security6} />
 //             <div >
 //               <h1>After Sales Support</h1>
 //               <p>Enjoy FREE home service for 1 year for unlimited times.NO conditions or restrictions. If our sensors detect any issues, we fix and deliver within 72 hours at your doorstep, and it's all free of charge.</p>
@@ -124,11 +124,11 @@
 //       <Heading heading="Features of our camera sensors" cls={classes.div_head} />
 
 //       <div className={classes.feat}>
-//         <img src={im1} data-aos="fade-right" data-aos-delay="100" />
-//         <img src={im2} data-aos="fade-right" data-aos-delay="200" />
-//         <img src={im3} data-aos="fade-right" data-aos-delay="300" />
-//         <img src={im4} data-aos="fade-right" data-aos-delay="400" />
-//         <img src={im5} data-aos="fade-right" data-aos-delay="500" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im1} data-aos="fade-right" data-aos-delay="100" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im2} data-aos="fade-right" data-aos-delay="200" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im3} data-aos="fade-right" data-aos-delay="300" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im4} data-aos="fade-right" data-aos-delay="400" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im5} data-aos="fade-right" data-aos-delay="500" />
 //       </div>
 
 //       <div className={`${classes.mob} w-100`}>
@@ -138,11 +138,11 @@
 //       <Heading heading="Features of our Gps Trackers" cls={classes.div_head} />
 
 //       <div className={classes.feat}>
-//         <img src={im6} data-aos="fade-left" data-aos-delay="100" />
-//         <img src={im7} data-aos="fade-left" data-aos-delay="200" />
-//         <img src={im8} data-aos="fade-left" data-aos-delay="300" />
-//         <img src={im9} data-aos="fade-left" data-aos-delay="400" />
-//         <img src={im10} data-aos="fade-left" data-aos-delay="500" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im6} data-aos="fade-left" data-aos-delay="100" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im7} data-aos="fade-left" data-aos-delay="200" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im8} data-aos="fade-left" data-aos-delay="300" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im9} data-aos="fade-left" data-aos-delay="400" />
+//         <img alt='Corelens CCTV Camera for Home Security Features' src={im10} data-aos="fade-left" data-aos-delay="500" />
 //       </div>
 
 //       <div className={`${classes.mob} w-100`}>
@@ -198,7 +198,7 @@ const Features = () => {
             <div className={classes.main_div}>
                 <div className={classes.d1}>
                     <div className={classes.d2}>
-                        <img src={Security1} />
+                        <img alt='Corelens CCTV Camera for Home Security Features' src={Security1} />
                         <div>
                             <h1>Increasing theft</h1>
                             <p>
@@ -207,7 +207,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className={classes.d2}>
-                        <img src={Security4} />
+                        <img alt='Corelens CCTV Camera for Home Security Features' src={Security4} />
                         <div>
                             <h1>Total security solution</h1>
                             <p>
@@ -218,7 +218,7 @@ const Features = () => {
                 </div>
                 <div className={classes.d1}>
                     <div className={classes.d2}>
-                        <img src={Security2} />
+                        <img alt='Corelens CCTV Camera for Home Security Features' src={Security2} />
                         <div>
                             <h1>On demand surveillance</h1>
                             <p>
@@ -227,7 +227,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className={classes.d2}>
-                        <img src={Security5} />
+                        <img alt='Corelens CCTV Camera for Home Security Features' src={Security5} />
                         <div>
                             <h1>Latest features</h1>
                             <p>
@@ -238,7 +238,7 @@ const Features = () => {
                 </div>
                 <div className={classes.d1}>
                     <div className={classes.d2}>
-                        <img src={average} />
+                        <img alt='Corelens CCTV Camera for Home Security Features' src={average} />
                         <div>
                             <h1>Money saving prices</h1>
                             <p>
@@ -247,7 +247,7 @@ const Features = () => {
                         </div>
                     </div>
                     <div className={classes.d2}>
-                        <img src={Security6} />
+                        <img alt='Corelens CCTV Camera for Home Security Features' src={Security6} />
                         <div>
                             <h1>After Sales Support</h1>
                             <p>
@@ -261,11 +261,11 @@ const Features = () => {
             <Heading heading="Features of our camera sensors" cls={classes.div_head} />
 
             <div className={classes.feat}>
-                <img src={im1} data-aos="fade-right" data-aos-delay="100" />
-                <img src={im2} data-aos="fade-right" data-aos-delay="200" />
-                <img src={im3} data-aos="fade-right" data-aos-delay="300" />
-                <img src={im4} data-aos="fade-right" data-aos-delay="400" />
-                <img src={im5} data-aos="fade-right" data-aos-delay="500" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im1} data-aos="fade-right" data-aos-delay="100" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im2} data-aos="fade-right" data-aos-delay="200" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im3} data-aos="fade-right" data-aos-delay="300" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im4} data-aos="fade-right" data-aos-delay="400" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im5} data-aos="fade-right" data-aos-delay="500" />
             </div>
 
             <div className={`${classes.mob} w-100`}>
@@ -275,11 +275,11 @@ const Features = () => {
             <Heading heading="Features of our GPS Trackers" cls={classes.div_head} />
 
             <div className={classes.feat}>
-                <img src={im6} data-aos="fade-left" data-aos-delay="100" />
-                <img src={im7} data-aos="fade-left" data-aos-delay="200" />
-                <img src={im8} data-aos="fade-left" data-aos-delay="300" />
-                <img src={im9} data-aos="fade-left" data-aos-delay="400" />
-                <img src={im10} data-aos="fade-left" data-aos-delay="500" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im6} data-aos="fade-left" data-aos-delay="100" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im7} data-aos="fade-left" data-aos-delay="200" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im8} data-aos="fade-left" data-aos-delay="300" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im9} data-aos="fade-left" data-aos-delay="400" />
+                <img alt='Corelens CCTV Camera for Home Security Features' src={im10} data-aos="fade-left" data-aos-delay="500" />
             </div>
 
             <div className={`${classes.mob} w-100`}>
