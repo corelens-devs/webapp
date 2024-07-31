@@ -110,7 +110,7 @@ const Footer = () => {
             </div>
             )}
         <div className={classes.div2}>
-            <p>copyright © vibhor electronics. All rights reserved</p>
+            <p>copyright © vibhor gupta. All rights reserved</p>
             <div>
             <FiFacebook />
             <FaXTwitter />
