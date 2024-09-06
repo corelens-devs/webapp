@@ -91,7 +91,6 @@ const Blog = () => {
             },
         })
 
-        console.log(response.data.data?.docs)
         setBlogs(response.data.data?.docs)
         setBlog(response.data.data?.docs[0])
         setPageInfo({ ...response.data.data, docs: null })

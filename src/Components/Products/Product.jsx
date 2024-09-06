@@ -12,12 +12,9 @@ const Product = (props) => {
   let index = props.index
   const [productData, setProductData] = useState({})
   let data = props?.data
-  console.log(data)
-  // console.log(data.discount)
   const [show, setShow] = useState(false)
 
   const handleShow = (id, data) => {
-    console.log(id)
     setProductData(data)
     setShow(!show)
 

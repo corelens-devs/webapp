@@ -90,8 +90,6 @@ const ProductSlider = ({ searchTerm }) => {
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [showAllProducts, setShowAllProducts] = useState(false);
 
-    // console.log(searchTerm)
-
     const gradients = {
         p1: 'linear-gradient(180deg, #FCB48C 0%, #FFEADF 100%)',
         p2: 'linear-gradient(180deg, #6FDBF9 0%, rgba(207, 245, 255, 0.69) 100%)',
@@ -101,7 +99,7 @@ const ProductSlider = ({ searchTerm }) => {
 
     const products = [
         {
-            id: 1, name: 'Turbo', cat: "GPS Tracker", actualAmount: '4999', discount: "30%", saleAmount : "3499", img:[ product1, product12, product123], cls: classes.p1, gradientColors: gradients.p1,
+            id: 1, name: 'Turbo', cat: "GPS Tracker", actualAmount: '4999', discount: "30%", saleAmount: "3499", img: [product1, product12, product123], cls: classes.p1, gradientColors: gradients.p1,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -146,7 +144,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 2, name: 'Mercusys mr30G',cat: "Wifi Extender", actualAmount: '3299', discount: "33%",   saleAmount : "2199", img: [product3, product32, product31 ], cls: classes.p3, gradientColors: gradients.p3,
+            id: 2, name: 'Mercusys mr30G', cat: "Wifi Extender", actualAmount: '3299', discount: "33%", saleAmount: "2199", img: [product3, product32, product31], cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "4 External Antennas", img: icon2
@@ -180,11 +178,11 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Wireless Type", description: "802.11n, 802.11b, 802.11a, 802.11g, 802.11ac" },
                 { title: "GMS frequencies", description: "5 GHz" },
                 { title: "Number of Ports", description: "3" },
-  
+
             ]
         },
         {
-            id: 3, name: 'Polo',cat: "Outdoor Camera Sensor", actualAmount: '4999', discount: "50%", saleAmount : "2499", img: [product5, polo1, polo2, polo3, polo4, polo5], cls: classes.p1, gradientColors: gradients.p1,
+            id: 3, name: 'Polo', cat: "Outdoor Camera Sensor", actualAmount: '4999', discount: "50%", saleAmount: "2499", img: [product5, polo1, polo2, polo3, polo4, polo5], cls: classes.p1, gradientColors: gradients.p1,
             mainhighlight: [
                 {
                     title: "Real 4mp", img: icon8
@@ -221,9 +219,9 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Wired Connection", description: "TCP/IPv4" },
             ]
         },
-        
+
         {
-            id: 4, name: 'Echo',cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product8, echo1, echo2, echo3, echo4, echo5, echo6, echo7 ], cls: classes.p4, gradientColors: gradients.p4,
+            id: 4, name: 'Echo', cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount: "1999", img: [product8, echo1, echo2, echo3, echo4, echo5, echo6, echo7], cls: classes.p4, gradientColors: gradients.p4,
             mainhighlight: [
                 {
                     title: "Real 2mp", img: icon8
@@ -261,7 +259,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 5, name: 'Moto', cat: "GPS Tracker", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
+            id: 5, name: 'Moto', cat: "GPS Tracker", actualAmount: '1999', discount: "45%", saleAmount: "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -307,9 +305,9 @@ const ProductSlider = ({ searchTerm }) => {
                 },
             ]
         },
-       
+
         {
-            id: 6, name: 'Mercusys ac12',cat: "Wifi Extender", actualAmount: '2999', discount: "36%",  saleAmount : "1899", img: [product4, product41, product42], cls: classes.p4, gradientColors: gradients.p4,
+            id: 6, name: 'Mercusys ac12', cat: "Wifi Extender", actualAmount: '2999', discount: "36%", saleAmount: "1899", img: [product4, product41, product42], cls: classes.p4, gradientColors: gradients.p4,
             mainhighlight: [
                 {
                     title: "4 External Antennas", img: icon2
@@ -343,12 +341,12 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Data Transfer Rate", description: "1200 Megabits Per Second" },
                 { title: "Wireless Type", description: "801.11ac" },
                 { title: "Data Link Protocol", description: "IEEE 802.11ac, IEEE 802.11n, IEEE 802.11g, IEEE 802.11b, IEEE 802.3, IEEE 802.3u" },
-            
+
             ]
         },
-      
+
         {
-            id: 7, name: 'Oval' ,cat: "Outdoor Camera Sensor", actualAmount: '6999', discount: "50%", saleAmount : "3499",img: [product6, ovl1, ovl2, ovl3, ovl4, ovl5, ovl6], cls: classes.p2, gradientColors: gradients.p2,
+            id: 7, name: 'Oval', cat: "Outdoor Camera Sensor", actualAmount: '6999', discount: "50%", saleAmount: "3499", img: [product6, ovl1, ovl2, ovl3, ovl4, ovl5, ovl6], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real 8mp", img: icon8
@@ -385,9 +383,9 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Wired Connection", description: "TCP/IPv4" },
             ]
         },
-           
+
         {
-            id: 8, name: 'Wave', cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount : "1999", img: [product9, oval1, oval2, oval3, oval4], cls: classes.p3, gradientColors: gradients.p3,
+            id: 8, name: 'Wave', cat: "Indoor Camera Sensor", actualAmount: '3999', discount: "50%", saleAmount: "1999", img: [product9, oval1, oval2, oval3, oval4], cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 2mp", img: icon8
@@ -425,7 +423,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 9, name: 'Gem', cat: "Outdoor Camera Sensor", actualAmount: '6199', discount: "50%", saleAmount : "3099", img: [product7, gem1, gem2, gem3, gem4, gem5, gem6, gem7, gem8, gem9, gem10, gem11], cls: classes.p3, gradientColors: gradients.p3,
+            id: 9, name: 'Gem', cat: "Outdoor Camera Sensor", actualAmount: '6199', discount: "50%", saleAmount: "3099", img: [product7, gem1, gem2, gem3, gem4, gem5, gem6, gem7, gem8, gem9, gem10, gem11], cls: classes.p3, gradientColors: gradients.p3,
             mainhighlight: [
                 {
                     title: "Real 4mp", img: icon8
@@ -462,7 +460,7 @@ const ProductSlider = ({ searchTerm }) => {
                 { title: "Wired Connection", description: "TCP/IPv4" },
             ]
         },
-   
+
 
     ];
 
@@ -472,7 +470,7 @@ const ProductSlider = ({ searchTerm }) => {
             duration: 1000,
             once: false, // Ensure the animation triggers every time you scroll
         });
-    
+
         // Reinitialize AOS when component updates, if necessary
         AOS.refresh();
     }, []);
@@ -553,10 +551,10 @@ const ProductSlider = ({ searchTerm }) => {
                         <div className={`${classes.allProducts} ${showAllProducts ? classes.showAllProducts : ''}`}>
                             <div className={classes.productList}>
                                 {filteredProducts.map((product, index) => (
-                                    <div key={product.id} className={classes.productItem} 
+                                    <div key={product.id} className={classes.productItem}
                                     >
                                         <Product cls={product.cls}
-                                        index={index + 1}
+                                            index={index + 1}
                                             data={product} gradientColors={product.gradientColors} onClick={() => openModal(product)} />
                                     </div>
                                 ))}
@@ -568,7 +566,7 @@ const ProductSlider = ({ searchTerm }) => {
                             navigation={true}
                             modules={[Autoplay, Pagination, Navigation]}
                             loop={true}
-                            style={{padding:"20px"}}
+                            style={{ padding: "20px" }}
                             autoplay={{ delay: 5000, disableOnInteraction: true }}
                             className={'home_slider home_slider1 prmodal'}
                             slidesPerView={1}
@@ -582,8 +580,8 @@ const ProductSlider = ({ searchTerm }) => {
                         >
                             {filteredProducts.map((item, index) => (
                                 <SwiperSlide key={index}>
-                                    <Product 
-                                        onClick={() => openModal(item)} data={item} cls={item.cls} 
+                                    <Product
+                                        onClick={() => openModal(item)} data={item} cls={item.cls}
                                         index={index}
                                         gradientColors={item.gradientColors} />
                                 </SwiperSlide>
@@ -592,31 +590,31 @@ const ProductSlider = ({ searchTerm }) => {
                     )
                 ) : (
                     <Swiper
-                    pagination={{ type: 'progressbar' }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    loop={true}
-                    style={{padding:"20px"}}
-                    autoplay={{ delay: 5000, disableOnInteraction: true }}
-                    className={'home_slider home_slider1 prmodal'}
-                    slidesPerView={1}
-                    breakpoints={{
-                        360: { slidesPerView: 1 },
-                        690: { slidesPerView: 2 },
-                        1000: { slidesPerView: 3 },
-                        1200: { slidesPerView: 4 }
-                    }}
-                    spaceBetween={30}
-                >
-                    {products.map((item, index) => (
-                        <SwiperSlide key={index}>
-                            <Product 
-                                onClick={() => openModal(item)} data={item} cls={item.cls} 
-                                index={index}
-                                gradientColors={item.gradientColors} />
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                        pagination={{ type: 'progressbar' }}
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        loop={true}
+                        style={{ padding: "20px" }}
+                        autoplay={{ delay: 5000, disableOnInteraction: true }}
+                        className={'home_slider home_slider1 prmodal'}
+                        slidesPerView={1}
+                        breakpoints={{
+                            360: { slidesPerView: 1 },
+                            690: { slidesPerView: 2 },
+                            1000: { slidesPerView: 3 },
+                            1200: { slidesPerView: 4 }
+                        }}
+                        spaceBetween={30}
+                    >
+                        {products.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <Product
+                                    onClick={() => openModal(item)} data={item} cls={item.cls}
+                                    index={index}
+                                    gradientColors={item.gradientColors} />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                     // <div className={classes.noProducts}>
                     //     <p>no product found!</p>
                     // </div>

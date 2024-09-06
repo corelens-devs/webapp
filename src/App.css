@@ -1,52 +1,14 @@
-/* .App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-@import url(https://db.onlinewebfonts.com/c/365834cfa7beb7ca64c00476397ddc32?family=Helvetica+Neue+Medium+Extended);
+/* @import url(https://db.onlinewebfonts.com/c/365834cfa7beb7ca64c00476397ddc32?family=Helvetica+Neue+Medium+Extended); */
 
 @font-face {
   font-family: "Helvetica Neue Medium Extended";
-  src: url("https://db.onlinewebfonts.com/t/365834cfa7beb7ca64c00476397ddc32.eot");
-  src: url("https://db.onlinewebfonts.com/t/365834cfa7beb7ca64c00476397ddc32.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/365834cfa7beb7ca64c00476397ddc32.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/365834cfa7beb7ca64c00476397ddc32.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/365834cfa7beb7ca64c00476397ddc32.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/365834cfa7beb7ca64c00476397ddc32.svg#Helvetica Neue Medium Extended")format("svg");
+  src: url("Assets/fonts/365834cfa7beb7ca64c00476397ddc32.eot");
+  src: url("Assets/fonts/365834cfa7beb7ca64c00476397ddc32.eot?#iefix")format("embedded-opentype"),
+  url("Assets/fonts/365834cfa7beb7ca64c00476397ddc32.woff2")format("woff2"),
+  url("Assets/fonts/365834cfa7beb7ca64c00476397ddc32.woff")format("woff"),
+  url("Assets/fonts/365834cfa7beb7ca64c00476397ddc32.ttf")format("truetype"),
+  /* url("fonts/365834cfa7beb7ca64c00476397ddc32.svg#Helvetica Neue Medium Extended")format("svg"); */
 }
 
 div::-webkit-scrollbar {

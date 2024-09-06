@@ -16,10 +16,8 @@ import '../product.css'
 
 
 const MainHighlight = ({data}) => {
-    console.log(data)
     return (
         <div>
-        {/* <Heading heading="Our Products"/> */}
         <Swiper
         pagination={{
             type: 'progressbar',

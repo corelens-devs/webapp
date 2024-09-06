@@ -21,21 +21,21 @@ const LandingPage = () => {
 
   return (
     <div>
-        <Navbar navv={true} onSearchChange={handleSearchChange} />
-        <Home/>
-       <div className={classes.main_div}>
-       <AISecurity/>
-        <Services/>
+      <Navbar navv={true} onSearchChange={handleSearchChange} />
+      <Home />
+      <div className={classes.main_div}>
+        <AISecurity />
+        <Services />
         <ProductSlider searchTerm={searchTerm} />
-        <Features/>
-       </div>
-        <MobileSection/>
-        <div className={classes.main_div}>
-          <Faq/>
-          <BlogSection/>
-        <BottomComponent/>
-        </div>
-        <Footer/>
+        <Features />
+      </div>
+      <MobileSection />
+      <div className={classes.main_div}>
+        <Faq />
+        <BlogSection />
+        <BottomComponent />
+      </div>
+      <Footer />
     </div>
   )
 }
