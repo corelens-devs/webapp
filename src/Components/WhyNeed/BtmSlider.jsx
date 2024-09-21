@@ -55,11 +55,11 @@ const BtmSlider = () => {
             spaceBetween={30}
             // slidesPerView={4}
         >
-            <SwiperSlide> <img className={classes.imge} src={im1}/></SwiperSlide>
-            <SwiperSlide> <img className={classes.imge} src={im2}/></SwiperSlide>
-            <SwiperSlide> <img className={classes.imge} src={im3}/></SwiperSlide>
-            <SwiperSlide> <img className={classes.imge} src={im4}/></SwiperSlide>
-            <SwiperSlide> <img className={classes.imge} src={im5}/></SwiperSlide>
+            <SwiperSlide> <img className={classes.imge} src={im1} alt='Corelens CCTV Camera for Home Security' /></SwiperSlide>
+            <SwiperSlide> <img className={classes.imge} src={im2} alt='Corelens CCTV Camera for Home Security' /></SwiperSlide>
+            <SwiperSlide> <img className={classes.imge} src={im3} alt='Corelens CCTV Camera for Home Security' /></SwiperSlide>
+            <SwiperSlide> <img className={classes.imge} src={im4} alt='Corelens CCTV Camera for Home Security' /></SwiperSlide>
+            <SwiperSlide> <img className={classes.imge} src={im5} alt='Corelens CCTV Camera for Home Security' /></SwiperSlide>
              
             
         </Swiper>

@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Heading from '../Heading/Heading'
 import classes from "./BlogSection.module.css"
-import blog1 from "../../Assets/blog1.png"
-import blog2 from "../../Assets/blog2.png"
-import blog3 from "../../Assets/blog3.png"
 import BlogCard from '../../Pages/Blogs/BlogCard'
 import { Row } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import axios from "axios"
-import NewPagination from '../NewPagination/NewPagination'
 
 const BlogSection = () => {
   
@@ -16,9 +12,8 @@ const BlogSection = () => {
     const navigate = useNavigate()
 
     const [blogs, setBlogs] = useState([])
-    const [limit, setLimit] = useState(10)
-    const [page, setPage] = useState(1)
-    const [pageInfo, setPageInfo] = useState({})
+    // const [page, setPage] = useState(1)
+    // const [pageInfo, setPageInfo] = useState({})
 
     const getBlogs = async () => {
 
@@ -29,19 +24,15 @@ const BlogSection = () => {
             },
         })
 
-        console.log(response.data.data?.docs)
         setBlogs(response.data.data?.docs)
-        setPageInfo({ ...response.data.data, docs: null })
+        // setPageInfo({ ...response.data.data, docs: null })
 
-    }
-    const paginationProps = {
-        setPage,
-        pageInfo
     }
 
     useEffect(() => {
         getBlogs()
-    }, [])
+    }, []);
+
     return (
         <div id="blogs">
             <Heading heading={"Blogs"} para="" cls={classes.div_head} />
@@ -52,7 +43,7 @@ const BlogSection = () => {
                         <>
                             {
                                 blogs?.map((item, index) =>
-                                    <BlogCard item={item} />
+                                    <BlogCard item={item} key={index} />
                                 )}
                             {/* <NewPagination {...paginationProps} /> */}
                         </>

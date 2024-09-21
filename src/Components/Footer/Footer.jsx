@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import {FaInstagram, FaPhone, FaPhoneAlt} from 'react-icons/fa'
-import { FiFacebook, FiGithub } from "react-icons/fi";
+import {FaInstagram, FaPhoneAlt} from 'react-icons/fa'
+import { FiFacebook } from "react-icons/fi";
 import classes from "./Footer.module.css"
 import { FaXTwitter } from "react-icons/fa6";
 import {useNavigate} from "react-router-dom"
@@ -10,7 +10,6 @@ import { MdEmail } from "react-icons/md";
 
 
 const Footer = () => {
-  const [showPrivacyPolicy, setShowPrivacyPolicy] = useState(false);
   const [email, setEmail] = useState('');
   const [buttonText, setButtonText] = useState('Submit');
   const [buttonColor, setButtonColor] = useState('#00398E');
@@ -37,9 +36,6 @@ const Footer = () => {
     return re.test(String(email).toLowerCase());
   };
 
-  const togglePrivacyPolicy = () => {
-      setShowPrivacyPolicy(prevState => !prevState);
-  };
   const navigate = useNavigate()
   const handleNavigation = (path) => {
     navigate(path);
@@ -55,19 +51,18 @@ const Footer = () => {
           <button  style={{ backgroundColor: buttonColor }} onClick={handleSubmit}>{buttonText}</button>
         </div>
         <div  className={classes.main_div1}>
-           <img src={logo} style={{width:"100px"}}/>
+           <img src={logo} style={{width:"100px"}} alt='Corelens logo' />
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-use')}>Terms of Use</p>
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-sales')}>Terms of Sales</p>
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-condition')}>Term & Condition</p>
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/privacy-policy')}>Privacy Policy</p>
-            <p style={{cursor:"pointer"}} onClick={togglePrivacyPolicy}>Contact Us</p>
+            <p style={{cursor:"pointer"}}>Contact Us</p>
             <p style={{cursor:"pointer"}}>Download App</p>
         </div>
-        {showPrivacyPolicy && (
+        {true && (
                 <div className={classes.contactinfo}>
                 <div className={classes.contactsection}>
                     <h3>Get In Touch</h3>
-                    {/* <p>Lorem ipsum dolor sit amet.</p> */}
                 </div>
                 <div className={classes.top_contact}>
                 <div className={classes.top_div}>
@@ -110,13 +105,11 @@ const Footer = () => {
             </div>
             )}
         <div className={classes.div2}>
-            <p>@Copyright2024,All Rights Reserved</p>
+            <p>copyright © vibhor gupta. All rights reserved</p>
             <div>
             <FiFacebook />
             <FaXTwitter />
             <FaInstagram />
-            {/* <FiGithub/> */}
-
             </div>
         </div>
     </div>
