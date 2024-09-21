@@ -101,7 +101,7 @@ const ProductSlider = ({ searchTerm }) => {
 
     const products = [
         {
-            id: 1, name: 'Turbo', cat: "GPS Tracker", actualAmount: '4999', discount: "30%", saleAmount : "3499", img:[ product1, product12, product123], cls: classes.p1, gradientColors: gradients.p1,
+            id: 1, name: 'Turbo', cat: "GPS Tracker", actualAmount: '7199', discount: "45%", saleAmount : "3999", img:[ product1, product12, product123], cls: classes.p1, gradientColors: gradients.p1,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
@@ -261,7 +261,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 5, name: 'Moto', cat: "GPS Tracker", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
+            id: 5, name: 'Moto', cat: "GPS Tracker", actualAmount: '1999', discount: "25%", saleAmount : "1499", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
