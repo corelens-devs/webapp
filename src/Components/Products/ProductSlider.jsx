@@ -259,7 +259,7 @@ const ProductSlider = ({ searchTerm }) => {
             ]
         },
         {
-            id: 5, name: 'Moto', cat: "GPS Tracker", actualAmount: '1999', discount: "45%", saleAmount : "1099", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
+            id: 5, name: 'Moto', cat: "GPS Tracker", actualAmount: '1999', discount: "25%", saleAmount : "1499", img: [product2, product23, product22, product21], cls: classes.p2, gradientColors: gradients.p2,
             mainhighlight: [
                 {
                     title: "Real-time Tracking", img: icon1
