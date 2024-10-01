@@ -12,6 +12,17 @@ import { DiscountFunction } from '../../DiscountFunction/DiscountFunction';
 const ProductDetail = (props) => {
   let data = props?.productData
 
+  const orderCall = () => {
+    // On click, navigate to call this number
+    window.location.href = "tel:18003134207";
+  };
+  
+  const downloadApk = () => {
+    // On click, navigate to call this number
+    window.location.href = "/corelens.apk";
+  };
+
+
   return (
     <Modal
       {...props}
@@ -74,18 +85,18 @@ const ProductDetail = (props) => {
             <div style={{ marginTop: "20px" }}>
 
               <p className={classes.para2}>₹{data?.saleAmount}
-              {data?.actualAmount &&    <p className={classes.p9}>MRP <span style={{
-                textDecoration: "line-through"
-              }}>₹{data?.actualAmount}</span></p>} 
-            {data?.discount &&  <span style={{ color: "#FF774F" }}>({data?.discount} Off)</span>}
+                {data?.actualAmount && <p className={classes.p9}>MRP <span style={{
+                  textDecoration: "line-through"
+                }}>₹{data?.actualAmount}</span></p>}
+                {data?.discount && <span style={{ color: "#FF774F" }}>({data?.discount} Off)</span>}
               </p>
               <h1 className={classes.head2}>Inclusive all Taxes</h1>
             </div>
             <div className={classes.btm_btn_div}>
-              <button className={classes.buy_btn} style={{ background: "black" }}>Order Through Call <FaPhoneAlt />
+              <button className={classes.buy_btn} onClick={orderCall} style={{ background: "black" }}>Order Through Call <FaPhoneAlt />
 
               </button>
-              <button className={classes.buy_btn}>Order Through App <ImMobile style={{ fontSize: "18px" }} />
+              <button className={classes.buy_btn} onClick={downloadApk}>Order Through App <ImMobile style={{ fontSize: "18px" }} />
               </button>
             </div>
 
