@@ -13,7 +13,7 @@ const Footer = () => {
   const [email, setEmail] = useState('');
   const [buttonText, setButtonText] = useState('Submit');
   const [buttonColor, setButtonColor] = useState('#00398E');
-  
+  const [isContactOpen, setIsContactOpen] = useState(false);
  
   const handleSubmit = () => {
     if (validateEmail(email)) {
@@ -56,10 +56,10 @@ const Footer = () => {
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-sales')}>Terms of Sales</p>
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/term-condition')}>Term & Condition</p>
             <p style={{cursor:"pointer"}} onClick={() => handleNavigation('/privacy-policy')}>Privacy Policy</p>
-            <p style={{cursor:"pointer"}}>Contact Us</p>
+            <p style={{cursor:"pointer"}} onClick={() => setIsContactOpen(!isContactOpen)}>Contact Us</p>
             <p style={{cursor:"pointer"}}>Download App</p>
         </div>
-        {true && (
+        {isContactOpen && (
                 <div className={classes.contactinfo}>
                 <div className={classes.contactsection}>
                     <h3>Get In Touch</h3>
