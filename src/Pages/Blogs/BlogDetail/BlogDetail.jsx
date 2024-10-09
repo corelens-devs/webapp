@@ -7,6 +7,8 @@ import Footer from "../../../Components/Footer/Footer";
 import BlogCard from "../BlogCard";
 import { FaArrowLeft } from "react-icons/fa";
 import axios from "axios";
+import parse from 'html-react-parser';
+
 
 const BlogDetail = () => {
     const [blogs, setBlogs] = useState({})
@@ -56,7 +58,8 @@ const BlogDetail = () => {
 
                     <img src={blogs?.images_url} alt={blogs.blog_category_id?.name} />
                     <p style={{ textIndent: '40px', marginTop: "20px" }}>
-                        {blogs?.description}
+                    {blogs?.description ? parse(blogs.description) : "No description available."}
+
 
                     </p>
                 </Container>

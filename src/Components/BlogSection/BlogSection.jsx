@@ -5,6 +5,7 @@ import BlogCard from '../../Pages/Blogs/BlogCard'
 import { Row } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import axios from "axios"
+import NewPagination from '../NewPagination/NewPagination'
 
 const BlogSection = () => {
   
@@ -12,8 +13,8 @@ const BlogSection = () => {
     const navigate = useNavigate()
 
     const [blogs, setBlogs] = useState([])
-    // const [page, setPage] = useState(1)
-    // const [pageInfo, setPageInfo] = useState({})
+    const [page, setPage] = useState(1)
+    const [pageInfo, setPageInfo] = useState({})
 
     const getBlogs = async () => {
 
@@ -32,6 +33,11 @@ const BlogSection = () => {
     useEffect(() => {
         getBlogs()
     }, []);
+
+//   const paginationProps = {
+//         setPage,
+//         pageInfo
+//       }
 
     return (
         <div id="blogs">

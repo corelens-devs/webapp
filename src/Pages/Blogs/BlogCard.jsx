@@ -17,10 +17,10 @@ const BlogCard = (props) => {
                     <span>15 min read</span>
                 </div>
                 <h5>
-                    {item.title}
+                    {item?.title}
                 </h5>
                 <p>
-                    {item.sub_title}.{" "}
+                    {item?.sub_title?.length > 150 && item?.sub_title?.slice(0,140) + "..."}
               {/* <br/> */}
                     {/* {item.description}.{" "} */}
                 </p>

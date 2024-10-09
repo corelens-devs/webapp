@@ -103,7 +103,7 @@ const Blog = () => {
 
     useEffect(() => {
         getBlogs()
-    }, [])
+    }, [limit, page])
     // const navigate = useNavigate()
 
     // const blogs = [
@@ -165,8 +165,8 @@ const Blog = () => {
             <div className={styles.main_hero_section}>
                 <Container >
                     <div className={styles.hero_section}>
-                    <p className="text-start mb-4 fw-medium text-dark" style={{fontFamily:'"Inter", san-serif', cursor:"pointer"}} onClick={() =>navigate('/')}><FaArrowLeft style={{fontSize:"15px" , marginRight:"10px"}}/>
-                    Back</p>
+                        <p className="text-start mb-4 fw-medium text-dark" style={{ fontFamily: '"Inter", san-serif', cursor: "pointer" }} onClick={() => navigate('/')}><FaArrowLeft style={{ fontSize: "15px", marginRight: "10px" }} />
+                            Back</p>
                         <h6>Blogs</h6>
 
 
@@ -183,13 +183,13 @@ const Blog = () => {
                                         <span>15 min read</span>
                                     </div>
                                     <h6>
-                                    {blog.title}
+                                        {blog.title}
                                     </h6>
-                                    <p>
-                    {blog.sub_title}.{" "}
-               <br/>
-                    {blog.description}.{" "}
-                </p>
+                                    <p style={{ width: "100%" }}>
+                                        {blog?.sub_title?.slice(0, 240) + "..."}
+                                        {/* <br/> */}
+                                        {/* {blog.description}.{" "} */}
+                                    </p>
                                     <a href={`/blogs/details/${blog?._id}`} >
                                         {/* <a href={"/blogs/details/" + blogs[0]?._id} > */}
                                         Read More <MdOutlineArrowOutward />
@@ -206,26 +206,26 @@ const Blog = () => {
                     <div className={styles.bottom_section}>
                         {/* <h6>Latest blogs</h6> */}
 
-                        <Row className="gap-sm-4">
-                        {blogs.length > 0 ?
-                        <>
-                            {blogs.map((item, index) => 
-                            <BlogCard item={item} />
-                            
-                        )
+                        <Row >
+                            {blogs.length > 0 ?
+                                <>
+                                    {blogs.map((item, index) =>
+                                        <BlogCard item={item} />
 
-                            }
-                            <NewPagination {...paginationProps} />
-                        </>
+                                    )
 
-                        : "no blogs found!"}
+                                    }
+                                    <NewPagination {...paginationProps} />
+                                </>
+
+                                : "no blogs found!"}
 
                         </Row>
                     </div>
                 </Container>
 
             </div>
-                <Footer />
+            <Footer />
         </React.Fragment>
     );
 };
