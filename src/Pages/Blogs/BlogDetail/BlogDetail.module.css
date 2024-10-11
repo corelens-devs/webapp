@@ -64,13 +64,16 @@
     }
 }
 
-
+p.parser_parent li {
+    text-align: left;
+}
 
 .span_div {
     display: flex;
     gap: 20px;
-cursor: pointer;
-margin-bottom: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
     & span {
         border: 1px solid #4E5774;
         color: #4E5774;
@@ -140,14 +143,17 @@ margin-bottom: 20px;
     .main_section {
         margin-inline: auto;
         padding: 20px;
-        & h6{
+
+        & h6 {
             word-wrap: break-word;
         }
+
         & p {
             word-wrap: break-word;
         }
     }
-    .span_div{
+
+    .span_div {
         flex-wrap: wrap;
     }
 }

@@ -27,7 +27,7 @@ const BlogDetail = () => {
         setBlogs(response.data.data?.blogDetails)
         setRelatedBlogs(response.data.data?.relatedBlogs)
     }
-    
+
     useEffect(() => {
         getBlogs()
     }, [])
@@ -57,10 +57,8 @@ const BlogDetail = () => {
                     </div>
 
                     <img src={blogs?.images_url} alt={blogs.blog_category_id?.name} />
-                    <p style={{ textIndent: '40px', marginTop: "20px" }}>
-                    {blogs?.description ? parse(blogs.description) : "No description available."}
-
-
+                    <p style={{ marginTop: "20px" }} className={styles.parser_parent}>
+                        {blogs?.description ? parse(blogs.description) : "No description available."}
                     </p>
                 </Container>
                 <Container>
