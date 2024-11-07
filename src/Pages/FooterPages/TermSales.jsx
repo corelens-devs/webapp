@@ -20,10 +20,10 @@ const TermSales = () => {
     <>
       <Navbar onSearchChange={handleSearchChange} />
       <div className={classes.main_div}>
-      <div className={classes.inn_div} onClick={handleNavigate}>
-      <FaArrowLeft />
-<span>Back</span>
-      </div>
+        <div className={classes.inn_div} onClick={handleNavigate}>
+          <FaArrowLeft />
+          <span>Back</span>
+        </div>
 
         <h3 className='text-start mb-5'> Terms of Sale </h3>
 
@@ -82,9 +82,46 @@ const TermSales = () => {
 
         <p> Corelens Gift Cards can only be used for transactions only on the Corelens website. No sales tax will be applied to the purchase of the Gift Card. Upon redemption of the Gift Card, sales tax will be applied. The tax rate applied to the transaction depends on the delivery address of the person redeeming it. Gift Cards cannot be used for the purpose of acquiring further Gift Cards.</p>
 
-        <h5>  Shipping</h5>
-        <p>
-          The delivery will be made by a standard transportation company, with the responsibility for the goods transferring to the buyer once they leave Corelens's shipping location. You bear full responsibility for any loss or damage to the System during transportation.</p>
+        <h5> Shipping</h5>
+        <ul>
+          <li  className='text-start'>Processing Time: Orders are processed within 1-2 business days after payment is confirmed. You will receive a notification with a tracking number once your order has shipped.</li>
+          <li className='text-start'>
+          Shipping Duration: Delivery times vary based on your location. Standard delivery typically takes:
+          <ul>
+            <li className='text-start'>Metro Cities: 3-5 business days
+            </li>
+            <li className='text-start'>
+            Non-Metro Cities and Rural Areas: 5-10 business days
+            </li>
+          </ul>
+          </li>
+          <li className='text-start'>
+          Shipping Partners: We partner with reliable couriers to ensure timely delivery. Tracking information will be provided once the order is shipped.
+          </li>
+          <li className='text-start'>
+          Shipping Fees: Shipping fees vary by location and order size. Charges will be displayed at checkout before finalizing your purchase.
+          </li>
+          <li className='text-start'>
+          International Shipping: Currently, we only ship within India.
+          </li>
+        </ul>
+
+
+        
+        <h5>Turnaround Time</h5>
+        <ul>
+          <li className="text-start">Order Confirmation: After placing an order, you will receive a confirmation immediately. Processing starts within 24 hours of confirmation.</li>
+          <li className="text-start">Estimated Delivery: Orders are generally delivered within 3-10 business days, depending on your location.</li>
+          <li className="text-start">Delays: While we strive for timely deliveries, unexpected delays may occur. In such cases, please reach out to our support team for assistance.</li>
+        </ul>
+<h5>Payment Information</h5>
+<ul>
+  <li className="text-start">Payment Gateway: Corelens uses Razorpay for secure online payments. Accepted payment methods include UPI, Credit/Debit Cards, Net Banking, Wallets, and EMI options.</li>
+  <li className="text-start">Secure Transactions: All transactions are securely encrypted to protect your data.</li>
+  <li className="text-start">Billing Information: Please ensure that the billing information matches your bank records to avoid transaction issues. You will receive an invoice upon successful payment.</li>
+</ul>
+        {/* <p>
+          The delivery will be made by a standard transportation company, with the responsibility for the goods transferring to the buyer once they leave Corelens's shipping location. You bear full responsibility for any loss or damage to the System during transportation.</p> */}
 
         <h5>Limited Warranty</h5>
 
