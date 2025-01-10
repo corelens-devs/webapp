@@ -5,7 +5,6 @@ import AISecurity from '../Components/AISection/AISecurity'
 import Services from '../Components/Services/Services'
 import ProductSlider from '../Components/Products/ProductSlider'
 import Features from '../Components/WhyNeed/Features'
-import MobileSection from '../Components/MobileSection/MobileSection'
 import BottomComponent from '../Components/Bottom/BottomComponent'
 import Footer from '../Components/Footer/Footer'
 import classes from "./Landing.module.css"
@@ -29,7 +28,7 @@ const LandingPage = () => {
         <ProductSlider searchTerm={searchTerm} />
         <Features />
       </div>
-      <MobileSection />
+      {/* <MobileSection /> */}
       <div className={classes.main_div}>
         <Faq />
         <BlogSection />

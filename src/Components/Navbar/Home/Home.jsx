@@ -63,9 +63,9 @@ const Home = () => {
             slidesPerView={1.5}
             modules={[Autoplay, Pagination]}
         >
-            <SwiperSlide><img className='img' src={banner_first} alt='Corelens CCTV Camera for Home Security' /><img className='img_mob' src={ban_sm1} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner1} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={Banner_mob} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner2} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
+            {/* <SwiperSlide><img className='img' src={banner_first} alt='Corelens CCTV Camera for Home Security' /><img className='img_mob' src={ban_sm1} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide> */}
+            {/* <SwiperSlide><img className='img' src={Banner1} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={Banner_mob} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide> */}
+            {/* <SwiperSlide><img className='img' src={Banner2} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide> */}
             <SwiperSlide><img className='img' src={Banner3} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm2} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
             <SwiperSlide><img className='img' src={Banner4} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm3} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
             <SwiperSlide><img className='img' src={Banner5} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm4} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>

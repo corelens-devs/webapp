@@ -25,7 +25,7 @@ const BlogSection = () => {
             },
         })
 
-        setBlogs(response.data.data?.docs)
+        setBlogs([response.data.data?.docs[1]])
         // setPageInfo({ ...response.data.data, docs: null })
 
     }
