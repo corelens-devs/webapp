@@ -84,7 +84,7 @@ const Blog = () => {
 
     const getBlogs = async () => {
 
-        const register = `https://corelens.awarno.com/api/website/blogs?limit=${limit}&page=${page}`
+        const register = `https://backend.corelens.in/api/website/blogs?limit=${limit}&page=${page}`;
         let response = await axios.get(register, {
             headers: {
                 "Content-Type": "application/json",

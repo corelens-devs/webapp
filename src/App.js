@@ -10,6 +10,7 @@ import Blog from './Pages/Blogs/Blog';
 import BlogDetail from './Pages/Blogs/BlogDetail/BlogDetail';
 import CancellationPolicy from './Pages/FooterPages/CancellationPolicy';
 import ReturnPolicy from './Pages/FooterPages/ReturnPolicy';
+import AccountDeletion from './Components/Contact/AccountDeletion';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/blogs/details/:id' element={<BlogDetail />} />
+        <Route path='/contact/account-deletion' element={<AccountDeletion />} />
       </Routes>
     </div>
   );
