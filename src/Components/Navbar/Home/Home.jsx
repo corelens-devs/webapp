@@ -70,10 +70,10 @@ const Home = () => {
             <SwiperSlide><img className='img' src={Banner4} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm3} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
             <SwiperSlide><img className='img' src={Banner5} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm4} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
             <SwiperSlide><img className='img' src={Banner6} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm5} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
-            <SwiperSlide><img className='img' src={Banner7} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm6} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide>
+            {/* <SwiperSlide><img className='img' src={Banner7} alt='Corelens CCTV Camera for Home Security'  /><img className='img_mob' src={ban_sm6} alt='Corelens CCTV Camera for Home Security'  /></SwiperSlide> */}
 
         </Swiper>
-
+    
     );
 }
 
