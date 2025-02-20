@@ -4,6 +4,7 @@ import Footer from "../../Components/Footer/Footer";
 import Navbar from "../../Components/Navbar/Navbar/Navbar";
 import classes from "./AccountDeletion.module.css";
 import axios from "axios";
+import ImageGrid from "./ImageGrid";
 
 const AccountDeletion = () => {
   const [email, setEmail] = useState("");
@@ -79,7 +80,10 @@ const AccountDeletion = () => {
     <React.Fragment>
       <Navbar />
       <div style={{ minHeight: "500px" }}>
-        <Container>
+        <div className={classes.main_div}>
+          <ImageGrid />
+        </div>
+        {/* <Container>
           <div className={classes.main_div}>
             <h2>Account Data Deletion!</h2>
             <p>Fill the below form to request deletion of your data.</p>
@@ -117,7 +121,7 @@ const AccountDeletion = () => {
               <p>Your details have been submitted. We will get back to you on phone/email for further processing.</p>
             )}
           </div>
-        </Container>
+        </Container> */}
       </div>
 
       <Footer />

@@ -25,6 +25,7 @@ function App() {
         <Route path='/cancellation-policy' element={<CancellationPolicy />} />
         <Route path='/return-policy' element={<ReturnPolicy />} />
         <Route path='/privacy-policy' element={<PrivacyPolicy />} />
+        <Route path='/our-privacy-policy' element={<PrivacyPolicy />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/blogs/details/:id' element={<BlogDetail />} />
         <Route path='/contact/account-deletion' element={<AccountDeletion />} />
