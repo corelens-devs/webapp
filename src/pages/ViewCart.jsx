@@ -3575,6 +3575,7 @@ const ViewCart = () => {
           </div>
         </div>
       )}
+
       {/* Hero Section */}
       <section className="cart-hero-section">
         <div className="cart-inner-container">
@@ -3584,8 +3585,8 @@ const ViewCart = () => {
               <a className="breadcrumb-link" href="#/">
                 home
               </a>
-              <span class="breadcrumb-separator"> / </span>
-              <span class="breadcrumb-current">view cart</span>
+              <span className="breadcrumb-separator"> / </span>
+              <span className="breadcrumb-current">view cart</span>
             </nav>
           </div>
         </div>
@@ -3599,6 +3600,7 @@ const ViewCart = () => {
             <div className="checkout-steps-container">
               {steps.map((step) => (
                 <div
+                  key={step.id}
                   className={`step-panel ${
                     isStepActive(step.id) ||
                     (step.id === 2 && isNewUser && currentStep === 2)
