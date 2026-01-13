@@ -2647,7 +2647,7 @@ const ViewCart = () => {
           confirmButtonColor: "#fb641b",
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.href = "/checkout-success";
+            window.location.href = "/#checkout-success";
           }
         });
       } else {
