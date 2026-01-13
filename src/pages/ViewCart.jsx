@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Swal from "sweetalert2";
-import "../css/viewcart.css";
+import "./viewcart.css";
 import {
   sendOTP,
   verifyOTP,
