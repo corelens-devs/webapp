@@ -1,9 +1,236 @@
-import './App.css'
+import React, { useEffect } from "react";
+import {
+  HashRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 
-export default function App() {
-  return (
-    <main>
-      React ⚛️ + Vite ⚡ + Replit
-    </main>
-  )
+// Component to scroll to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
 }
+import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
+import Home from "./pages/Home.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import Categories from "./pages/Categories.jsx";
+import Products from "./pages/Products.jsx";
+import ProductDetails from "./pages/ProductDetails.jsx";
+import ViewCart from "./pages/ViewCart.jsx";
+import SignIn from "./pages/SignIn.jsx";
+import TrackOrder from "./pages/TrackOrder.jsx";
+import Testimonials from "./pages/Testimonials.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import Signup from "./pages/Signup.jsx";
+import Surveillance from "./pages/Surveillance.jsx";
+import CategoryPage from "./pages/CategoryPage.jsx";
+import ContactUs from "./pages/ContactUs.jsx"; // Import ContactUs component
+import TermsOfUse from "./pages/TermsOfUse.jsx";
+import TermsOfSales from "./pages/TermsOfSales.jsx";
+import TermsAndConditions from "./pages/TermsAndConditions.jsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import NotFound from "./pages/NotFound.jsx";
+import CategoryProducts from "./pages/CategoryProducts";
+import Checkout from "./pages/Checkout.jsx";
+import CheckoutSuccess from "./pages/CheckoutSuccess.jsx";
+import CheckoutFailure from "./pages/CheckoutFailure.jsx";
+
+// Import main CSS file that includes all styles
+import "./css/main.css";
+
+function App() {
+  useEffect(() => {
+    const loadScripts = async () => {
+      try {
+        // Scripts are loaded via HTML, so we just need to initialize them
+        if (window.jQuery) {
+          console.log("jQuery loaded successfully");
+        }
+        if (window.WOW) {
+          new window.WOW().init();
+        }
+      } catch (error) {
+        console.error("Script loading failed:", error);
+      }
+    };
+
+    // Enhanced global state restoration with improved persistence
+    const restoreApplicationState = async () => {
+      try {
+        console.log("🔄 App: Restoring application state on load...");
+
+        // Check login state directly from localStorage
+        const token = localStorage.getItem("userToken");
+        const phone = localStorage.getItem("userPhone");
+        const verified = localStorage.getItem("userVerified");
+        const timestamp = localStorage.getItem("loginTimestamp");
+
+        if (token && phone && verified === "true") {
+          // Validate login timestamp (max 30 days old)
+          const loginTime = timestamp ? parseInt(timestamp) : Date.now();
+          const maxAge = 30 * 24 * 60 * 60 * 1000; // 30 days
+          const isValid = Date.now() - loginTime < maxAge;
+
+          if (isValid) {
+            console.log("✅ App: Found valid existing login state", {
+              phone: phone,
+              hasToken: !!token,
+              isVerified: true,
+              loginTime: new Date(loginTime).toLocaleString(),
+              daysAgo: Math.floor(
+                (Date.now() - loginTime) / (24 * 60 * 60 * 1000)
+              ),
+            });
+
+            // Dispatch login event for any components that need it
+            window.dispatchEvent(
+              new CustomEvent("userLoggedIn", {
+                detail: { phone: phone, token: token, isVerified: true },
+              })
+            );
+          } else {
+            console.log("⚠️ App: Login state expired, clearing...");
+            localStorage.removeItem("userToken");
+            localStorage.removeItem("userPhone");
+            localStorage.removeItem("userVerified");
+            localStorage.removeItem("loginTimestamp");
+            localStorage.removeItem("loginData");
+            localStorage.removeItem("viewCartData");
+          }
+        } else {
+          console.log("🔓 App: No existing login state found");
+        }
+
+        // Enhanced cart state restoration with validation
+        const cartItems = localStorage.getItem("cartItems");
+        const cartLastUpdated = localStorage.getItem("cartLastUpdated");
+
+        if (cartItems && cartItems !== "undefined" && cartItems !== "null") {
+          try {
+            const parsedCart = JSON.parse(cartItems);
+            const validCartItems = Array.isArray(parsedCart)
+              ? parsedCart.filter(
+                  (item) =>
+                    item &&
+                    item.id &&
+                    item.name &&
+                    item.price !== undefined &&
+                    item.quantity > 0
+                )
+              : [];
+
+            console.log(
+              "🛒 App: Found existing cart state:",
+              validCartItems.length,
+              "items"
+            );
+            console.log(
+              "🛒 App: Cart last updated:",
+              cartLastUpdated
+                ? new Date(parseInt(cartLastUpdated)).toLocaleString()
+                : "unknown"
+            );
+
+            // Force save cleaned cart if needed
+            if (
+              validCartItems.length !== parsedCart.length ||
+              validCartItems.length > 0
+            ) {
+              try {
+                localStorage.setItem(
+                  "cartItems",
+                  JSON.stringify(validCartItems)
+                );
+                localStorage.setItem("cartLastUpdated", Date.now().toString());
+                console.log("🧹 App: Cleaned and re-saved cart items");
+
+                // Dispatch event to update any components already loaded
+                setTimeout(() => {
+                  window.dispatchEvent(
+                    new CustomEvent("cartUpdated", { detail: validCartItems })
+                  );
+                }, 100);
+              } catch (saveError) {
+                console.error("❌ App: Error saving cleaned cart:", saveError);
+              }
+            }
+          } catch (error) {
+            console.error("❌ App: Error parsing cart items, clearing:", error);
+            localStorage.removeItem("cartItems");
+            localStorage.removeItem("cartLastUpdated");
+          }
+        } else {
+          console.log("📭 App: No existing cart state found");
+        }
+
+        // Check for ViewCart specific data
+        const viewCartData = localStorage.getItem("viewCartData");
+        if (viewCartData) {
+          console.log("📋 App: Found ViewCart data");
+        }
+
+        console.log("✅ App: Enhanced application state restoration completed");
+      } catch (error) {
+        console.error("❌ App: Error during state restoration:", error);
+      }
+    };
+
+    loadScripts();
+    restoreApplicationState();
+  }, []);
+
+  return (
+    <Router>
+      <div className="App">
+        <ScrollToTop />
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/categories" element={<Categories />} />
+            <Route path="/category/:slug" element={<CategoryPage />} />
+            <Route
+              path="/category-products/:slug"
+              element={<CategoryProducts />}
+            />
+            <Route path="/products" element={<Products />} />
+            <Route
+              path="/product-details/:slug/:id"
+              element={<ProductDetails />}
+            />
+            <Route path="/surveillance" element={<Surveillance />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/terms-of-use" element={<TermsOfUse />} />
+            <Route path="/terms-of-sales" element={<TermsOfSales />} />
+            <Route
+              path="/terms-and-conditions"
+              element={<TermsAndConditions />}
+            />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/sign-in" element={<SignIn />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/track-order" element={<TrackOrder />} />
+            <Route path="/view-cart" element={<ViewCart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/checkout-success" element={<CheckoutSuccess />} />
+            <Route path="/checkout-failure" element={<CheckoutFailure />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;

@@ -1,0 +1,126 @@
+
+/* Banner Carousel Dots Styling */
+.home-banner-carousel .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.home-banner-carousel .owl-dots .owl-dot {
+  display: inline-block;
+  margin: 0 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-banner-carousel .owl-dots .owl-dot.active,
+.home-banner-carousel .owl-dots .owl-dot:hover {
+  background: #3388bd;
+  transform: scale(1.2);
+}
+
+.home-banner-carousel .owl-dots .owl-dot span {
+  display: none;
+}
+
+/* Banner Animation Classes */
+.home-banner .wow {
+  visibility: hidden;
+}
+
+.home-banner .wow.animated {
+  visibility: visible;
+}
+
+/* Banner Position Relative for Absolute Dots */
+.home-banner {
+  position: relative;
+}
+
+.home-banner .wrapper {
+  position: relative;
+}
+
+/* Prevent hero image blinking */
+.hero-image {
+  position: relative;
+  will-change: transform;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Animation improvements */
+.home-banner .wow {
+  animation-fill-mode: both;
+  backface-visibility: hidden;
+  visibility: hidden;
+}
+
+.home-banner .wow.animated {
+  visibility: visible;
+}
+
+.home-banner .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+/* Ensure watermark typing animation works */
+.home-banner .watermark {
+  overflow: visible;
+}
+
+.home-banner .watermark .typewriter {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Enhance CTA button animations */
+.cta-buttons {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.cta-buttons.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Enhance review count animation */
+.review-count {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+
+.review-count.animated {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Enhance testimonial animation */
+.testimonial-sec {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+.testimonial-sec.animated {
+  opacity: 1;
+  transform: translateX(0);
+}

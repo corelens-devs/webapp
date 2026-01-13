@@ -1,0 +1,116 @@
+/* Payment Modal Styles */
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  padding: 20px;
+}
+
+.payment-modal-content {
+  background: #fff;
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.payment-modal-header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payment-modal-header h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #212121;
+}
+
+.close-modal-btn {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: #757575;
+}
+
+.payment-options-list {
+  padding: 20px;
+}
+
+.payment-option-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.payment-option-card:hover {
+  background: #f9f9f9;
+  border-color: #2874f0;
+}
+
+.option-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.option-label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #212121;
+}
+
+.payment-logos {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.payment-logos img {
+  object-fit: contain;
+}
+
+.option-arrow {
+  font-size: 2rem;
+  color: #757575;
+}
+
+.option-checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.checkmark-box {
+  width: 100%;
+  height: 100%;
+  background: #00a58a;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 1.4rem;
+}

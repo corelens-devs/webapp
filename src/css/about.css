@@ -1,0 +1,677 @@
+.about-us-page {
+  width: 100%;
+  overflow-x: hidden
+}
+
+.about-hero-section {
+  background: var(--blue);
+  padding: 4rem 0 3rem;
+  text-align: center;
+  color: #2c3e50
+}
+
+.about-hero-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem
+}
+
+.about-hero-section .breadcrumb-container {
+  margin-bottom: 2rem
+}
+
+.about-hero-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: var(--light-blue)
+}
+
+.about-hero-subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+  opacity: .9
+}
+
+.about-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem
+}
+
+.about-section-title {
+  font-size: 4.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 3rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  text-align: left;
+  position: relative;
+  padding-bottom: 1.5rem
+}
+
+.about-section-title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25rem;
+  height: 3px;
+  background: #1e6e94
+}
+
+.about-choose-title:after {
+  left: 50%;
+  transform: translate(-50%)
+}
+
+.about-section-title.text-center:after {
+  left: 50%;
+  transform: translate(-50%)
+}
+
+.about-story-section {
+  padding: 8rem 0;
+  background: #fff
+}
+
+.about-story-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem
+}
+
+.about-story-text {
+  flex: 1
+}
+
+.about-story-description {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #242424;
+  margin: 0 0 2rem;
+  text-align: center
+}
+
+.about-story-image {
+  flex: 0 0 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.about-story-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain
+}
+
+.about-cause-section {
+  padding: 8rem 0;
+  background: #dcf6ff
+}
+
+.about-cause-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem
+}
+
+.about-cause-image {
+  flex: 0 0 46rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.about-cause-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 1rem
+}
+
+.about-cause-text {
+  flex: 1
+}
+
+.text-center {
+  text-align: center
+}
+
+.about-cause-description {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #242424;
+  margin: 0 0 2rem;
+  text-align: justify
+}
+
+.about-vision-section {
+  padding: 4rem 0;
+  background: #f2f2f2
+}
+
+.about-vision-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 10rem;
+}
+
+.about-vision-text {
+  flex: 1
+}
+
+.about-vision-points {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 2rem
+}
+
+.about-vision-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background: #3badd8;
+  border-radius: 1rem;
+  padding: 2rem 3rem
+}
+
+.about-vision-content .alter-color {
+  background: #1e6e94
+}
+
+.vision-point-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d7cbf;
+  min-width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  flex-shrink: 0
+}
+
+.about-vision-point p {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 400;
+  color: #fff;
+  margin: 0
+}
+
+.about-vision-image {
+  flex: 0 0 46rem;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.about-vision-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2rem;
+  height: 100vh;
+}
+
+.about-mission-section {
+  padding: 8rem 0;
+  background: #1e6e94;
+  color: #fff
+}
+
+.about-mission-description ul {
+  list-style: disc;
+  padding-left: 2rem;
+  margin: 0
+}
+
+.about-mission-description li {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #fff;
+  margin-bottom: 1rem
+}
+
+.about-mission-content {
+  display: flex;
+  align-items: center;
+  gap: 6rem
+}
+
+.about-mission-section .about-section-title {
+  color: #fff
+}
+
+.about-mission-section .about-section-title:after {
+  background: #fff
+}
+
+.about-mission-image {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.about-mission-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain
+}
+
+.about-mission-text {
+  flex: 1
+}
+
+.about-mission-description {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #fff;
+  margin: 0 0 2rem;
+  text-align: justify
+}
+
+.about-mission-signature {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 3rem 0 0;
+  font-style: italic
+}
+
+.about-core-values-section {
+  padding: 8rem 0;
+  background: #dcf6ff
+}
+
+.about-core-values-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 6rem
+}
+
+.about-core-values-text {
+  flex: 1
+}
+
+.core-values-list {
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+.core-values-list li {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #242424;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-left: 2rem
+}
+
+.core-values-list li:before {
+  content: "•";
+  color: #2d7cbf;
+  font-weight: 700;
+  position: absolute;
+  left: 0;
+  font-size: 1.8rem
+}
+
+.about-core-values-image {
+  flex: 0 0 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+.about-core-values-image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain
+}
+
+.about-choose-section {
+  padding: 4rem 0;
+  background: #fff
+}
+
+.about-choose-title {
+  text-align: center;
+  margin-bottom: 2rem
+}
+
+.about-choose-subtitle {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #666;
+  text-align: center;
+  max-width: 80rem;
+  margin: 0 auto 6rem
+}
+
+.about-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 3rem;
+  margin: 3rem 0
+}
+
+.about-choose-card {
+  background: #dff2ff;
+  padding: 3rem 2.5rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: all .3s ease
+}
+
+.about-choose-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px #2d7cbf26;
+  border-color: #2d7cbf
+}
+
+.choose-card-icon {
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px #0000001a
+}
+
+.choose-card-icon img,
+.choose-card-icon .feature-icon {
+  width: 3rem;
+  height: 3rem;
+  object-fit: contain;
+  font-size: 3rem;
+  color: #23719b;
+  margin: 0 auto
+}
+
+.choose-card-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 1.5rem;
+  text-transform: uppercase
+}
+
+.choose-card-description {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #666;
+  margin: 0
+}
+
+.about-commitment-section {
+  padding: 4rem 0;
+  background: #f8f9fa
+}
+
+.commitment-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center
+}
+
+.commitment-description {
+  font-size: 1.6rem;
+  line-height: 2;
+  color: #242424;
+  margin-bottom: 3rem;
+  text-align: justify
+}
+
+.commitment-footer {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #2d7cbf;
+  text-align: center;
+  font-weight: 500
+}
+
+@media (max-width: 1199px) {
+  .about-hero-title {
+    font-size: 4.5rem
+  }
+
+  .about-story-content,
+  .about-cause-content,
+  .about-vision-content,
+  .about-mission-content {
+    gap: 4rem
+  }
+
+  .about-story-image,
+  .about-cause-image,
+  .about-vision-image,
+  .about-mission-image {
+    flex: 0 0 30rem
+  }
+}
+
+@media (min-width:340px) and (max-width: 710px) {
+
+  .about-story-content,
+  .about-cause-content,
+  .about-vision-content,
+  .about-mission-content,
+  .about-core-values-content {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: left
+  }
+
+  .about-cause-content,
+  .about-mission-content {
+    flex-direction: column-reverse
+  }
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer .contact-sec {
+    display: inline-flex;
+    gap: 1.7rem;
+    margin-bottom: 0;
+    flex-direction: column;
+}
+.footer-col.about-col{
+    grid-column: 1 / -1;
+}
+.footer-top{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+footer .heading-sec h3 {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+}
+footer .contact-sec a {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+footer .heading-sec {
+    max-width: 100%;
+}
+.footer-col h4 {
+    margin-bottom: 1rem;
+    color: #fff;
+}
+}
+
+@media (min-width:740px) and (max-width: 991px) {
+  .about-hero-title {
+    font-size: 4rem
+  }
+
+  .about-section-title {
+    font-size: 2.5rem
+  }
+
+  .about-story-content,
+  .about-cause-content,
+  .about-vision-content,
+  .about-mission-content,
+  .about-core-values-content {
+    flex-direction: row;
+    gap: 4rem;
+    text-align: left
+  }
+
+  .about-story-image,
+  .about-cause-image,
+  .about-vision-image,
+  .about-mission-image,
+  .about-core-values-image {
+    flex: none;
+    max-width: 40rem;
+    margin: 0 auto
+  }
+
+  .about-cause-content,
+  .about-mission-content {
+    flex-direction: row
+  }
+
+  .about-choose-grid {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2.5rem
+  }
+  .cart-page .cart-inner-container {
+    max-width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+  .about-hero-section {
+    padding: 6rem 0 4rem
+  }
+
+  .about-hero-title {
+    font-size: 3rem
+  }
+
+  .about-hero-subtitle {
+    font-size: 1.6rem
+  }
+
+  .about-story-section,
+  .about-cause-section,
+  .about-vision-section,
+  .about-mission-section,
+  .about-choose-section {
+    padding: 6rem 0
+  }
+
+  .about-section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem
+  }
+
+  .about-story-description,
+  .about-cause-description,
+  .about-mission-description {
+    font-size: 1.5rem;
+    text-align: left
+  }
+
+  .about-vision-point {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 1.5rem
+  }
+
+  .vision-point-number {
+    align-self: center
+  }
+
+  .about-vision-point p {
+    font-size: 1.4rem
+  }
+
+  .about-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem
+  }
+
+  .about-choose-card {
+    padding: 2.5rem 2rem
+  }
+
+  .choose-card-title {
+    font-size: 1.8rem
+  }
+
+  .choose-card-description {
+    font-size: 1.3rem
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 0 1.5rem
+  }
+
+  .about-hero-title {
+    font-size: 2.5rem
+  }
+
+  .about-hero-subtitle {
+    font-size: 1.4rem
+  }
+
+  .about-section-title {
+    font-size: 2rem
+  }
+
+  .about-story-description,
+  .about-cause-description,
+  .about-mission-description,
+  .about-choose-subtitle,
+  .about-choose-footer {
+    font-size: 1.4rem
+  }
+
+  .about-vision-points {
+    gap: 2rem
+  }
+
+  .about-vision-point {
+    padding: 1.5rem
+  }
+
+  .choose-card-icon {
+    width: 6rem;
+    height: 6rem
+  }
+
+  .choose-card-icon img {
+    width: 3rem;
+    height: 3rem
+  }
+}

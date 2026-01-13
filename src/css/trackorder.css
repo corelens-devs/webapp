@@ -1,0 +1,457 @@
+
+
+.track-order-page {
+  min-height: 100vh;
+  background: #f8f9fa;
+  font-family: Poppins, sans-serif
+}
+
+.track-order-hero {
+  background: var(--blue);
+  padding: 4rem 0;
+  text-align: center;
+  color: #fff
+}
+
+.track-order-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem
+}
+
+.track-order-title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--light-blue)
+}
+
+.track-order-breadcrumb {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #fff
+}
+
+.track-order-breadcrumb span {
+  margin: 0 .5rem
+}
+
+.track-order-content {
+  padding: 6rem 0
+}
+
+.track-order-form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px #0000001a
+}
+
+.track-order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem
+}
+
+.track-order-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem
+}
+
+.track-order-label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: .8rem
+}
+
+.track-order-input {
+  padding: 1.5rem 2rem;
+  border: 1px solid rgb(145 145 145);
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  color: #2c3e50;
+  transition: all .3s ease;
+  background: #fff
+}
+
+.track-order-input:focus {
+  outline: none;
+  border-color: #5dade2;
+  box-shadow: 0 0 0 3px #5dade21a
+}
+
+.track-order-input::placeholder {
+  color: #adb5bd
+}
+
+.track-order-btn {
+  background: var(--black80) !important;
+  color: #fff;
+  border: none;
+  padding: 1.5rem 3rem;
+  border-radius: 8px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+  text-transform: uppercase;
+  letter-spacing: .5px
+}
+
+.track-order-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #3498db4d
+}
+
+.track-order-btn:disabled {
+  opacity: .6;
+  cursor: not-allowed;
+  transform: none
+}
+
+.track-order-result {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 3rem;
+  box-shadow: 0 4px 20px #0000001a
+}
+
+.track-order-info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e9ecef;
+  flex-wrap: wrap;
+  gap: 2rem
+}
+
+.track-order-info-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem
+}
+
+.track-order-info-item:first-child {
+  flex: 1
+}
+
+.track-order-info-icon {
+  background: #e3f2fd;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem
+}
+
+.track-order-info-content {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem
+}
+
+.track-order-info-label {
+  font-size: 1.4rem;
+  color: #6c757d;
+  font-weight: 500
+}
+
+.track-order-info-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #2c3e50
+}
+
+.track-order-highlight {
+  color: #2c3e50 !important
+}
+
+.track-order-info-badge {
+  background: #2c3e50;
+  color: #fff;
+  padding: .8rem 1.5rem;
+  border-radius: 20px;
+  font-size: 1.4rem;
+  font-weight: 600
+}
+
+.track-order-tracking-id {
+  background: #5dade2
+}
+
+.track-order-timeline {
+  position: relative;
+  margin: 4rem 0
+}
+
+.track-order-progress-line {
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  right: 2rem;
+  height: 4px;
+  border-radius: 2px;
+  z-index: 1
+}
+
+.track-order-progress-line-segment {
+  display: inline-block;
+  width: 25%;
+  height: 100%;
+  position: relative
+}
+
+.track-order-line {
+  height: 100%;
+  background: #e9ecef;
+  border-radius: 2px
+}
+
+.track-order-line-completed {
+  background: linear-gradient(90deg, #5dade2, #5dade2)
+}
+
+.track-order-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2
+}
+
+.track-order-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  max-width: 200px
+}
+
+.track-order-step-circle {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border: 3px solid #e9ecef;
+  background: #fff;
+  font-size: 1.8rem;
+  font-weight: 700
+}
+
+.track-order-step-completed .track-order-step-circle {
+  background: #5dade2;
+  border-color: #539ed0
+}
+
+.track-order-step-check {
+  color: #fff;
+  font-size: 1.6rem
+}
+
+.track-order-step-pending .track-order-step-circle {
+  background: #6c757d;
+  border-color: #6c757d
+}
+
+.track-order-step-pending-icon {
+  color: #fff;
+  font-size: 1.6rem
+}
+
+.track-order-step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.track-order-step-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem
+}
+
+.track-order-step-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem
+}
+
+.track-order-step-info {
+  text-align: center
+}
+
+.track-order-step-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: .5rem
+}
+
+.track-order-step-date {
+  font-size: 1.3rem;
+  color: #6c757d;
+  margin: 0
+}
+
+.track-order-step-completed .track-order-step-title {
+  color: #487ea3
+}
+
+.track-order-actions {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e9ecef
+}
+
+.track-order-new-btn {
+  background: transparent;
+  color: #5dade2;
+  border: 2px solid #5dade2;
+  padding: 1.2rem 2.5rem;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease
+}
+
+.track-order-new-btn:hover {
+  background: #5dade2;
+  color: #fff;
+  transform: translateY(-2px)
+}
+
+@media (max-width: 768px) {
+  .track-order-title {
+    font-size: 2.5rem
+  }
+
+  .track-order-hero {
+    padding: 3rem 0
+  }
+
+  .track-order-content {
+    padding: 4rem 0
+  }
+
+  .track-order-form-wrapper,
+  .track-order-result {
+    padding: 2rem;
+    margin: 0 1rem
+  }
+
+  .track-order-info-header {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center
+  }
+
+  .track-order-info-item {
+    justify-content: center
+  }
+
+  .track-order-steps {
+    flex-direction: column;
+    gap: 3rem
+  }
+
+  .track-order-progress-line {
+    display: none
+  }
+
+  .track-order-step {
+    flex-direction: row;
+    text-align: left;
+    max-width: none;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 8px
+  }
+
+  .track-order-step-circle {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+    flex-shrink: 0
+  }
+
+  .track-order-step-icon-wrapper {
+    flex-direction: row;
+    gap: 1.5rem
+  }
+
+  .track-order-step-icon {
+    margin-bottom: 0;
+    font-size: 2.5rem
+  }
+
+  .track-order-step-info {
+    text-align: left
+  }
+}
+
+@media (max-width: 480px) {
+  .track-order-container {
+    padding: 0 1rem
+  }
+
+  .track-order-title {
+    font-size: 2rem
+  }
+
+  .track-order-breadcrumb {
+    font-size: 1.2rem
+  }
+
+  .track-order-form-wrapper,
+  .track-order-result {
+    padding: 1.5rem
+  }
+
+  .track-order-input,
+  .track-order-btn,
+  .track-order-step-title {
+    font-size: 1.4rem
+  }
+
+  .track-order-step-date {
+    font-size: 1.2rem
+  }
+}
+/* Default dull/off-white look for all steps */
+.track-order-step-offwhite {
+  background: #fafafa;
+  color: #777;
+  border: 1px solid #eee;
+  opacity: 0.7;
+  filter: grayscale(0.5);
+  transition: all 0.3s ease;
+}
+
+/* Highlighted step (current order status) */
+
+
+/* Optional: circle highlight */
+.track-order-step-active .track-order-step-circle {
+ background: #5dade2;
+    color: white;
+    border: #539ed0;
+}
+
+/* Hover effect (optional) */
+.track-order-step-offwhite:hover {
+  opacity: 0.85;
+}

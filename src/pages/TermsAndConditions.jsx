@@ -1,0 +1,1655 @@
+import React from "react";
+import { Link } from "react-router-dom";
+import "../css/style.css";
+import "../css/legalstyle.css";
+
+const TermsAndConditions = () => {
+  return (
+    <div className="legal-page">
+      <section className="legal-banner-section">
+        <div className="legal-banner-content">
+          <h1>TERMS & CONDITIONS</h1>
+          <div className="legal-breadcrumb">
+            <Link to="/">Home</Link>
+            <span className="breadcrumb-separator">&gt;</span>
+            <span className="breadcrumb-current">Terms & Conditions</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="legal-content-section">
+        <div className="wrapper inner-box">
+          <div className="legal-container">
+            <p className="last-updated">Last updated: April 2024</p>
+
+            <div className="legal-text">
+              <p>
+                This document is a legally binding agreement (referred to as the
+                "Agreement") between you (referred to as "you" or the
+                "Subscriber") and Corelens, Inc. (referred to as "we" or
+                "Corelens"). In this Agreement, the term "System" refers to the
+                products purchased from Corelens. The term "Services" refers to
+                the selected services provided by Corelens, which may include
+                Emergency Dispatch Services, Video-Related Services, Account
+                Management Services, the Application (software or subscription
+                services downloaded to a smartphone, tablet, or other connected
+                device), and customer support Services. The term "Premises"
+                refers to the location where the System is installed. In this
+                Agreement, the word "you" refers to any individual or
+                organisation that accesses or utilises the Services. This
+                includes individuals or organisations that establish an account,
+                accept this Agreement, and access or use the Services. It also
+                includes any person who is given access to the Services by you.
+                Kindly review these terms and conditions thoroughly. These are
+                the terms and conditions that govern our provision of Services
+                to you via a monthly subscription that automatically renews.
+                Please refer to the sections below for information on invoicing,
+                the duration of the subscription, and how to cancel or terminate
+                the subscription.This Agreement includes significant
+                disclaimers, restrictions on responsibility, and
+                responsibilities to compensate for losses that apply to the
+                Services. It also mandates the use of binding arbitration to
+                settle disputes, instead of jury trials or class actions (as
+                explained in Section 39 below). By clicking the "Submit" button
+                or using any of the Services, you acknowledge that you have
+                perused and comprehend this Agreement and are legally obligated
+                by its terms, which include the disclaimers, limits of
+                liability, and indemnification duties stated below. The Corelens
+                Privacy Policy located at http://www.Corelens.in/privacy-policy
+                is included in this Agreement by reference. To get a physical
+                copy of this Agreement, just click the print button on your
+                Internet browser. IMPORTANT NOTICE REGARDING LIFE SAFETY: IF YOU
+                HAVE PURCHASED A SYSTEM THAT INCLUDES SMOKE DETECTORS OR CARBON
+                MONOXIDE DETECTORS, OR IF YOU PLAN TO ADD THESE DETECTORS AT A
+                LATER TIME, IT IS ESSENTIAL TO BE AWARE OF SPECIFIC REQUIREMENTS
+                AND STANDARDS FOR THEIR INSTALLATION, MAINTENANCE, AND
+                PLACEMENT. TO ENSURE COMPLIANCE WITH THESE REGULATIONS, IT IS
+                ADVISABLE TO CONTACT YOUR LOCAL AUTHORITY OR CONSULT A QUALIFIED
+                PROFESSIONAL WHO CAN ASSIST YOU IN PROPERLY INSTALLING,
+                MAINTAINING, AND PLACING THESE DETECTORS. PLEASE NOTE THAT YOU
+                ARE SOLELY RESPONSIBLE FOR ADHERING TO ANY APPLICABLE CODES,
+                LAWS, AND STANDARDS RELATED TO THE INSTALLATION, PLACEMENT, AND
+                MAINTENANCE OF THE SYSTEM.REFER TO THE PRODUCT MANUALS FOR MORE
+                INFORMATION.
+              </p>
+              <h3>
+                1. Service offerings, criteria for qualification, and management
+                of your account.
+              </h3>
+              <p>
+                (a) Corelens will provide you the Services in accordance with
+                the conditions outlined in this Agreement. (b) The Services and
+                Account registration are only available to those who are 18
+                years old or older. (c) In order to use the Services, it is
+                necessary for you to create an account ("Account") and provide
+                certain information about yourself as instructed by the
+                registration form. Any information pertaining to your Account is
+                governed by the provisions outlined in this Agreement and the
+                Corelens Privacy Policy, which can be found at
+                http://www.Corelens.com/privacy-policy. It is your exclusive
+                responsibility to ensure the confidentiality of your Account
+                login details and to oversee all actions that take place under
+                your Account. By using your Account, you are obligated to use
+                "strong" passwords, which consist of a mixture of uppercase and
+                lowercase characters, numbers, and symbols. It is also essential
+                to securely manage your password to avoid unauthorised access.
+                It is your responsibility to promptly inform Corelens of any
+                unauthorised or suspected unauthorised use of your Account, as
+                well as any other security breaches. Corelens bears no
+                responsibility for any loss or damage that may occur as a result
+                of your failure to adhere to the aforementioned conditions.
+                Corelens has the authority to examine passwords for obscene or
+                improper language, which may be forbidden at Corelens's sole
+                discretion. You are banned from using any passwords that are not
+                allowed by Corelens. If Corelens decides that your password
+                contains any forbidden word or phrase, you will be compelled to
+                change it. Not changing your password to a non-prohibited word
+                might result in termination, as detailed below. (d) We may
+                provide the option to access your Account via the Application
+                using Touch ID™. To enable or disable this function, just
+                switch the "Touch ID Authentication" buttons on the Settings
+                screen and follow the provided instructions. Corelens does not
+                possess the ability to get or obtain your fingerprint data. By
+                activating Touch ID™, you agree that anybody with a saved
+                fingerprint on your smartphone will be able to access your
+                Account via the Application on your device. We advise avoiding
+                saving the fingerprints of people on your device. However, if
+                you want to do so, please ensure that the persons whose
+                fingerprints are kept on your device are authorised to access
+                the personal and Services information provided by the
+                Application. The Touch ID™ feature can only be linked to a
+                single Corelens Account on a device at any one time. To learn
+                about Apple's practices regarding the use and storage of your
+                fingerprint data, go to Apple's Privacy Policy and iOS Security
+                Guide. (e) By contacting Corelens's customer support, you are
+                giving your agreement to the method via which the communication
+                was started. By agreeing, you also provide permission for
+                Corelens to contact you using any accessible methods, using the
+                contact details provided in your Account. This encompasses both
+                unidirectional and bidirectional video-enabled customer support
+                communication techniques, whether accessible via your mobile
+                device, the Application, or any other present or future mobile
+                or online interface. Unless specifically agreed upon in a
+                separate services agreement, Corelens will not impose any extra
+                charges for providing customer support services. However, please
+                note that your wireless service provider may apply fees for
+                air-time or data usage related to these services. Consult your
+                wireless service provider for any inquiries about your wireless
+                plan. (f) You acknowledge that your home security system and
+                monitoring service may be subject to state or municipal
+                regulations regarding the handling of various kinds of alarms
+                and requests for first responder dispatch. If you activate our
+                service in an area that is subject to local laws and procedures,
+                please note that our capacity to offer professional monitoring
+                services may be limited by these rules and practices. For
+                instance, some municipalities may mandate the reception of
+                multiple alarms or the immediate verification of an alarm
+                through audio or visual means before dispatching first
+                responders. In contrast, other municipalities may stipulate that
+                alarms from specific life safety devices, such as carbon
+                monoxide alarms, must always result in emergency response calls,
+                regardless of whether the occupants perceive it as a false
+                alarm. (g) After you have purchased the system and created or
+                activated your account, Corelens may reach out to you by phone,
+                email, SMS/text, or mail to provide assistance in setting up
+                your system or subscribing to any services that you have
+                included in your online purchase. You comprehend and recognise
+                that the use of monitoring services, which includes the
+                inclusion of cellular backup capabilities, necessitates an
+                ongoing subscription. If you do not maintain your membership,
+                your paid subscription will be cancelled, along with all
+                monitoring services. This includes the capacity of our
+                Monitoring Staff to monitor and support your System. The
+                termination of subscription services will take effect
+                immediately upon the expiration of your subscription. Your
+                system may still operate as a local home alarm with some
+                restricted internet capabilities, such as system controls and
+                connection via an app or web interface.
+              </p>
+              <h3>2. Term and Termination. </h3>
+              <p>
+                The duration of this Agreement will persist until it is
+                terminated in accordance with the provisions outlined in this
+                section. Either Corelens or the Subscriber has the right to
+                terminate this Agreement by providing notice to the other party,
+                without needing to provide a reason. This termination will be
+                effective after Corelens confirms the legality of the
+                Subscriber's request. Subscriber can terminate the agreement
+                with Corelens by (1) sending a written notice through regular
+                mail or overnight delivery to Corelens's current main office.
+                Alternatively, they can (2) call Corelens Customer Support at
+                1-800-313-4207 and follow the provided instructions. Another
+                option is to use (3) any other cancellation method offered by
+                Corelens, such as initiating cancellation through the Corelens
+                App, which may result in a confirmation call from Corelens to
+                the user's provided phone number. Subscriber's notification will
+                be considered valid after Corelens receives and confirms it. If
+                a written cancellation request is received, Corelens retains the
+                authority to contact the subscriber in order to conduct the
+                company's routine account holder security inquiries, therefore
+                ensuring the authenticity and precision of the request. It is
+                important to note that ending these Services could have a
+                significant impact on the provision of life-saving services. In
+                order to ensure the validity of any termination request,
+                Customer Service may need to verify certain details, such as the
+                identity of the account holder, the authenticity of the request,
+                and whether it is being made under any external pressure.
+                Additionally, if the termination is scheduled for a future date,
+                this information will also need to be confirmed. You acknowledge
+                that engaging with Customer Service is the most effective
+                approach to guarantee the appropriate handling of cancellations
+                for services that might possibly save lives. Corelens will
+                notify the Subscriber of termination by sending an email to the
+                email address associated with the Subscriber's current online
+                account with Corelens. The termination of Corelens will be
+                deemed effective upon the transmission of the email message by
+                Corelens. Failure to provide Corelens with an email address may
+                result in Corelens sending you a termination notice by
+                conventional mail, with postage paid. This notice will be
+                considered effective four days after it is issued by Corelens.
+                After the Agreement ends, Corelens is not obligated to do
+                anything else for the Subscriber, and the Subscriber is not
+                obligated to do anything else for Corelens, except for (i)
+                paying any outstanding fees for services provided by Corelens,
+                and (ii) fulfilling the obligations stated in Sections 3-8,
+                13-19, and 24-41. After the activation of a subscriber's
+                Service, Corelens will charge the subscriber's chosen payment
+                method the monthly amount for the next month, after any relevant
+                promotional or trial periods. The service billing will continue
+                monthly on the same day as the original bill date, unless the
+                service is terminated. If the recurring date does not exist in a
+                particular month, the subscriber will be billed on the last day
+                of that month. For example, if the recurring subscription date
+                is on the 31st of the month and a month only has 30 days, the
+                payment for the next month will be billed on the 30th of the
+                preceding month. If subscriptions are cancelled prior to the
+                billing date, no charges will be incurred for the following
+                month. However, Corelens will reimburse any service costs that
+                have not been earned for a complete calendar month after
+                termination. Corelens will not reimburse any unused service fees
+                for any remaining portion of a calendar month after termination.
+                Termination costs are nonexistent.
+              </p>
+              <h3>3. Payment for Services. </h3>
+              <p>
+                The subscriber is required to pay Corelens the monthly service
+                price in advance. By providing your consent, you grant Corelens
+                permission to debit your credit/debit card for the recurring
+                service fee at the appropriate intervals (e.g., monthly,
+                quarterly, or yearly). In the event that charges are not
+                accepted, Corelens will resubmit the charges for authorization
+                and inform you of the rejected charges via email. Meanwhile,
+                Corelens will continue to provide Emergency Dispatch Services
+                for a period of ten-days. If the charges are not authorised and
+                payment is not made, Corelens has the option to cease providing
+                services without prior warning, either immediately or after the
+                ten-day period has elapsed. If the Subscriber fails to pay any
+                charges on time, Corelens has the right to cancel this Agreement
+                and/or stop providing services without prior warning. Corelens
+                has the authority to charge your credit or debit card on file
+                for any unpaid payments that are overdue, at their sole
+                discretion and within the limits of the law. In the event that
+                you enrol in a monthly auto-renewing subscription with Corelens
+                and your monthly billing date coincides with a weekend or
+                holiday, we reserve the right to charge you on the following
+                business day. If your payment is returned due to inadequate or
+                uncollected money, you give Corelens permission to resend the
+                payment, unless the Razorpay Rules or relevant legislation state
+                otherwise. You are responsible for all payment processing costs
+                related to your chosen method of payment, including currency
+                translation fees, insufficient fund fees, reversal fees, or
+                overdraft penalties. Corelens will not refund you for these
+                expenses. Non-payment of your monthly cost: You are obligated to
+                continue making payments for the applicable monthly service
+                charge as per your automatically renewing subscription until
+                either you or Corelens stop the subscription. If your account
+                contains a payment that is either less or more than the required
+                amount, Corelens has the authority to apply a rectification
+                charge or provide a refund to the payment method associated with
+                your account. Specifically, in accordance with relevant laws and
+                regulations, YOU HEREBY AUTHORISE CORELENS TO CHARGE YOUR
+                DESIGNATED PAYMENT METHOD FOR ANY OUTSTANDING AMOUNTS AT
+                CORELENS'S DISCRETION AND AT A TIME OF THEIR CHOOSING, if
+                Corelens determines that you have not paid for one or more
+                months of service, either partially or in full, after reviewing
+                your account information. Corelens may inform you of any
+                required correction fees by several means, including email,
+                phone call, text/SMS, or in-app message. Corelens has the
+                ability to provide such warning at its own discretion. By
+                enrolling in a monthly subscription, Corelens will get automatic
+                updates from your issuing bank to ensure that your payment
+                information remains up-to-date. To manually amend or delete a
+                method of payment, please go to the Plan &amp; Billing section
+                in your account preferences. Alternatively, you may call us at
+                1800-313-4207. Corelens may also provide the option for you to
+                make advance payments for one or many months. If you choose to
+                prepay for future months of service, you are doing so willingly
+                and may still cancel your membership according to the conditions
+                stated above. Corelens may choose to reimburse any remaining
+                prepaid months of service either to the payment method on file
+                or directly to the customer. If you are given a promotion as
+                part of a pre-paid service, you must continue your current
+                subscription during the pre-paid time in order to enjoy the
+                offer. At Corelens's sole discretion, you may be permitted to
+                keep any promotional item or value without having to maintain
+                your membership throughout the pre-paid time. After the
+                conclusion of any relevant pre-paid time period, unless there is
+                a mutual agreement stating otherwise, your membership will
+                automatically renew on a monthly basis. Corelens has the
+                authority to reimburse any advance payments for future months of
+                service and switch your account to a monthly billing and renewal
+                cycle at its own discretion. If you have any inquiries or
+                apprehensions, or if you like to verify the availability of any
+                pre-paid alternatives for your particular account, please reach
+                out to our Customer Service department.
+              </p>
+              <h3>4. Insurance.</h3>
+              <p>
+                CORELENS'S SERVICE CHARGES ARE BASED SOLELY ON THE VALUE OF
+                SERVICES PROVIDED AND ARE NOT INSURANCE PREMIUMS AND ARE NOT
+                RELATED TO THE VALUE OF PROPERTY LOCATED ON OR NEAR THE
+                PREMISES. YOU ACKNOWLEDGE AND AGREE THAT CORELENS IS NOT AN
+                INSURER AND SHALL NOT PROVIDE INSURANCE COVERAGE AGAINST ANY
+                LOSSES, AS DEFINED BELOW. TO THE EXTENT YOU WISH TO HAVE ANY
+                INSURANCE COVERAGE FOR LOSSES, AS DEFINED BELOW, IT IS YOUR
+                RESPONSIBILITY TO PROCURE AND MAINTAIN SEPARATE INSURANCE
+                POLICIES FROM AN INSURANCE COMPANY OR COMPANIES, SOLELY AT YOUR
+                COST AND EXPENSE, COVERING ALL LOSS, DAMAGE OR EXPENSE
+                (COLLECTIVELY, "LOSSES"), INCLUDING ALL PROPERTY DAMAGE,
+                PERSONAL INJURY (INCLUDING DEATH), ECONOMIC LOSSES OR ANY OTHER
+                FORM OF LOSS, DAMAGE OR EXPENSE, ARISING OUT OF OR IN CONNECTION
+                WITH, DUE TO, OR CAUSED IN WHOLE OR IN PART BY
+                <br /> (I) THIS AGREEMENT, INCLUDING ANY BREACH OF ANY
+                REPRESENTATION, WARRANTY, COVENANT OR OBLIGATION ARISING
+                HEREUNDER <br /> (II) THE SYSTEM, <br /> (III) THE SERVICES
+                (INCLUDING Third-Party Products and Services), <br /> (IV) THE
+                ACTIVE OR PASSIVE SOLE, JOINT OR SEVERAL NEGLIGENCE OF ANY KIND
+                OR DEGREE OF YOU OR ANY CORELENS PARTY (AS DEFINED IN SECTION
+                5), <br /> (V) THE IMPROPER OPERATION OR NON-OPERATION OF THE
+                SYSTEM, <br /> (VI) BREACH OF CONTRACT, EXPRESS OR IMPLIED,
+                WHICH OCCURS BEFORE OR AFTER THE SIGNING OF THIS AGREEMENT{" "}
+                <br /> (VII) BREACH OF WARRANTY, EXPRESS OR IMPLIED, <br />{" "}
+                (VIII) PRODUCT OR STRICT LIABILITY <br /> (IX) THE LOSS OR
+                DAMAGE TO OR MALFUNCTION OF FACILITIES NECESSARY TO OPERATE THE
+                SYSTEM, TRANSMIT ANY SIGNAL TO OR RECEIVE SIGNALS AT ANY
+                MONITORING FACILITY, <br /> (X) A CLAIM FOR SUBROGATION,
+                INDEMNIFICATION OR CONTRIBUTION, <br /> (XI) A VIOLATION OF ANY
+                APPLICABLE CONSUMER PROTECTION LAW OR ANY OTHER THEORY OF
+                LIABILITY OR ALLEGED FAULT ON THE PART OF ANY CORELENS PARTY,{" "}
+                <br /> (XII) A VIOLATION OF ANY LAW PROHIBITING THE INTERCEPTION
+                OF ORAL COMMUNICATIONS BY ELECTRONIC MEANS, <br /> (XIII) THE
+                ACTIONS OF ANY THIRD PARTY IN RESPONDING TO A SIGNAL FROM THE
+                SYSTEM, OR <br /> (XIV) ANY UNAUTHORIZED ACCESS, USE OR
+                DISCLOSURE OF YOUR PERSONAL INFORMATION (COLLECTIVELY, THE
+                "COVERED CLAIMS"). COMPENSATION FOR ANY DAMAGES, AS DEFINED IN
+                SECTION 4, WILL BE RESTRICTED TO THE INSURANCE THAT YOU GET
+                INDEPENDENTLY FROM AN INSURANCE COMPANY, IF APPLICABLE.
+              </p>
+              <h3>5. LIMITATIONS OF LIABILITY AND RELEASE.</h3>
+              <p>
+                BY AGREEING TO THESE TERMS, YOU ARE RELEASING CORELENS, ITS
+                AFFILIATES, DIRECTORS, OFFICERS, SHAREHOLDERS, EMPLOYEES,
+                SUBCONTRACTORS, AGENTS, AND REPRESENTATIVES (COLLECTIVELY
+                REFERRED TO AS THE "CORELENS PARTIES"), AS WELL AS ANY PROVIDERS
+                OF THIRD-PARTY PRODUCTS AND SERVICES, FROM ANY LIABILITY RELATED
+                TO ANY COVERED CLAIM AS DEFINED IN SECTION 4. THIS RELEASE
+                APPLIES TO YOU AND ANYONE ELSE WHO MAKES CLAIMS UNDER THIS
+                AGREEMENT. CORELENS WILL NOT BE HELD RESPONSIBLE OR LIABLE FOR
+                ANY CONSEQUENTIAL OR INCIDENTAL DAMAGES, INCLUDING BUT NOT
+                LIMITED TO DAMAGES FOR PERSONAL INJURY, DEATH, OR PROPERTY
+                DAMAGE. HOWEVER, IF ANY CORELENS PARTY IS FOUND LIABLE FOR ANY
+                LOSSES ARISING FROM A COVERED CLAIM, THEIR LIABILITY WILL BE
+                LIMITED TO A MAXIMUM OF $1,000.00. THIS LIMITATION IS CUMULATIVE
+                AND WILL NOT BE INCREASED BY THE EXISTENCE OF MORE THAN ONE
+                INCIDENT OR CLAIM. CORELENS DISCLAIMS ALL LIABILITY OF ANY KIND
+                FROM CORELENS'S LICENSORS AND SUPPLIERS. CORELENS AND YOU
+                ACKNOWLEDGE AND AGREE THAT IT IS IMPRACTICAL AND EXTREMELY
+                DIFFICULT TO DETERMINE THE ACTUAL DAMAGES, IF ANY, THAT MAY
+                RESULT FROM A FAILURE BY CORELENS TO PERFORM ANY OF ITS
+                OBLIGATIONS. THE AGREED-UPON AMOUNT IS NOT A PENALTY AND IS THE
+                SOLE REMEDY. SOME STATES DO NOT ALLOW THE EXCLUSION OR
+                LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE
+                LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
+              </p>
+              <h3>6. NO WARRANTIES.</h3>
+              <p>
+                THE SERVICES ARE PROVIDED WITHOUT ANY WARRANTIES. THEY ARE
+                OFFERED FOR YOUR CONVENIENCE AND ARE PROVIDED "AS IS" AND "AS
+                AVAILABLE". CORELENS, ALONG WITH ITS LICENSORS AND SUPPLIERS,
+                EXPLICITLY DISCLAIM ANY WARRANTIES AND CONDITIONS, WHETHER
+                EXPRESS OR IMPLIED, INCLUDING WARRANTIES OR CONDITIONS OF
+                MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, AND
+                NON-INFRINGEMENT.
+              </p>
+              <h3>7. Release of Insured Losses; Waiver of Subrogation.</h3>
+              <p>
+                You waive all claims for losses that are covered by your
+                insurance policies and for any insurance deductibles.
+                Additionally, you relinquish and discharge any subrogation and
+                other entitlements that you or your insurance provider may
+                possess against Corelens for funds disbursed to you or on your
+                behalf.
+              </p>
+              <h3>8. Indemnification.</h3>
+              <p>
+                {" "}
+                I IF ANYONE OTHER THAN YOU (INCLUDING YOUR INSURANCE COMPANY)
+                ASKS ANY CORELENS PARTY TO PAY FOR ANY LOSSES, AS DEFINED IN
+                SECTION 4, INCLUDING ATTORNEYS' FEES, ARISING OUT OF OR IN
+                CONNECTION WITH, DUE TO, OR CAUSED IN WHOLE OR IN PART BY ANY
+                COVERED CLAIM, AS DEFINED IN SECTION 4, INCLUDING THE ACTIVE OR
+                PASSIVE SOLE, JOINT OR SEVERAL NEGLIGENCE OF ANY KIND OR DEGREE
+                OF YOU OR ANY CORELENS PARTY, YOU SHALL INDEMNIFY, DEFEND AND
+                HOLD SUCH CORELENS PARTY HARMLESS (WITHOUT ANY CONDITION THAT
+                ANY OF THEM FIRST PAY), FOR ALL LOSSES, AS DEFINED IN SECTION 4,
+                INCLUDING ATTORNEYS' FEES, ASSERTED AGAINST OR INCURRED BY SUCH
+                CORELENS PARTY. THE FOREGOING INDEMNIFICATION OBLIGATIONS MAY
+                NOT BE ENFORCEABLE IN SOME STATES, SO SUCH OBLIGATIONS MAY NOT
+                APPLY TO YOU.
+              </p>
+              <h3>9. Communications Equipment and Services.</h3>
+              <p>
+                The System is specifically engineered to transmit signals to a
+                monitoring facility using various forms of communications
+                equipment and services, such as DSL, broadband, Wi-Fi, cellular,
+                wireless, and landline telephone equipment and services
+                (referred to collectively as "Communications Equipment and
+                Services"). Irrespective of the type of Communications Equipment
+                and Services employed, it is important to acknowledge that these
+                services may experience interruptions, bypassing, unavailability
+                (for a short or long duration), or other forms of compromise.
+                This could occur, for example, due to the use of equipment by a
+                third party with the intention of causing false alarms or
+                gaining unauthorised access to, affecting, or controlling the
+                Communications Equipment and Services or any Video-Related
+                Services. In the event that the Communications Equipment and
+                Services experience any malfunction or disruption, the
+                monitoring facility will not be notified and will not receive
+                any signal from your system. It is necessary to conduct regular
+                testing of the System's data transmission with the monitoring
+                facility, at a minimum frequency of once a month. Additionally,
+                immediate testing should be performed following the
+                installation, modification, or repair of any Communications
+                Equipment or Service. (If using DSL, VOIP, or any other kind of
+                broadband telephone equipment and services, it is essential to
+                establish such equipment and services on a separate telephone
+                line and number that is not used by the System for transmitting
+                data to the monitoring facility.) If you want to use the
+                optional telephone backup for the System, you will need an
+                alternative method of communication to place a phone call
+                whenever the System sends data by telephone. Prior to making any
+                modifications to your Communications Equipment and Services, it
+                is essential that you verify their compatibility with the
+                System. The accessibility and availability of the Application
+                rely on many factors, including the functionality of your
+                computer, mobile device, home wiring, home Wi-Fi network,
+                Bluetooth connection, and other associated equipment and
+                services. Additionally, it is reliant on the performance of your
+                Internet service provider and your mobile device carrier. You
+                are required to promptly fix any issues with the Communications
+                Equipment and Services, as well as any issues with the System.
+                Refer to the Owner's Manual for your System for more crucial
+                safety information about your System and the transmission of
+                signals from it. YOU EXPLICITLY UNDERSTAND AND AGREE THAT YOU DO
+                NOT HAVE ANY CONTRACTUAL RELATIONSHIP WHATSOEVER WITH THE
+                UNDERLYING WIRELESS SERVICE PROVIDER (REFERRED TO AS THE
+                "UNDERLYING CARRIER") OR ITS AFFILIATES OR CONTRACTORS.
+                FURTHERMORE, YOU ARE NOT A THIRD PARTY BENEFICIARY OF ANY
+                AGREEMENT BETWEEN CORELENS AND THE UNDERLYING CARRIER.
+                ADDITIONALLY, YOU ACKNOWLEDGE AND AGREE THAT THE UNDERLYING
+                CARRIER AND ITS AFFILIATES AND CONTRACTORS HAVE NO LEGAL,
+                EQUITABLE, OR OTHER LIABILITY OF ANY KIND TOWARDS YOU. YOU
+                HEREBY RENOUNCE ANY AND ALL CLAIMS OR DEMANDS AGAINST THEM. YOUR
+                INSTALLATION AND USE OF OUR SYSTEM AND SERVICES WILL BE
+                RESTRICTED TO AND DEPEND ONLY ON NON-CELLULAR COMMUNICATION,
+                NAMELY YOUR HOME WIFI CONNECTIVITY. THEREFORE, IF YOUR SYSTEM
+                HAS A CELLULAR MODULE FOR BACKUP COMMUNICATION (WHICH IS ONLY
+                ACCESSIBLE WITH A QUALIFYING SERVICE PLAN) WITH OUR MONITORING
+                CENTRE, IT WILL NOT HAVE ANY BACKUP COMMUNICATION IF YOU RESIDE
+                IN AN AREA WITHOUT CELLULAR COVERAGE.
+              </p>
+              <h3>10. Supplementary equipment or services. </h3>
+              <p>
+                You have chosen the System based on your own criteria, such as
+                cost, the state of the premises, insurance needs, and so on.
+                Additional equipment or services, which come with an extra
+                charge, may enhance the detecting capabilities. You acknowledge
+                that any supplementary equipment or services offered by Corelens
+                will be governed by the terms of this Agreement. For instance,
+                you can ask the monitoring facility to inform you of any
+                activity detected by your System through live operator telephone
+                call, text message, or other electronic communication, instead
+                of or in addition to the Emergency Dispatch Services mentioned
+                in this document. We shall comply with any such request on the
+                condition that we have already reached a written agreement to do
+                so. Additionally, you are obligated to compensate Corelens for
+                any supplementary equipment or services. It is possible that
+                your local government may mandate a licence, permission, or the
+                payment of taxes for the installation, usage, or monitoring of
+                the System. It is your exclusive responsibility to meet these
+                duties and provide Corelens with the current licence or
+                permission number. It is important to note that Corelens does
+                not provide any installation or maintenance services for the
+                System. You are required to provide and sustain sufficient power
+                for any devices associated with the System.
+              </p>
+              <h3>11. False Alarms; Suspension of Service and Shut-Down.</h3>{" "}
+              <p>
+                You are obligated to take measures to avoid false alerts and
+                assume full responsibility for any false alarms that occur. You
+                are responsible for paying any fines, fees, costs, expenses, and
+                penalties associated with the System or Services that are
+                imposed on you, Corelens, or the monitoring facility by any
+                individual or organisation, including courts, government
+                agencies, or representatives of such entities. If you fail to
+                meet the terms of this Agreement, if either party terminates
+                this Agreement or the Services for any reason, if the System
+                starts behaving erratically or excessively signals the
+                monitoring facility without a clear cause, or if the System is
+                considered a problematic account by the monitoring facility
+                personnel, we have the right to suspend the Services and you
+                give Corelens permission to disconnect the System from the
+                monitoring facility. Exercising any of these rights does not
+                mean that Corelens is giving up its right to claim damages.
+              </p>
+              <h3>12. Rise in fees.</h3>
+              <p>
+                {" "}
+                Corelens has the right to raise periodic recurring fees at any
+                moment according to this Agreement. They will notify you of the
+                increase by sending an email to the email address associated
+                with your current online account with Corelens. Subject to legal
+                limitations, Corelens has the right to implement price changes
+                immediately upon providing notification, in its sole discretion.
+              </p>
+              <h3>13. Default.</h3>
+              <p>
+                In the event of a default under this Agreement, you are
+                obligated to compensate Corelens for any financial damages
+                incurred in the process of exercising its rights under this
+                Agreement.
+              </p>
+              <h3>14. Binding Agreement.</h3>
+              <p>
+                The Agreement will only be legally binding on Corelens after the
+                Services have begun. This Agreement is legally enforceable by
+                the heirs, executors, administrators, successors, and allowed
+                assigns of the parties involved.
+              </p>
+              <h3>15. Applicable Law.</h3>
+              <p>
+                This Agreement will be governed by and interpreted in accordance
+                with the laws of India, without taking into account its
+                conflicts of law provisions. The interpretation of this
+                Agreement must not be interpreted unfavourably against the party
+                that drafted it.
+              </p>
+              <h3>16. Assignment.</h3>
+              <p>
+                Assignment of this Agreement is prohibited. Corelens has the
+                authority to transfer or allocate the whole or a part of this
+                Agreement.
+              </p>
+              <h3>17. Financial issues and fees for late payments.</h3>{" "}
+              <p>
+                Payment for invoices is required immediately upon receipt. By
+                accepting, you are obligated to pay a financing fee at a rate of
+                either 1.5% per month (equivalent to 18% per year) or the
+                highest rate allowed by law, whichever is lower. This charge
+                applies to any outstanding charges that remain unpaid for more
+                than thirty (30) days from the date of the invoice. Furthermore,
+                if you fail to pay any invoice within thirty (30) days of the
+                invoice date, you will be required to pay an administrative fee
+                (referred to as a late charge) equal to 5% of the invoice
+                amount. It is important to note that this fee, along with the
+                finance charge mentioned earlier, must comply with applicable
+                law and not exceed the maximum charge allowed.
+              </p>
+              <h3>18. No Waiver of Breach.</h3>
+              <p>
+                {" "}
+                Forgiving your violation of this Agreement does not mean
+                forgiving any future violations. Corelens's rights under this
+                Agreement are cumulative, meaning they may be used together or
+                one after the other, and encompass all applicable remedies, even
+                if not explicitly mentioned in this Agreement.
+              </p>
+              <h3>19. Recording Consent.</h3>
+              <p>
+                Various federal and regional laws ban the unauthorised capturing
+                of videos and the interception and recording of telephone
+                conversations and other spoken communications by technological
+                methods. If your system has the capability to capture audio and
+                video, it is your duty to adhere to relevant laws and
+                regulations. This means you should not install your system in
+                areas where individuals may reasonably expect privacy, such as
+                bedrooms, restrooms, dressing or changing areas, locker rooms,
+                or similar spaces. Additionally, you must inform potential
+                subjects that they are entering a secure location where they may
+                be monitored and recorded by your system. By activating the
+                audio and video recording function on your System, you give your
+                permission for yourself and anyone else who enters your Premises
+                (referred to as "Users") to be aware of the presence of your
+                System and to agree to being monitored. You also acknowledge
+                that the recordings made by your System may be utilised by
+                Corelens for the provision of Video-Related Services (as defined
+                later) and for reasonable quality assurance purposes. It is
+                strictly prohibited to intercept or record any spoken
+                communication of any anyone without obtaining their explicit
+                permission. For more information on the recording of audio or
+                video, please see the Corelens Privacy Policy available at
+                http://www.Corelens./privacy-policy.
+              </p>
+              <h3>20. Services for managing accounts.</h3>
+              <p>
+                "Account Management Services" refers to services that include
+                the remote management of the System via the Application or other
+                methods.
+              </p>
+              <h3>21. Services related to video. </h3>
+              <p>
+                "Video-Related Services" consists solely of the following:
+                <br />
+                (i) verification of alarm events by monitoring facility
+                personnel in connection with the Emergency Dispatch Services to
+                be provided pursuant to Section 23 ("Verification Services")
+                using audio and video received from the System,
+                <br />
+                (ii) real-time access to video and audio from the System through
+                the Application ("Real-Time Services"),
+                <br />
+                (iii) storage and retrieval through the Application of recorded
+                video and audio stored on our servers, which storage shall be
+                limited and subject to change (a) in accordance with the terms
+                of the plan you selected or (b) if you did not select a plan
+                that provides for terms regarding storage, at our discretion
+                ("Recorded Services"), and
+                <br />
+                (iv) use of cameras or other Product components to allow for
+                human (live or automated) or robotic (pre-recorded warnings or
+                sirens) audio communication with any individuals captured in
+                Real Time Video Services to help monitoring facility personnel
+                engage with persons observed in Real Time Video Services in an
+                attempt to deter unlawful or unpermitted actions or to initiate
+                steps to request Emergency Dispatch Services, if deemed
+                necessary in the monitoring facility personnel staff’s sole
+                discretion. The use of Real-Time Services may need the use of
+                certain System hardware, such as specialised cameras, to
+                facilitate the transmission of video and audio from the Premises
+                to monitoring facility staff. Signing up for Real-Time Services
+                is contingent upon the functionality and positioning of your
+                System. Specifically, your System must have properly positioned
+                cameras to capture incident locations, be connected, powered,
+                and operating correctly.
+                <br />
+                You acknowledge and consent that Emergency Dispatch Services may
+                be requested at the discretion of the monitoring personnel,
+                based on their observation of circumstances depicted on the
+                Video-Related Services that reasonably indicate the need for
+                Emergency Dispatch Services, even without conducting any Alarm
+                Verification procedures. You acknowledge and accept that
+                Video-Related Services may not be able to record the reason
+                behind an alarm event due to various factors (such as the
+                camera(s) not being positioned to capture the cause, obstruction
+                of the camera's view by physical objects, communication
+                equipment or service issues, etc.), or if the cause of the alarm
+                event is not visible to any Video-Related Services within a
+                reasonably short period of time. The purpose of Verification
+                Services is to aid you and authorised people from monitoring
+                facilities in confirming an alarm occurrence at the Premises,
+                rather than to diminish or eliminate any potential loss. The
+                Video-Related Services are not designed to substitute alarm
+                monitoring services or to identify or prevent unauthorised entry
+                into the Premises or any other emergency situation, such as
+                fire, smoke, carbon monoxide, medical crises, or water damage.
+                The Verification Services are intended for the exclusive use of
+                verifying alarm occurrences at the Premises and should not be
+                used for any other purpose. Monitoring facility personnel will
+                only be able to access the Real-Time Services or Recorded
+                Services if two conditions are met: (1) you have explicitly
+                given them access through the Application, and (2) the video and
+                audio are received at the monitoring facility as part of the
+                Emergency Dispatch Services.
+              </p>
+              <h3>
+                22. Lawful Recording of Video and Audio; Mandatory Connectivity.
+              </h3>
+              <p>
+                Engaging in the act of recording video or audio may potentially
+                be illegal or infringe upon an individual's rights, particularly
+                their right to privacy.YOU ARE PROHIBITED FROM USING OR ALLOWING
+                THE USE OF ANY VIDEO-RELATED SERVICES FOR ANY ILLEGAL
+                ACTIVITIES. As an example, it is prohibited to use the System
+                for capturing or storing video in locations where individuals
+                might reasonably anticipate privacy, such as bedrooms,
+                bathrooms, dressing or changing facilities, locker rooms, or
+                similar spaces. You are required to take all necessary measures
+                to inform persons at the Premises about the potential recording
+                of video or audio. It should be made clear to them that they
+                should not anticipate any privacy in discussions that occur
+                while the recordings are active. You are required to use a
+                method of connection that allows for the transfer of video,
+                audio, and Listed Codes (as described below) from your System to
+                us and any authorised monitoring facility. You must provide
+                clear instructions to all individuals who may use any
+                Video-Related Services or the System on any restrictions or
+                limits associated with the Video-Related Services or the System.
+                You are required to adhere to the regulations outlined in
+                Section 19 regarding the utilisation of the Video-Related
+                Services and the System.
+              </p>
+              <h3>23. Emergency Dispatch Service.</h3>
+              <p>
+                The provision of "Emergency Dispatch Services" under this
+                Agreement will involve monitoring facility personnel making
+                phone calls to governmental authorities ("Authorities") or
+                sending SMS/text notifications and alerts to other individuals
+                designated by you ("Responsible Parties" as defined in Section
+                24 below) or any company that offers on-site response services
+                ("Third Party Responders"). This will occur when signals from
+                your System report specific conditions ("Listed Codes") at the
+                Premises. We will only provide Emergency Dispatch Services for
+                the specified codes. We fulfil our duty to provide Emergency
+                Dispatch Services by either monitoring facility personnel as
+                they contact (or attempt to contact) the Authorities,
+                Responsible Parties, or Third Party Responders, or by leaving a
+                voicemail or similar message with them. Emergency Dispatch
+                Services aim to mitigate the likelihood of a burglary, robbery,
+                or other incidents taking place at the Premises. However, they
+                do not provide an absolute assurance that such events will not
+                occur or that there will be no harm to individuals or loss of
+                property as a consequence. The monitoring facility will refrain
+                from contacting any Third Party Responder on your behalf unless
+                you have explicitly engaged our services for this purpose, or
+                you have directly requested and received written confirmation
+                from us to offer such service. Instances where it may be
+                necessary for the monitoring facility to contact a Third Party
+                Responder include: (i) when the Premises are situated in a
+                jurisdiction where the relevant Authorities will only respond to
+                alarm signals after confirming an actual alarm event, or (ii)
+                when a quicker response time is desired compared to what the
+                relevant Authorities can provide. Irrespective of the situation,
+                you understand that the monitoring facility will not contact or
+                have any obligation to contact any Third Party Responder unless
+                you have a prior agreement with us to provide such service or
+                you have made a written request for us to do so, and we have
+                agreed to it.
+              </p>
+              <h3>
+                24. Agreement and Permission to Communicate, for Notifications,
+                and Alerts.
+              </h3>
+              <p>
+                These provisions pertain to messages, alerts, and notifications
+                that are sent using SMS/text message or the Corelens mobile app
+                (referred to as "Notifications") in relation to Corelens
+                programmes, goods, and Services. As part of the Services you
+                have bought from Corelens, you and other responsible parties may
+                have the option to send notifications by SMS/text message to
+                confirm or cancel shipment. Corelens does not impose any charges
+                for receiving Notifications, save for any monthly costs that may
+                be applicable if you are a subscriber to Corelens monitoring
+                services. Corelens may incur charges from your cellular service
+                provider for sending and/or receiving Notifications, as well as
+                for air-time or data use related to these activities. Consult
+                your cellular provider for any inquiries about your wireless
+                plan. BY BUYING SERVICES AND ACCEPTING THESE CONDITIONS, YOU
+                EXPLICITLY PROVIDE YOUR APPROVAL FOR CORELENS TO SEND YOU
+                NOTIFICATIONS RELATED TO THE CORELENS SERVICES BY SMS/TEXT
+                MESSAGE OR THE CORELENS MOBILE APP (REFERRED TO AS "MESSAGING
+                SERVICES").By accepting, you agree and provide permission to
+                Corelens sending you Notifications that Corelens believes will
+                assist you in completing any essential account or Service setup
+                procedures needed to properly activate your Services. By
+                becoming a Corelens subscriber and adding a contact to receive
+                Notifications, you confirm that you have informed the contact
+                about the content and purpose of the Notifications, and have
+                acquired their approval for Corelens to deliver Notifications to
+                them. Our Emergency Dispatch Services need communication with
+                the individuals or entities that are accountable or in charge.
+                Our communication may be conducted by several mediums, such as a
+                live operator phone call, a pre-recorded phone message using an
+                auto-dialer, an SMS or other text message, or any other
+                technological form of contact. We shall establish communication
+                with a designated individual at the telephone number you supply
+                us, which may be a mobile phone number or a domestic landline
+                number. You shall notify the Responsible Parties that we will
+                contact them at the specified numbers, and seek their consent to
+                speak with them at these telephone numbers. You are obligated to
+                compensate, protect, and absolve us (without any requirement for
+                us to make a payment first) for any damages (as defined in
+                Section 4 of this Agreement), including the reasonable fees of
+                our lawyers, that arise from or are related to, caused by, in
+                whole or in part, any allegations made against us in relation to
+                our interactions with any of the parties responsible, including
+                any claims under any state or federal laws that protect
+                consumers or similar laws, such as the Telephone Consumer
+                Protection Act. Corelens shall not be held responsible for any
+                delays in receiving Notifications or for any failures in sending
+                Notifications. Notifications may fail to be sent or received if
+                your phone is out of range of a transmission site or if there is
+                insufficient network capacity at a given moment. Despite being
+                inside a service area, certain circumstances that are not within
+                the control of Corelens or your wireless carrier may disrupt
+                message transmission. These factors include your equipment,
+                geography, proximity to buildings, vegetation, and weather
+                conditions. You recognise that urgent Notifications may not be
+                promptly sent or received, and both Corelens and your cellular
+                carrier may not guarantee the delivery or sending of such
+                Notifications. To inquire about the Messaging Services or to
+                unsubscribe from receiving messages, kindly reach out to
+                Corelens Customer Support at 1800-313-4207 or visit
+                www.Corelens.in/support and select "Contact Us." If you wish to
+                modify the messaging preferences linked to your Corelens
+                account, please access the Alerts settings page in your customer
+                account. This can be done online at www.Corelens.in or via the
+                Corelens mobile app.
+              </p>
+              <h3>25. Verification of alarms before dispatching.</h3>
+              <p>
+                Upon receipt of a Listed Code and before attempting to contact /
+                call any Authorities or Responsible Parties or any Third Party
+                Responder, monitoring facility personnel may, in their sole
+                discretion, take any one or more of the following steps in an
+                attempt to verify the need to report the Listed Code to the
+                Authorities or any of the Responsible Parties or any Third Party
+                Responder, (collectively, the "Alarm Verification Steps"):{" "}
+                <br />
+                (i) telephone or text or attempt to telephone or text the
+                Account holder or any secondary contact that has been provided
+                by the Account holder, <br /> (ii) if we have access to
+                Real-Time Services or Recorded Services, receive, retrieve and
+                review video from the System,
+                <br /> (iii) intercept or retrieve and listen to oral
+                communications or other audio from the System; <br />
+                (iv) optionally engage via Real-Time Services with any persons
+                to confirm the need to report the Listed Code or other
+                potentially urgent safety or security information to the
+                Authorities or any of the Responsible Parties or any Third Party
+                Responder; or <br /> (v) undertake such other reasonable steps
+                to verify the need to report the Listed Code. After completing
+                one or more of the Alarm Verification Steps, the workers at the
+                monitoring facility have the authority to decide whether or not
+                to inform the Authorities, Responsible Parties, or Third Party
+                Responders about a Listed Code. Furthermore, if the staff at the
+                monitoring site are unable to confirm the need of reporting a
+                Code that is included in the List to the Authorities,
+                Responsible Parties, or any Third Party Responder, they are not
+                obligated to notify such Code. The monitoring facility workers
+                are not required to evaluate or watch any audio or video from
+                the System, except for the period immediately before or after
+                they get a Listed Code.
+              </p>
+              <h3>26. Termination of Alarm.</h3>
+              <p>
+                {" "}
+                When the monitoring facility receives a cancellation code that
+                is valid according to the Owner's Manual or confirmation from an
+                authorised account user, such as through verified electronic
+                communication or oral advice confirmed by a safe word, they may
+                choose not to report the received code to the Authorities,
+                Responsible Parties, or any Third Party Responder.
+              </p>
+              <h3>27. Data; Data Storage.</h3>
+              <p>
+                Your Account gives you access to certain data that is held by
+                us. By agreeing to this clause, you acknowledge that we have the
+                right to delete any data you provide to us under the following
+                circumstances: <br />
+                (i) when the storage period for your account ends, <br />
+                (ii) when this Agreement is terminated or expires, or <br />
+                (iii) when you submit a written request according to Section 40
+                and the deletion is not prohibited by any relevant laws,
+                regulations, regulatory authorities, or other applicable
+                judicial or governmental orders. Despite any conflicting
+                provisions, Corelens has no responsibility for any alteration or
+                loss of data.
+              </p>
+              <h3>28. App Stores.</h3>
+              <p>
+                {" "}
+                You recognise and consent that the accessibility of the
+                Application relies on the third-party websites from which you
+                get the Application, such as the Apple App Store or the Google
+                Android app market (each referred to as a "App Store"). You
+                understand that this Agreement is strictly between you and
+                Corelens, and does not include any App Store. Prior to
+                downloading mobile apps from any App Store, it is necessary to
+                accept the specific terms and conditions set by that particular
+                App Store. Your usage of the Application is contingent upon your
+                adherence to the terms and conditions set out by the App Store.
+                If the terms and conditions of the App Store are less stringent
+                or conflicting with the terms and conditions of this Agreement,
+                the more restrictive or conflicting terms and conditions of this
+                Agreement will prevail. Corelens does not impose any extra
+                charges for receiving and downloading the Application. However,
+                your cellular service provider may apply costs for air-time or
+                data use related to it. Consult your cellular provider for any
+                inquiries about your wireless plan.
+              </p>
+              <h3>
+                29. Corelens-Provided Interface to Third-Party Products,
+                Applications and Services .
+              </h3>
+              <p>
+                {" "}
+                Occasionally, Corelens may offer you the opportunity to connect
+                the Corelens Platform (which includes the Corelens System,
+                Services, Application, Account, website, and other Corelens
+                products, services, functionalities, or service elements) with
+                third-party products, services, or applications (including their
+                respective mobile applications or any related or connected
+                third-party mobile devices or product peripherals that control
+                or connect to any of the aforementioned). This connection can be
+                made through and using the Corelens Platform, such as the
+                Corelens Amazon Alexa Skill, Apple Watch, or Google Assistant
+                (when each becomes available). The decision of whether and how
+                to engage with Third-Party Products and Services is left to your
+                discretion. Your express permission and authorization are
+                necessary for this interface, and you have the ability to cancel
+                or deactivate them at any moment. However, subject to the
+                maximum extent allowed by law, if you download and install the
+                Corelens mobile application on third-party products and
+                services, or enable Corelens notifications to be sent to them,
+                you are considered to have given your consent and authorization
+                for the corresponding third-party products and services, their
+                interfaces, and data exchange. By providing your consent for a
+                specific Third-Party Product and Service, you acknowledge and
+                accept that Corelens has the right to share information and
+                control data pertaining to you and your products, including your
+                personal information. This sharing is done to facilitate the
+                integration with the authorised Third-Party Products and
+                Services. Once this information is disclosed to the specific
+                Third-Party Product and Service, its use will be regulated by
+                the privacy policy of the third party, rather than Corelens's
+                Privacy Policy. You acknowledge and agree that Corelens does not
+                provide any assurance or guarantee regarding the quality or
+                safety of any Third-Party Products or Services, or their
+                compatibility with Corelens' own products and services. The use
+                or performance of these Third-Party Products or Services will be
+                governed by the terms of service or similar terms set by the
+                third party. Corelens bears no liability for your use of any
+                Third-Party Product or Service, including any bodily harm,
+                fatality, property destruction (including, but not limited to,
+                damage to your residence), or any other detrimental consequences
+                or losses resulting from or associated with your usage of any
+                Third-Party Products or Services. If you have any inquiries
+                about the Third-Party Products and Services, it is advisable to
+                reach out to the third party directly.
+              </p>
+              <h3>30. End User Licence and Intellectual Property.</h3>{" "}
+              <p>
+                Corelens allows you to access and use the Services under certain
+                conditions. You are given a licence to use the Application to
+                control and monitor the Services you are authorised to receive.
+                You can only install and use the Application on your own
+                handheld mobile device, such as an iPhone, iPad, or Android
+                smartphone or tablet, and only for the purposes stated in this
+                Agreement. There is a possibility that someone without
+                authorization may be able to access the Application and its
+                data, and you agree to accept this risk. By using the
+                Application, you agree to allow us to publish alarm events and
+                other status updates related to the Service. You are required to
+                maintain the confidentiality of any information accessible via
+                the Application, as well as any passwords associated with the
+                Application or its access. This licence will remain in effect
+                for the same duration as this Agreement, unless you <br />
+                (i) fail to keep all information available on the Application
+                and all passwords or access codes relating to the Application
+                confidential, <br />
+                (ii) use the licence or the information in a way that harms us,{" "}
+                <br />
+                (iii) use the licence or the information for any illegal
+                purpose, <br />
+                (iv) violate this Agreement, or <br />
+                (v) break any applicable law. You shall bear full responsibility
+                for any information that you transmit, delete, or alter. If this
+                Agreement is terminated or if we suspend or terminate the
+                licence, we have the right to promptly and without prior
+                warning, prohibit your access to the Application and revoke any
+                passwords or access codes. You are prohibited from sharing or
+                providing any part of the technology related to the Services or
+                the Application to third parties without obtaining our written
+                permission beforehand. Additionally, you are not allowed to
+                copy, decompile, dissemble, reverse engineer, manipulate,
+                modify, or create derivative works of any technology integrated
+                into the Services or the Application. Corelens may periodically
+                create Updates, such as patches, updates, upgrades, or other
+                changes, to enhance the functioning of the Services or the
+                Application. These may be deployed automatically without any
+                further warning or permission. You agree to this automated
+                update. If you want to avoid receiving these updates, you may
+                resolve the issue by closing your account and discontinuing your
+                use of the services or application. You recognise that it may be
+                necessary for you to install Updates in order to use the
+                Services, and you agree to quickly install any Updates that
+                Corelens offers. FAILURE TO INSTALL ANY UPDATES PROVIDED BY
+                CORELENS MAY RESULT IN TERMINATION OF YOUR ACCESS TO THE
+                APPLICATION AND ITS SERVICES. However, it is important to note
+                that the software integrated into any Corelens System may
+                consist of or incorporate third-party software components, which
+                may be licenced under "open source" or equivalent licences. For
+                further details on the Third-Party Components, please refer to
+                the website https://www.Corelens.com/legal or consult the
+                programme documentation, help, notices, about, or source files.
+                The copyright holders specified in the open source software
+                retain the copyrights. If the licence for any Third-Party
+                Component mandates it, the terms of that licence will take
+                precedence over the provisions of this Agreement. If the licence
+                conditions for any Third-Party Component explicitly ban any of
+                the limitations mentioned below, those restrictions will not be
+                enforced for that specific Third-Party Component. If the licence
+                conditions for any Third-Party Component require Corelens to
+                disclose source code or associated information, Corelens is now
+                making that offer. Please focus all inquiries for source code or
+                associated material exclusively to: connect@Corelens.in.
+                Corelens and/or its licensors retain full rights to any software
+                not licenced to you under this agreement.
+              </p>
+              <h3>31. Service interruption. </h3>
+              <p>
+                Corelens's responsibilities under this Agreement are
+                automatically cancelled without notification, and you release
+                Corelens from any financial losses that occur as a result of
+                your failure to comply with this Agreement or if the monitoring
+                facility, Communications Equipment, or Services are destroyed,
+                damaged, inoperable, or malfunctioning for any reason. During
+                the interruption of service, you can request a credit for the
+                unused charges paid for that period, but the credit cannot
+                exceed one month's service charge and is the maximum amount for
+                which Corelens can be held liable. In the event of termination
+                of this Agreement or suspension/termination of the Services, you
+                are required to promptly disconnect the System from all forms of
+                Communications Equipment and Services, such as telephone lines,
+                radio transmitters, cellular transmitters, etc. In the event
+                that this Agreement is terminated or if the Services are stopped
+                or terminated for any reason, we reserve the right, in our own
+                discretion and without providing notice or assuming any
+                responsibility, to remotely deactivate, disconnect, or prevent
+                the System and its data from communicating with the monitoring
+                facility.
+              </p>
+              <h3>32. Time Limitation on Actions .</h3>
+              <p>
+                {" "}
+                ANY CLAIMS, ACTIONS, OR PROCEEDINGS AGAINST CORELENS MUST BE
+                INITIATED IN COURT WITHIN ONE YEAR AFTER THE CAUSE OF ACTION HAS
+                ARISEN, WITHOUT ANY EXTENSION OF TIME GRANTED BY THE COURT.
+                FAILURE TO DO SO WILL RESULT IN THE CLAIM, ACTION, OR PROCEEDING
+                BEING LEGALLY PROHIBITED.It is essential to closely adhere to
+                the specified time frame in this Section.
+              </p>
+              <h3>33. Integrated Agreement .</h3>
+              <p>
+                This Agreement, along with any document incorporated into it,
+                constitutes the complete agreement between the parties regarding
+                the transactions mentioned in those documents. It overrides all
+                previous or ongoing discussions, commitments, contracts
+                (explicit or implicit), warranties (explicit or implicit),
+                statements, and representations, whether written or spoken,
+                related to those transactions. All of these will be considered
+                as incorporated into this Agreement. BOTH PARTIES HAVE NOT MADE
+                ANY ADDITIONAL REPRESENTATIONS, TERMS, PROMISES, CONDITIONS,
+                STATEMENTS, WARRANTIES, OR INDUCEMENTS OUTSIDE OF WHAT IS
+                EXPRESSED IN THIS AGREEMENT. THIS APPLIES TO THE TRANSACTIONS
+                DESCRIBED IN THIS AGREEMENT AND ANY DOCUMENTS THAT ARE PART OF
+                THIS AGREEMENT. NEITHER PARTY IS RELYING ON ANY INDUCEMENT THAT
+                IS NOT STATED IN THIS AGREEMENT.
+              </p>
+              <h3>34. Valid Agreement.</h3>
+              <p>
+                If any part of this Agreement, or its application to any
+                situation, is found to be illegal, invalid, or unenforceable to
+                any degree, the rest of the provision and this Agreement will
+                still be valid and enforceable. The affected part will be
+                disregarded, but the rest of the Agreement will remain in full
+                force and effect.
+              </p>
+              <h3>35. Modifications.</h3>
+              <p>
+                Any changes to these terms will only be considered part of the
+                Agreement if they are agreed upon in writing by both parties.
+                However, Corelens has the authority to make changes to the terms
+                of this Agreement by giving prior written notice on its website
+                at www.Corelens.com/terms-of-service and/or through a notice
+                delivered as outlined in Section 40(ii). These modified terms
+                will be legally binding on both parties.
+              </p>
+              <h3>36. Right to Subcontract .</h3>
+              <p>
+                The system is monitored by a third-party independent contractor.
+                Similarly, any Third Party Responder is considered an autonomous
+                contractor. Corelens has the option to hire another company to
+                provide any of the Services mentioned in this Agreement. The
+                terms of this Agreement apply to and benefit the subcontractors
+                who provide the Services to you, including any monitoring
+                facility and any Third Party Responder. They also apply to each
+                of the Corelens Parties, as well as any providers of Third-Party
+                Products and Services, if applicable. You are bound to all of
+                these individuals and entities listed in subsections (i) and
+                (ii) with the same strength and impact as you are bound to
+                Corelens. Every subcontractor we hire is considered an
+                independent contractor and is not regarded as our partner or
+                joint venturer. By granting us authorization, you allow us to
+                act as your representative in order to collaborate with or
+                provide instructions to any subcontractors involved in
+                delivering the Services. By agreeing to this Agreement, you give
+                us permission to disclose your personal information to our
+                subcontractors or Third Parties in order to provide the Services
+                outlined in this Agreement.
+              </p>
+              <h3>37. Section Headings; Interpretation.</h3>
+              <p>
+                The section names used in this document are only for the
+                convenience of the parties involved and should not be taken into
+                account for interpreting the terms of this Agreement. In this
+                Agreement, the term "including" means "including, but not
+                limited to," and the phrase "sole discretion" means "sole and
+                absolute discretion without any liability.”
+              </p>
+              <h3>38. Notice and Cure Right.</h3>
+              <p>
+                In the event that Corelens violates this Agreement, you are
+                required to provide writing notification to Corelens, clearly
+                stating the details of the violation and the particular elements
+                of this Agreement that have been impacted as a consequence of
+                the violation. Corelens has the option to resolve the breach
+                within five (5) business days after receiving written
+                notification. If it is not possible to fix the breach within
+                this timeframe, Corelens may start the process quickly and
+                continue until the breach is resolved. If Corelens successfully
+                resolves any violation, this Agreement will continue without
+                interruption and Corelens will not be held responsible for any
+                damages incurred by you as a result of, or related to, or caused
+                in whole or in part by such breach.
+              </p>
+              <h3>39. Conflict resolution and arbitration.</h3>
+              <p>
+                {" "}
+                PLEASE CAREFULLY REVIEW THIS SECTION. IF YOU WANT TO EXCLUDE
+                YOURSELF FROM THE OBLIGATION TO RESOLVE DISPUTES VIA ARBITRATION
+                ON AN INDIVIDUAL LEVEL, PLEASE FOLLOW THE INSTRUCTIONS PROVIDED
+                BELOW. Specific parts of Section 39 are considered a legally
+                binding commitment to resolve disputes through arbitration, as
+                outlined in the Federal Arbitration Act. You and Corelens both
+                acknowledge that Corelens intends for Section 39 to fulfil the
+                "writing" requirement of the Federal Arbitration Act.
+                <br /> a. If any disagreement or dispute arises between the
+                parties regarding this Agreement or any breach of it, including
+                but not limited to issues related to tort law, contract law,
+                auto renewal disputes, billing, or service disputes, the parties
+                will make their utmost efforts to resolve the dispute. In order
+                to achieve this goal, the parties will engage in discussions and
+                negotiations with one another in a sincere and honest manner.
+                They will acknowledge their shared interests and strive to find
+                a fair and balanced resolution that is acceptable to both
+                parties. If the parties fail to achieve a resolution after 60
+                days, then any party may notify the other party to resolve the
+                dispute via arbitration handled by the Indian Law Association,
+                following its Consumer Arbitration Rules. Upon submission of the
+                Dispute to the ILA for arbitration, both parties are required to
+                pay the necessary filing fees. Corelens is responsible for
+                covering any costs related to the arbitration and any fees
+                associated with the International Law Association (ILA). Each
+                party will be liable for their own legal fees and other
+                necessary expenditures, such as witness expenses, which will be
+                paid by the party which calls the witnesses. If an arbitration
+                hearing conducted in person is necessary, it will take place in
+                a location that is fairly convenient for both parties. If the
+                parties cannot reach a consensus on a site, the Independent
+                Institution or the impartial arbiter will make a decision about
+                the location. In the event that the arbitrator determines that a
+                dispute is without merit or was initiated with an inappropriate
+                intention, the party that prevails will be entitled to receive a
+                refund of any fees paid to Corelens. Additionally, the
+                arbitrator may, in their own discretion, grant an amount of
+                reasonable attorney's fees and expenses.
+                <br /> b. The arbitration will be conducted by a sole impartial
+                arbitrator, chosen from retired judges or lawyers with at least
+                15 years of experience in the relevant field of law related to
+                the dispute. This arbitrator will oversee the proceedings in
+                accordance with the Consumer Arbitration Rules. The arbitrator
+                will use the relevant legislation and the rules outlined in this
+                Agreement to resolve any Dispute, making decisions based only on
+                the applicable law and factual evidence presented in the record.
+                The arbitrator's ruling must include a written statement that
+                clearly outlines the resolution of each claim in the dispute.
+                Additionally, it should provide a summary of the crucial
+                findings and conclusions that form the basis of the judgement
+                and any potential award. The decision made by the arbitrator may
+                be enforced in any court with the appropriate jurisdiction.
+                During arbitration, similar to a court proceeding, the
+                arbitrator is obligated to uphold the provisions of this
+                Agreement and has the authority to provide the winning party
+                compensation and other forms of redress (such as payment for
+                legal representation). WITH ARBITRATION, THERE IS NO JUDGE OR
+                JURY INVOLVED, AND THE ARBITRATION PROCEEDINGS AND OUTCOME ARE
+                GOVERNED BY SPECIFIC CONFIDENTIALITY RULES. ADDITIONALLY, THE
+                ABILITY TO REVIEW THE ARBITRATION OUTCOME IN A COURT OF LAW IS
+                RESTRICTED. THE PARTIES INVOLVED HAVE MUTUALLY AGREED THAT THE
+                ARBITRATION PROCESS WOULD BE KEPT SECRET. Each party involved in
+                the arbitration process will have the opportunity, at their own
+                cost, to be legally represented by a lawyer or another chosen
+                advocate.
+                <br /> c. SUBJECT TO THE MAXIMUM EXTENT ALLOWED BY APPLICABLE
+                LAW, IF ANY PARTY WISHES TO INITIATE A DISPUTE AGAINST THE OTHER
+                PARTY, IT MUST BE DONE WITHIN ONE YEAR OF THE DISPUTE ARISING,
+                AS SPECIFIED IN SECTION 40, BY THE DELIVERY OF WRITTEN NOTICE.
+                FAILURE TO DO SO WILL RESULT IN THE DISPUTE BEING PERMANENTLY
+                PROHIBITED.
+                <br /> d. NOTWITHSTANDING THE FOREGOING, THIS ARBITRATION
+                AGREEMENT DOES NOT APPLY TO ANY CLAIM SEEKING DAMAGES IN TORT
+                FOR BODILY INJURY, INCLUDING EMOTIONAL OR PSYCHOLOGICAL INJURY,
+                OR PROPERTY DAMAGE OF ANY KIND, INCLUDING CLAIMS FOR LOSS OF USE
+                OR DIMINUTION IN VALUE OF PROPERTY. IN ADDITION, THERE SHALL BE
+                NO RIGHT OR AUTHORITY FOR ANY DISPUTE TO BE ARBITRATED ON A
+                CLASS ACTION BASIS OR ON ANY BASIS INVOLVING ANY DISPUTE BROUGHT
+                IN A PURPORTED REPRESENTATIVE CAPACITY ON BEHALF OF THE GENERAL
+                PUBLIC, OTHER PERSONS OR ENTITIES DOING BUSINESS WITH CORELENS,
+                OR OTHER PERSONS OR ENTITIES SIMILARLY SITUATED. FURTHERMORE,
+                ANY DISPUTE BROUGHT BY OR AGAINST CORELENS MAY NOT BE JOINED OR
+                CONSOLIDATED IN THE ARBITRATION WITH CLAIMS BROUGHT BY OR
+                AGAINST ANY OTHER CORELENS SUBSCRIBER, UNLESS OTHERWISE AGREED
+                BY THE PARTIES. FURTHER, THE PARTIES ACKNOWLEDGE THAT THEY WAIVE
+                ANY RIGHT TO PARTICIPATE IN A REPRESENTATIVE CAPACITY OR AS A
+                MEMBER OF ANY CLASS OF CLAIMANTS PERTAINING TO ANY DISPUTE
+                SUBJECT TO ARBITRATION.
+                <br /> e. Additionally, unless there is written agreement from
+                all parties to the contrary (including, but not limited to, as
+                outlined in the procedures below concerning Mass Arbitration),
+                the arbitrator is prohibited from combining multiple disputes
+                from different customers and is also prohibited from overseeing
+                any type of representative or class action. IF THERE ARE 25 OR
+                MORE ARBITRATION DEMANDS THAT MEET THE FOLLOWING CRITERIA:{" "}
+                <br />
+                (i) filed within 180 days of each other,
+                <br />
+                (ii) alleging similar or identical claims or causes of action,
+                and
+                <br />
+                (iii) either (a) the parties involved want to administer and/or
+                arbitrate together, or (b) they are filed by the same counsel or
+                in coordination with each other, THEN THE ARBITRATION WILL BE
+                CONDUCTED ACCORDING TO THE RULES OUTLINED BELOW.
+                <br />
+                1. If there is an attempt or request for Mass Arbitration
+                involving 250 or fewer arbitration demands, we agree that the
+                arbitration provider will:
+                <br />
+                (i) organise the arbitration demands into groups of at least 25
+                demands per group; and
+                <br />
+                (ii) facilitate the resolution of each group or batch as a
+                single arbitration, with one set of filing and administrative
+                fees and one arbitrator assigned to each group or batch.
+                <br />
+                2. If there is an attempt or request for Mass Arbitration
+                involving more than 250 arbitration demands, we agree that the
+                arbitration provider will:
+                <br />
+                (i) organise the arbitration demands into groups of at least 250
+                demands per group; and
+                <br />
+                (ii) facilitate the resolution of each group or batch as a
+                single arbitration, with one set of filing and administrative
+                fees and one arbitrator assigned to each group or batch.
+                <br />
+                3. Any kind of collective arbitration will be subject to all
+                other substantive and procedural conditions outlined in this
+                Agreement.
+                <br />
+                4. We will collaborate in a sincere and honest manner with the
+                arbitration provider to execute the previously described
+                procedure for Mass Arbitration, namely in relation to
+                resolution, costs, and administration.
+                <br />
+                5. In the event that any section of this paragraph concerning
+                Mass Arbitration is deemed unenforceable, that particular
+                component will be removed, but the rest of this paragraph and
+                the Agreement will be upheld to the fullest degree allowed by
+                law.
+                <br />
+                6. If the arbitration provider is unwilling or unable to adhere
+                to the procedures outlined in this paragraph for Mass
+                Arbitration, the parties have the option to seek the services of
+                an alternative arbitration organisation that is mutually
+                acceptable and widely acknowledged, and that is willing to
+                comply with the procedures outlined here. If the parties are
+                unable to find or agree on another arbitration provider, the
+                alternative dispute resolution procedures stated in this
+                Agreement will not be applicable to the disputes in the Mass
+                Arbitration. SUBSCRIBER SHALL HAVE THE RIGHT TO OPT OUT OF THIS
+                AGREEMENT TO ARBITRATE BY PROVIDING WRITTEN NOTICE OF ITS
+                INTENTION TO DO SO BY EMAILING TO connect@corelens.com WITHIN 60
+                DAYS OF THIS AGREEMENT BECOMING BINDING UPON SUBSCRIBER FOR THE
+                FIRST TIME. OPTING OUT OF THIS AGREEMENT TO ARBITRATE HAS NO
+                EFFECT ON ANY PREVIOUS, OTHER, OR FUTURE ARBITRATION
+                AGREEMENT(S) THAT SUBSCRIBER MAY HAVE WITH CORELENS. IF THIS
+                AGREEMENT TO ARBITRATE BECOMES BINDING, SUBSCRIBER CAN NOT
+                CHANGE, MODIFY OR REVOKE IT (INCLUDING BY ATTEMPTING TO OPT OUT
+                IN CONNECTION WITH ANY CONFIRMATION OF THE THESE TERMS OF
+                SERVICE, AS AMENDED FROM TIME TO TIME) WITHOUT AN AGREEMENT IN
+                WRITING SIGNED BY CORELENS. IN THE EVENT THAT THE SUBSCRIBER
+                OPTS OUT OF THIS AGREEMENT TO ARBITRATE IN ACCORDANCE WITH THIS
+                SECTION 39: EACH PARTY HEREBY IRREVOCABLY AGREES THAT ANY SUIT,
+                ACTION OR OTHER LEGAL PROCEEDING ("SUIT") ARISING OUT OF OR IN
+                CONNECTION WITH OR DUE TO ANY CLAIM OR DISPUTE THAT HAS ARISEN
+                OR MAY ARISE BETWEEN THE PARTIES MUST BE RESOLVED EXCLUSIVELY BY
+                A STATE OR HIGH COURT; EACH PARTY CONSENTS TO THE EXCLUSIVE
+                JURISDICTION AND VENUE OF EACH SUCH COURT IN ANY SUCH SUIT AND
+                WAIVES ANY OBJECTION THAT IT MAY HAVE TO JURISDICTION OR VENUE
+                OF ANY SUCH SUIT; EACH PARTY CONSENTS TO SERVICE OF PROCESS IN
+                ACCORDANCE WITH THE NOTICE PROVISIONS OF THIS AGREEMENT; AND
+                EACH PARTY HEREBY WAIVES ANY RIGHT TO TRIAL BY JURY IN ANY SUCH
+                SUIT. Periodically, we may modify and enhance this Agreement.
+                Subject to legal constraints, any modifications will take effect
+                immediately upon their publication on the Corelens Website. If
+                you do not choose to decline the changes mentioned below, your
+                ongoing use of any Corelens Services or Website implies that you
+                acknowledge and consent to the modifications in relation to your
+                use after the revision date. Your continuous use serves as your
+                acceptance of the modified terms. Any changes made to this
+                Agreement will not affect the agreed-upon dispute resolution
+                arrangements for ongoing issues, unless the parties explicitly
+                agree differently in writing. To clarify, "then-pending
+                disputes" refers to any legal action that has been brought
+                before a court or panel. You have the option to reject any
+                modifications made to the Agreement within 30 days of the
+                updated version being posted on the Website. To do so, you must
+                provide a written notification expressing your intention to opt
+                out of the amended terms of this Agreement by contacting
+                Corelens at connect@corelens.com.
+              </p>
+              <h3>40. Notices.</h3>
+              <p>
+                Unless stated otherwise,
+                <br />
+                (i) all notices that need to be sent to Corelens will be
+                considered as duly delivered if they are written and sent by
+                regular mail with prepaid postage or by a reliable national
+                overnight delivery service to Corelens's current main office,
+                and
+                <br />
+                (ii) all notices that need to be sent to Subscriber will be
+                considered as duly delivered if they are written and sent to the
+                email address associated with Subscriber's Account as recorded
+                by Corelens. The subscriber is obligated to inform Corelens of
+                any changes to their email address, as stated in the previous
+                sentence.
+              </p>
+              <h3>41. Severability</h3>{" "}
+              <p>
+                Severability refers to the legal principle that allows a
+                contract or agreement to remain valid even if certain provisions
+                or clauses are found to be unenforceable In the event that any
+                term of this Agreement is deemed invalid, the other provisions
+                shall continue to be in full force and effect.
+              </p>
+              <h3>42. Policy on the protection of personal information.</h3>
+              <p>
+                {" "}
+                Kindly consult Corelens's privacy policy at
+                http://www.Corelens.com/privacy-policy for crucial details on
+                Corelens's acquisition, use, and dissemination of Customer's
+                personal data. THE SUBSCRIPTION PRODUCT PROTECTION PLANS ARE NOT
+                ABLE TO BE TRANSFERRED AND ONLY PERTAIN TO THE ORIGINAL BUYER.
+                The Subscription Product Protection plans terminate when any
+                Covered Item is withdrawn, either at Corelens' discretion or due
+                to obsolescence. If Corelens chooses to provide the subscriber
+                with a replacement item as part of a Subscription Product
+                Protection plan, the replacement will be covered by a 1-year
+                original Limited Hardware Warranty and any relevant Subscription
+                Product Protection Plans, as long as all other requirements are
+                fulfilled. Subscription Product Protection plans specifically
+                provide coverage for regular deterioration due to normal use,
+                but do not extend to instances involving unintentional use or
+                deliberate harm caused by inappropriate use of the Covered
+                Products. Corelens has the authority to decide whether a product
+                has been used in a way that was not intended or was not
+                appropriate. Corelens has the authority to provide any client
+                with the chance to be included in one of these subscription
+                product protection plans at any given moment, based on terms
+                defined solely by Corelens. Corelens has the authority to
+                restrict the number of times a client may redeem a certain
+                component or implement other corrective measures if it
+                determines that the customer is misusing a product protection
+                plan. Corelens retains the authority to terminate any individual
+                membership at its discretion, which may include instances of
+                suspected fraud or misuse of the product protection plan
+                features. Product protection plans cease to be valid when a
+                subscription is discontinued or interrupted in any way. Corelens
+                has the authority to modify or end these Subscription Product
+                Protection plans at any time. Unless stated otherwise, such
+                changes would take effect in the following payment cycle at the
+                earliest. By enrolling in any Service, you acknowledge that
+                these Subscription Product Protection policies are linked to
+                your monthly service plan and are separate from your original
+                hardware purchase.
+              </p>
+              <h3>
+                45.Essential updates and replacements for products, components,
+                and software throughout service
+              </h3>
+              <p>
+                If Corelens determines, at its own discretion, that certain
+                essential updates or replacements for the Product, component, or
+                Software are necessary to ensure the reliable performance of
+                your system or any of its components during your subscription
+                for any Services, and if Corelens provides the corresponding
+                hardware or software updates (referred to as "Critical Updates
+                &amp; Replacements"), the Customer agrees, upon receiving
+                notice, to take reasonable actions and follow the provided
+                instructions to carry out these Critical Updates &amp;
+                Replacements. The Customer also agrees to cooperate as
+                reasonably requested in order to schedule, coordinate, or
+                arrange for the installation, delivery, or implementation of
+                these Critical Updates &amp; Replacements. These Critical
+                Updates &amp; Replacements may include the implementation of
+                updated labelling, the substitution of batteries, the
+                replacement of wifi or cellular modules, and even the
+                substitution of discontinued components or goods. By agreeing to
+                use the service, you confirm that you will make all reasonable
+                attempts to assist with these essential updates and that
+                Corelens has fulfilled its responsibilities to you by making
+                these updates readily accessible.
+              </p>
+              <h3>46.Reconditioned components</h3>
+              <p>
+                As part of Corelens's commitment to sustainability, recycling,
+                and reusability, we have the option to use reclaimed, recycled,
+                or reconditioned parts as component parts in any new products
+                sold or provided to consumers. When consumers make a purchase or
+                request replacement parts, they do so with the understanding,
+                agreement, and acknowledgment that these parts may be used.
+                Terms, Consent, and Release for Video Sharing by Corelens
+                Suspected Crime Related Videos; Authorizing Review for Customer
+                Support &amp; Evaluation of Corelens Products and Services
+                <h3>Revised in August 2024</h3>By agreeing to these terms, I
+                confirm and recognise that I give my permission for Corelens to
+                utilise the Shared Video Content I have specified through the
+                Corelens mobile app for assessment by Corelens staff and
+                representatives, as outlined in more detail below. It is
+                important to note that my consent and agreement to these terms
+                are not contingent upon purchasing any Corelens products or
+                services. As part of this agreement, I have agreed to release
+                Corelens from all claims and liabilities connected to their use
+                of the Shared Video Content, as authorised in this agreement,
+                and resulting from any customer support services given by
+                Corelens. The phrases "I", "you", and "me" in this context
+                pertain to the Corelens client who is agreeing to these
+                conditions. Shared Video Content: The terms "consent" and
+                "release" apply to video clips and all content contained within
+                them, including images, audio, commentary, and metadata. These
+                video clips are captured using Corelens's System(s) and related
+                Services, and are specifically identified by the user for
+                consent and approval for internal review by Corelens employees
+                or representatives. This content is subject to the "Terms,
+                Consent &amp; Release for Video Sharing (Crime Suspected)" and
+                Corelens's Terms of Service, Website Terms of Use, and Privacy
+                Policy, which are all incorporated into these terms. Any
+                capitalised words used in this document that are not specified
+                will have the meanings given to them in Corelens's words and
+                Conditions. Your Obligations with Respect to Shared Video
+                Content: According to Corelens's Terms and Conditions, you are
+                entirely accountable for all the content you upload, post,
+                email, transmit, or distribute using the Corelens System(s) or
+                related Services. This includes the Shared Video Content
+                explicitly. You affirm and guarantee that:
+                <br />
+                (a) you possess the authority to upload the Shared Video Content
+                and provide the specified licence, and
+                <br />
+                (b) the act of uploading and utilising your Shared Video Content
+                on the Services or Website (including Corelens's mobile
+                applications) as described here will not:
+                <br />
+                (1)Breach or encroach upon the private rights, publicity rights,
+                copyrights, contract rights, intellectual property rights, or
+                any other rights of any person;
+                <br />
+                (2) Breach any law, ordinance, or regulation, including privacy
+                and other laws mentioned above, as well as any relevant export
+                control laws; or
+                <br />
+                (3) include the deliberate staging or the intended portrayal of
+                a prepared, re-enacted, or fabricated representation or
+                dramatisation of illegal behaviour;
+                <br />
+                (4) Any submission should not be made with the purpose or
+                intention of compromising the security of your Corelens account
+                or anyone else’s. You acknowledge and agree that you are
+                prohibited from submitting any video material for sharing that:{" "}
+                <br />
+                (i) is not owned by you or originates from an account that is
+                not owned or registered to you, unless you have obtained the
+                explicit written agreement of the relevant owners, and <br />
+                (ii) infringes the rights of third parties in any manner.
+                License Grant to Corelens to Use the Shared Video Content: You
+                give Corelens and its licensees an unrestricted, permanent,
+                worldwide right and licence to utilise, distribute, store,
+                delete, translate, copy, alter, test, analyse, and evaluate
+                Corelens products and services using the shared video content.
+                This licence also allows Corelens to review the shared video
+                content with its employees and representatives for the sole
+                purpose of providing customer support and recommendations to
+                customers. Customer Support Services: THE CUSTOMER SUPPORT
+                SERVICES PROVIDED IN CONNECTION WITH SHARED VIDEO CONTENT ARE
+                OFFERED FOR THE CONVENIENCE OF THE CUSTOMER AND ARE PROVIDED "AS
+                IS" AND "AS AVAILABLE". TO THE FULLEST EXTENT PERMITTED BY LAW,
+                CORELENS AND ITS AFFILIATES, EMPLOYEES, AND REPRESENTATIVES
+                EXPLICITLY DISCLAIM ANY WARRANTIES AND CONDITIONS, WHETHER
+                EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OR
+                CONDITIONS OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+                ACCURACY, AND NON-INFRINGEMENT. The General Release of Claims
+                states that, in exchange for certain promises and
+                considerations, I am releasing Corelens and its affiliates, as
+                well as their officers, directors, employees, and authorised
+                representatives (collectively referred to as "Corelens Released
+                Parties"), from any liability related to any personal or
+                proprietary rights I may have in connection with the use and
+                sharing of my Shared Video Content. This release also covers any
+                third-party claims that may arise from the authorised use of the
+                Shared Video Content, as explicitly permitted or authorised in
+                these Terms. Additionally, it includes any liability related to
+                the receipt or performance of customer support services provided
+                under these Terms. Acknowledgement: I have thoroughly perused
+                the Terms, Consent &amp; Release for Video Sharing (Crime
+                Suspected) and comprehended its contents completely. These
+                Terms, Consent &amp; Release for Video Sharing (Crime
+                Suspected), along with the Corelens Terms and Conditions
+                incorporated by reference, form the complete agreement between
+                the parties regarding the subject matter. They will be
+                interpreted and enforced in accordance with the laws, without
+                considering conflicting laws principles. To the fullest extent
+                permitted by law, they will be legally binding on me and my
+                assigns. If any provision of these Terms, Consent &amp; Release
+                for Video Sharing (Crime Suspected) is determined to be unlawful
+                or unenforceable, the rest of this release will remain in
+                effect. Corelens Terms, Consent &amp; Release for Video Sharing
+                Non-Crime Related Videos; Granting Permission for Lawful
+                Promotional and Other Uses
+              </p>
+              <h3>Revised in August 2019</h3>
+              <p>
+                By agreeing to these terms, I confirm and recognise that I give
+                my permission for Corelens to utilise the Shared Video Content I
+                have specified through the Corelens mobile app for all legal
+                promotional and other purposes, as outlined in more detail
+                below. It is important to note that my consent and agreement to
+                these terms are not contingent upon purchasing any Corelens
+                products or services. As a result of my permission, and under
+                the conditions specified, I have consented to absolve Corelens
+                of all claims and responsibilities related to their utilisation
+                of the Shared Video Content, as authorised in this agreement.
+                The pronouns "I", "you", and "me" in this context must be
+                interpreted as referring to the client of Corelens who is
+                accepting these conditions. Shared video content: The terms
+                "consent" and "release" apply to video clips and all associated
+                content (including images, audio, and metadata) that have been
+                captured using Corelens's System(s) and Services, and have been
+                specifically approved by you for Corelens to use for promotional
+                purposes. This content is referred to as "Shared Video Content"
+                and is subject to the "Terms, Consent &amp; Release for Video
+                Sharing (Non-Crime)" and Corelens's Terms of Service, Website
+                Terms of Use, and Privacy Policy. Any capitalised words not
+                defined in this document will have the meanings specified in
+                Corelens's words and Conditions. Your Obligations with Respect
+                to Shared Video Content: As stated in Corelens's Terms and
+                Conditions, you are solely accountable for all the content you
+                upload, post, email, transmit, or distribute using the Corelens
+                System(s) or related Services, including the Shared Video
+                Content. You affirm and guarantee that:
+                <br />
+                (a) you possess the authority to upload the Shared Video Content
+                and provide the specified licence, and
+                <br />
+                (b) the act of uploading and utilising your Shared Video Content
+                on the Services or Website (including Corelens's mobile
+                applications) as described here will not:
+                <br />
+                (1) Breach or encroach upon the private rights, publicity
+                rights, copyrights, contract rights, intellectual property
+                rights, or any other rights of any person;
+                <br />
+                (2) Breach any law, ordinance, or regulation, including privacy
+                and other laws mentioned above, as well as any relevant export
+                control legislation;
+                <br />
+                (3) include anything that is detrimental, deceitful, misleading,
+                menacing, harassing, slanderous, explicit, portray any illegal
+                or criminal or otherwise offensive behaviour; or
+                <br />
+                (4) Endanger the security of your Corelens account or any other
+                account. You acknowledge and agree that you are prohibited from
+                submitting any video material for sharing that: <br />
+                (i) is not owned by you or originates from an account that is
+                not owned or registered to you, without obtaining the explicit
+                prior written agreement of the relevant owners, and <br />
+                (ii) in any manner that infringes against the rights of any
+                third party. License Grant to Corelens to Use the Shared Video
+                Content: By accepting this agreement, you are granting Corelens
+                and its licensees an unrestricted, non-revocable, fully paid,
+                royalty-free, perpetual, worldwide right and licence to utilise,
+                reuse, distribute, store, remove, translate, duplicate, alter,
+                exhibit, sell, create derivative works from, use for testing and
+                analytical purposes, and otherwise exploit the shared video
+                content for any legal purpose and in any media format or
+                channel, without the need for any further compensation to you.
+                To clarify, the allowed and authorised uses include all legal
+                activities related to marketing, promotion, advertising,
+                offering, selling, and trading. These activities may be
+                conducted by any means, medium, or channel, whether electronic
+                or otherwise. Consideration for Corelens’s Selection of Your
+                Shared Video Content for Promotional Use: When Corelens chooses
+                to use your Shared Video Content for promotional purposes, such
+                as advertisements or social media posts, you will receive two
+                months of professional monitoring services as compensation. This
+                compensation will be provided in the months following the use of
+                your content by Corelens, and it will be considered as full
+                payment for the use of your content. This consideration
+                constitutes Corelens's complete payment for the aforementioned
+                rights and permissions. I acknowledge and agree that Corelens is
+                not obligated to make any further payments of any nature, and no
+                reporting or accounting of Corelens's use of the Shared Video
+                Content is necessary. If you cancel your subscription to
+                Corelens monitoring services before the free months of
+                monitoring services are provided, no further payment will be
+                required. Corelens will only provide the appropriate amount of
+                consideration under relevant legislation. If this consideration
+                is not considered sufficient, Corelens may provide two months of
+                monitoring service as an alternative form of payment. General
+                Release of Claims: In consideration of the promises made in
+                these Terms, Consent &amp; Release for Video Sharing
+                (Non-Crime), and for other valuable consideration, I hereby
+                release Corelens, its affiliates, and its/their officers,
+                directors, employees, and authorised representatives
+                (collectively referred to as "Corelens Released Parties") from
+                any and all liability for any violation of my personal or
+                proprietary rights related to the use and sharing of my Shared
+                Video Content. This release also covers any third-party claims
+                that may arise from the authorised use and exploitation of the
+                Shared Video Content, but only for the uses explicitly permitted
+                or authorised in these terms. Acknowledgement: I have thoroughly
+                perused the Terms, Consent &amp; Release for Video Sharing
+                (Non-Crime) and have a comprehensive understanding of its
+                contents. The Terms, Consent &amp; Release for Video Sharing
+                (Non-Crime), along with the Corelens Terms and Conditions
+                incorporated by reference, form the complete agreement between
+                the parties regarding the subject matter. These terms will be
+                interpreted and enforced in accordance with the laws, without
+                considering conflict of laws principles. They will be legally
+                binding on me and my assigns to the fullest extent permitted by
+                law. In the event that any provision of these Terms, Consent
+                &amp; Release for Video Sharing (Non-Crime) is determined to be
+                unlawful or unenforceable, the other provisions of this release
+                shall remain in full force and effect.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default TermsAndConditions;

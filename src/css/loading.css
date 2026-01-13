@@ -1,0 +1,53 @@
+.dashboard-loading-container {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.loading-state {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.loading-spinner {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: spin 1s infinite linear;
+}
+
+.loading-state h3 {
+  margin: 0.5rem 0;
+  color: #2c3e50;
+}
+
+.loading-state p {
+  color: #7f8c8d;
+  margin: 0.5rem 0;
+}
+
+.loading-progress {
+  font-size: 0.875rem;
+  color: #95a5a6;
+  margin-top: 1rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Add pulsing effect to loading text */
+.loading-state p {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
