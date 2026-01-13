@@ -308,7 +308,10 @@ const ViewCart = () => {
         const result = await response.json();
         const promo = result.data?.docs?.[0] || result.data?.[0];
 
-        if (!promo || promo.code.toUpperCase() !== promoCode.trim().toUpperCase()) {
+        if (
+          !promo ||
+          promo.code.toUpperCase() !== promoCode.trim().toUpperCase()
+        ) {
           setPromoError("Invalid or expired promo code");
           setPromoData(null);
         } else if (!promo.is_active) {
@@ -1087,10 +1090,21 @@ const ViewCart = () => {
 
         // Notify user about registration
         Swal.fire({
-          icon: "info",
-          title: "User Not Found",
-          text: "Mobile number is verified. Please provide your details to register and continue.",
+          html: `
+            <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
+              <img src="/images/icons/add_newuser.png" alt="Add User" style="width: 40px; height: 40px; margin-bottom: 15px; object-fit: contain;" />
+              <h2 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 10px; color: #333;">User Not Found</h2>
+              <p style="color: #666; font-size: 0.95rem; line-height: 1.4; margin: 0;">Welcome! Please complete your registration to continue shopping.</p>
+            </div>
+          `,
+          showConfirmButton: true,
+          confirmButtonText: "OK",
           confirmButtonColor: "#1976d2",
+          width: '350px',
+          padding: '1.5rem',
+          customClass: {
+            popup: "custom-swal-popup",
+          },
         });
 
         // Pre-fill form for the new user with mobile number
@@ -2337,7 +2351,11 @@ const ViewCart = () => {
 
         // Validate Pincode using external API
         const pincode = newAddressForm.pincode?.trim();
-        if (!pincode || pincode.length !== 6 || !/^[1-9][0-9]{5}$/.test(pincode)) {
+        if (
+          !pincode ||
+          pincode.length !== 6 ||
+          !/^[1-9][0-9]{5}$/.test(pincode)
+        ) {
           Swal.fire({
             icon: "error",
             title: "Invalid Pincode",
@@ -2348,7 +2366,9 @@ const ViewCart = () => {
         }
 
         try {
-          const pincodeRes = await fetch(`https://api.postalpincode.in/pincode/${pincode}`);
+          const pincodeRes = await fetch(
+            `https://api.postalpincode.in/pincode/${pincode}`,
+          );
           const pincodeData = await pincodeRes.json();
           if (!pincodeData || pincodeData[0].Status !== "Success") {
             Swal.fire({
@@ -2360,7 +2380,9 @@ const ViewCart = () => {
             return;
           }
         } catch (err) {
-          console.warn("Pincode verification API failed, proceeding with manual validation");
+          console.warn(
+            "Pincode verification API failed, proceeding with manual validation",
+          );
         }
 
         const token = userToken || localStorage.getItem("userToken");
@@ -2566,17 +2588,24 @@ const ViewCart = () => {
 
       // 2. Pick the correct address _id
       // Priority: 1. selectedAddressId (from UI) 2. default address 3. first address in list
-      let latestAddress = addressList.find(a => (a._id || a.id) === selectedAddressId);
-      
+      let latestAddress = addressList.find(
+        (a) => (a._id || a.id) === selectedAddressId,
+      );
+
       if (!latestAddress) {
-        console.log("📍 Selected address not found in list, falling back to default/first");
-        latestAddress = addressList.find(a => a.defaultAddress) || addressList[0];
+        console.log(
+          "📍 Selected address not found in list, falling back to default/first",
+        );
+        latestAddress =
+          addressList.find((a) => a.defaultAddress) || addressList[0];
       }
-      
+
       const finalAddressId = latestAddress._id || latestAddress.id;
 
       if (!finalAddressId) {
-        throw new Error("Could not resolve backend address ID. Please select or add an address.");
+        throw new Error(
+          "Could not resolve backend address ID. Please select or add an address.",
+        );
       }
 
       console.log("✅ COD: Using verified backend address ID:", finalAddressId);
@@ -2587,7 +2616,9 @@ const ViewCart = () => {
       const amountAfterDiscount = subtotalValue - promoDiscount;
       // BACKEND FIX: tax is 18%, delivery_fee is 0
       const taxAmount = Number((amountAfterDiscount * 0.18).toFixed(2));
-      const finalTotalAmount = Number((amountAfterDiscount + taxAmount).toFixed(2));
+      const finalTotalAmount = Number(
+        (amountAfterDiscount + taxAmount).toFixed(2),
+      );
 
       // Use correct product structure for backend
       const orderProducts = cartItems.map((item) => ({
@@ -2612,10 +2643,15 @@ const ViewCart = () => {
         trx_ref_no: `pymt-${random10Digit}`,
       };
 
-      console.log("🚀 [COD DEBUG] Sending Verified Payload:", JSON.stringify(orderPayload, null, 2));
+      console.log(
+        "🚀 [COD DEBUG] Sending Verified Payload:",
+        JSON.stringify(orderPayload, null, 2),
+      );
 
       // 5. Place order
-      console.log("🚀 [COD DEBUG] Request URL: https://backend.corelens.in/api/app/order");
+      console.log(
+        "🚀 [COD DEBUG] Request URL: https://backend.corelens.in/api/app/order",
+      );
       const response = await fetch(
         "https://backend.corelens.in/api/app/order",
         {
@@ -2632,7 +2668,10 @@ const ViewCart = () => {
       const result = await response.json();
       console.log("✅ COD Response:", result);
 
-      if (response.ok && (result.success === true || result.success === "true")) {
+      if (
+        response.ok &&
+        (result.success === true || result.success === "true")
+      ) {
         localStorage.removeItem("cartItems");
         localStorage.removeItem("cartLastUpdated");
         localStorage.removeItem("cart");
@@ -2658,7 +2697,8 @@ const ViewCart = () => {
       Swal.fire({
         icon: "error",
         title: "Order Failed",
-        text: error.message || "Something went wrong while placing your COD order.",
+        text:
+          error.message || "Something went wrong while placing your COD order.",
       });
     } finally {
       setLoading(false);
@@ -3747,9 +3787,14 @@ const ViewCart = () => {
                       <span>₹{getSubtotal().toLocaleString("en-IN")}</span>
                     </div>
                     {promoData && (
-                      <div className="price-row promo-row" style={{ color: "#388e3c" }}>
+                      <div
+                        className="price-row promo-row"
+                        style={{ color: "#388e3c" }}
+                      >
                         <span>Promo Discount ({promoData.code})</span>
-                        <span>- ₹{getPromoDiscount().toLocaleString("en-IN")}</span>
+                        <span>
+                          - ₹{getPromoDiscount().toLocaleString("en-IN")}
+                        </span>
                       </div>
                     )}
                     <div className="price-row gst-fee-row">
