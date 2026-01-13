@@ -36,5 +36,5 @@ channel = "stable-25_05"
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["npm", "run", "preview", "--", "--host", "0.0.0.0", "--port", "5000"]
+run = ["npm", "run", "dev"]
 publicDir = "dist"
