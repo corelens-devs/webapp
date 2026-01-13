@@ -2582,10 +2582,12 @@ const ViewCart = () => {
       console.log("✅ COD: Using verified backend address ID:", finalAddressId);
 
       // 3. Resolve amounts
-      const subtotalValue = getTotalPrice();
+      const subtotalValue = getSubtotal();
+      const promoDiscount = getPromoDiscount();
+      const amountAfterDiscount = subtotalValue - promoDiscount;
       // BACKEND FIX: tax is 18%, delivery_fee is 0
-      const taxAmount = Number((subtotalValue * 0.18).toFixed(2));
-      const finalTotalAmount = Number((subtotalValue + taxAmount).toFixed(2));
+      const taxAmount = Number((amountAfterDiscount * 0.18).toFixed(2));
+      const finalTotalAmount = Number((amountAfterDiscount + taxAmount).toFixed(2));
 
       // Use correct product structure for backend
       const orderProducts = cartItems.map((item) => ({
