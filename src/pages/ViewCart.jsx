@@ -2647,7 +2647,7 @@ const ViewCart = () => {
           confirmButtonColor: "#fb641b",
         });
 
-        window.location.href = "/dashboard";
+        window.location.href = "/checkout-success";
       } else {
         throw new Error(result.message || "Backend rejected order creation");
       }
