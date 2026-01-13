@@ -14,10 +14,7 @@ export default defineConfig({
         main: "./index.html",
       },
       output: {
-        manualChunks: {
-          vendor: ["react", "react-dom"],
-          router: ["react-router-dom"],
-        },
+        manualChunks: undefined,
         assetFileNames: (assetInfo) => {
           const info = assetInfo.name.split(".");
           const ext = info[info.length - 1];
@@ -40,8 +37,8 @@ export default defineConfig({
     minify: "terser",
     terserOptions: {
       compress: {
-        drop_console: true,
-        drop_debugger: true,
+        drop_console: false,
+        drop_debugger: false,
       },
     },
     chunkSizeWarningLimit: 1000,
