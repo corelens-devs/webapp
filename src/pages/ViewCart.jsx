@@ -2645,9 +2645,11 @@ const ViewCart = () => {
           text: "Your order has been placed. Please pay at delivery.",
           confirmButtonText: "OK",
           confirmButtonColor: "#fb641b",
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = "/checkout-success";
+          }
         });
-
-        window.location.href = "/checkout-success";
       } else {
         throw new Error(result.message || "Backend rejected order creation");
       }
