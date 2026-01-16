@@ -16,7 +16,7 @@ const TrackOrder = () => {
       const token = localStorage.getItem("userToken");
 
       console.log("🔍 TrackOrder: Searching for order:", orderId);
-      
+
       // Fetch all orders from /api/app/orders
       const response = await fetch(
         "https://backend.corelens.in/api/app/orders",
@@ -26,7 +26,7 @@ const TrackOrder = () => {
             "Content-Type": "application/json",
             Authorization: `Bearer ${token}`,
           },
-        }
+        },
       );
 
       const result = await response.json();
@@ -35,7 +35,7 @@ const TrackOrder = () => {
 
       // Extract orders list - handle multiple response formats
       let allOrders = [];
-      
+
       if (Array.isArray(result.data?.docs)) {
         allOrders = result.data.docs;
         console.log("✅ Found orders in result.data.docs");
@@ -62,7 +62,10 @@ const TrackOrder = () => {
         return orderNo === orderId_normalized || o._id === orderId;
       });
 
-      console.log("🔍 Order search result:", { found: !!order, searchedFor: orderId });
+      console.log("🔍 Order search result:", {
+        found: !!order,
+        searchedFor: orderId,
+      });
 
       if (order) {
         console.log("✅ Order found! Details:", order);
@@ -86,7 +89,7 @@ const TrackOrder = () => {
             title: "Order Placed",
             icon: "📋",
             date: new Date(
-              order.createdAtTime || order.createdAt || Date.now()
+              order.createdAtTime || order.createdAt || Date.now(),
             ).toLocaleDateString("en-IN"),
           },
           {
@@ -138,7 +141,9 @@ const TrackOrder = () => {
           totalOrdersChecked: allOrders.length,
           orderNosInList: allOrders.map((o) => o.order_no),
         });
-        alert("Order ID '" + orderId + "' not found. Please check and try again.");
+        alert(
+          "Order ID '" + orderId + "' not found. Please check and try again.",
+        );
       }
     } catch (error) {
       console.error("❌ Error fetching orders:", error);
@@ -174,7 +179,7 @@ const TrackOrder = () => {
                     id="orderId"
                     value={orderId}
                     onChange={(e) => setOrderId(e.target.value.toUpperCase())}
-                    placeholder="Enter your order ID (e.g., CLI23466)"
+                    placeholder="Enter your order ID (e.g., 3456)"
                     className="track-order-input"
                     required
                   />
@@ -248,8 +253,8 @@ const TrackOrder = () => {
                           isActive
                             ? "track-order-step-active"
                             : isBefore
-                            ? "track-order-step-done"
-                            : "track-order-step-offwhite"
+                              ? "track-order-step-done"
+                              : "track-order-step-offwhite"
                         }`}
                       >
                         <div className="track-order-step-circle">

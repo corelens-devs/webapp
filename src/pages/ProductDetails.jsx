@@ -1847,71 +1847,83 @@ const ProductDetails = () => {
       </section>
 
       {/* Know More Section */}
-      <section className="know-more-section">
-        <div className="know-more-title">KNOW MORE</div>
-        <div className="know-more-image-container">
-          <img
-            src={product.knowMoreImage || "/images/knowmore/knowmore-locks.jpg"}
-            alt="Product Features"
-            className="know-more-featured-image"
-            onError={(e) => {
-              console.error("Image load failed:", e.target.src);
-              e.target.src = "/images/knowmore/knowmore-locks.jpg";
-            }}
-          />
-        </div>
-      </section>
+      {!(
+        product?.name?.toLowerCase().includes("mercusys") ||
+        product?.name?.toLowerCase().includes("ac12") ||
+        product?.name?.toLowerCase().includes("mr30g")
+      ) && (
+        <section className="know-more-section">
+          <div className="know-more-title">KNOW MORE</div>
+          <div className="know-more-image-container">
+            <img
+              src={product.knowMoreImage || "/images/knowmore/knowmore-locks.jpg"}
+              alt="Product Features"
+              className="know-more-featured-image"
+              onError={(e) => {
+                console.error("Image load failed:", e.target.src);
+                e.target.src = "/images/knowmore/knowmore-locks.jpg";
+              }}
+            />
+          </div>
+        </section>
+      )}
 
       {/* Video Frame Section */}
-      <section className="video-frame" id="product-video-section">
-        <div className="video-grid-container" id="youtube-player">
-          <iframe
-            width="100%"
-            height="500"
-            src={(() => {
-              const productName = (product?.name || "").toLowerCase();
-              let videoId = "";
+      {!(
+        product?.name?.toLowerCase().includes("mercusys") ||
+        product?.name?.toLowerCase().includes("ac12") ||
+        product?.name?.toLowerCase().includes("mr30g")
+      ) && (
+        <section className="video-frame" id="product-video-section">
+          <div className="video-grid-container" id="youtube-player">
+            <iframe
+              width="100%"
+              height="500"
+              src={(() => {
+                const productName = (product?.name || "").toLowerCase();
+                let videoId = "";
 
-              // Product-specific video mapping
-              if (productName.includes("ultra")) {
-                videoId = "dV8zaRaWCxI";
-              } else if (productName.includes("royale")) {
-                videoId = "owBKsviTtTQ";
-              } else if (productName.includes("turbo")) {
-                videoId = "SnRUk_yLRdI";
-              } else if (productName.includes("echo")) {
-                videoId = "RBJU2b7hDSw";
-              } else if (productName.includes("wave")) {
-                videoId = "tFllR0Tdn-s";
-              } else if (productName.includes("polo")) {
-                videoId = "90iBsEqdYF4";
-              } else if (productName.includes("oval")) {
-                videoId = "6dr8uwGsnlw";
-              } else if (productName.includes("gem")) {
-                videoId = "EjRM3m0h2tY";
-              } else if (
-                productName.includes("motion") ||
-                productName.includes("sensor")
-              ) {
-                videoId = "en1VRrjOJqs";
-              } else if (productName.includes("moto")) {
-                videoId = "M5CZPtRqklg";
-              } else if (productName.includes("prime")) {
-                videoId = "oj1NXHbTwUU";
-              } else {
-                videoId = "fCueFbMZ3lU";
-              }
-              
-              return `https://www.youtube.com/embed/${videoId}?enablejsapi=1&mute=1`;
-            })()}
-            title={`${product?.name} - Product Demo Video`}
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
+                // Product-specific video mapping
+                if (productName.includes("ultra")) {
+                  videoId = "dV8zaRaWCxI";
+                } else if (productName.includes("royale")) {
+                  videoId = "owBKsviTtTQ";
+                } else if (productName.includes("turbo")) {
+                  videoId = "SnRUk_yLRdI";
+                } else if (productName.includes("echo")) {
+                  videoId = "RBJU2b7hDSw";
+                } else if (productName.includes("wave")) {
+                  videoId = "tFllR0Tdn-s";
+                } else if (productName.includes("polo")) {
+                  videoId = "90iBsEqdYF4";
+                } else if (productName.includes("oval")) {
+                  videoId = "6dr8uwGsnlw";
+                } else if (productName.includes("gem")) {
+                  videoId = "EjRM3m0h2tY";
+                } else if (
+                  productName.includes("motion") ||
+                  productName.includes("sensor")
+                ) {
+                  videoId = "en1VRrjOJqs";
+                } else if (productName.includes("moto")) {
+                  videoId = "M5CZPtRqklg";
+                } else if (productName.includes("prime")) {
+                  videoId = "oj1NXHbTwUU";
+                } else {
+                  videoId = "fCueFbMZ3lU";
+                }
+
+                return `https://www.youtube.com/embed/${videoId}?enablejsapi=1&mute=1`;
+              })()}
+              title={`${product?.name} - Product Demo Video`}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+      )}
       {/* Specifications Section */}
       <section className="specifications-modern">
         <div className="specs-container">
