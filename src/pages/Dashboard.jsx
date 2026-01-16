@@ -262,6 +262,8 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                   ? `https://backend.corelens.in/static/${product.photo[0].name}`
                   : null;
                 const isPaid = !!paymentId;
+                const isCOD = order.payment_method?.toLowerCase() === "cod" || order.payment_mode?.toLowerCase() === "cod";
+                const displayPaymentStatus = isPaid ? "✓ Paid" : (isCOD ? "⏳ Pending (COD)" : "⏳ Pending");
 
                 const handleDownloadInvoice = async (id) => {
                   try {
@@ -325,7 +327,7 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                       <span
                         className={`payment-badge ${isPaid ? "paid" : "pending"}`}
                       >
-                        {isPaid ? "✓ Paid" : "⏳ Pending"}
+                        {displayPaymentStatus}
                       </span>
                     </td>
                     <td className="col-invoice">

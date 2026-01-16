@@ -142,7 +142,7 @@ const TrackOrder = () => {
           orderNosInList: allOrders.map((o) => o.order_no),
         });
         alert(
-          "Order ID '" + orderId + "' not found. Please check and try again.",
+          "We couldn't find this order. Please log in to your profile to track your order details",
         );
       }
     } catch (error) {
