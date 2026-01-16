@@ -98,10 +98,15 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
 
       const paymentId = order.payment_id || order.razorpay_payment_id || "";
       const isPaid = !!paymentId;
+      const isCOD = order.payment_method?.toLowerCase() === "cod" || 
+                    order.payment_mode?.toLowerCase() === "cod" ||
+                    order.payment_type?.toLowerCase() === "cod" ||
+                    order.method?.toLowerCase() === "cod";
+      
       const matchesPayment =
         paymentFilter === "all" ||
         (paymentFilter === "paid" && isPaid) ||
-        (paymentFilter === "pending" && !isPaid);
+        (paymentFilter === "pending" && !isPaid && !isCOD);
 
       return matchesSearch && matchesStatus && matchesPayment;
     })
@@ -256,13 +261,27 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                   order.current_status || order.status || "Order Placed";
                 const paymentId =
                   order.payment_id || order.razorpay_payment_id || "";
+                
+                // Debug log to see actual order structure
+                console.log("DEBUG Order:", { 
+                  id: order.order_no, 
+                  method: order.payment_method, 
+                  mode: order.payment_mode, 
+                  type: order.payment_type,
+                  raw_method: order.method,
+                  paymentId 
+                });
+
                 const productName =
                   product?.name || order.name || "Unnamed Product";
                 const productImg = product?.photo?.[0]?.name
                   ? `https://backend.corelens.in/static/${product.photo[0].name}`
                   : null;
                 const isPaid = !!paymentId;
-                const isCOD = order.payment_method?.toLowerCase() === "cod" || order.payment_mode?.toLowerCase() === "cod";
+                const isCOD = order.payment_method?.toLowerCase() === "cod" || 
+                              order.payment_mode?.toLowerCase() === "cod" ||
+                              order.payment_type?.toLowerCase() === "cod" ||
+                              order.method?.toLowerCase() === "cod";
                 const displayPaymentStatus = isPaid ? "✓ Paid" : (isCOD ? "⏳ Pending (COD)" : "⏳ Pending");
 
                 const handleDownloadInvoice = async (id) => {
