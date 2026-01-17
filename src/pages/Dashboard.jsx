@@ -98,12 +98,13 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
 
       const paymentId = order.payment_id || order.razorpay_payment_id || "";
       const isPaid = !!paymentId && paymentId !== "cod";
-      const isCOD = order.payment_method?.toLowerCase() === "cod" || 
-                    order.payment_mode?.toLowerCase() === "cod" ||
-                    order.payment_type?.toLowerCase() === "cod" ||
-                    order.method?.toLowerCase() === "cod" ||
-                    order.orderproducts?.payment_method?.toLowerCase() === "cod";
-      
+      const isCOD =
+        order.payment_method?.toLowerCase() === "cod" ||
+        order.payment_mode?.toLowerCase() === "cod" ||
+        order.payment_type?.toLowerCase() === "cod" ||
+        order.method?.toLowerCase() === "cod" ||
+        order.orderproducts?.payment_method?.toLowerCase() === "cod";
+
       const matchesPayment =
         paymentFilter === "all" ||
         (paymentFilter === "paid" && isPaid) ||
@@ -243,7 +244,6 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
               <th>Product</th>
               <th>Amount</th>
               <th>Status</th>
-              <th>Payment</th>
               <th>Invoice</th>
             </tr>
           </thead>
@@ -262,15 +262,15 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                   order.current_status || order.status || "Order Placed";
                 const paymentId =
                   order.payment_id || order.razorpay_payment_id || "";
-                
+
                 // Debug log to see actual order structure
-                console.log("DEBUG Order:", { 
-                  id: order.order_no, 
-                  method: order.payment_method, 
-                  mode: order.payment_mode, 
+                console.log("DEBUG Order:", {
+                  id: order.order_no,
+                  method: order.payment_method,
+                  mode: order.payment_mode,
                   type: order.payment_type,
                   raw_method: order.method,
-                  paymentId 
+                  paymentId,
                 });
 
                 const productName =
@@ -278,31 +278,43 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                 const productImg = product?.photo?.[0]?.name
                   ? `https://backend.corelens.in/static/${product.photo[0].name}`
                   : null;
-                const isPaid = !!paymentId && String(paymentId).toLowerCase() !== "cod";
-                const isCOD = String(order.payment_method || "").toLowerCase() === "cod" || 
-                              String(order.payment_mode || "").toLowerCase() === "cod" ||
-                              String(order.payment_type || "").toLowerCase() === "cod" ||
-                              String(order.method || "").toLowerCase() === "cod" ||
-                              String(order.orderproducts?.payment_method || "").toLowerCase() === "cod" ||
-                              String(paymentId || "").toLowerCase() === "cod";
-                const displayPaymentStatus = isPaid ? "✓ Paid" : (isCOD ? "⏳ Pending (COD)" : "⏳ Pending");
+                const isPaid =
+                  !!paymentId && String(paymentId).toLowerCase() !== "cod";
+                const isCOD =
+                  String(order.payment_method || "").toLowerCase() === "cod" ||
+                  String(order.payment_mode || "").toLowerCase() === "cod" ||
+                  String(order.payment_type || "").toLowerCase() === "cod" ||
+                  String(order.method || "").toLowerCase() === "cod" ||
+                  String(
+                    order.orderproducts?.payment_method || "",
+                  ).toLowerCase() === "cod" ||
+                  String(paymentId || "").toLowerCase() === "cod";
+                const displayPaymentStatus = isPaid
+                  ? "✓ Paid"
+                  : isCOD
+                    ? "⏳ Pending (COD)"
+                    : "⏳ Pending";
 
                 const handleDownloadInvoice = async (id) => {
                   try {
                     const token = localStorage.getItem("userToken");
                     if (!token) throw new Error("Authentication required");
 
-                    const response = await fetch(`https://backend.corelens.in/api/app/generate-invoice/${id}`, {
-                      headers: {
-                        Authorization: `Bearer ${token}`
-                      }
-                    });
+                    const response = await fetch(
+                      `https://backend.corelens.in/api/app/generate-invoice/${id}`,
+                      {
+                        headers: {
+                          Authorization: `Bearer ${token}`,
+                        },
+                      },
+                    );
 
-                    if (!response.ok) throw new Error("Failed to generate invoice");
+                    if (!response.ok)
+                      throw new Error("Failed to generate invoice");
 
                     const blob = await response.blob();
                     const url = window.URL.createObjectURL(blob);
-                    const a = document.createElement('a');
+                    const a = document.createElement("a");
                     a.href = url;
                     a.download = `invoice-${id}.pdf`;
                     document.body.appendChild(a);
@@ -345,15 +357,9 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                         {status}
                       </span>
                     </td>
-                    <td className="col-payment">
-                      <span
-                        className={`payment-badge ${isPaid ? "paid" : "pending"}`}
-                      >
-                        {displayPaymentStatus}
-                      </span>
-                    </td>
+
                     <td className="col-invoice">
-                      <button 
+                      <button
                         onClick={() => handleDownloadInvoice(order._id)}
                         className="invoice-btn"
                         style={{
@@ -362,7 +368,7 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                           color: "white",
                           border: "none",
                           borderRadius: "4px",
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
                       >
                         📄 Download
