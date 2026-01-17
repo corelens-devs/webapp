@@ -25,12 +25,12 @@ const VideoSection = () => {
           nav: true,
           dots: true,
           autoplay: true,
-          autoplayTimeout: 9800, // 4.8s fade + 5s stay
+          autoplayTimeout: 7000, 
           autoplayHoverPause: true,
           autoHeight: false,
           center: false,
           stagePadding: 0,
-          smartSpeed: 4800, // transition ki duration = 4.8s
+          smartSpeed: 1200, 
           animateOut: "fadeOut",
           animateIn: "fadeIn",
           dotsClass: "owl-dots",
@@ -59,7 +59,6 @@ const VideoSection = () => {
           },
           onInitialized: function (event) {
             console.log("Video carousel initialized successfully");
-            console.log("Total slides:", event.item.count);
             // Force show dots
             setTimeout(() => {
               const dotsContainer = document.querySelector(
@@ -68,16 +67,20 @@ const VideoSection = () => {
               if (dotsContainer) {
                 dotsContainer.style.display = "block";
                 dotsContainer.style.visibility = "visible";
-                console.log("Dots container found and made visible");
               }
             }, 100);
           },
-          onChanged: function (event) {
-            console.log("Slide changed to:", event.item.index);
-          },
-          onTranslate: function (event) {
-            // No manual active class handling needed as dots:true handles it correctly
-            // if initialized properly with Owl Carousel's internal logic.
+          onTranslated: function (event) {
+            // event.page.index handles loop mode correctly for dots
+            const pageIndex = event.page.index;
+            const dots = document.querySelectorAll(".video-slider .owl-dot");
+            dots.forEach((dot, index) => {
+              if (index === pageIndex) {
+                dot.classList.add("active");
+              } else {
+                dot.classList.remove("active");
+              }
+            });
           },
         });
 
