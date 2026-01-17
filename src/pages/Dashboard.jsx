@@ -291,9 +291,8 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                   ).toLowerCase() === "cod" ||
                   String(paymentId || "").toLowerCase() === "cod";
                 
-                // Get display method dynamically from API data
-                const rawMethod = order.payment_method || order.payment_mode || order.payment_type || order.method || order.orderproducts?.payment_method || (paymentId ? "Online" : "COD");
-                const displayMethod = String(rawMethod).toLowerCase() === "cod" ? "COD" : "Online";
+                // Dynamic method directly from API fields
+                const displayMethod = order.payment_method || order.payment_mode || order.payment_type || order.method || (paymentId ? "Online" : "COD");
 
                 const displayPaymentStatus = isPaid
                   ? "✓ Paid"
