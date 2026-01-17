@@ -84,7 +84,8 @@ const VideoSection = () => {
           },
           onChanged: function (event) {
             if (event.namespace && event.property.name === "position") {
-              const pageIndex = event.page.index;
+              // event.relatedTarget.relative(event.item.index) is more reliable for real current page
+              const pageIndex = event.relatedTarget.relative(event.item.index);
               const dots = document.querySelectorAll(".video-slider .owl-dot");
               if (dots.length > 0) {
                 dots.forEach((dot, index) => {
