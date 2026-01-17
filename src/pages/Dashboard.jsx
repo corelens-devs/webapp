@@ -244,6 +244,7 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
               <th>Product</th>
               <th>Amount</th>
               <th>Status</th>
+              <th>Method</th>
               <th>Invoice</th>
             </tr>
           </thead>
@@ -357,11 +358,9 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                         {status}
                       </span>
                     </td>
-                    <td className="col-payment" data-label="Payment">
-                      <span
-                        className={`payment-badge ${isPaid ? "paid" : "pending"}`}
-                      >
-                        {displayPaymentStatus}
+                    <td className="col-payment" data-label="Method">
+                      <span className="payment-method-text">
+                        {isCOD ? "COD" : "Online"}
                       </span>
                     </td>
                     <td className="col-invoice" data-label="Invoice">

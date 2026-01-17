@@ -857,6 +857,12 @@
   }
 }
 
+.payment-method-text {
+  font-weight: 500;
+  color: #2c3e50;
+  font-size: 1.4rem;
+}
+
 /* Purchase History Styles */
 .loading-state, .error-state {
   text-align: center;
