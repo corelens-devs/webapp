@@ -71,7 +71,6 @@ const VideoSection = () => {
             }, 100);
           },
           onTranslated: function (event) {
-            // event.page.index handles loop mode correctly for dots
             const pageIndex = event.page.index;
             const dots = document.querySelectorAll(".video-slider .owl-dot");
             dots.forEach((dot, index) => {
@@ -81,6 +80,21 @@ const VideoSection = () => {
                 dot.classList.remove("active");
               }
             });
+          },
+          onChanged: function (event) {
+            if (event.namespace && event.property.name === 'position') {
+                const pageIndex = event.page.index;
+                const dots = document.querySelectorAll(".video-slider .owl-dot");
+                if (dots.length > 0) {
+                    dots.forEach((dot, index) => {
+                        if (index === pageIndex) {
+                            dot.classList.add("active");
+                        } else {
+                            dot.classList.remove("active");
+                        }
+                    });
+                }
+            }
           },
         });
 
