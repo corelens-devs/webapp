@@ -25,12 +25,12 @@ const VideoSection = () => {
           nav: true,
           dots: true,
           autoplay: true,
-          autoplayTimeout: 7000, 
+          autoplayTimeout: 7000,
           autoplayHoverPause: true,
           autoHeight: false,
           center: false,
           stagePadding: 0,
-          smartSpeed: 1200, 
+          smartSpeed: 1000,
           animateOut: "fadeOut",
           animateIn: "fadeIn",
           dotsClass: "owl-dots",
@@ -82,18 +82,18 @@ const VideoSection = () => {
             });
           },
           onChanged: function (event) {
-            if (event.namespace && event.property.name === 'position') {
-                const pageIndex = event.page.index;
-                const dots = document.querySelectorAll(".video-slider .owl-dot");
-                if (dots.length > 0) {
-                    dots.forEach((dot, index) => {
-                        if (index === pageIndex) {
-                            dot.classList.add("active");
-                        } else {
-                            dot.classList.remove("active");
-                        }
-                    });
-                }
+            if (event.namespace && event.property.name === "position") {
+              const pageIndex = event.page.index;
+              const dots = document.querySelectorAll(".video-slider .owl-dot");
+              if (dots.length > 0) {
+                dots.forEach((dot, index) => {
+                  if (index === pageIndex) {
+                    dot.classList.add("active");
+                  } else {
+                    dot.classList.remove("active");
+                  }
+                });
+              }
             }
           },
         });
@@ -103,10 +103,10 @@ const VideoSection = () => {
           const dots = document.querySelectorAll(".video-slider .owl-dot");
           dots.forEach((dot, index) => {
             dot.addEventListener("click", function () {
-              window.$(slider).trigger("to.owl.carousel", [index, 1200]); // Smooth manual transition
+              window.$(slider).trigger("to.owl.carousel", [index, 1000]); // Smooth manual transition
             });
           });
-        }, 500);
+        }, 300);
       }
     };
 
@@ -117,10 +117,10 @@ const VideoSection = () => {
         if (slider && slider.children.length > 0) {
           initVideoSlider();
         } else {
-          setTimeout(checkAndInit, 100);
+          setTimeout(checkAndInit, 200);
         }
       } else {
-        setTimeout(checkAndInit, 100);
+        setTimeout(checkAndInit, 200);
       }
     };
 
