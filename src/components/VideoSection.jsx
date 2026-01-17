@@ -76,15 +76,8 @@ const VideoSection = () => {
             console.log("Slide changed to:", event.item.index);
           },
           onTranslate: function (event) {
-            // Smooth transition during slide change
-            const dots = document.querySelectorAll(".video-slider .owl-dot");
-            dots.forEach((dot, index) => {
-              if (index === event.item.index % event.item.count) {
-                dot.classList.add("active");
-              } else {
-                dot.classList.remove("active");
-              }
-            });
+            // No manual active class handling needed as dots:true handles it correctly
+            // if initialized properly with Owl Carousel's internal logic.
           },
         });
 
