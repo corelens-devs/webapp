@@ -784,6 +784,79 @@
   }
 }
 
+/* Responsive Table for Mobile */
+@media screen and (max-width: 768px) {
+  .data-table-responsive {
+    overflow-x: hidden;
+  }
+
+  .data-table thead {
+    display: none; /* Hide original headers */
+  }
+
+  .data-table, 
+  .data-table tbody, 
+  .data-table tr, 
+  .data-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .data-table tr {
+    margin-bottom: 2rem;
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    padding: 1.5rem;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  }
+
+  .data-table td {
+    text-align: right;
+    padding: 1rem 0;
+    position: relative;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .data-table td:last-child {
+    border-bottom: none;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+
+  /* Add Labels using Pseudo-elements */
+  .data-table td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: #6c757d;
+    text-align: left;
+  }
+
+  .col-order-id { font-weight: 700; color: #2c3e50; }
+  
+  .product-cell {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 1rem;
+  }
+  
+  .product-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .invoice-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
 /* Purchase History Styles */
 .loading-state, .error-state {
   text-align: center;

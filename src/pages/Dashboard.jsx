@@ -329,13 +329,13 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
 
                 return (
                   <tr key={orderId} className="data-row">
-                    <td className="col-order-id">
+                    <td className="col-order-id" data-label="Order ID">
                       #{order.order_no || orderId.slice(-6)}
                     </td>
-                    <td className="col-date">
+                    <td className="col-date" data-label="Date">
                       {createdDate.toLocaleDateString("en-IN")}
                     </td>
-                    <td className="col-product">
+                    <td className="col-product" data-label="Product">
                       <div className="product-cell">
                         {productImg && (
                           <img
@@ -347,18 +347,24 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                         <span className="product-name">{productName}</span>
                       </div>
                     </td>
-                    <td className="col-amount">
+                    <td className="col-amount" data-label="Amount">
                       ₹{Number(totalAmount).toFixed(2)}
                     </td>
-                    <td className="col-status">
+                    <td className="col-status" data-label="Status">
                       <span
                         className={`status-badge status-${status.toLowerCase().replace(" ", "-")}`}
                       >
                         {status}
                       </span>
                     </td>
-
-                    <td className="col-invoice">
+                    <td className="col-payment" data-label="Payment">
+                      <span
+                        className={`payment-badge ${isPaid ? "paid" : "pending"}`}
+                      >
+                        {displayPaymentStatus}
+                      </span>
+                    </td>
+                    <td className="col-invoice" data-label="Invoice">
                       <button
                         onClick={() => handleDownloadInvoice(order._id)}
                         className="invoice-btn"
