@@ -126,10 +126,15 @@ const TrackOrder = () => {
           },
         ];
 
+        // Calculate expected arrival (5 days from Order Placed date)
+        const orderDate = new Date(order.createdAtTime || order.createdAt || Date.now());
+        const expectedDate = new Date(orderDate);
+        expectedDate.setDate(orderDate.getDate() + 5);
+        const expectedArrivalStr = expectedDate.toLocaleDateString("en-IN");
+
         setTracking({
           orderId: order.order_no || order._id || orderId,
-          expectedArrival:
-            order.expected_delivery || order.delivery_date || "Pending",
+          expectedArrival: expectedArrivalStr,
           status: currentStatus, // highlight from backend
           steps,
         });
