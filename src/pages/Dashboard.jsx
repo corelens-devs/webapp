@@ -244,7 +244,6 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
               <th>Product</th>
               <th>Amount</th>
               <th>Status</th>
-              <th>Method</th>
               <th>Invoice</th>
             </tr>
           </thead>
@@ -362,11 +361,6 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                         {status}
                       </span>
                     </td>
-                    <td className="col-payment" data-label="Method">
-                      <span className="payment-method-text">
-                        {displayMethod}
-                      </span>
-                    </td>
                     <td className="col-invoice" data-label="Invoice">
                       <button
                         onClick={() => handleDownloadInvoice(order._id)}
@@ -388,7 +382,7 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
               })
             ) : (
               <tr>
-                <td colSpan="6" className="no-results">
+                <td colSpan="5" className="no-results">
                   No orders match your filters
                 </td>
               </tr>
