@@ -25,7 +25,7 @@ const ProductDetails = () => {
     actualSlug = actualSlug.replace(/-+$/, "").replace(/^-+/, ""); // Remove leading and trailing dashes
   }
 
-  console.log("Original URL params - slug:", slug, "id:", id);
+  
   console.log(
     "Cleaned params - actualSlug:",
     actualSlug,
@@ -49,7 +49,7 @@ const ProductDetails = () => {
   // Test API connection function
   const testAPIConnection = async () => {
     try {
-      console.log("🔍 Testing API Connection...");
+      
       const response = await fetch(
         "https://backend.corelens.in/api/app/products?limit=5",
         {
@@ -62,19 +62,19 @@ const ProductDetails = () => {
         },
       );
 
-      console.log("API Test Response Status:", response.status);
+      
 
       if (response.ok) {
         const data = await response.json();
-        console.log("✅ API Connection Successful");
+        
         console.log("Sample products:", data.data?.docs?.slice(0, 2));
         return true;
       } else {
-        console.error("❌ API Connection Failed:", response.statusText);
+        
         return false;
       }
     } catch (error) {
-      console.error("❌ API Connection Error:", error);
+      
       return false;
     }
   };
@@ -97,7 +97,7 @@ const ProductDetails = () => {
   // Fetch product from API by ID
   const fetchProductById = async (productId) => {
     try {
-      console.log("Fetching product with ID:", productId);
+      
 
       // First try direct API call
       let response = await fetch(
@@ -112,11 +112,11 @@ const ProductDetails = () => {
         },
       );
 
-      console.log("Direct product API response status:", response.status);
+      
 
       if (response.ok) {
         const data = await response.json();
-        console.log("Direct product API response data:", data);
+        
 
         if (data.success && data.data) {
           return data.data;
@@ -124,7 +124,7 @@ const ProductDetails = () => {
       }
 
       // Fallback: fetch all products and find by ID
-      console.log("Direct API failed, trying to fetch from all products list");
+      
       response = await fetch(
         "https://backend.corelens.in/api/app/products?limit=100",
         {
@@ -142,7 +142,7 @@ const ProductDetails = () => {
       }
 
       const data = await response.json();
-      console.log("All products API response:", data);
+      
 
       if (data.success && data.data) {
         let allProducts = [];
@@ -154,13 +154,13 @@ const ProductDetails = () => {
 
         // Find product by ID
         const product = allProducts.find((p) => p._id === productId);
-        console.log("Found product in all products:", product);
+        
         return product || null;
       }
 
       return null;
     } catch (error) {
-      console.error("Error fetching product by ID:", error);
+      
       return null;
     }
   };
@@ -253,10 +253,10 @@ const ProductDetails = () => {
           prices.wave = wave.price || wave.selling_price || wave.net_price || 0;
       }
 
-      console.log("Comparison prices fetched:", prices);
+      
       setComparisonPrices(prices);
     } catch (error) {
-      console.error("Error fetching comparison prices:", error);
+      
     }
   };
 
@@ -273,7 +273,7 @@ const ProductDetails = () => {
     }
 
     window.onYouTubeIframeAPIReady = () => {
-      console.log("YouTube API Ready");
+      
     };
 
     const loadProduct = async () => {
@@ -298,7 +298,7 @@ const ProductDetails = () => {
           const apiProductData = await fetchProductById(productId);
 
           if (apiProductData) {
-            console.log("API Product Data loaded:", apiProductData.name);
+            
 
             // Normalize API response fields with better fallback logic
             const normalizedData = {
@@ -418,12 +418,12 @@ const ProductDetails = () => {
               technicalHighlights: localProduct?.technicalHighlights || null,
               customIcons: localProduct?.customIcons || null,
             };
-            console.log("Converted product:", convertedProduct);
+            
             console.log(
               "Final selling price being used:",
               convertedProduct.selling_price,
             );
-            console.log("Final MRP being used:", convertedProduct.mrp);
+            
             console.log(
               "Final display percentage being used:",
               convertedProduct.display_percentage,
@@ -465,7 +465,7 @@ const ProductDetails = () => {
                 "All API products:",
                 allProducts.map((p) => p.name),
               );
-              console.log("Looking for slug:", actualSlug);
+              
 
               // Enhanced product matching with multiple strategies
               foundApiProduct = allProducts.find((p) => {
@@ -477,7 +477,7 @@ const ProductDetails = () => {
 
                 // Strategy 1: Exact slug match
                 if (productSlug === cleanSlug) {
-                  console.log("✅ Exact slug match found:", p.name);
+                  
                   return true;
                 }
 
@@ -487,7 +487,7 @@ const ProductDetails = () => {
                   (part) => part.length > 2 && productName.includes(part),
                 );
                 if (matchesAllParts) {
-                  console.log("✅ All slug parts match:", p.name);
+                  
                   return true;
                 }
 
@@ -627,7 +627,7 @@ const ProductDetails = () => {
                 setProduct(convertedProduct);
                 return;
               } else {
-                console.log("❌ No API product found for slug:", actualSlug);
+                
                 console.log(
                   "Available API product names:",
                   allProducts.map((p) => p.name),
@@ -636,7 +636,7 @@ const ProductDetails = () => {
             }
           }
         } catch (error) {
-          console.error("Error searching API products by name:", error);
+          
         }
 
         // If no API product found, try static data as fallback
@@ -683,7 +683,7 @@ const ProductDetails = () => {
         }
 
         if (foundStaticProduct) {
-          console.log("Using static product data for:", actualSlug);
+          
           // For static products, try to get API pricing if available
           let finalProduct = foundStaticProduct;
 
@@ -823,7 +823,7 @@ const ProductDetails = () => {
                     "Final selling price being used:",
                     finalProduct.selling_price,
                   );
-                  console.log("Final MRP being used:", finalProduct.mrp);
+                  
                   console.log(
                     "Final display percentage being used:",
                     finalProduct.display_percentage,
@@ -910,7 +910,7 @@ const ProductDetails = () => {
           setError("Product not found");
         }
       } catch (err) {
-        console.error("Error loading product:", err);
+        
         setError("Failed to load product details");
       }
     };
@@ -926,12 +926,12 @@ const ProductDetails = () => {
     if (!videoSection) return;
 
     const onPlayerReady = (event) => {
-      console.log("YouTube Player Ready");
+      
       setPlayer(event.target);
     };
 
     const createPlayer = () => {
-      console.log("Creating YouTube Player...");
+      
       const iframe = videoSection.querySelector("iframe");
       if (!iframe) return;
 
@@ -1066,7 +1066,7 @@ const ProductDetails = () => {
       const finalPrice = currentPrice * quantity;
       return Math.round(finalPrice);
     } catch (error) {
-      console.error("Error calculating total price:", error);
+      
       return 0;
     }
   };
@@ -1240,7 +1240,7 @@ const ProductDetails = () => {
   const handleAddToCart = () => {
     try {
       if (!product) {
-        console.error("No product data available for cart");
+        
         return;
       }
 
@@ -1251,7 +1251,7 @@ const ProductDetails = () => {
       const currentPrice = product.selling_price || product.net_price || 0;
 
       if (!currentPrice || currentPrice <= 0) {
-        console.error("Invalid price for product:", product.name);
+        
         return;
       }
 
@@ -1268,7 +1268,7 @@ const ProductDetails = () => {
         quantity: addQuantity,
       };
 
-      console.log("Adding product to cart:", productForCart);
+      
 
       // Add item with specified quantity
       if (
@@ -1277,7 +1277,7 @@ const ProductDetails = () => {
       ) {
         window.headerCartFunctions.addToCart(productForCart);
       } else {
-        console.warn("Cart functions not available");
+        
       }
 
       // Open cart modal
@@ -1288,7 +1288,7 @@ const ProductDetails = () => {
         window.headerCartFunctions.openCart();
       }
     } catch (error) {
-      console.error("Error adding product to cart:", error);
+      
     }
   };
 
@@ -1418,7 +1418,7 @@ const ProductDetails = () => {
               }
 
               const data = await response.json();
-              console.log("Indian Post API response:", data);
+              
 
               // Check if API returned valid data
               if (data && data.length > 0 && data[0]) {
@@ -1474,7 +1474,7 @@ const ProductDetails = () => {
                 deliveryInfo.style.color = "#dc3545";
               }
             } catch (error) {
-              console.error("Pincode validation error:", error);
+              
 
               // API failed - show error message
               deliveryInfo.innerHTML =
@@ -1513,15 +1513,15 @@ const ProductDetails = () => {
 
         // Accordion functionality
         const accordionHeaders = document.querySelectorAll(".accordion-header");
-        console.log("Found accordion headers:", accordionHeaders.length);
+        
 
         accordionHeaders.forEach((header, index) => {
-          console.log(`Adding click listener to accordion header ${index}`);
+          
           header.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
 
-            console.log("Accordion header clicked:", index);
+            
             const accordionItem = header.closest(".accordion-item");
             const isActive = accordionItem.classList.contains("active");
 
@@ -1538,24 +1538,24 @@ const ProductDetails = () => {
             // Toggle current accordion
             if (!isActive) {
               accordionItem.classList.add("active");
-              console.log("Accordion opened");
+              
             } else {
-              console.log("Accordion closed");
+              
             }
           });
         });
 
         // FAQ functionality
         const faqQuestions = document.querySelectorAll(".faq-question");
-        console.log("Found FAQ questions:", faqQuestions.length);
+        
 
         faqQuestions.forEach((question, index) => {
-          console.log(`Adding click listener to FAQ question ${index}`);
+          
           question.addEventListener("click", (e) => {
             e.preventDefault();
             e.stopPropagation();
 
-            console.log("FAQ question clicked:", index);
+            
             const faqItem = question.closest(".faq-item");
             const isActive = faqItem.classList.contains("active");
 
@@ -1572,16 +1572,16 @@ const ProductDetails = () => {
             // Toggle current FAQ
             if (!isActive) {
               faqItem.classList.add("active");
-              console.log("FAQ opened");
+              
             } else {
-              console.log("FAQ closed");
+              
             }
           });
         });
 
         // Global functions as backup
         window.toggleAccordion = function (header) {
-          console.log("Global toggleAccordion called");
+          
           const accordionItem = header.closest(".accordion-item");
           const isActive = accordionItem.classList.contains("active");
 
@@ -1595,7 +1595,7 @@ const ProductDetails = () => {
         };
 
         window.toggleFaq = function (question) {
-          console.log("Global toggleFaq called");
+          
           const faqItem = question.closest(".faq-item");
           const isActive = faqItem.classList.contains("active");
 
@@ -1650,10 +1650,10 @@ const ProductDetails = () => {
       const script = document.createElement("script");
       script.src = src;
       script.onload = () => {
-        console.log(`Loaded: ${src}`);
+        
       };
       script.onerror = (error) => {
-        console.error(`Error loading script ${src}:`, error);
+        
       };
       document.head.appendChild(script);
     });
@@ -1860,7 +1860,7 @@ const ProductDetails = () => {
               alt="Product Features"
               className="know-more-featured-image"
               onError={(e) => {
-                console.error("Image load failed:", e.target.src);
+                
                 e.target.src = "/images/knowmore/knowmore-locks.jpg";
               }}
             />
