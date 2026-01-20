@@ -15,7 +15,7 @@ const TrackOrder = () => {
     try {
       const token = localStorage.getItem("userToken");
 
-      console.log("🔍 TrackOrder: Searching for order:", orderId);
+      
 
       // Fetch all orders from /api/app/orders
       const response = await fetch(
@@ -30,30 +30,30 @@ const TrackOrder = () => {
       );
 
       const result = await response.json();
-      console.log("🎯 All Orders API Response received:", result);
-      console.log("🎯 Response Status:", response.status, response.ok);
+      
+      
 
       // Extract orders list - handle multiple response formats
       let allOrders = [];
 
       if (Array.isArray(result.data?.docs)) {
         allOrders = result.data.docs;
-        console.log("✅ Found orders in result.data.docs");
+        
       } else if (Array.isArray(result.data?.orders)) {
         allOrders = result.data.orders;
-        console.log("✅ Found orders in result.data.orders");
+        
       } else if (Array.isArray(result.data)) {
         allOrders = result.data;
-        console.log("✅ Found orders in result.data");
+        
       } else if (Array.isArray(result.orders)) {
         allOrders = result.orders;
-        console.log("✅ Found orders in result.orders");
+        
       } else if (Array.isArray(result)) {
         allOrders = result;
-        console.log("✅ Result is directly an array of orders");
+        
       }
 
-      console.log("📊 Total orders fetched:", allOrders.length);
+      
 
       // Find matching order by order_no or _id
       const order = allOrders.find((o) => {
@@ -68,7 +68,7 @@ const TrackOrder = () => {
       });
 
       if (order) {
-        console.log("✅ Order found! Details:", order);
+        
 
         // Normalize backend status - multiple field options
         const currentStatus = (
@@ -80,7 +80,7 @@ const TrackOrder = () => {
           .toLowerCase()
           .replace(/\s+/g, "-");
 
-        console.log("📦 Current order status:", currentStatus);
+        
 
         // Step structure (UI timeline) - stages based on status
         const steps = [
@@ -138,7 +138,7 @@ const TrackOrder = () => {
           status: currentStatus, // highlight from backend
           steps,
         });
-        console.log("✅ Order tracking data set successfully");
+        
       } else {
         setTracking(null);
         console.warn("❌ Order not found in list:", {
@@ -151,7 +151,7 @@ const TrackOrder = () => {
         );
       }
     } catch (error) {
-      console.error("❌ Error fetching orders:", error);
+      
       setTracking(null);
       alert("Error: " + error.message);
     } finally {

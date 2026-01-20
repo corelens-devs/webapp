@@ -51,20 +51,20 @@ function App() {
       try {
         // Scripts are loaded via HTML, so we just need to initialize them
         if (window.jQuery) {
-          console.log("jQuery loaded successfully");
+          
         }
         if (window.WOW) {
           new window.WOW().init();
         }
       } catch (error) {
-        console.error("Script loading failed:", error);
+        
       }
     };
 
     // Enhanced global state restoration with improved persistence
     const restoreApplicationState = async () => {
       try {
-        console.log("🔄 App: Restoring application state on load...");
+        
 
         // Check login state directly from localStorage
         const token = localStorage.getItem("userToken");
@@ -96,7 +96,7 @@ function App() {
               })
             );
           } else {
-            console.log("⚠️ App: Login state expired, clearing...");
+            
             localStorage.removeItem("userToken");
             localStorage.removeItem("userPhone");
             localStorage.removeItem("userVerified");
@@ -105,7 +105,7 @@ function App() {
             localStorage.removeItem("viewCartData");
           }
         } else {
-          console.log("🔓 App: No existing login state found");
+          
         }
 
         // Enhanced cart state restoration with validation
@@ -149,7 +149,7 @@ function App() {
                   JSON.stringify(validCartItems)
                 );
                 localStorage.setItem("cartLastUpdated", Date.now().toString());
-                console.log("🧹 App: Cleaned and re-saved cart items");
+                
 
                 // Dispatch event to update any components already loaded
                 setTimeout(() => {
@@ -158,27 +158,27 @@ function App() {
                   );
                 }, 100);
               } catch (saveError) {
-                console.error("❌ App: Error saving cleaned cart:", saveError);
+                
               }
             }
           } catch (error) {
-            console.error("❌ App: Error parsing cart items, clearing:", error);
+            
             localStorage.removeItem("cartItems");
             localStorage.removeItem("cartLastUpdated");
           }
         } else {
-          console.log("📭 App: No existing cart state found");
+          
         }
 
         // Check for ViewCart specific data
         const viewCartData = localStorage.getItem("viewCartData");
         if (viewCartData) {
-          console.log("📋 App: Found ViewCart data");
+          
         }
 
-        console.log("✅ App: Enhanced application state restoration completed");
+        
       } catch (error) {
-        console.error("❌ App: Error during state restoration:", error);
+        
       }
     };
 
