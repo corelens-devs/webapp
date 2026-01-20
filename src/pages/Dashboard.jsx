@@ -326,7 +326,7 @@ const PurchaseHistoryContent = ({ orders: propOrders }) => {
                     window.URL.revokeObjectURL(url);
                     document.body.removeChild(a);
                   } catch (error) {
-                    console.error("Invoice error:", error);
+                    
                     Swal.fire("Error", "Could not download invoice", "error");
                   }
                 };
@@ -624,8 +624,8 @@ const Dashboard = () => {
         country: "India",
       };
 
-      console.log("📤 Dashboard: Sending profile update:", profilePayload);
-      console.log("📤 Dashboard: Sending address update:", addressPayload);
+      
+      
 
       // Update both profile and address in parallel
       const [profileResponse, addressResponse] = await Promise.all([
@@ -682,7 +682,7 @@ const Dashboard = () => {
       ).replace(/^error:\s*/i, "");
       throw new Error(errorMsg);
     } catch (error) {
-      console.error("Update profile error:", error);
+      
       Swal.fire("Error", error.message || "Failed to update profile", "error");
     } finally {
       setLoadingDashboard(false);
@@ -719,7 +719,7 @@ const Dashboard = () => {
       );
 
       const result = await response.json();
-      console.log("Wallet Balance Response:", result);
+      
 
       if (response.ok && result.data) {
         const balance = parseFloat(result.data.balance || 0);
@@ -727,7 +727,7 @@ const Dashboard = () => {
         setUserInfo((prev) => ({ ...prev, wallet: balance }));
       }
     } catch (error) {
-      console.error("Error fetching wallet balance:", error);
+      
     }
   };
 
@@ -741,7 +741,7 @@ const Dashboard = () => {
       navigate("/sign-in", { replace: true });
       return;
     }
-    console.log("currentToken: " + currentToken);
+    
 
     const tokenAge = Date.now() - parseInt(loginTimestamp);
     const maxAge = 24 * 60 * 60 * 1000;
@@ -769,7 +769,7 @@ const Dashboard = () => {
       const userPhone = localStorage.getItem("userPhone");
 
       if (!token || !userPhone) {
-        console.warn("Missing token or phone - redirecting to sign-in");
+        
         navigate("/sign-in", { replace: true });
         return;
       }
@@ -840,7 +840,7 @@ const Dashboard = () => {
       setAddressData(addresses);
 
       if (!profileRes.ok) {
-        console.warn("Profile API returned error status:", profileRes.status);
+        
       }
 
       // Fetch wallet balance
@@ -864,7 +864,7 @@ const Dashboard = () => {
           walletBalance = parseFloat(walletJson.data.walletBalance);
         }
       }
-      console.log("💰 Extracted Wallet Balance:", walletBalance);
+      
 
       // --- Extract profile data robustly ---
       let profileData = {};
@@ -905,13 +905,13 @@ const Dashboard = () => {
         }
       }
 
-      console.log("📦 Extracted Orders:", ordersData);
+      
 
       // calculate stats
       const totalOrders = ordersData.filter(
         (order) => order && (order._id || order.order_no),
       ).length;
-      console.log("🔢 Total Orders Count:", totalOrders);
+      
 
       const totalRevenue = ordersData.reduce((sum, order) => {
         if (!order) return sum;
@@ -972,7 +972,7 @@ const Dashboard = () => {
       setOrdersList(orders);
       localStorage.setItem("userInfo", JSON.stringify(updatedUserInfo));
     } catch (err) {
-      console.error("Error in autoFetchProfile:", err);
+      
       // set a visible error inside userInfo so UI can show friendly message
       setUserInfo((prev) => ({
         ...prev,
@@ -1054,7 +1054,7 @@ const Dashboard = () => {
         alert("❌ No authentication token found. Please login again.");
         return;
       }
-      console.log("token:" + currentToken);
+      
       // Prepare profile payload (includes city for profile)
       const profilePayload = {
         name: editForm.name.trim(),
@@ -1073,8 +1073,8 @@ const Dashboard = () => {
         country: "India",
       };
 
-      console.log("Sending profile update payload:", profilePayload);
-      console.log("Sending address update payload:", addressPayload);
+      
+      
 
       // Set up headers with proper authorization
       const headers = {
@@ -1107,22 +1107,22 @@ const Dashboard = () => {
         }),
       ]);
 
-      console.log("Sending Address Update - Payload:", addressPayload);
+      
       const [profileResult, addressResult] = await Promise.all([
         profileResponse.json(),
         addressResponse.json(),
       ]);
 
       // Log responses for debugging
-      console.log("✅ Profile Save Response:", profileResult);
-      console.log("✅ Address Save Response:", addressResult);
+      
+      
 
       // Check if we have any specific error messages
       const profileError = !profileResponse.ok ? profileResult.message : null;
       const addressError = !addressResponse.ok ? addressResult.message : null;
 
       if (profileError || addressError) {
-        console.error("Update errors:", { profileError, addressError });
+        
         const errorMessage = profileError || addressError;
         alert(`❌ Update failed: ${errorMessage}`);
         return;
@@ -1142,8 +1142,8 @@ const Dashboard = () => {
           /created|updated|success/i.test(addressResult.message || ""));
 
       if (profileSuccess && addressSuccess) {
-        console.log("✅ Profile & Address save SUCCESS");
-        console.log("📋 Address Response:", addressResult);
+        
+        
 
         Swal.fire({
           icon: "success",
@@ -1156,7 +1156,7 @@ const Dashboard = () => {
 
         // ✅ Refresh from backend to show newest address
         setTimeout(() => {
-          console.log("🔄 Refreshing profile from backend after save...");
+          
           autoFetchProfile();
         }, 1500);
       } else {
@@ -1168,7 +1168,7 @@ const Dashboard = () => {
         Swal.fire("Error", errorMsg, "error");
       }
     } catch (error) {
-      console.error("Profile save error:", error);
+      
       alert(
         "⚠️ Error saving profile: " +
           (error.message || "Unknown error occurred"),
