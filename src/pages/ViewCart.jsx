@@ -117,11 +117,11 @@ const ViewCart = () => {
 
   // Test API connectivity with dynamic token
   const testAPIConnectivity = async () => {
-    console.log("🔧 Testing API connectivity...");
+    
     try {
       const currentToken = getCurrentToken();
       if (!currentToken) {
-        console.warn("🔧 No authentication token available for API test");
+        
         return false;
       }
 
@@ -142,7 +142,7 @@ const ViewCart = () => {
       );
       return response.ok;
     } catch (error) {
-      console.error("🔧 API Test Failed:", error);
+      
       return false;
     }
   };
@@ -153,13 +153,13 @@ const ViewCart = () => {
       const currentToken =
         localStorage.getItem("userToken") ||
         localStorage.getItem("verificationToken");
-      console.log("📍 loadSavedAddresses: Token exists?", !!currentToken);
+      
       if (!currentToken) {
-        console.log("📍 loadSavedAddresses: No token, returning");
+        
         return;
       }
 
-      console.log("📍 loadSavedAddresses: Fetching from API...");
+      
       const response = await fetch(
         "https://backend.corelens.in/api/app/address?page=1&limit=50",
         {
@@ -170,11 +170,11 @@ const ViewCart = () => {
         },
       );
 
-      console.log("📍 loadSavedAddresses: Response status:", response.status);
+      
 
       if (response.ok) {
         const data = await response.json();
-        console.log("📍 loadSavedAddresses: Full response:", data);
+        
 
         let addressList = [];
         if (data.data?.docs && Array.isArray(data.data.docs)) {
@@ -205,7 +205,7 @@ const ViewCart = () => {
           addressToLoad = addressList.find(
             (addr) => (addr._id || addr.id) === previouslySelectedId,
           );
-          console.log("📍 Found previously selected address:", addressToLoad);
+          
         }
 
         // If no previously selected, use first address
@@ -226,7 +226,7 @@ const ViewCart = () => {
           setSelectedAddressId(finalId);
           setBillingAddressId(finalId);
           localStorage.setItem("billingAddressId", finalId);
-          console.log("📍 Auto-loaded address with ID:", finalId);
+          
         }
 
         console.log(
@@ -241,7 +241,7 @@ const ViewCart = () => {
         );
       }
     } catch (error) {
-      console.error("❌ Error loading addresses:", error);
+      
     }
   };
 
@@ -332,7 +332,7 @@ const ViewCart = () => {
         setPromoError("Failed to validate promo code");
       }
     } catch (error) {
-      console.error("Promo error:", error);
+      
       setPromoError("Something went wrong");
     } finally {
       setPromoLoading(false);
@@ -371,9 +371,9 @@ const ViewCart = () => {
       try {
         const parsedData = JSON.parse(savedFormData);
         setFormData(parsedData);
-        console.log("📍 Restored form data from session:", parsedData);
+        
       } catch (e) {
-        console.error("Error parsing saved form data:", e);
+        
       }
     }
   }, []);
@@ -381,7 +381,7 @@ const ViewCart = () => {
   // Save form data to session storage whenever it changes
   useEffect(() => {
     sessionStorage.setItem("checkoutFormData", JSON.stringify(formData));
-    console.log("💾 Form data saved to session storage");
+    
   }, [formData]);
 
   // Load saved data on component mount and load Razorpay script
@@ -411,11 +411,11 @@ const ViewCart = () => {
         script.id = "razorpay-script";
         script.src = "https://checkout.razorpay.com/v1/checkout.js";
         script.onload = () => {
-          console.log("Razorpay script loaded successfully");
+          
           resolve(true);
         };
         script.onerror = () => {
-          console.error("Failed to load Razorpay script");
+          
           resolve(false);
         };
         document.body.appendChild(script);
@@ -436,7 +436,7 @@ const ViewCart = () => {
         e.key === "userPhone" ||
         e.key === "loginData"
       ) {
-        console.log("ViewCart: Login state changed, reloading user data...");
+        
         setTimeout(loadSavedData, 100); // Small delay to ensure change is complete
       }
     };
@@ -445,19 +445,19 @@ const ViewCart = () => {
 
     // Listen for custom events from the same window
     const handleCartUpdate = () => {
-      console.log("ViewCart: Cart update event received, reloading...");
+      
       loadCartItems();
     };
 
     const handleLoginUpdate = (event) => {
-      console.log("ViewCart: Login update event received:", event.detail);
+      
       if (event.detail?.phone && event.detail?.token) {
         setPhoneNumber(event.detail.phone);
         setUserToken(event.detail.token);
         setCompletedSteps([0]); // Mark login as completed
         setCurrentStep(1); // Move to address step
         setShowOTP(false);
-        console.log("✅ ViewCart: Login state updated from event");
+        
       }
     };
 
@@ -490,7 +490,7 @@ const ViewCart = () => {
         document.head.appendChild(style);
       }
     } catch (e) {
-      console.warn("Could not inject readonly style:", e);
+      
     }
   }, []);
 
@@ -501,7 +501,7 @@ const ViewCart = () => {
 
   const loadCartItems = async () => {
     try {
-      console.log("🔄 ViewCart: Loading cart items from localStorage...");
+      
 
       // Use enhanced storage utility
       try {
@@ -559,7 +559,7 @@ const ViewCart = () => {
               try {
                 localStorage.setItem("cartItems", JSON.stringify(validItems));
                 localStorage.setItem("cartLastUpdated", Date.now().toString());
-                console.log("🧹 ViewCart: Cleaned and saved cart");
+                
               } catch (saveError) {
                 console.error(
                   "❌ ViewCart: Error saving cleaned cart:",
@@ -568,7 +568,7 @@ const ViewCart = () => {
               }
             }
           } else {
-            console.log("❌ ViewCart: Invalid cart data format");
+            
             setCartItems([]);
             try {
               localStorage.removeItem("cartItems");
@@ -582,11 +582,11 @@ const ViewCart = () => {
           }
         } else {
           setCartItems([]);
-          console.log("📭 ViewCart: No cart items found in localStorage");
+          
         }
       }
     } catch (error) {
-      console.error("❌ ViewCart: Error loading cart items:", error);
+      
       setCartItems([]);
       try {
         localStorage.removeItem("cartItems"); // Remove corrupted data
@@ -602,7 +602,7 @@ const ViewCart = () => {
 
   const loadSavedData = async () => {
     try {
-      console.log("🔄 ViewCart: Loading saved user data...");
+      
 
       let loginData = null;
       let isValidLogin = false;
@@ -639,11 +639,11 @@ const ViewCart = () => {
 
             if (isValidLogin) {
               loginData = parsedLoginData;
-              console.log("✅ ViewCart: Found valid consolidated login data");
+              
             }
           }
         } catch (parseError) {
-          console.warn("ViewCart: Failed to parse consolidated login data");
+          
         }
       }
 
@@ -667,10 +667,10 @@ const ViewCart = () => {
             timestamp: loginTime,
           };
 
-          console.log("✅ ViewCart: Found valid individual login data");
+          
         } else {
           // Login expired, clear it
-          console.log("⚠️ ViewCart: Login expired, clearing...");
+          
           localStorage.removeItem("userToken");
           localStorage.removeItem("verificationToken");
           localStorage.removeItem("userPhone");
@@ -701,7 +701,7 @@ const ViewCart = () => {
         // Load profile to pre-fill address form
         await loadUserProfile(loginData.phone, loginData.token);
       } else {
-        console.log("❌ ViewCart: No valid login found, user needs to login");
+        
         setCurrentStep(0); // Start with login step
         setCompletedSteps([]);
         setShowOTP(false);
@@ -749,7 +749,7 @@ const ViewCart = () => {
         }
       }
     } catch (error) {
-      console.error("❌ ViewCart: Error loading saved data:", error);
+      
     }
   };
 
@@ -764,7 +764,7 @@ const ViewCart = () => {
       };
       localStorage.setItem("viewCartData", JSON.stringify(dataToSave));
     } catch (error) {
-      console.error("Error saving data to storage:", error);
+      
     }
   };
 
@@ -823,7 +823,7 @@ const ViewCart = () => {
       window.headerCartFunctions.updateCartCount(newCartCount);
     }
 
-    console.log("ViewCart: Item removed, cart updated:", updatedItems);
+    
   };
 
   const handleUpdateItemQuantity = (itemId, newQuantity) => {
@@ -881,7 +881,7 @@ const ViewCart = () => {
       window.headerCartFunctions.updateCartCount(newCartCount);
     }
 
-    console.log("ViewCart: Item quantity updated:", updatedItems);
+    
   };
 
   const isStepCompleted = (stepId) => {
@@ -990,19 +990,19 @@ const ViewCart = () => {
       return;
     }
 
-    console.log("ViewCart: Requesting OTP for phone number:", phoneNumber);
+    
 
     try {
       const result = await sendOTP(phoneNumber);
-      console.log("ViewCart: OTP request result:", result);
+      
 
       if (result.success) {
-        console.log("ViewCart: OTP sent successfully");
+        
         setShowOTP(true);
         setOTP(""); // Clear previous OTP
         setPhoneError("");
       } else {
-        console.warn("ViewCart: API response:", result);
+        
         // Check if it's a real API failure or demo mode
         if (result.status === 200) {
           // API responded OK but may not have sent real SMS
@@ -1020,7 +1020,7 @@ const ViewCart = () => {
         }
       }
     } catch (error) {
-      console.error("ViewCart: Error requesting OTP:", error);
+      
       setPhoneError(
         `Network Error: ${error.message}. Please check your internet connection.`,
       );
@@ -1039,15 +1039,15 @@ const ViewCart = () => {
       return;
     }
 
-    console.log("ViewCart: Verifying OTP:", otp, "for phone:", phoneNumber);
+    
 
     try {
       // Get stored token from OTP request
       const storedToken = localStorage.getItem("otpToken");
-      console.log("ViewCart: Using stored token:", storedToken);
+      
 
       const result = await verifyOTP(otp, phoneNumber, storedToken);
-      console.log("ViewCart: OTP verification result:", result);
+      
       console.log(
         "ViewCart: Full result for debugging:",
         JSON.stringify(result),
@@ -1123,7 +1123,7 @@ const ViewCart = () => {
           "✅ ViewCart: Flow switched to SIGNUP mode for new user at Step 1",
         );
       } else if (result.success && result.data) {
-        console.log("ViewCart: OTP verification successful - existing user");
+        
 
         // Extract token from response - handle multiple formats
         let authToken = null;
@@ -1131,16 +1131,16 @@ const ViewCart = () => {
 
         if (responseData.accessToken) {
           authToken = responseData.accessToken;
-          console.log("✅ ViewCart: Found accessToken");
+          
         } else if (responseData.data?.accessToken) {
           authToken = responseData.data.accessToken;
-          console.log("✅ ViewCart: Found accessToken in nested data");
+          
         } else if (responseData.token) {
           authToken = responseData.token;
-          console.log("✅ ViewCart: Found token");
+          
         } else if (responseData.data?.token) {
           authToken = responseData.data.token;
-          console.log("✅ ViewCart: Found token in nested data");
+          
         } else if (
           responseData.verified === true ||
           responseData.data?.verified === true
@@ -1155,15 +1155,15 @@ const ViewCart = () => {
         if (authToken) {
           completeLoginStep(authToken);
         } else {
-          console.warn("ViewCart: No valid token found in OTP response");
+          
           setOtpError("Invalid OTP. Please enter the correct 4-digit code.");
         }
       } else {
-        console.warn("ViewCart: OTP verification failed", result);
+        
         setOtpError("Invalid OTP. Please enter the correct 4-digit code.");
       }
     } catch (error) {
-      console.error("ViewCart: Error verifying OTP:", error);
+      
       setOtpError("Error verifying OTP. Please try again.");
     } finally {
       setLoading(false);
@@ -1171,7 +1171,7 @@ const ViewCart = () => {
   };
 
   const loadUserProfile = async (phoneNumber, token) => {
-    console.log("🔄 Loading user profile for:", phoneNumber);
+    
     setProfileLoading(true);
 
     try {
@@ -1196,8 +1196,8 @@ const ViewCart = () => {
       const profileJson = await profileRes.json().catch(() => ({}));
       const addressJson = await addressRes.json().catch(() => ({}));
 
-      console.log("📝 Profile Response:", profileJson);
-      console.log("🏠 Address Response:", addressJson);
+      
+      
 
       // Normalize profile data according to API shape
       let profileData = {};
@@ -1238,7 +1238,7 @@ const ViewCart = () => {
         const addressId = foundActiveAddress._id || foundActiveAddress.id;
         setBillingAddressId(addressId);
         localStorage.setItem("billingAddressId", addressId);
-        console.log("🔥 Dynamic billingAddressId set:", addressId);
+        
       }
 
       console.log("Parsed addresses (ViewCart):", addresses);
@@ -1410,7 +1410,7 @@ const ViewCart = () => {
           merged,
         );
       } catch (e) {
-        console.warn("❌ Could not update userInfo in localStorage:", e);
+        
       }
 
       // Only mark address step complete when we actually have usable data
@@ -1434,7 +1434,7 @@ const ViewCart = () => {
         "✅ Form pre-filled with address/profile data (address preferred)",
       );
     } catch (error) {
-      console.error("Error loading profile:", error);
+      
       // Try to load from localStorage as fallback
       try {
         const savedUserInfo = localStorage.getItem("userInfo");
@@ -1449,10 +1449,10 @@ const ViewCart = () => {
             state: userInfo.state || prev.state || "",
             pincode: userInfo.pincode || prev.pincode || "",
           }));
-          console.log("✅ Loaded data from localStorage fallback");
+          
         }
       } catch (localStorageError) {
-        console.error("❌ Error loading from localStorage:", localStorageError);
+        
       }
     } finally {
       setProfileLoading(false);
@@ -1515,9 +1515,9 @@ const ViewCart = () => {
         }),
       );
 
-      console.log("🎉 ViewCart: Login completed successfully");
+      
     } catch (error) {
-      console.error("❌ ViewCart: Error completing login step:", error);
+      
     } finally {
       setLoading(false);
     }
@@ -1563,8 +1563,8 @@ const ViewCart = () => {
         pincode: "122001", // Dummy pincode to satisfy backend requirement
       };
 
-      console.log("📤 Sending profile update:", profilePayload);
-      console.log("📤 Sending address update:", addressPayload);
+      
+      
 
       // 🔥 Update both profile and address in parallel (same as Dashboard)
       const [profileResponse, addressResponse] = await Promise.all([
@@ -1585,15 +1585,15 @@ const ViewCart = () => {
         addressResponse.json().catch(() => ({})),
       ]);
 
-      console.log("📥 Profile API Response:", profileResult);
-      console.log("📥 Address API Response:", addressResult);
+      
+      
 
       // 🔥 Update billingAddressId if new address created
       if (addressResult?.data?._id || addressResult?.data?.id) {
         const newAddressId = addressResult.data._id || addressResult.data.id;
         setBillingAddressId(newAddressId);
         localStorage.setItem("billingAddressId", newAddressId);
-        console.log("🔥 Updated billingAddressId:", newAddressId);
+        
       }
 
       // 🔥 Update localStorage userInfo for Dashboard sync
@@ -1609,15 +1609,15 @@ const ViewCart = () => {
           city: formData.city.trim(),
         };
         localStorage.setItem("userInfo", JSON.stringify(merged));
-        console.log("✅ Updated localStorage.userInfo for Dashboard sync");
+        
       } catch (e) {
-        console.warn("Could not update userInfo:", e);
+        
       }
 
       if (profileResponse.ok || addressResponse.ok) {
         setCompletedSteps((prev) => [...prev.filter((step) => step !== 1), 1]);
         setEditingStep(null);
-        console.log("✅ Profile and Address saved successfully!");
+        
 
         // ✅ Show success message to user
         const successMessage = document.createElement("div");
@@ -1647,7 +1647,7 @@ const ViewCart = () => {
       } else {
         const errorMsg =
           profileResult?.message || addressResult?.message || "Failed to save";
-        console.error("❌ Address save failed:", errorMsg);
+        
 
         // ✅ Show error message
         const errorMessage = document.createElement("div");
@@ -1680,7 +1680,7 @@ const ViewCart = () => {
         return;
       }
     } catch (error) {
-      console.error("❌ Address save error:", error);
+      
 
       // ✅ Show network error message to user
       const errorMessage = document.createElement("div");
@@ -1750,7 +1750,7 @@ const ViewCart = () => {
         },
       };
 
-      console.log("Processing payment with data:", paymentData);
+      
 
       // 🔥 Get billing address ID - from state or localStorage as fallback
       let currentBillingAddressId =
@@ -1758,7 +1758,7 @@ const ViewCart = () => {
 
       // If still no billing address, try to fetch it
       if (!currentBillingAddressId) {
-        console.warn("⚠️ No billing address ID found, attempting to fetch...");
+        
         try {
           const addressRes = await fetch(
             "https://backend.corelens.in/api/app/address?limit=50",
@@ -1790,7 +1790,7 @@ const ViewCart = () => {
             );
           }
         } catch (addrErr) {
-          console.error("Failed to fetch billing address:", addrErr);
+          
         }
       }
 
@@ -1839,7 +1839,7 @@ const ViewCart = () => {
       );
 
       const orderData = await razorpayResponse.json();
-      console.log("🔥 Razorpay order creation response:", orderData);
+      
       console.log(
         "🔥 Response status:",
         razorpayResponse.status,
@@ -1906,9 +1906,9 @@ const ViewCart = () => {
           // // 🔥 SET LOCK IMMEDIATELY - Prevent handler re-entry even if triggered multiple times
           // try {
           //   localStorage.setItem(orderPostedKey, "processing");
-          //   console.log("🔐 Order lock set for:", response.razorpay_order_id);
+          //   
           // } catch (e) {
-          //   console.error("Failed to set order lock:", e);
+          //   
           // }
 
           // Disable payment button to prevent double-click
@@ -1983,7 +1983,7 @@ const ViewCart = () => {
               //         response.razorpay_payment_id,
               //       );
               //     } catch (e) {
-              //       console.error("Failed to set payment ID lock:", e);
+              //       
               //     }
 
               //     const productsPayload = (cartItems || []).map((item) => ({
@@ -2055,7 +2055,7 @@ const ViewCart = () => {
               //         title: "Order Registration Failed",
               //         text: msg,
               //       });
-              //       console.error("Order registration failed:", orderJson);
+              //       
               //       // Clear payment ID lock on failure so user can retry
               //       try {
               //         localStorage.removeItem(paymentIdKey);
@@ -2067,7 +2067,7 @@ const ViewCart = () => {
               //     // Mark payment ID as successfully processed
               //     try {
               //       localStorage.setItem(paymentIdKey, "1");
-              //       console.log("✅ Payment ID lock set to success");
+              //       
               //     } catch (e) {}
 
               //     // 🔥 Mark this order as posted to avoid duplicate posts
@@ -2103,7 +2103,7 @@ const ViewCart = () => {
               //     window.location.href =
               //       window.location.origin + "/#/checkout-success";
               //   } catch (err) {
-              //     console.error("Error saving order:", err);
+              //     
               //     await Swal.fire({
               //       icon: "error",
               //       title: "Order Save Error",
@@ -2124,11 +2124,11 @@ const ViewCart = () => {
               // // 🔥 CLEAR LOCK ON FAILURE - User can try again
               // try {
               //   localStorage.removeItem(orderPostedKey);
-              //   console.log("🔓 Order lock cleared after verification failure");
+              //   
               // } catch (e) {}
             }
           } catch (handlerError) {
-            console.error("🔥 Razorpay handler error:", handlerError);
+            
             await Swal.fire({
               icon: "error",
               title: "Payment Error",
@@ -2140,18 +2140,18 @@ const ViewCart = () => {
             // // 🔥 CLEAR LOCK ON ERROR - User can try again
             // try {
             //   localStorage.removeItem(orderPostedKey);
-            //   console.log("🔓 Order lock cleared after handler error");
+            //   
             // } catch (e) {}
           }
         },
 
         modal: {
           ondismiss: async function () {
-            // console.log("🔓 Payment modal dismissed - clearing lock");
+            // 
             // // 🔥 CLEAR LOCK WHEN USER CANCELS - User can try again
             // try {
             //   localStorage.removeItem(orderPostedKey);
-            //   console.log("🔓 Order lock cleared after modal dismiss");
+            //   
             // } catch (e) {}
             setLoading(false);
             await Swal.fire({
@@ -2163,11 +2163,11 @@ const ViewCart = () => {
         },
       };
 
-      console.log("Opening Razorpay with options:", razorpayOptions);
+      
       const rzp = new window.Razorpay(razorpayOptions);
       rzp.open();
     } catch (error) {
-      console.error("❌ Payment processing error:", error);
+      
       const errorMessage = error.message || "";
       if (
         errorMessage.includes("token") ||
@@ -2250,7 +2250,7 @@ const ViewCart = () => {
 
         // 🆕 NEW USER SIGNUP LOGIC
         if (isNewUser) {
-          console.log("👤 New user detected. Performing signup first...");
+          
           try {
             const signupPayload = {
               name: newAddressForm.name.trim(),
@@ -2259,7 +2259,7 @@ const ViewCart = () => {
               password: `User@${phoneNumber.slice(-4)}`,
             };
 
-            console.log("📡 Sending signup payload:", signupPayload);
+            
             const signupRes = await fetch(
               "https://backend.corelens.in/api/app/signup",
               {
@@ -2270,13 +2270,13 @@ const ViewCart = () => {
             );
 
             const signupResult = await signupRes.json();
-            console.log("✅ Signup response:", signupResult);
+            
 
             if (signupRes.ok && signupResult.data?.accessToken) {
               const newToken = signupResult.data.accessToken;
               setUserToken(newToken);
               localStorage.setItem("userToken", newToken);
-              console.log("✅ New user signed up and token received.");
+              
 
               // 🔥 CRITICAL: Update the token variable to be used in the address API call below
               const addressToken = newToken;
@@ -2342,10 +2342,10 @@ const ViewCart = () => {
                 return; // Exit after successful dual-action
               }
             } else if (signupRes.status === 409) {
-              console.log("ℹ️ User already exists, proceeding.");
+              
             }
           } catch (err) {
-            console.error("❌ Signup error:", err);
+            
           }
         }
 
@@ -2399,7 +2399,7 @@ const ViewCart = () => {
           defaultAddress: true,
         };
 
-        console.log("📡 Saving NEW address to backend:", addressPayload);
+        
         const res = await fetch("https://backend.corelens.in/api/app/address", {
           method: "POST",
           headers: {
@@ -2410,7 +2410,7 @@ const ViewCart = () => {
         });
 
         const result = await res.json();
-        console.log("✅ Address save response:", result);
+        
 
         if (res.ok && result.data) {
           const newAddress = result.data;
@@ -2470,7 +2470,7 @@ const ViewCart = () => {
         saveAddressData();
       }
     } catch (error) {
-      console.error("❌ Error saving address:", error);
+      
       Swal.fire({
         icon: "error",
         title: "Error",
@@ -2552,7 +2552,7 @@ const ViewCart = () => {
       }
 
       // 1. Re-fetch address list to get the latest backend _id
-      console.log("📍 COD: Re-fetching address list from backend...");
+      
       const addressRes = await fetch(
         "https://backend.corelens.in/api/app/address?page=1&limit=50",
         {
@@ -2608,7 +2608,7 @@ const ViewCart = () => {
         );
       }
 
-      console.log("✅ COD: Using verified backend address ID:", finalAddressId);
+      
 
       // 3. Resolve amounts
       const subtotalValue = getSubtotal();
@@ -2666,7 +2666,7 @@ const ViewCart = () => {
       );
 
       const result = await response.json();
-      console.log("✅ COD Response:", result);
+      
 
       if (
         response.ok &&
@@ -2693,7 +2693,7 @@ const ViewCart = () => {
         throw new Error(result.message || "Backend rejected order creation");
       }
     } catch (error) {
-      console.error("❌ COD Order Error:", error);
+      
       Swal.fire({
         icon: "error",
         title: "Order Failed",
@@ -2968,7 +2968,7 @@ const ViewCart = () => {
                       mobile_number: phoneNumber,
                     };
 
-                    console.log("📡 Signup payload:", signupPayload);
+                    
 
                     const signupRes = await fetch(
                       "https://backend.corelens.in/api/app/signup",
@@ -2980,7 +2980,7 @@ const ViewCart = () => {
                     );
 
                     const signupResult = await signupRes.json();
-                    console.log("✅ Signup response:", signupResult);
+                    
 
                     if (signupRes.ok && signupResult.data?.accessToken) {
                       const newToken = signupResult.data.accessToken;
@@ -3038,7 +3038,7 @@ const ViewCart = () => {
                       });
                     }
                   } catch (err) {
-                    console.error("❌ Signup error:", err);
+                    
                     Swal.fire({
                       icon: "error",
                       title: "Error",
