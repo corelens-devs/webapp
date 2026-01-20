@@ -31,13 +31,13 @@ export const StorageUtils = {
             return true;
           }
         } catch (saveError) {
-          console.warn(`Cart save attempt ${attempt + 1} failed:`, saveError);
+          
           if (attempt === 2) throw saveError;
         }
       }
       return false;
     } catch (error) {
-      console.error("❌ Error saving cart:", error);
+      
       return false;
     }
   },
@@ -86,15 +86,15 @@ export const StorageUtils = {
           return validItems;
         }
       }
-      console.log("📭 No valid cart items found in localStorage");
+      
       return [];
     } catch (error) {
-      console.error("❌ Error loading cart:", error);
+      
       try {
         localStorage.removeItem("cartItems");
         localStorage.removeItem("cartLastUpdated");
       } catch (cleanError) {
-        console.error("❌ Error cleaning corrupted cart:", cleanError);
+        
       }
       return [];
     }
@@ -104,10 +104,10 @@ export const StorageUtils = {
     try {
       localStorage.removeItem("cartItems");
       localStorage.removeItem("cartLastUpdated");
-      console.log("🗑️ Cart cleared from localStorage");
+      
       return true;
     } catch (error) {
-      console.error("❌ Error clearing cart:", error);
+      
       return false;
     }
   },
@@ -130,7 +130,7 @@ export const StorageUtils = {
         originalResponse: apiResponse,
       };
 
-      console.log("💾 Saving complete session data:", sessionData);
+      
 
       // Save to multiple keys for different access patterns
       localStorage.setItem("sessionData", JSON.stringify(sessionData));
@@ -154,7 +154,7 @@ export const StorageUtils = {
 
       return true;
     } catch (error) {
-      console.error("❌ Error saving complete session:", error);
+      
       return false;
     }
   },
@@ -183,14 +183,14 @@ export const StorageUtils = {
           });
           return parsedSession;
         } else {
-          console.log("⚠️ Session expired, clearing...");
+          
           this.clearCompleteSession();
           return null;
         }
       }
       return null;
     } catch (error) {
-      console.error("❌ Error loading session:", error);
+      
       return null;
     }
   },
@@ -233,13 +233,13 @@ export const StorageUtils = {
         if (preservedCartUpdated) {
           localStorage.setItem("cartLastUpdated", preservedCartUpdated);
         }
-        console.log("✅ Storage: Cart items restored after session clear");
+        
       }
 
       console.log("🗑️ Complete session cleared (cart preserved)");
       return true;
     } catch (error) {
-      console.error("❌ Error clearing session:", error);
+      
       return false;
     }
   },
@@ -263,7 +263,7 @@ export const StorageUtils = {
       try {
         return JSON.parse(userInfo);
       } catch (error) {
-        console.error("Error parsing userInfo:", error);
+        
       }
     }
     return null;
@@ -309,14 +309,14 @@ export const StorageUtils = {
             return true;
           }
         } catch (saveError) {
-          console.warn(`Login save attempt ${attempt + 1} failed:`, saveError);
+          
           if (attempt === 2) throw saveError;
         }
       }
 
       return false;
     } catch (error) {
-      console.error("❌ Error saving login state:", error);
+      
       return false;
     }
   },
@@ -368,10 +368,10 @@ export const StorageUtils = {
         return loginData;
       }
 
-      console.log("🔓 No login state found");
+      
       return null;
     } catch (error) {
-      console.error("❌ Error loading login state:", error);
+      
       return null;
     }
   },
@@ -413,13 +413,13 @@ export const StorageUtils = {
         if (preservedCartUpdated) {
           localStorage.setItem("cartLastUpdated", preservedCartUpdated);
         }
-        console.log("✅ Storage: Cart items restored after login clear");
+        
       }
 
       console.log("🔓 Login state cleared (cart preserved)");
       return true;
     } catch (error) {
-      console.error("❌ Error clearing login state:", error);
+      
       return false;
     }
   },
@@ -446,7 +446,7 @@ export const StorageUtils = {
 
       return isValid;
     } catch (error) {
-      console.error("❌ Error checking login validity:", error);
+      
       return false;
     }
   },
@@ -507,11 +507,11 @@ export const StorageUtils = {
       }
       return null;
     } catch (error) {
-      console.error(`❌ Force load failed for ${key}:`, error);
+      
       try {
         localStorage.removeItem(key); // Remove corrupted data
       } catch (removeError) {
-        console.error(`❌ Error removing corrupted key ${key}:`, removeError);
+        
       }
       return null;
     }
@@ -545,7 +545,7 @@ export const StorageUtils = {
       }
       return success;
     } catch (error) {
-      console.error("❌ Error adding to cart:", error);
+      
       return false;
     }
   },
@@ -565,7 +565,7 @@ export const StorageUtils = {
       }
       return success;
     } catch (error) {
-      console.error("❌ Error removing from cart:", error);
+      
       return false;
     }
   },
