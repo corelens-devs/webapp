@@ -223,6 +223,10 @@ function App() {
               path="/contact/account-deletion"
               element={<Navigate to="/account-deletion" replace />}
             />
+            <Route
+              path="/our-privacy-policy"
+              element={<Navigate to="/privacy-policy" replace />}
+            />
             <Route path="/sign-in" element={<SignIn />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />

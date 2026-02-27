@@ -8,6 +8,7 @@ import ErrorBoundary from './components/ErrorBoundary.jsx'
 const legacyPathToHashRoute = {
   "/contact/account-deletion": "/account-deletion",
   "/account-deletion": "/account-deletion",
+  "/our-privacy-policy": "/privacy-policy",
 };
 
 if (!window.location.hash) {
