@@ -3,6 +3,7 @@ import {
   HashRouter as Router,
   Routes,
   Route,
+  Navigate,
   useLocation,
 } from "react-router-dom";
 
@@ -36,6 +37,7 @@ import TermsOfUse from "./pages/TermsOfUse.jsx";
 import TermsOfSales from "./pages/TermsOfSales.jsx";
 import TermsAndConditions from "./pages/TermsAndConditions.jsx";
 import PrivacyPolicy from "./pages/PrivacyPolicy.jsx";
+import AccountDeletion from "./pages/AccountDeletion.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import CategoryProducts from "./pages/CategoryProducts";
 import Checkout from "./pages/Checkout.jsx";
@@ -216,6 +218,11 @@ function App() {
               element={<TermsAndConditions />}
             />
             <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/account-deletion" element={<AccountDeletion />} />
+            <Route
+              path="/contact/account-deletion"
+              element={<Navigate to="/account-deletion" replace />}
+            />
             <Route path="/sign-in" element={<SignIn />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/dashboard" element={<Dashboard />} />

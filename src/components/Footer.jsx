@@ -145,6 +145,9 @@ const Footer = () => {
               <li>
                 <a href="#/privacy-policy">Privacy Policy</a>
               </li>
+              <li>
+                <a href="#/account-deletion">Account Deletion</a>
+              </li>
             </ul>
           </div>
         </div>
