@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -32,7 +32,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import Signup from "./pages/Signup.jsx";
 import Surveillance from "./pages/Surveillance.jsx";
 import CategoryPage from "./pages/CategoryPage.jsx";
-import ContactUs from "./pages/ContactUs.jsx"; // Import ContactUs component
+import ContactUs from "./pages/ContactUs.jsx";
 import TermsOfUse from "./pages/TermsOfUse.jsx";
 import TermsOfSales from "./pages/TermsOfSales.jsx";
 import TermsAndConditions from "./pages/TermsAndConditions.jsx";
@@ -51,7 +51,6 @@ function App() {
   useEffect(() => {
     const loadScripts = async () => {
       try {
-        // Scripts are loaded via HTML, so we just need to initialize them
         if (window.jQuery) {
           
         }
@@ -63,42 +62,25 @@ function App() {
       }
     };
 
-    // Enhanced global state restoration with improved persistence
     const restoreApplicationState = async () => {
       try {
-        
-
-        // Check login state directly from localStorage
         const token = localStorage.getItem("userToken");
         const phone = localStorage.getItem("userPhone");
         const verified = localStorage.getItem("userVerified");
         const timestamp = localStorage.getItem("loginTimestamp");
 
         if (token && phone && verified === "true") {
-          // Validate login timestamp (max 30 days old)
           const loginTime = timestamp ? parseInt(timestamp) : Date.now();
-          const maxAge = 30 * 24 * 60 * 60 * 1000; // 30 days
+          const maxAge = 30 * 24 * 60 * 60 * 1000;
           const isValid = Date.now() - loginTime < maxAge;
 
           if (isValid) {
-            console.log("✅ App: Found valid existing login state", {
-              phone: phone,
-              hasToken: !!token,
-              isVerified: true,
-              loginTime: new Date(loginTime).toLocaleString(),
-              daysAgo: Math.floor(
-                (Date.now() - loginTime) / (24 * 60 * 60 * 1000)
-              ),
-            });
-
-            // Dispatch login event for any components that need it
             window.dispatchEvent(
               new CustomEvent("userLoggedIn", {
                 detail: { phone: phone, token: token, isVerified: true },
               })
             );
           } else {
-            
             localStorage.removeItem("userToken");
             localStorage.removeItem("userPhone");
             localStorage.removeItem("userVerified");
@@ -106,11 +88,8 @@ function App() {
             localStorage.removeItem("loginData");
             localStorage.removeItem("viewCartData");
           }
-        } else {
-          
         }
 
-        // Enhanced cart state restoration with validation
         const cartItems = localStorage.getItem("cartItems");
         const cartLastUpdated = localStorage.getItem("cartLastUpdated");
 
@@ -128,19 +107,6 @@ function App() {
                 )
               : [];
 
-            console.log(
-              "🛒 App: Found existing cart state:",
-              validCartItems.length,
-              "items"
-            );
-            console.log(
-              "🛒 App: Cart last updated:",
-              cartLastUpdated
-                ? new Date(parseInt(cartLastUpdated)).toLocaleString()
-                : "unknown"
-            );
-
-            // Force save cleaned cart if needed
             if (
               validCartItems.length !== parsedCart.length ||
               validCartItems.length > 0
@@ -151,9 +117,7 @@ function App() {
                   JSON.stringify(validCartItems)
                 );
                 localStorage.setItem("cartLastUpdated", Date.now().toString());
-                
 
-                // Dispatch event to update any components already loaded
                 setTimeout(() => {
                   window.dispatchEvent(
                     new CustomEvent("cartUpdated", { detail: validCartItems })
@@ -164,21 +128,10 @@ function App() {
               }
             }
           } catch (error) {
-            
             localStorage.removeItem("cartItems");
             localStorage.removeItem("cartLastUpdated");
           }
-        } else {
-          
         }
-
-        // Check for ViewCart specific data
-        const viewCartData = localStorage.getItem("viewCartData");
-        if (viewCartData) {
-          
-        }
-
-        
       } catch (error) {
         
       }
