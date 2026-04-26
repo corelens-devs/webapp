@@ -15,3 +15,14 @@ By default, Replit runs the `dev` script, but you can configure it by changing t
 ### Typescript
 
 Just rename any file from `.jsx` to `.tsx`. You can also try our [TypeScript Template](https://replit.com/@replit/React-TypeScript)
+
+## SEO + Pre-render Setup
+
+- Build with generated sitemap: `npm run build`
+- Start SEO server with prerender middleware: `npm run serve:seo`
+
+Set environment variables for crawler pre-rendering:
+
+- `PRERENDER_TOKEN`: Pre-render.io token (required for pre-render.io).
+- `PRERENDER_SERVICE_URL`: Optional custom render service URL (use this for Renderton/Rendertron compatible endpoint).
+- `SITE_URL`: Canonical host (default `https://www.corelens.in`).

@@ -1,4 +1,12 @@
 User-agent: *
 Allow: /
 
+Disallow: /dashboard
+Disallow: /checkout
+Disallow: /checkout-success
+Disallow: /checkout-failure
+Disallow: /sign-in
+Disallow: /signup
+Disallow: /view-cart
+
 Sitemap: https://www.corelens.in/sitemap.xml

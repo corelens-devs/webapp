@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../css/about.css";
 import Breadcrumb from "../components/Breadcrumb";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -12,46 +12,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 const AboutUs = () => {
-  useEffect(() => {
-    // Set meta title
-    document.title =
-      "Corelens | About Us | Smart Home Security Systems & CCTV in India";
-
-    // Set meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Learn about Corelens – India's trusted brand for CCTV cameras, smart locks, GPS trackers & motion sensors. Complete home & business security solutions with app control.",
-      );
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content =
-        "Learn about Corelens – India's trusted brand for CCTV cameras, smart locks, GPS trackers & motion sensors. Complete home & business security solutions with app control.";
-      document.getElementsByTagName("head")[0].appendChild(meta);
-    }
-
-    // Set meta keywords
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute(
-        "content",
-        "Corelens security solutions, home security systems India, CCTV cameras in India, smart door locks India, motion sensors India, GPS trackers India, smart home security solutions, surveillance solutions India, Corelens app",
-      );
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "keywords";
-      meta.content =
-        "Corelens security solutions, home security systems India, CCTV cameras in India, smart door locks India, motion sensors India, GPS trackers India, smart home security solutions, surveillance solutions India, Corelens app";
-      document.getElementsByTagName("head")[0].appendChild(meta);
-    }
-
-    return () => {
-      document.title = "Corelens - Smart Security Solutions";
-    };
-  }, []);
-
   return (
     <div className="about-us-page">
       {/* Hero Section */}

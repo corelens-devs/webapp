@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
 import { getCategoryContent } from "../data/categories";
 import BannerSection from "../components/Category/BannerSection";
@@ -31,16 +31,6 @@ const CategoryPage = () => {
     };
     return categoryNames[slug] || slug.toUpperCase().replace("-", "\n");
   };
-
-  useEffect(() => {
-    if (categoryData) {
-      document.title = `${categoryData.banner.title} - Corelens`;
-    } else {
-      // Set title based on slug even if no category data
-      const categoryName = getCategoryDisplayName(slug);
-      document.title = `${categoryName.replace("\n", " ")} - Corelens`;
-    }
-  }, [categoryData, slug]);
 
   if (!categoryData) {
     return (

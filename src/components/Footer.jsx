@@ -30,13 +30,13 @@ const Footer = () => {
         </div>
         <div className="footer-row footer-main">
           <div className="footer-col about-col">
-            <a href="#">
+            <Link to="/">
               <img
                 src="/images/icons/logo.png"
                 alt="Corelens Logo"
                 className="logo"
               />
-            </a>
+            </Link>
             <p>Shop No 3, building 2287/39 MS ROAD, K. PUL, Delhi-110006</p>
           </div>
 
@@ -44,16 +44,19 @@ const Footer = () => {
             <h4>Quick Links</h4>
             <ul>
               <li>
-                <a href="#/about-us">About Us</a>
+                <Link to="/about-us">About Us</Link>
               </li>
               <li>
                 <Link to="/surveillance">Surveillance</Link>
               </li>
               <li>
-                <a href="#/testimonials">Testimonials</a>
+                <Link to="/testimonials">Testimonials</Link>
               </li>
               <li>
-                <a href="#/contact-us">Contact Us</a>
+                <Link to="/contact-us">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/hourly-surveillance-service">Hourly Surveillance Service</Link>
               </li>
             </ul>
           </div>
@@ -62,19 +65,19 @@ const Footer = () => {
             <h4>Explore</h4>
             <ul>
               <li>
-                <a href="#/category/door-locks">Door Locks</a>
+                <Link to="/category/door-locks">Door Locks</Link>
               </li>
               <li>
-                <a href="#/category/cam-sensors">Cam Sensors</a>
+                <Link to="/category/cam-sensors">Cam Sensors</Link>
               </li>
               <li>
-                <a href="#/category/gps-trackers">GPS Trackers</a>
+                <Link to="/category/gps-trackers">GPS Trackers</Link>
               </li>
               <li>
-                <a href="#/category/motion-sensors">Motion Sensors</a>
+                <Link to="/category/motion-sensors">Motion Sensors</Link>
               </li>
               <li>
-                <a href="#/category/accessories">Accessories</a>
+                <Link to="/category/accessories">Accessories</Link>
               </li>
             </ul>
           </div>
@@ -134,19 +137,19 @@ const Footer = () => {
             <h4>Policies</h4>
             <ul>
               <li>
-                <a href="#/terms-of-use">Terms of Use</a>
+                <Link to="/terms-of-use">Terms of Use</Link>
               </li>
               <li>
-                <a href="#/terms-of-sales">Terms of Sales</a>
+                <Link to="/terms-of-sales">Terms of Sales</Link>
               </li>
               <li>
-                <a href="#/terms-and-conditions">Term & Condition</a>
+                <Link to="/terms-and-conditions">Term & Condition</Link>
               </li>
               <li>
-                <a href="#/privacy-policy">Privacy Policy</a>
+                <Link to="/privacy-policy">Privacy Policy</Link>
               </li>
               <li>
-                <a href="#/account-deletion">Account Deletion</a>
+                <Link to="/account-deletion">Account Deletion</Link>
               </li>
             </ul>
           </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "../css/surveillance.css";
 import { image } from "../utils/asset";
@@ -11,47 +11,6 @@ import {
 } from "react-icons/fa";
 
 const Surveillance = () => {
-  useEffect(() => {
-    // Set meta title
-    document.title =
-      "Corelens | Surveillance | Smart Home Security Systems & CCTV in India";
-
-    // Set meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        "content",
-        "Book on-demand surveillance at just ₹9 with Corelens app. Smart CCTV monitoring, real-time alerts & emergency response for home, shop & office security in India.",
-      );
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "description";
-      meta.content =
-        "Book on-demand surveillance at just ₹9 with Corelens app. Smart CCTV monitoring, real-time alerts & emergency response for home, shop & office security in India.";
-      document.getElementsByTagName("head")[0].appendChild(meta);
-    }
-
-    // Set meta keywords
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute(
-        "content",
-        "Corelens, on-demand surveillance app, surveillance app India, CCTV cameras India, buy CCTV online, GPS trackers India, home security solutions, mobile surveillance app, Android surveillance app, iOS surveillance app, smart home security, CCTV installation India, book surveillance service, best GPS tracker India, affordable CCTV cameras India",
-      );
-    } else {
-      const meta = document.createElement("meta");
-      meta.name = "keywords";
-      meta.content =
-        "Corelens, on-demand surveillance app, surveillance app India, CCTV cameras India, buy CCTV online, GPS trackers India, home security solutions, mobile surveillance app, Android surveillance app, iOS surveillance app, smart home security, CCTV installation India, book surveillance service, best GPS tracker India, affordable CCTV cameras India";
-      document.getElementsByTagName("head")[0].appendChild(meta);
-    }
-
-    // Cleanup function to reset title when component unmounts
-    return () => {
-      document.title = "Corelens - Smart Security Solutions";
-    };
-  }, []);
-
   return (
     <div className="surveillance-page">
       {/* Hero Banner Offer Section */}

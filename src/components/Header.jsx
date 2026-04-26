@@ -551,17 +551,18 @@ const Header = () => {
         section.scrollIntoView({ behavior: "smooth" });
       }
     } else {
-      // Navigate to home with hash
-      navigate("/#demo");
+      sessionStorage.setItem("scrollToDemo", "1");
+      navigate("/");
     }
   };
 
-  // Scroll to demo automatically when URL hash is #demo
+  // Scroll to demo automatically on deep-link request
   useEffect(() => {
-    if (location.hash === "#demo") {
+    const shouldScroll = location.hash === "#demo" || sessionStorage.getItem("scrollToDemo") === "1";
+    if (shouldScroll) {
+      sessionStorage.removeItem("scrollToDemo");
       const section = document.getElementById("demo");
       if (section) {
-        // Wait a bit to ensure home page is rendered
         setTimeout(() => {
           section.scrollIntoView({ behavior: "smooth" });
         }, 500);

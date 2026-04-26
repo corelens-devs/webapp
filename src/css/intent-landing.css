@@ -1,0 +1,202 @@
+.intent-landing-page {
+  background: #f4f7fb;
+}
+
+.intent-hero {
+  background: linear-gradient(120deg, #0b4f7e, #1b6aa0);
+  color: #fff;
+  padding: 6rem 0;
+}
+
+.intent-hero h1 {
+  margin: 1.2rem 0;
+  font-size: 4rem;
+  line-height: 1.2;
+  max-width: 90rem;
+}
+
+.intent-hero h1 span {
+  color: #9be8ff;
+}
+
+.intent-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  border-radius: 999px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.intent-subheadline,
+.intent-audience {
+  max-width: 84rem;
+  font-size: 1.9rem;
+}
+
+.intent-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+.intent-primary-btn,
+.intent-secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.9rem;
+  padding: 1.2rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.intent-primary-btn {
+  background: #fff;
+  color: #0b4f7e;
+}
+
+.intent-secondary-btn {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.intent-primary-btn:hover,
+.intent-secondary-btn:hover {
+  transform: translateY(-2px);
+}
+
+.intent-benefits,
+.proof-blocks-section,
+.intent-final-cta {
+  padding: 5rem 0;
+}
+
+.intent-benefits h2,
+.proof-header h2,
+.intent-final-cta h2 {
+  font-size: 3.2rem;
+  color: #17324d;
+  margin-bottom: 1.2rem;
+}
+
+.intent-benefit-grid,
+.proof-stats-grid,
+.proof-testimonial-row {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.intent-benefit-grid {
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+}
+
+.intent-benefit-card,
+.proof-stat-card,
+.proof-testimonial-card,
+.response-promise-card {
+  background: #fff;
+  border-radius: 1.2rem;
+  border: 1px solid #dce7f3;
+  padding: 2rem;
+}
+
+.proof-header p,
+.intent-final-cta p {
+  font-size: 1.8rem;
+  color: #324e66;
+}
+
+.proof-stats-grid {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin-top: 2rem;
+}
+
+.proof-stat-value {
+  margin: 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0b4f7e;
+}
+
+.proof-stat-label {
+  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #17324d;
+}
+
+.proof-stat-note,
+.proof-testimonial-city {
+  margin: 0;
+  color: #4f6b84;
+  font-size: 1.4rem;
+}
+
+.proof-testimonial-row {
+  grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  margin-top: 2rem;
+}
+
+.proof-testimonial-quote {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #17324d;
+}
+
+.proof-testimonial-name {
+  margin: 1.2rem 0 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f2f4a;
+}
+
+.response-promise-card {
+  margin-top: 2rem;
+  background: #0f2f4a;
+  color: #fff;
+}
+
+.response-promise-card h3 {
+  margin: 0 0 1rem;
+  font-size: 2.2rem;
+}
+
+.response-promise-card ul {
+  margin: 0;
+  padding-left: 2rem;
+}
+
+.response-promise-card li {
+  margin-bottom: 0.7rem;
+  font-size: 1.5rem;
+}
+
+.intent-final-cta {
+  background: #e6eef8;
+}
+
+.intent-landing-not-found {
+  padding: 7rem 0;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .intent-hero h1 {
+    font-size: 3.2rem;
+  }
+
+  .intent-subheadline,
+  .intent-audience,
+  .proof-header p,
+  .intent-final-cta p {
+    font-size: 1.6rem;
+  }
+}

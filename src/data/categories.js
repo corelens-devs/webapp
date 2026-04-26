@@ -1185,3 +1185,5 @@ export const categoryContent = {
 export const getCategoryContent = (slug) => {
   return categoryContent[slug] || null;
 };
+
+export const getAllCategorySlugs = () => Object.keys(categoryContent);

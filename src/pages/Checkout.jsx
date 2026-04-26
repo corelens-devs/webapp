@@ -158,8 +158,8 @@ const Checkout = () => {
         }
 
         const currentDomain = window.location.origin;
-        const successUrl = `${currentDomain}/#/checkout-success`;
-        const failureUrl = `${currentDomain}/#/checkout-failure`;
+        const successUrl = `${currentDomain}/checkout-success`;
+        const failureUrl = `${currentDomain}/checkout-failure`;
 
         const callbackUrl = `https://backend.corelens.in/api/app/paymentVerification?successUrl=${encodeURIComponent(
           successUrl
@@ -253,7 +253,7 @@ const Checkout = () => {
                 showConfirmButton: false,
               });
               window.location.href =
-                window.location.origin + "/#/checkout-success";
+                window.location.origin + "/checkout-success";
             } catch (e) {
               console.error("Post-payment UI error:", e);
             }
@@ -265,11 +265,11 @@ const Checkout = () => {
               text: verifyData?.message || "Payment verification failed",
             });
             window.location.href =
-              window.location.origin + "/#/checkout-failure";
+              window.location.origin + "/checkout-failure";
           }
         } catch (error) {
           console.error("Payment verification error:", error);
-          window.location.href = window.location.origin + "/#/checkout-failure";
+          window.location.href = window.location.origin + "/checkout-failure";
         }
       },
       modal: {

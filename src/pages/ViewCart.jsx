@@ -1899,7 +1899,7 @@ const ViewCart = () => {
           //     showConfirmButton: false,
           //   });
           //   window.location.href =
-          //     window.location.origin + "/#/checkout-success";
+          //     window.location.origin + "/checkout-success";
           //   return;
           // }
 
@@ -1952,7 +1952,7 @@ const ViewCart = () => {
               });
 
               window.location.href =
-                window.location.origin + "/#/checkout-success";
+                window.location.origin + "/checkout-success";
 
               //   // 🔥 EXTRA PROTECTION: Check if we already tried to create order (using payment_id instead of order_id)
               //   const paymentIdKey = `orderCreatedWithPaymentId_${response.razorpay_payment_id}`;
@@ -1969,7 +1969,7 @@ const ViewCart = () => {
               //       showConfirmButton: false,
               //     });
               //     window.location.href =
-              //       window.location.origin + "/#/checkout-success";
+              //       window.location.origin + "/checkout-success";
               //     return;
               //   }
 
@@ -2101,7 +2101,7 @@ const ViewCart = () => {
               //     });
 
               //     window.location.href =
-              //       window.location.origin + "/#/checkout-success";
+              //       window.location.origin + "/checkout-success";
               //   } catch (err) {
               //     
               //     await Swal.fire({
@@ -2686,7 +2686,7 @@ const ViewCart = () => {
           confirmButtonColor: "#fb641b",
         }).then((result) => {
           if (result.isConfirmed) {
-            window.location.href = "/#checkout-success";
+            window.location.href = "/checkout-success";
           }
         });
       } else {
@@ -3582,7 +3582,7 @@ const ViewCart = () => {
           <div className="cart-hero-content">
             <h1 className="cart-title">Your Cart</h1>
             <nav className="cart-breadcrumb">
-              <a className="breadcrumb-link" href="#/">
+              <a className="breadcrumb-link" href="/">
                 home
               </a>
               <span className="breadcrumb-separator"> / </span>

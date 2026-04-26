@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import { image } from "../utils/asset";
 const Banner = () => {
   useEffect(() => {
@@ -194,7 +195,7 @@ const Banner = () => {
       subtext:
         "Protect your home for just ₹9/hour — alerts police & neighbours instantly.",
       ctaText: "Customer Stories",
-      ctaLink: "#/testimonials",
+      ctaLink: "/testimonials",
       learnMoreText: "Learn More",
       productImage: "/home/corelens-echo.png",
       backgroundColor: "#e1effe",
@@ -232,7 +233,7 @@ const Banner = () => {
       heading: "Free Delivery. 1-Year Service.",
       subtext: "365-day support & onsite service — no holidays.",
       ctaText: "Buy Now",
-      ctaLink: "#/product-details/corelens-turbo/6652dd611a712cc1384d5d63",
+      ctaLink: "/product-details/corelens-turbo/6652dd611a712cc1384d5d63",
       learnMoreText: "Learn More",
       productImage: "/home/corelens-turbo.png",
       backgroundColor: "#ebeeff",
@@ -252,7 +253,7 @@ const Banner = () => {
       subtext:
         "Hourly based security at ₹9 with instant alerts for break-ins or emergencies.",
       ctaText: "Customer Stories",
-      ctaLink: "#/testimonials",
+      ctaLink: "/testimonials",
       learnMoreText: "Learn More",
       productImage: "/home/corelens-gem.png",
       backgroundColor: "#e1effe",
@@ -270,7 +271,7 @@ const Banner = () => {
       subtext:
         "Corelens motion sensors work even during power cuts and network failure. @just 1799 now 684",
       ctaText: "Explore Security Solutions",
-      ctaLink: "#/category/motion-sensors",
+      ctaLink: "/category/motion-sensors",
       learnMoreText: "Learn More",
       productImage: "/home/corelens-motion-sensor.png",
       backgroundColor: "#d6e8fb",
@@ -290,7 +291,7 @@ const Banner = () => {
       subtext:
         "Uninterrupted security, doorstep delivery, 1-year service, 365-day support.",
       ctaText: "Buy Now",
-      ctaLink: "#/product-details/corelens-prime/67b6f14412039d03d5e2c3ab",
+      ctaLink: "/product-details/corelens-prime/67b6f14412039d03d5e2c3ab",
       learnMoreText: "Learn More",
       productImage: "/home/smart-door-lock-prime.png",
       backgroundColor: "#ebeeff",
@@ -398,12 +399,12 @@ const Banner = () => {
                 data-wow-delay="600ms"
                 data-animation="fadeInUp"
               >
-                <a href={slide.ctaLink} className="btn black arrow">
+                <Link to={slide.ctaLink} className="btn black arrow">
                   {slide.ctaText}
-                </a>
-                <a href="#/about-us" className="btn white">
+                </Link>
+                <Link to="/about-us" className="btn white">
                   {slide.learnMoreText}
-                </a>
+                </Link>
               </div>
               <div
                 className="review-count wow fadeInLeft"
